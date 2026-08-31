@@ -1,0 +1,362 @@
+SID4: 5825 | Domain: Clinical Trial Listings (DOMAIN_ID 1)
+
+--- Docker Build (Local)
+
+C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>docker build -t clinical-trial-app .
+[+] Building 3.9s (8/8) FINISHED                                    docker:desktop-linux
+ => [internal] load build definition from Dockerfile                          0.0s
+ => => transferring dockerfile: 344B                                          0.0s
+ => [internal] load metadata for docker.io/library/nginx:alpine               1.3s
+ => [internal] load .dockerignore                                             0.0s
+ => => transferring context: 2B                                               0.0s
+ => [1/3] FROM docker.io/library/nginx:alpine@sha256:db35bfc6b2951e7f8a72db5db120288c127ffaeeb4a6d4b95a26fead017d5913  2.0s
+ => [internal] load build context                                             0.3s
+ => => transferring context: 36.63kB                                          0.3s
+ => [2/3] RUN rm -rf /usr/share/nginx/html/*                                  0.2s
+ => [3/3] COPY . /usr/share/nginx/html/                                       0.0s
+ => exporting to image                                                        0.2s
+ => => naming to docker.io/library/clinical-trial-app:latest                  0.0s
+
+C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>
+
+--- Docker Run (Local) ---
+
+C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>docker run -d -p 8080:80 --name clinical-trial-container clinical-trial-app
+6c8e582cfb66f43faf2405d050408c8a212cce95518f9c8b72031f681653d0d5
+
+C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>docker ps
+CONTAINER ID   IMAGE               COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+6c8e582cfb66   clinical-trial-app  "/docker-entrypoint...."   41 seconds ago   Up 40 seconds   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp   clinical-trial-container
+
+Verified: http://localhost:8080 — application rendered correctly (Clinical Trial Listings form).
+
+--- AWS ECR Repository 
+Timestamp: August 29, 2026, 16:34:50 (UTC-7)
+Repository created: clinical-trial-app
+URI: 093468662825.dkr.ecr.us-east-2.amazonaws.com/clinical-trial-app
+
+--- AWS ECR Login & Push 
+
+C:\Users\vivek>docker tag clinical-trial-app:latest 093468662825.dkr.ecr.us-east-2.amazonaws.com/clinical-trial-app:latest
+
+C:\Users\vivek>docker push 093468662825.dkr.ecr.us-east-2.amazonaws.com/clinical-trial-app:latest
+The push refers to repository [093468662825.dkr.ecr.us-east-2.amazonaws.com/clinical-trial-app]
+c072f83ab0c3: Pushed
+44136fa355b3: Pushed
+d94291c26261: Pushed
+55afa1ecc21d: Pushed
+0ea935727878: Pushed
+1ed8e39a7434: Pushed
+0d62d88506ba: Pushed
+8cdfe4f23778: Pushed
+da4dea1b00af: Pushed
+fb597529c916: Pushed
+5acef8123c6a: Pushed
+0938e7230cea: Pushed
+latest: digest: sha256:00bd2738528866ac42d7749aa8e2e987795f7af464a151d893ba553cff42d21e size: 856
+
+--- AWS ECS Task Definition 
+Timestamp: August 30, 2026, 01:50 (UTC-7:00)
+Task definition created: clinical-trial-task:1
+Status: ACTIVE
+App environment: Fargate
+Task CPU: 256 units (0.25 vCPU) | Task memory: 512 MiB (0.5 GiB)
+
+--- AWS ECS Service Deployment 
+Timestamp: August 30, 2026, 02:01 - 02:17 (UTC-7:00)
+Cluster: clinical-trial-cluster
+Service: clinical-trial-service
+Note: First deployment attempt failed — CloudWatch log group creation permission error
+  (ecsTaskExecutionRole not authorized to perform logs:CreateLogGroup)
+Fix applied: Attached CloudWatchLogsFullAccess policy to ecsTaskExecutionRole via IAM
+Redeployed via "Force new deployment"
+Result: 1/1 Tasks running, deployment status "Completed"
+
+Public IP obtained: 18.116.203.173
+Verified: http://18.116.203.173 — application rendered correctly (Clinical Trial Listings form).
+
+--- Part 2: Agentic AI — Sample Run 
+
+(venv) C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>python agents_demo.py --temp 0.7
+=== Planner Agent ===
+{"tags": ["Phase II Trial", "Metformin", "Type 2 Diabetes"], "summary": "Phase II trial evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."}
+=== Reviewer Agent ===
+{"tags": ["Phase II Trial", "Metformin", "Type 2 Diabetes"], "summary": "Phase II trial evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."}
+=== Finalized Publish Output ===
+{
+  "tags": [
+    "Phase II Trial",
+    "Metformin",
+    "Type 2 Diabetes"
+  ],
+  "summary": "Phase II trial evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."
+}
+Latency: 36272.33 ms
+
+--- Part 3: Non-Determinism Experiment (40 runs) 
+
+(venv) C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>python run_experiments.py
+=== Starting 20 runs at temperature 0.7 ===
+Running temp=0.7, run 1/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 24714.79ms
+Running temp=0.7, run 2/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Phase II Trial'], Latency: 36030.62ms
+Running temp=0.7, run 3/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 23105.28ms
+Running temp=0.7, run 4/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Phase II Clinical Trial'], Latency: 28072.78ms
+Running temp=0.7, run 5/20...
+  Tags: ['Phase II Trial', 'Metformin', 'Type 2 Diabetes'], Latency: 39078.15ms
+Running temp=0.7, run 6/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Phase II Trial'], Latency: 45094.62ms
+Running temp=0.7, run 7/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Clinical Trial Phase II'], Latency: 54552.54ms
+Running temp=0.7, run 8/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 27791.6ms
+Running temp=0.7, run 9/20...
+  Tags: ['Metformin Efficacy', 'Phase II Clinical Trial', 'Blood Glucose Management'], Latency: 28190.46ms
+Running temp=0.7, run 10/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Phase II Trial'], Latency: 40165.82ms
+Running temp=0.7, run 11/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Clinical Trial'], Latency: 40429.48ms
+Running temp=0.7, run 12/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Clinical Trial Phase II'], Latency: 35527.82ms
+Running temp=0.7, run 13/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Clinical Trial Phase II'], Latency: 44432.31ms
+Running temp=0.7, run 14/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 25347.13ms
+Running temp=0.7, run 15/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Blood Glucose Management'], Latency: 26358.0ms
+Running temp=0.7, run 16/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Phase II Trial'], Latency: 45613.92ms
+Running temp=0.7, run 17/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 35899.71ms
+Running temp=0.7, run 18/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 29978.09ms
+Running temp=0.7, run 19/20...
+  Tags: ['Phase II Trial', 'Metformin Efficacy', 'Type 2 Diabetes'], Latency: 38643.75ms
+Running temp=0.7, run 20/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes', 'Phase II Trial'], Latency: 42261.76ms
+
+=== Starting 20 runs at temperature 0.0 ===
+Running temp=0.0, run 1/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Metformin Safety'], Latency: 58469.29ms
+Running temp=0.0, run 2/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 32533.61ms
+Running temp=0.0, run 3/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33518.69ms
+Running temp=0.0, run 4/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30482.58ms
+Running temp=0.0, run 5/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33516.66ms
+Running temp=0.0, run 6/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30744.5ms
+Running temp=0.0, run 7/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33531.37ms
+Running temp=0.0, run 8/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30452.11ms
+Running temp=0.0, run 9/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33493.14ms
+Running temp=0.0, run 10/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30390.39ms
+Running temp=0.0, run 11/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33478.53ms
+Running temp=0.0, run 12/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30410.33ms
+Running temp=0.0, run 13/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33543.15ms
+Running temp=0.0, run 14/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30411.64ms
+Running temp=0.0, run 15/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33511.32ms
+Running temp=0.0, run 16/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30398.42ms
+Running temp=0.0, run 17/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33525.61ms
+Running temp=0.0, run 18/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30374.8ms
+Running temp=0.0, run 19/20...
+  Tags: ['Phase II Clinical Trial', 'Metformin Efficacy', 'Type 2 Diabetes Management'], Latency: 33481.41ms
+Running temp=0.0, run 20/20...
+  Tags: ['Metformin Efficacy', 'Type 2 Diabetes Management', 'Clinical Trial Safety'], Latency: 30393.76ms
+
+All 40 runs complete. Results saved to reports/hw01/raw/
+
+--- Part 3: Analysis 
+(venv) C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>python analyze_results.py
+
+=== Temperature 0.7 ===
+Distinct tag sets: 6
+Tags in all 20 runs: []
+Tags in exactly 1 run: ['Metformin', 'Clinical Trial']
+Latency p50: 35965.17 ms
+Latency p95: 45613.92 ms
+Latency p99: 45613.92 ms
+
+=== Temperature 0.0 ===
+Distinct tag sets: 3
+Tags in all 20 runs: ['Metformin Efficacy']
+Tags in exactly 1 run: ['Metformin Safety']
+Latency p50: 33006.07 ms
+Latency p95: 33543.15 ms
+Latency p99: 33543.15 ms
+
+METRICS.md written to reports/hw01/METRICS.md
+
+--- Part 4: Model Client- 5-Turn Conversation 
+(venv) C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>python hw1_client.py
+HW1 Model Client — type your message, or '/stats' for stats, or 'exit' to quit.
+
+You: What is a clinical trial?
+
+Assistant: A **clinical trial** is a research study designed to evaluate the safety, effectiveness, and potential benefits of a new medical intervention, such as a drug, device, therapy, or treatment. These trials are essential for advancing medical knowledge and improving healthcare by testing whether new interventions work better than existing ones or are safer for patients.
+
+### Key Aspects of Clinical Trials:
+1. **Purpose**:
+   - **Safety**: Assess whether a treatment is safe for human use.
+   - **Efficacy**: Determine if a treatment works as intended.
+   - **Optimal Use**: Identify the best dosage, administration method, or combination with other treatments.
+
+2. **Phases of Trials**:
+   Clinical trials are divided into **phases** to systematically evaluate interventions:
+   - **Phase I**: Small groups of healthy volunteers or patients to test safety, side effects, and dosage.
+   - **Phase II**: Larger groups to assess effectiveness and monitor side effects.
+   - **Phase III**: Large-scale trials to confirm effectiveness, monitor long-term side effects, and compare the intervention to standard treatments.
+   - **Phase IV**: Post-approval studies to track long-term outcomes and rare side effects after the treatment is available to the public.
+
+3. **Types of Trials**:
+   - **Randomized Controlled Trials (RCTs)**: Participants are randomly assigned to treatment or control groups to ensure unbiased results.
+   - **Blind/Double-Blind Trials**: Participants (and sometimes researchers) don’t know who receives the treatment to avoid bias.
+   - **Observational Studies**: Researchers observe and record data without intervening (e.g., tracking outcomes in real-world settings).
+
+4. **Ethical and Regulatory Oversight**:
+   - Trials require **informed consent**, ensuring participants understand risks, benefits, and their right to withdraw.
+   - They are reviewed by **ethics committees** (e.g., Institutional Review Boards or IRBs) to protect participant safety and rights.
+
+5. **Benefits and Risks**:
+   - **Benefits**: Access to cutting-edge treatments, potential health improvements, and contribution to medical research.
+   - **Risks**: Possible side effects, time commitment, or discomfort.
+
+6. **Examples**:
+   - Testing a new cancer drug.
+   - Evaluating a vaccine for a public health crisis (e.g., COVID-19).
+   - Studying a novel surgical technique or device.
+
+### Why Clinical Trials Matter:
+They are the foundation of evidence-based medicine, enabling the development of life-saving treatments and ensuring that new therapies are both safe and effective before they are widely used. Participation in trials also helps researchers address unmet medical needs and improve patient care.
+
+If you're considering participating in a clinical trial, it’s important to discuss the details with your healthcare provider and the research team to understand the risks and benefits.
+[Turn 1 — Input tokens: 13, Output tokens: 735, Total: 748]
+
+You: What does Phase II mean in that context?
+
+Assistant: **Phase II** of a clinical trial is a critical stage in the development of a new medical intervention (e.g., drug, device, or therapy). It follows **Phase I** and precedes **Phase III**, serving as a bridge between initial safety testing and large-scale efficacy evaluation. Here's a breakdown of what Phase II entails:
+
+---
+
+### **Purpose of Phase II**
+1. **Assess Efficacy**:
+   - Determine whether the intervention works as intended in a **smaller group of patients** (typically 100–300 participants).
+   - Measure how well the treatment addresses the target condition (e.g., reducing symptoms, improving survival rates).
+
+2. **Monitor Safety**:
+   - Continue to evaluate **side effects** and long-term risks, building on the safety data from Phase I.
+   - Identify any rare or delayed adverse effects.
+
+3. **Refine Treatment Parameters**:
+   - Optimize dosing, administration methods, or treatment duration based on early results.
+   - Determine the most effective patient population (e.g., specific age groups, disease stages).
+
+---
+
+### **Key Features of Phase II**
+- **Participants**:
+  - Focuses on **patients with the target condition** (not healthy volunteers).
+  - Typically involves **100–300 participants**.
+
+- **Duration**:
+  - Usually lasts **6–12 months**, depending on the intervention and study design.
+
+- **Study Design**:
+  - May include **randomized controlled trials (RCTs)** or **observational studies**, depending on the research goals.
+  - Often uses **placebos** or **standard treatments** as controls to compare outcomes.
+
+- **Outcomes**:
+  - Researchers analyze data to determine if the intervention shows **promising efficacy** and **acceptable safety**.
+  - Statistical significance is evaluated to assess whether results are likely due to the treatment rather than chance.
+
+---
+
+### **How Phase II Differs from Phase I and III**
+- **Phase I**: Focuses on **safety** and **dosage** in a small group of healthy volunteers or patients.
+- **Phase II**: Balances **efficacy** and **safety** in a larger group of patients.
+- **Phase III**: Confirms **efficacy** and **monitors long-term risks** in a **much larger population** (often thousands of participants) to gather robust data for regulatory approval.
+
+---
+
+### **Example**
+If a new diabetes drug is tested in Phase II:
+- Researchers might evaluate whether it effectively lowers blood sugar levels in patients with type 2 diabetes.
+- They would also track side effects like hypoglycemia or gastrointestinal issues.
+- If the drug shows promise, it would advance to Phase III for broader testing.
+
+---
+
+### **Why Phase II Matters**
+Phase II is where researchers **validate the potential of an intervention** and decide whether it’s worth investing further resources (e.g., for Phase III trials). It helps identify treatments that are both **safe and effective** before they are widely tested or approved for public use.
+
+Let me know if you'd like examples of specific drugs or conditions tested in Phase II!
+[Turn 2 — Input tokens: 759, Output tokens: 763, Total: 1522]
+
+You: Summarize that in one sentence.
+
+Assistant: Phase II clinical trials evaluate the efficacy and safety of a new treatment in a larger group of patients (typically 100–300 participants) to determine if it shows promise and should advance to larger-scale testing in Phase III.
+[Turn 3 — Input tokens: 1531, Output tokens: 57, Total: 1588]
+
+You: /stats
+
+--- STATS ---
+Turn count: 3
+Cumulative input tokens: 2303
+Cumulative output tokens: 1555
+Cumulative total tokens: 3858
+Serialized conversation history length: 6348 characters
+-------------
+
+You: What is Metformin used for?
+
+Assistant: **Metformin** is primarily used to **treat type 2 diabetes** by improving insulin sensitivity, reducing glucose production in the liver, and increasing glucose uptake in muscle cells. It is also sometimes prescribed **off-label** for conditions like **polycystic ovary syndrome (PCOS)** to manage insulin resistance and **obesity** (though its role in weight loss is less well-established). It is generally considered a first-line therapy for type 2 diabetes due to its efficacy, affordability, and low risk of hypoglycemia.
+[Turn 4 — Input tokens: 1595, Output tokens: 131, Total: 1726]
+
+You: Thank you, that's all.
+
+Assistant: You're welcome! If you have any more questions in the future, feel free to ask. Have a great day! 😊
+[Turn 5 — Input tokens: 1732, Output tokens: 24, Total: 1756]
+
+You: /stats
+
+--- STATS ---
+Turn count: 5
+Cumulative input tokens: 5630
+Cumulative output tokens: 1710
+Cumulative total tokens: 7340
+Serialized conversation history length: 7020 characters
+-------------
+
+You: exit
+
+=== Session ended ===
+Total turns: 5
+Cumulative input tokens: 5630
+Cumulative output tokens: 1710
+Cumulative total tokens: 7340
+
+--- Part 4: AGENT.md Verification 
+(venv) C:\Users\vivek\Desktop\Rutuja docs\DATA 260\data260-5825>python test_agent_review.py
+=== Model Response ===
+- The function is functionally correct for basic addition but lacks type hints for parameters and return value.
+- Parameter names `a` and `b` are generic; more descriptive names would improve readability.
+- The intermediate variable `result` is unnecessary; the function could directly return `a + b`.
+- No error handling is included for non-numeric inputs, which could cause runtime errors.
+- The function could benefit from a docstring to clarify its purpose and usage.
+

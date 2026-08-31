@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW1-Rutuja</title>
+</head>
+<body>
+    <h1>Clinical Trial Listings</h1>
+
+    <form id="trialForm">
+        <label for="trialTitle">Trial Title:</label>
+        <input type="text" id="trialTitle" name="trialTitle" placeholder="Enter the full title of the clinical trial" required autofocus>
+        <br><br>
+
+        <label for="nctNumber">NCT Number:</label>
+        <input type="text" id="nctNumber" name="nctNumber" placeholder="e.g., NCT01234567" required>
+        <br><br>
+
+        <label for="submitterEmail">Submitter Email:</label>
+        <input type="email" id="submitterEmail" name="submitterEmail" placeholder="Enter your email address" required>
+        <br><br>
+
+        <label for="trialDescription">Trial Description:</label>
+        <textarea id="trialDescription" name="trialDescription" placeholder="Describe the trial's purpose, methodology, and goals (minimum 25 characters)" required></textarea>
+        <br><br>
+
+        <label for="trialPhase">Trial Phase:</label>
+        <select id="trialPhase" name="trialPhase" required>
+            <option value="">-- Select Phase --</option>
+            <option value="Phase I">Phase I</option>
+            <option value="Phase II">Phase II</option>
+            <option value="Phase III">Phase III</option>
+            <option value="Phase IV">Phase IV</option>
+        </select>
+        <br><br>
+
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        <label for="agreeTerms">I agree to the terms and conditions.</label>
+        <br><br>
+
+        <button type="submit">Submit Trial Listing</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
