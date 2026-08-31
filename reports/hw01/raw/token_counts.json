@@ -1,0 +1,32 @@
+[
+  {
+    "turn": 1,
+    "input_tokens": 13,
+    "output_tokens": 735,
+    "total_tokens": 748
+  },
+  {
+    "turn": 2,
+    "input_tokens": 759,
+    "output_tokens": 763,
+    "total_tokens": 1522
+  },
+  {
+    "turn": 3,
+    "input_tokens": 1531,
+    "output_tokens": 57,
+    "total_tokens": 1588
+  },
+  {
+    "turn": 4,
+    "input_tokens": 1595,
+    "output_tokens": 131,
+    "total_tokens": 1726
+  },
+  {
+    "turn": 5,
+    "input_tokens": 1732,
+    "output_tokens": 24,
+    "total_tokens": 1756
+  }
+]
