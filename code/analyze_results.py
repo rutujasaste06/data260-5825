@@ -2,7 +2,7 @@ import json
 from collections import Counter
 import statistics
 
-with open("reports/hw01/raw/all_runs.json", "r") as f:
+with open("../reports/hw01/raw/all_runs.json", "r") as f:
     all_results = json.load(f)
 
 def analyze_temp(results, temp_label):
@@ -46,7 +46,7 @@ results_00 = [r for r in all_results if r["temperature"] == 0.0]
 summary_07 = analyze_temp(results_07, "0.7")
 summary_00 = analyze_temp(results_00, "0.0")
 
-with open("reports/hw01/METRICS.md", "w") as f:
+with open("../reports/hw01/METRICS.md", "w") as f:
     f.write("# Non-Determinism Metrics\n\n")
     f.write("## Temperature 0.7\n\n")
     f.write(f"- Distinct tag sets: {summary_07['distinct_tag_sets']}\n")

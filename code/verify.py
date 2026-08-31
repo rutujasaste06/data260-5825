@@ -5,13 +5,13 @@ import sys
 
 checks = {}
 
-# Check 1: Required files exist
+# Check 1: Required files exist (paths relative to code/ folder)
 required_files = [
-    "index.html", "script.js", "Dockerfile", "agents_demo.py",
-    "src/model_client.py", "hw1_client.py", "AGENT.md",
-    "DOMAIN_SCHEMA.md", "reports/hw01/cases/nondeterminism_input.json",
-    "reports/hw01/raw/all_runs.json", "reports/hw01/METRICS.md",
-    "reports/hw01/AI_USE.md", "reports/hw01/RUN_LOG.txt"
+    "web_application/index.html", "web_application/script.js", "web_application/Dockerfile",
+    "agents_demo.py", "../src/model_client.py", "hw1_client.py", "../AGENT.md",
+    "../DOMAIN_SCHEMA.md", "../reports/hw01/cases/nondeterminism_input.json",
+    "../reports/hw01/raw/all_runs.json", "../reports/hw01/METRICS.md",
+    "../reports/hw01/AI_USE.md", "../reports/hw01/RUN_LOG.txt"
 ]
 missing_files = [f for f in required_files if not os.path.exists(f)]
 checks["required_files_present"] = len(missing_files) == 0
@@ -30,8 +30,8 @@ except Exception:
     checks["ollama_available"] = False
 
 # Check 4: 40 runs completed
-if os.path.exists("reports/hw01/raw/all_runs.json"):
-    with open("reports/hw01/raw/all_runs.json") as f:
+if os.path.exists("../reports/hw01/raw/all_runs.json"):
+    with open("../reports/hw01/raw/all_runs.json") as f:
         runs = json.load(f)
     checks["total_runs_count"] = len(runs)
     checks["forty_runs_complete"] = len(runs) == 40
@@ -46,7 +46,7 @@ checks["overall_status"] = "PASS" if (
     checks["forty_runs_complete"]
 ) else "FAIL"
 
-with open("reports/hw01/verification.json", "w") as f:
+with open("../reports/hw01/verification.json", "w") as f:
     json.dump(checks, f, indent=2)
 
 print(json.dumps(checks, indent=2))

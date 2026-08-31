@@ -1,8 +1,8 @@
 import sys
-sys.path.append("src")
+sys.path.append("../src")
 from model_client import ModelClient
 
-with open("AGENT.md", "r") as f:
+with open("../AGENT.md", "r") as f:
     agent_instructions = f.read()
 
 client = ModelClient()

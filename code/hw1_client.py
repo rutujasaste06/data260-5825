@@ -1,5 +1,5 @@
 import sys
-sys.path.append("src")
+sys.path.append("../src")
 from model_client import ModelClient
 
 def count_tokens(text):

@@ -6,7 +6,7 @@ import csv
 import os
 import sys
 
-RESULTS_DIR = "reports/hw01/raw"
+RESULTS_DIR = "../reports/hw01/raw"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 def run_single(temp, run_number):

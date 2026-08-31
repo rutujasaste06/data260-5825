@@ -69,7 +69,7 @@ def finalizer_agent(reviewer_output):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--input", type=str, default="reports/hw01/cases/nondeterminism_input.json")
+    parser.add_argument("--input", type=str, default="../reports/hw01/cases/nondeterminism_input.json")
     parser.add_argument("--temp", type=float, default=0.7)
     args = parser.parse_args()
 
