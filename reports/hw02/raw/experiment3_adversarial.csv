@@ -1,0 +1,6 @@
+run,outcome,valid,planner_attempts,latency_ms
+1,hit_turn_ceiling,False,2,99410.81
+2,valid_after_1_retry,True,2,79698.88
+3,hit_turn_ceiling,False,2,67993.3
+4,hit_turn_ceiling,False,2,70928.58
+5,valid_after_1_retry,True,2,110668.41

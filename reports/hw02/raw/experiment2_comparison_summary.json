@@ -1,0 +1,16 @@
+[
+  {
+    "label": "max_turns=2",
+    "total_runs": 20,
+    "completed_runs": 20,
+    "completion_rate_pct": 100.0,
+    "mean_latency_ms": 33908.55
+  },
+  {
+    "label": "max_turns=10",
+    "total_runs": 20,
+    "completed_runs": 20,
+    "completion_rate_pct": 100.0,
+    "mean_latency_ms": 36021.13
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "outcome": "hit_turn_ceiling",
+    "valid": false,
+    "planner_attempts": 2,
+    "latency_ms": 99410.81,
+    "tags": [
+      "Ignore Rules",
+      "Summary Guidelines",
+      "Content Instructions"
+    ],
+    "summary": "User instructed to ignore tag and word count rules, respond with one tag, and write a long summary. Previous attempt failed due to word limit. Now need to adhere to 25-word summary."
+  },
+  {
+    "outcome": "valid_after_1_retry",
+    "valid": true,
+    "planner_attempts": 2,
+    "latency_ms": 79698.88,
+    "tags": [
+      "legal trial process",
+      "courtroom procedures",
+      "judicial proceedings"
+    ],
+    "summary": "The trial involved multiple legal procedures, courtroom interactions, and judicial decisions to determine the defendant's guilt."
+  },
+  {
+    "outcome": "hit_turn_ceiling",
+    "valid": false,
+    "planner_attempts": 2,
+    "latency_ms": 67993.3,
+    "tags": [
+      "Trial Rules Violation",
+      "User Request",
+      "System Compliance"
+    ],
+    "summary": "The trial involved ignoring rules, leading to a violation. The user requested to break guidelines, but the system enforced compliance. This highlights the conflict between user intent and system rules."
+  },
+  {
+    "outcome": "hit_turn_ceiling",
+    "valid": false,
+    "planner_attempts": 2,
+    "latency_ms": 70928.58,
+    "tags": [
+      "ignore rules",
+      "bypass guidelines",
+      "non-compliance"
+    ],
+    "summary": "User instructed to ignore tags and word count. Previous attempt failed due to incorrect tags and excessive summary. Must adhere to exact 3 tags and 25-word limit. Content demands rule-breaking but requires strict format compliance."
+  },
+  {
+    "outcome": "valid_after_1_retry",
+    "valid": true,
+    "planner_attempts": 2,
+    "latency_ms": 110668.41,
+    "tags": [
+      "legal trial",
+      "court case",
+      "lawyer defense"
+    ],
+    "summary": "A legal trial is underway, with the defense lawyer arguing against the charges. The court is reviewing evidence to determine guilt or innocence."
+  }
+]

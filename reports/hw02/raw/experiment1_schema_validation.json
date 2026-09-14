@@ -1,0 +1,362 @@
+[
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 50067.53,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II trial evaluates Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 34757.82,
+    "tags": [
+      "Metformin Efficacy",
+      "Type 2 Diabetes",
+      "HbA1c Reduction"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 23965.88,
+    "tags": [
+      "Metformin Type 2 Diabetes",
+      "Phase II Trial",
+      "HbA1c Reduction"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy in Type 2 Diabetes, focusing on HbA1c reduction and safety."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 29886.8,
+    "tags": [
+      "Metformin Study",
+      "Phase II Trial",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 35547.61,
+    "tags": [
+      "Metformin Efficacy",
+      "HbA1c Reduction",
+      "Phase II Trial"
+    ],
+    "summary": "Evaluates Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 44043.77,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes Management"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 29734.39,
+    "tags": [
+      "Metformin Efficacy",
+      "Type 2 Diabetes",
+      "Phase II Trial"
+    ],
+    "summary": "Phase II study evaluates Metformin's efficacy and safety in Type 2 Diabetes, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 27044.98,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "HbA1c Reduction"
+    ],
+    "summary": "Evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 35662.34,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 59866.93,
+    "tags": [
+      "Metformin Study",
+      "Phase II Trial",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 43755.69,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Diabetes Management"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients, targeting HbA1c reduction and adverse events over 12 weeks."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 47656.57,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Diabetes Management"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 16420.78,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes Management"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 67553.43,
+    "tags": [
+      "Metformin Study",
+      "Type 2 Diabetes",
+      "HbA1c Reduction"
+    ],
+    "summary": "Phase II study evaluates Metformin's efficacy and safety in Type 2 Diabetes patients, targeting HbA1c reduction and adverse events over 12 weeks."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 38697.45,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 158707.5,
+    "tags": [
+      "Phase II Clinical Trial",
+      "Metformin Type 2 Diabetes",
+      "HbA1c Reduction Study"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 25647.01,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Diabetes Management"
+    ],
+    "summary": "Assesses Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 26087.41,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes Management"
+    ],
+    "summary": "Phase II trial evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, targeting HbA1c reduction and adverse events, patient-reported outcomes."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 32172.63,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II study assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 35749.38,
+    "tags": [
+      "Phase II Trial",
+      "Metformin T2D",
+      "HbA1c Reduction"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 23424.6,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Type 2 Diabetes",
+      "Diabetes Management"
+    ],
+    "summary": "Evaluates Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, targeting HbA1c reduction."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 19840.42,
+    "tags": [
+      "Phase II Clinical Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes Management"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 37584.0,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 34627.36,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Diabetes",
+      "HbA1c Reduction"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 27266.74,
+    "tags": [
+      "Phase II Clinical Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes"
+    ],
+    "summary": "Phase II study evaluates Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 30841.23,
+    "tags": [
+      "Phase II Clinical Trial",
+      "Metformin Type 2 Diabetes",
+      "HbA1c Reduction"
+    ],
+    "summary": "Phase II clinical trial evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 23994.12,
+    "tags": [
+      "Phase II Clinical Trial",
+      "Metformin Efficacy",
+      "Type 2 Diabetes Management"
+    ],
+    "summary": "Phase II trial assesses Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 40761.53,
+    "tags": [
+      "Metformin Efficacy",
+      "Type 2 Diabetes",
+      "Phase II Trial"
+    ],
+    "summary": "Phase II trial evaluates Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, focusing on HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 40597.22,
+    "tags": [
+      "Metformin Efficacy",
+      "Type 2 Diabetes",
+      "HbA1c Study"
+    ],
+    "summary": "Phase II study evaluates Metformin's efficacy and safety in Type 2 Diabetes patients over 12 weeks, targeting HbA1c reduction and adverse events."
+  },
+  {
+    "outcome": "valid_first_attempt",
+    "valid": true,
+    "planner_attempts": 1,
+    "latency_ms": 35433.41,
+    "tags": [
+      "Phase II Trial",
+      "Metformin Safety",
+      "HbA1c Reduction"
+    ],
+    "summary": "Evaluates Metformin's efficacy and safety in Type 2 Diabetes over 12 weeks, focusing on HbA1c reduction and adverse events."
+  }
+]
