@@ -1,0 +1,30 @@
+
+- id: q1
+  question: "What daily dose of cinnamon was tested against usual care alone for lowering HbA1c in uncontrolled type 2 diabetics?"
+  expected_answer: "1 gram (1g) of cinnamon daily, in addition to usual care."
+  expected_source: "NCT00445354.txt"
+  single_source: true
+
+- id: q2
+  question: "Which two needle types were compared in the NovoFine insulin injection pen trial?"
+  expected_answer: "NovoFine 32 Gauge Tip x 6mm and NovoFine 30 Gauge x 8mm, both used with a FlexPen disposable insulin injection pen."
+  expected_source: "NCT00569426.txt"
+  single_source: true
+
+- id: q3
+  question: "What BMI range was required for eligibility in the Vildagliptin vs Gliclazide trial (on top of metformin)?"
+  expected_answer: "BMI in the range 22 to 45."
+  expected_source: "NCT00102466.txt"
+  single_source: true
+
+- id: q4
+  question: "What reference product was Semaglutide Injection compared against in the Phase III metformin combination-therapy trial?"
+  expected_answer: "Ozempic (semaglutide reference product)."
+  expected_source: "NCT05816057.txt"
+  single_source: false
+
+- id: q5
+  question: "What natural compound was studied for its modulating effects in uncontrolled, insulin-treated type 2 diabetes patients?"
+  expected_answer: "Oil palm phenolics."
+  expected_source: "NCT02532101.txt"
+  single_source: true
