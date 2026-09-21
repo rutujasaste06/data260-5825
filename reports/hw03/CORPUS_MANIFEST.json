@@ -1,0 +1,449 @@
+{
+  "domain": "Clinical Trial Listings",
+  "condition_searched": "Type 2 Diabetes",
+  "access_date": "2026-09-19",
+  "total_files": 55,
+  "total_bytes": 223158,
+  "files": [
+    {
+      "nct_id": "NCT07436182",
+      "filename": "NCT07436182.txt",
+      "byte_size": 19207,
+      "sha256": "c347769d7e8fc538906b9b0ed7249721560eefac3c2583f52de069f2e9dbf8df",
+      "source_url": "https://clinicaltrials.gov/study/NCT07436182",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03593746",
+      "filename": "NCT03593746.txt",
+      "byte_size": 3810,
+      "sha256": "88fbcb06b570756625e90620758fcf0891f2c1b2d5448bf9cf7f344d7558413d",
+      "source_url": "https://clinicaltrials.gov/study/NCT03593746",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00712673",
+      "filename": "NCT00712673.txt",
+      "byte_size": 6963,
+      "sha256": "abca1c89bcce72fde095534927cabb4b2e13efa569a7bc9623eba014280d5f0b",
+      "source_url": "https://clinicaltrials.gov/study/NCT00712673",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03141073",
+      "filename": "NCT03141073.txt",
+      "byte_size": 2616,
+      "sha256": "f835053cd618286430c0808ce6b1eebc9691e180ae7ce2c4e472fefa2f2beadd",
+      "source_url": "https://clinicaltrials.gov/study/NCT03141073",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00558883",
+      "filename": "NCT00558883.txt",
+      "byte_size": 5601,
+      "sha256": "66f4461493b7241b3b5dc2ad3118cd43457e2cbef1a5255315c7d7c066004b53",
+      "source_url": "https://clinicaltrials.gov/study/NCT00558883",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07392853",
+      "filename": "NCT07392853.txt",
+      "byte_size": 5478,
+      "sha256": "e12ec44607736183fbf42e2c6f0b76fd98e0b84c735bf31e289d57e8aeb5b9b7",
+      "source_url": "https://clinicaltrials.gov/study/NCT07392853",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT04889157",
+      "filename": "NCT04889157.txt",
+      "byte_size": 1857,
+      "sha256": "5196739e34856475326e858eee23cdc4e24129d6ac02d42e012bc6068ec129d9",
+      "source_url": "https://clinicaltrials.gov/study/NCT04889157",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT02532101",
+      "filename": "NCT02532101.txt",
+      "byte_size": 4315,
+      "sha256": "6cfae72ad97801e895a309e42d9c73f55987d7c514cfebc38c860afa21d1a9bd",
+      "source_url": "https://clinicaltrials.gov/study/NCT02532101",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07344701",
+      "filename": "NCT07344701.txt",
+      "byte_size": 9433,
+      "sha256": "b37b3d97e2e7760e46db5858f9afb2070f30ca7c62262f036ef7a5274e437283",
+      "source_url": "https://clinicaltrials.gov/study/NCT07344701",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07446179",
+      "filename": "NCT07446179.txt",
+      "byte_size": 3210,
+      "sha256": "9ccffa73a2b5d942951a10da81868278fcd79eac098c1f538ba99245a97e9cbd",
+      "source_url": "https://clinicaltrials.gov/study/NCT07446179",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT05260879",
+      "filename": "NCT05260879.txt",
+      "byte_size": 10410,
+      "sha256": "1209823805fa6a0ea98682ee126fddaa916dbc707d8cf1412818446df84aac9e",
+      "source_url": "https://clinicaltrials.gov/study/NCT05260879",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT04349696",
+      "filename": "NCT04349696.txt",
+      "byte_size": 5433,
+      "sha256": "c11564d33174e42903da2868b8dad6310466951e22f1f635e90fd7c1b9530c48",
+      "source_url": "https://clinicaltrials.gov/study/NCT04349696",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03553862",
+      "filename": "NCT03553862.txt",
+      "byte_size": 1555,
+      "sha256": "539ec5d809718af2b8625ec5afcb3a5722126523e97f5c953d26068b64fec7ce",
+      "source_url": "https://clinicaltrials.gov/study/NCT03553862",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00614783",
+      "filename": "NCT00614783.txt",
+      "byte_size": 3673,
+      "sha256": "a2c8efe75199040563c3b2ff1b474b7cf944630892449c70e13fa7e6112c7c64",
+      "source_url": "https://clinicaltrials.gov/study/NCT00614783",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00135941",
+      "filename": "NCT00135941.txt",
+      "byte_size": 3544,
+      "sha256": "87d36dd0c5e36f38a38c5a1225f181b8eab6a55dd99869722daa567b4e72376d",
+      "source_url": "https://clinicaltrials.gov/study/NCT00135941",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03782805",
+      "filename": "NCT03782805.txt",
+      "byte_size": 1541,
+      "sha256": "2b1ea70017cbf59493eb0206ad9e86d4af6b3d3fc7d9912a1c1986c09e4c1f24",
+      "source_url": "https://clinicaltrials.gov/study/NCT03782805",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT02303405",
+      "filename": "NCT02303405.txt",
+      "byte_size": 4307,
+      "sha256": "e3930d827fc394cf89048cf669a89ac8c233fd916a3060e2ae8e1dbc2bfc9067",
+      "source_url": "https://clinicaltrials.gov/study/NCT02303405",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03983551",
+      "filename": "NCT03983551.txt",
+      "byte_size": 4743,
+      "sha256": "5109f714f8b99d5126c04d96c9f2075ece6b5bcaa81d96253423b984479f1917",
+      "source_url": "https://clinicaltrials.gov/study/NCT03983551",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00391196",
+      "filename": "NCT00391196.txt",
+      "byte_size": 1089,
+      "sha256": "3ae061ce1c33f33ee4027d0a61277ca076415cc42cd02695ea6c01ea987848de",
+      "source_url": "https://clinicaltrials.gov/study/NCT00391196",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00318461",
+      "filename": "NCT00318461.txt",
+      "byte_size": 1873,
+      "sha256": "17133567597ce08a02ee6df30acdc500949e8df542fdee8ec8850df555d39303",
+      "source_url": "https://clinicaltrials.gov/study/NCT00318461",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06391983",
+      "filename": "NCT06391983.txt",
+      "byte_size": 2612,
+      "sha256": "3293fcc94e04f92638671b4332cda1d35412f69a1b33dc6fdfc75fb15f328735",
+      "source_url": "https://clinicaltrials.gov/study/NCT06391983",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07144241",
+      "filename": "NCT07144241.txt",
+      "byte_size": 2145,
+      "sha256": "5a5312c40336a0a8c5eca251666c2c58b1190a9f05fc887c25d502d00fe15e87",
+      "source_url": "https://clinicaltrials.gov/study/NCT07144241",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00941954",
+      "filename": "NCT00941954.txt",
+      "byte_size": 2059,
+      "sha256": "fb81c944a3eca95e7b213bf80d97e97c21277fc56617f05ca8bb0053a7e4b279",
+      "source_url": "https://clinicaltrials.gov/study/NCT00941954",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07503366",
+      "filename": "NCT07503366.txt",
+      "byte_size": 3465,
+      "sha256": "631208ff937599218d7b6a0c1d81f8907214d4ab5118defaef1c98d6f7b72004",
+      "source_url": "https://clinicaltrials.gov/study/NCT07503366",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT04024631",
+      "filename": "NCT04024631.txt",
+      "byte_size": 1939,
+      "sha256": "e21a39c8c7d2b0328c4ebe7092c7df424d38acf5f2ca51e9a37b1f058d0d5388",
+      "source_url": "https://clinicaltrials.gov/study/NCT04024631",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT05420051",
+      "filename": "NCT05420051.txt",
+      "byte_size": 4518,
+      "sha256": "53bedf931f81ca4fc615a7dbda846e532a8b58588fe3cb90532a3ec9917de867",
+      "source_url": "https://clinicaltrials.gov/study/NCT05420051",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06780631",
+      "filename": "NCT06780631.txt",
+      "byte_size": 3673,
+      "sha256": "35dae1b0fe8cccfd721661b01aaafcd9a0e8d58e73cc2ca22ffa83502e82e26c",
+      "source_url": "https://clinicaltrials.gov/study/NCT06780631",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07163975",
+      "filename": "NCT07163975.txt",
+      "byte_size": 4705,
+      "sha256": "8d7e05b64fbd339827d557bff7fee28f9b8e2c7d343dafd78fad8d82f9207cb9",
+      "source_url": "https://clinicaltrials.gov/study/NCT07163975",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00445354",
+      "filename": "NCT00445354.txt",
+      "byte_size": 2338,
+      "sha256": "5ea515ba98411f9cd4ba805a09163bdeed8dc9d21eb51e7b7b38e07036707a4a",
+      "source_url": "https://clinicaltrials.gov/study/NCT00445354",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT01043445",
+      "filename": "NCT01043445.txt",
+      "byte_size": 1057,
+      "sha256": "afd468c6914d054f2ecebdfe12eff01b4dceb8c19722a69bbe7881b5ea27eda0",
+      "source_url": "https://clinicaltrials.gov/study/NCT01043445",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06582472",
+      "filename": "NCT06582472.txt",
+      "byte_size": 4563,
+      "sha256": "4965532b3052a143d1bfdd2c722084ba13abb141f6018a7be61313ff58057737",
+      "source_url": "https://clinicaltrials.gov/study/NCT06582472",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT02722239",
+      "filename": "NCT02722239.txt",
+      "byte_size": 7023,
+      "sha256": "cc8eee4efe7b01fbf929bfcb6d679b4d0f301551c682343a3c1f66e10ee8f08a",
+      "source_url": "https://clinicaltrials.gov/study/NCT02722239",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT05816057",
+      "filename": "NCT05816057.txt",
+      "byte_size": 4671,
+      "sha256": "9ca525d68de0c8e98577ebcb3c5f1fd4ceb1ef51c734689421c506cb4c191e49",
+      "source_url": "https://clinicaltrials.gov/study/NCT05816057",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03864705",
+      "filename": "NCT03864705.txt",
+      "byte_size": 1136,
+      "sha256": "b4228831de78d6c348875667d48f483a9cdfbe717ced9a1265459cba9f5a76a9",
+      "source_url": "https://clinicaltrials.gov/study/NCT03864705",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00387972",
+      "filename": "NCT00387972.txt",
+      "byte_size": 1183,
+      "sha256": "22b3f850077b17bbaacefb5a32053b5a7117db210354822ddcb6a4bdc556b773",
+      "source_url": "https://clinicaltrials.gov/study/NCT00387972",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06688461",
+      "filename": "NCT06688461.txt",
+      "byte_size": 4365,
+      "sha256": "0cf2c6fbe8bbba50f4f9a85da853fa9854b743a313ea75536389041ebca5f60f",
+      "source_url": "https://clinicaltrials.gov/study/NCT06688461",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT05015894",
+      "filename": "NCT05015894.txt",
+      "byte_size": 3695,
+      "sha256": "f24452c557fabfa525b8eb6ceaf68ee2fbea4db9541dab68325c679ef6848f31",
+      "source_url": "https://clinicaltrials.gov/study/NCT05015894",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT04819256",
+      "filename": "NCT04819256.txt",
+      "byte_size": 4210,
+      "sha256": "1cb2fd73e48c0ada0d2ffcb574b92f2f4876a96e9cc13a71246f95188baf02c6",
+      "source_url": "https://clinicaltrials.gov/study/NCT04819256",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT05247437",
+      "filename": "NCT05247437.txt",
+      "byte_size": 853,
+      "sha256": "41fd1839080ff0d495296dfb0518cfccdcd4143a3a1c7b8ded41f88e6042707a",
+      "source_url": "https://clinicaltrials.gov/study/NCT05247437",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06606327",
+      "filename": "NCT06606327.txt",
+      "byte_size": 12166,
+      "sha256": "09ab7dbe08794d48265ba06b69d46b15aaaaa61c716ea013c7ec10d4fde1f8fc",
+      "source_url": "https://clinicaltrials.gov/study/NCT06606327",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06805786",
+      "filename": "NCT06805786.txt",
+      "byte_size": 3456,
+      "sha256": "e25c4096c70a8f1abd8f919085331be27a5e9e9226abbf3d581e6dacb8d911f4",
+      "source_url": "https://clinicaltrials.gov/study/NCT06805786",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00543751",
+      "filename": "NCT00543751.txt",
+      "byte_size": 1236,
+      "sha256": "134cdb76956a194615e42ff80bc9be8f7ca6671514fe5703aafc9068f5d1deb8",
+      "source_url": "https://clinicaltrials.gov/study/NCT00543751",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT06703372",
+      "filename": "NCT06703372.txt",
+      "byte_size": 1920,
+      "sha256": "82a162a0489b26b7fb1537fc066e653feb614dcf80d87e352fb26e0bb3c6efb7",
+      "source_url": "https://clinicaltrials.gov/study/NCT06703372",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00937872",
+      "filename": "NCT00937872.txt",
+      "byte_size": 4118,
+      "sha256": "9beca449ebfa7c942de35c04a5ddba6275133cd1e95f8d44b4874ca8c809c749",
+      "source_url": "https://clinicaltrials.gov/study/NCT00937872",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03118739",
+      "filename": "NCT03118739.txt",
+      "byte_size": 3391,
+      "sha256": "46ec9f04abad909709924bd3babd7d268ea06a5ed8f8330a25d2a1339ee9ffde",
+      "source_url": "https://clinicaltrials.gov/study/NCT03118739",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT03555994",
+      "filename": "NCT03555994.txt",
+      "byte_size": 5467,
+      "sha256": "4ec727874eb10c12b1dc75342c179b968fdd7c2e8dbfd6976c23d71a25f3d54d",
+      "source_url": "https://clinicaltrials.gov/study/NCT03555994",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00102466",
+      "filename": "NCT00102466.txt",
+      "byte_size": 1304,
+      "sha256": "51701087c8d857c1b7f868b6d02508d5fc9733322409ca8015f5e7903ca5a12b",
+      "source_url": "https://clinicaltrials.gov/study/NCT00102466",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00976937",
+      "filename": "NCT00976937.txt",
+      "byte_size": 6836,
+      "sha256": "a1742b298286e1e5569e04a774bfa970201e5b1c9e4a28e0100df58f4d8b438c",
+      "source_url": "https://clinicaltrials.gov/study/NCT00976937",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT07323771",
+      "filename": "NCT07323771.txt",
+      "byte_size": 4106,
+      "sha256": "70b07ec135286edb0351953885265f4313f2148bc2b4abe9050449c8a2db4240",
+      "source_url": "https://clinicaltrials.gov/study/NCT07323771",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00309244",
+      "filename": "NCT00309244.txt",
+      "byte_size": 6134,
+      "sha256": "2ae4412ba71657f754203678f5589ae2ebadc9d70b5ec297e0e4d05c9e123724",
+      "source_url": "https://clinicaltrials.gov/study/NCT00309244",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT02802644",
+      "filename": "NCT02802644.txt",
+      "byte_size": 1682,
+      "sha256": "ec9cdcd60bedc7d7f3ef50c7bfea422e1f41b4a62f68389a4fae2d9147a9057b",
+      "source_url": "https://clinicaltrials.gov/study/NCT02802644",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00306384",
+      "filename": "NCT00306384.txt",
+      "byte_size": 4057,
+      "sha256": "5f840953f4e91d50e387c06a2968d9c59c36dff6daa69ea3a894384788a350bb",
+      "source_url": "https://clinicaltrials.gov/study/NCT00306384",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT01326533",
+      "filename": "NCT01326533.txt",
+      "byte_size": 2855,
+      "sha256": "2c07e041818bb01e5ab0a82a3b3a0f40fd2b5193a88ba1ee6b6dc977842a265c",
+      "source_url": "https://clinicaltrials.gov/study/NCT01326533",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT05680155",
+      "filename": "NCT05680155.txt",
+      "byte_size": 2278,
+      "sha256": "cc5e4c8fb0b6c98f784eaba85786df95f758690c4f9a973f485c6083237a2c1c",
+      "source_url": "https://clinicaltrials.gov/study/NCT05680155",
+      "access_date": "2026-09-19"
+    },
+    {
+      "nct_id": "NCT00569426",
+      "filename": "NCT00569426.txt",
+      "byte_size": 1284,
+      "sha256": "bd979a5b873fd404a4329700c90c1d23f8be4e05288df87170072aadd34972a5",
+      "source_url": "https://clinicaltrials.gov/study/NCT00569426",
+      "access_date": "2026-09-19"
+    }
+  ]
+}

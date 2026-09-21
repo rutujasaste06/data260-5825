@@ -1,0 +1,56 @@
+NCT ID: NCT00614783
+Brief Title: Screening for Early Evidence of Diabetes
+Official Title: A Prospective, Multi-Center, Paired Data, Cohort Screening Trial Comparing SCOUT to the Fasting Plasma Glucose Test in Subjects at Risk for Diabetes
+Status: COMPLETED
+Phase: 
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: VeraLight, Inc.
+
+Brief Summary:
+This is a pivotal study to determine the accuracy of a new device (SCOUT) in screening persons for pre-diabetes or diabetes. SCOUT will be compared to the standard screening test (Fasting Plasma Glucose), using the Oral Glucose Tolerance Test as the reference standard.
+
+SCOUT uses a rapid, noninvasive, light-based technology to measure the concentration of chemicals in the skin called advanced glycation endproducts (AGEs). Several studies have demonstrated that AGEs accumulate in skin faster in individuals with poor control of blood sugar.
+
+Persons will be eligible for the study if they are 'at risk' for diabetes based on their age and other risk factors as defined by the American Diabetes Association.
+
+Detailed Description:
+Current methods for detecting pre-diabetes and diabetes are inconvenient and inaccurate. The most widely used screening test, Fasting Plasma Glucose (FPG), requires an overnight fast and a blood draw. FPG also has poor sensitivity contributing to late diagnoses. A more accurate and convenient screening method, like SCOUT, will improve early detection and allow the physician to begin a treatment regimen to prevent or delay the development of the disease and its serious complications.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+Age greater than or equal to 45 years
+
+OR
+
+Age 18 to 44 years, with two or more of the following risk factors:
+
+* Overweight (BMI ≥ 25 kg/m2)
+* Elevated waist circumference, \>35 inches for women and \>40 inches for men
+* Habitually physically inactive
+* Has a first-degree relative with diabetes
+* African American, Latino, Native American, Asian American, Pacific Islander
+* Delivered a baby weighing \>9 lb or diagnosed with gestational diabetes
+* Hypertension (\>130/\>85 mm Hg) or being treated for hypertension
+* HDL cholesterol \<35 mg/dL and/or triglycerides \>250 mg/dL or being treated for dyslipidemia with medication
+* Previously diagnosed with Polycystic Ovary Syndrome (PCOS)
+* Abnormal Glucose Tolerance on previous testing within the last 3 years
+* Has a condition associated with insulin resistance (e.g., acanthosis nigricans)
+* History of vascular disease (e.g., heart attack, stroke, angina, coronary heart disease, atherosclerosis, congestive heart failure, or peripheral arterial disease)
+
+Exclusion Criteria:
+
+* Prior bariatric surgery
+* Diagnosed with type 1 or 2 diabetes
+* Taking glucose lowering medications
+* Receiving dialysis or having known renal compromise
+* Receiving investigational treatments
+* Scars, tattoos, rashes or other disruption/discoloration on the left volar forearm
+* Recent or current oral steroid therapy or topical steroids applied to the left forearm
+* Current chemotherapy, or chemotherapy within the past 12 months
+* Conditions that cause secondary diabetes (e.g., Cushing's syndrome, acromegaly, hemochromatosis, pancreatitis, or cystic fibrosis)
+* Receiving other investigational treatments
+* Receiving drugs that fluoresce (e.g., Doxorubicin, Daunomycin, Camptothecin, Protoporphyrin, Fluoroquinolones, Tetracycline, Hydroxychloroquine or Quinidine)
+* Known to be pregnant
+* Psychosocial issues that interfere with an ability to follow study procedures
+* Known to have, or at risk for, photosensitivity reactions (e.g., sensitive to ultraviolet light, or taking medication known to cause photosensitivity

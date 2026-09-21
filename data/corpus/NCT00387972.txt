@@ -1,0 +1,28 @@
+NCT ID: NCT00387972
+Brief Title: Study Of Denagliptin In Subjects With Type 2 Diabetes Mellitus (T2DM)
+Official Title: A Multi-center, Double-blind, Parallel-group, Randomized, Placebo-controlled Study to Evaluate the Efficacy, Safety, and Tolerability of Denagliptin in Subjects With Type 2 Diabetes Mellitus
+Status: WITHDRAWN
+Phase: PHASE2, PHASE3
+Conditions: Type 2 Diabetes Mellitus
+Sponsor: GlaxoSmithKline
+
+Brief Summary:
+GW823093 is a selective DPP-IV Inhibitor and is being investigated as a once a day oral therapy. The purpose of the Study is to evaluate the effectiveness, safety, and tolerability of 2 doses of GW823093, compared to placebo, taken once daily in patients with Type 2 diabetes mellitus.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion criteria:
+
+* Type 2 diabetes mellitus treated with diet and exercise or oral anti-diabetic treatment
+* Body mass index between 20 and 40
+* Females of childbearing potential must use adequate birth control.
+
+Exclusion criteria:
+
+* Subjects with previous use of insulin
+* Type 1 diabetes
+* Uncontrolled thyroid disease
+* History of drug or alcohol abuse in the past year
+* Any other clinically significant disease.

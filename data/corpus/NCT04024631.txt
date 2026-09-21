@@ -1,0 +1,33 @@
+NCT ID: NCT04024631
+Brief Title: Phenotyping Genetic Risk for Type 2 Diabetes
+Official Title: Phenotyping Children and Adults With Possible High or Low Genetic Risk for Type 2 Diabetes
+Status: RECRUITING
+Phase: NA
+Conditions: Diabetes Mellitus, Type 2, Genetics
+Sponsor: University of Pennsylvania
+
+Brief Summary:
+This study tests the hypothesis that non-diabetic individuals with a high genetic risk score for type 2 diabetes have impaired glucose tolerance and insulin resistance compared to those with a low genetic risk score for type 2 diabetes.
+
+Detailed Description:
+The study team will recruit individuals based on genetic risk score for type 2 diabetes from the biobank populations who have agreed to be recontacted for future research. Each participant will undergo a frequently sampled four-hour oral glucose tolerance test and whole body DXA scan (dual-energy X-ray absorptiometry) in addition to baseline laboratory and history assessment.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Age 10-70 years
+* Prior participant of the UPenn Biobank or Center for Applied Genomics Biobank and agreed to be recontacted for future research.
+* Adults with BMI 25kg/m2 or higher, children and adolescents with BMI 85th percentile or higher
+
+Exclusion Criteria:
+
+* prior diagnosis of type 1, type 2, or secondary diabetes
+* use of medications that would impact glucose and insulin response such as steroids, metformin or other anti-diabetic medication
+* acute illness that may impact insulin and glucose dynamics
+* pregnancy
+* hypothalamic obesity or related genetic disorder of metabolism
+* recent systemic chemotherapy use
+* gastrointestinal impairment or surgery that may impact absorption
+* anemia
+* major organ system illness or any underlying condition requiring regular medication or treatment that could make implementation of the protocol or interpretation of the study results difficult
+* inability to comply with study protocol

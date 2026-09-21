@@ -1,0 +1,51 @@
+NCT ID: NCT06582472
+Brief Title: Early Retinal Neurodegeneration As Risk Factor, Biomarker and Pharmacological Target of Diabetic Retinopathy
+Official Title: Early Retinal Neurodegeneration As Risk Factor, Biomarker and Pharmacological Target of Diabetic Retinopathy
+Status: UNKNOWN
+Phase: 
+Conditions: Diabetic Retinopathy, Diabetic Retinopathy Associated with Type 2 Diabetes Mellitus
+Sponsor: IRCCS Ospedale San Raffaele
+
+Brief Summary:
+Despite the evidence that diabetic retinopathy (DR) remains the first cause of blindness among the working-age population, it lacks a specific preventive treatment. This is because early mechanisms leading to the development of DR have been, until recently, unknown. Recent studies have suggested that the early stages of DR could be preceded by neuronal abnormalities, in particular retinal ganglion cell death, coupled with widespread retinal inflammation. According to these studies, endothelial dysfunction and the development of microaneurysms, the classic hallmarks of DR, could be the consequence of these early abnormalities.
+
+This project will aim to verify whether neurodegeneration could represent at the same time: 1) a risk factor for subsequent development of DR (this will be investigated through a follow-up study in type 2 diabetic patients free of diabetic retinopathy). 2) a biomarker of the complication (if so, patients with long-standing diabetes in the absence of retinopathy should show no signs of neurodegeneration).
+
+Detailed Description:
+The project is centered on a clinical study aimed to clarify whether early, diabetes-driven neurodegeneration (something that has been demonstrated by several seminal studies) is related (possibly causative) to the subsequent development of DR (a concept that is presently far from being confirmed but that, in case, would probably pave the way to identify for the first time a treatment for this diabetic complication.
+
+This project includes two substudies:
+
+* LONGITUDINAL STUDY: the aim is to verify whether the presence of retinal neurodegeneration in type 2 diabetic patients without DR increases the risk of subsequent development of retinal microaneurisms, the classic first vascular sign of DR; will enroll 90 individuals affected by type 2 diabetes and 30 healthy controls. All the subjects will be recruited during the first 6 months of the study and followed for 24 months (baseline, month 6, month 12, month 18, and month 24).
+* CROSS-SECTIONAL STUDY: the aim is to verify the clinical evidence of retinal neurodegeneration in patients with type 2 diabetes diagnosed over 20 years and with overt diabetic retinopathy, compared to patients with type 2 diabetes diagnosed for over 20 years but no signs of diabetic retinopathy. Will be enrolled 30 individuals affected by type 2 diabetes with a duration of disease longer than 20 years and no clinical signs of DR and 30 individuals affected by type 2 diabetes with a duration of disease longer than 20 years and DR of any stage. All the subjects will be recruited during the first 6 months of the study and subjected to only one visit to the site.
+
+Eligibility Criteria:
+Inclusion Criteria - Longitudinal study (patients):
+
+1. Participant is willing and able to give informed consent for participation in the trial.
+2. Male or Female, aged 40 - 80 years;
+3. In good general health as evidenced by medical history or diagnosed with type 2 diabetes for less than 10 years without clinical signs of retinopathy and other diabetic complications;
+4. HbA1c level 7% or greater;
+
+Inclusion Criteria - Longitudinal study (healthy controls)
+
+1. Participant is willing and able to give informed consent for participation in the trial;
+2. Male or Female, aged 40 - 80 years;
+3. In good general health as evidenced by medical history without diagnosis of type 2 diabetes;
+
+Inclusion Criteria - Cross-sectional study
+
+1. Participant is willing and able to give informed consent for participation in the trial;
+2. Male or Female, aged 40 - 80 years;
+3. Patient with a diagnosis of type 2 diabetes for longer than 20 years in the absence or presence of clinical signs of retinopathy and other diabetic complications;
+4. HbA1c level 7% or greater.
+
+Exclusion Criteria (longitudinal study and cross-sectional study)
+
+An individual who meets any of the following criteria will be excluded from participation in this study:
+
+1. retinal or systemic diseases other than diabetes;
+2. hypertension (BP values greater than 140/90 mm Hg);
+3. anemia (hematocrit less than 35%);
+4. smoking;
+5. laser treatment and pregnancy

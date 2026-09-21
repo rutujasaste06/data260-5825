@@ -1,0 +1,36 @@
+NCT ID: NCT07392853
+Brief Title: Investigation of the Effectiveness of Prophylactic NPWT (ciNPWT) in High-risk Diabetic Patients With Acute Laparotomy Wounds
+Official Title: Investigation of the Effectiveness of Prophylactic NPWT (ciNPWT) in High-risk Diabetic Patients With Acute Laparotomy Wounds - A Randomized, Prospective Clinical Trial
+Status: NOT_YET_RECRUITING
+Phase: NA
+Conditions: Diabetes (Insulin-requiring, Type 1 or Type 2)
+Sponsor: Semmelweis University
+
+Brief Summary:
+The aim of this study is to evaluate the effectiveness of prophylactic Negative Pressure Wound Therapy (NPWT) in patients with diabetes mellitus undergoing laparotomy who are at high risk for Surgical Site Infections (SSI). In addition to clinical efficacy, the investigators also plan a cost effectiveness analysis to assess the applicability of this relatively high-cost intervention in a domestic healthcare setting.
+
+Detailed Description:
+Background and Introduction Postoperative surgical site infections (SSI) continue to represent a significant challenge across almost all surgical disciplines, despite the widespread implementation of well-established aseptic and preventive measures. Abdominal surgery, in particular, presents an inherently higher risk, considering the nature of the procedures (e.g., surgeries involving bowel resections). For emergency and urgent procedures, the rate of wound infections can reach as high as 30%, according to some literature sources.
+
+Risk Factors for SSI Risk factors can be categorized based on the surgical procedure itself (e.g., acute/elective, bowel resection/non-resection, wound cleanliness), patient characteristics (e.g., diabetes, smoking, peripheral arterial disease, obesity, age, gender), underlying medical conditions (e.g., cancer, immunosuppressed or septic patients), and perioperative management (e.g., surgical duration, transfusion requirements, hypothermia, hyper/hypoglycemia, hypoxia, pharmacological treatments). Many of these factors are modifiable during patient care (e.g., achieving normothermia, ensuring proper asepsis during surgery, maintaining normoglycemia) or preoperatively (e.g., improving nutritional status, correcting anemia, managing chronic diseases such as diabetes and hypertension, promoting weight reduction). However, in emergency surgeries, there is often insufficient time to address these factors, significantly increasing the risk of SSI.
+
+The Impact of Diabetes Mellitus as an SSI Risk Factor Uncontrolled diabetes is associated with a higher incidence of complications, including wound infections. Factors such as tissue hypoxia (due to diabetic micro- and macroangiopathy and impaired angiogenesis), cellular dysfunction (e.g., abnormal endothelial, macrophage, and neutrophil function), and the formation of glycotoxins (Advanced Glycation End-products or AGEs) due to hyperglycemia impair wound healing. Numerous large-scale meta-analyses have confirmed the association between diabetes and surgical wound infections . Studies across various surgical fields (e.g., cardiac surgery, orthopedics, colorectal surgery) have demonstrated that preoperative (HbA1c) and perioperative (normoglycemia) management of blood glucose levels can significantly reduce the risk of SSI .
+
+ciNPWT (Closed Incisional, Prophylactic NPWT) as a Method for Preventing Surgical Site Infections
+
+Negative Pressure Wound Therapy (NPWT) was initially developed in the 1990s to treat chronic, difficult-to-heal wounds (Argenta \& Morykwas). The mechanism of NPWT involves the application of either continuous or intermittent negative pressure, which increases tissue vascularization, reduces edema, and promotes wound healing by removing necrotic tissue debris and stimulating granulation tissue formation. When applied prophylactically to closed surgical incisions, the available literature supports the significant reduction of septic surgical complications. Based on the results of a previously published multicenter, randomized, prospective clinical trial conducted by the investigators' research team, ciNPWT has been shown to reduce the incidence of SSIs following high-risk, urgent general abdominal surgeries (2). However, in that study, few poorly controlled diabetic patients were included, meaning no conclusions could be drawn specifically regarding this high-risk group. The effectiveness of NPWT has been largely settled in clinical debate, with numerous studies demonstrating its positive impact on wound healing. However, the cost-effectiveness of prophylactic NPWT remains an open question.
+
+Eligibility Criteria:
+Inclusion Criteria:a (all criteria must apply simultaneously):
+
+* Age ≥18 years,
+* Undergoing urgent abdominal surgery,
+* Diagnosis of diabetes mellitus either already present or newly diagnosed at admission
+* High SSI risk. We consider a patient to be at high SSI risk if the operating surgeon categorizes the patient as high risk, and the patient is classified in the III-IV cleanliness category with an open abdominal surgical procedure (laparotomy). "High SSI risk" may also be assessed individually based on existing severe risk factors or using an SSI risk calculator (patients with a normal laparotomy SSI risk more than 3 times the baseline are eligible).
+
+Exclusion Criteria: (any of the following):
+
+* Pregnancy,
+* Disseminated cancer (irresectable distant metastasis, peritoneal carcinomatosis),
+* Life expectancy of less than 30 days,
+* Refusal to participate in the study.

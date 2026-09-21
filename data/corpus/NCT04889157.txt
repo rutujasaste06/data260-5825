@@ -1,0 +1,35 @@
+NCT ID: NCT04889157
+Brief Title: A Study to Evaluate the Pharmacokinetics, Pharmacodynamics, Safety and Tolerability of PF-06882961 in Chinese Adults With Type 2 Diabetes Mellitus
+Official Title: AN 8-WEEK, RANDOMIZED, DOUBLE-BLIND, SPONSOR-OPEN, PLACEBO-CONTROLLED PHASE 1 STUDY TO EVALUATE THE PHARMACOKINETICS, PHARMACODYNAMICS, SAFETY AND TOLERABILITY OF PF-06882961 IN CHINESE ADULTS WITH TYPE 2 DIABETES MELLITUS
+Status: COMPLETED
+Phase: PHASE1
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: Pfizer
+
+Brief Summary:
+This is a Phase 1, randomized, double-blind (sponsor open), placebo controlled study in adult Chinese participants with T2DM who are receiving metformin as background antihyperglycemic medication.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Patients with T2DM who are taking metformin monotherapy as their only antihyperglycemic treatment
+* HbA1c greater than or equal to 7% and less than or equal to 10.5%
+* Total body weight \>50 kg (110 lb) with BMI of 22.5 to 45.4 kg/m\^2
+
+Exclusion Criteria:
+
+* Any condition possibly affecting drug absorption
+* Diagnosis of Type 1 diabetes mellitus or secondary forms of diabetes
+* History of myocardial infarction, unstable angina, arterial revascularization, stroke, heart failure, or transient ischemic attack within 6 months of Screening
+* Any malignancy not considered cured
+* Personal or family history of MTC or MEN2, or participants with suspected MTC
+* Acute pancreatitis or history of chronic pancreatitis
+* Acute gallbladder disease
+* Known history of HIV, hepatitis B, hepatitis C or syphilis, or positive testing of them
+* Supine blood pressure greater than or equal to 160 mmHg (systolic) or greater than or equal to 100 mmHg (diastolic)
+* Clinically relevant ECG abnormalities
+* Positive urine drug test
+* Clinical relevant laboratory tests abnormalities

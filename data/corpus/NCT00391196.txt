@@ -1,0 +1,24 @@
+NCT ID: NCT00391196
+Brief Title: A 1-Year Study On The Effects Of CP-945,598 For The Treatment Of Obesity In Overweight Type 2 Diabetic Patients
+Official Title: A 1-Year, Randomized, Double-Blind, Placebo-Controlled Phase 3 Study To Evaluate The Efficacy And Safety Of CP-945,598 In The Treatment Of Overweight, Oral Agent-Treated Subjects With Type 2 Diabetes Mellitus
+Status: TERMINATED
+Phase: PHASE3
+Conditions: Obesity
+Sponsor: Pfizer
+
+Brief Summary:
+The purpose of this study is to determine if CP-945,598 is effective in the treatment of obesity in type 2 diabetic patients.
+
+Detailed Description:
+The CP-945,598 program was terminated on November 3, 2008 due to changing regulatory perspectives on the risk/benefit profile of the CB1 class and likely new regulatory requirements for approval. No safety issues were involved in the termination decision.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Subjects must be overweight (BMI 27- 50 kg/m2)
+* Subjects must have type 2 diabetes mellitus
+
+Exclusion Criteria:
+
+* Pregnancy
+* Serious or unstable current or past medical conditions

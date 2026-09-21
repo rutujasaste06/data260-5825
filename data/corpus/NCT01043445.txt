@@ -1,0 +1,26 @@
+NCT ID: NCT01043445
+Brief Title: -Oleoyl Glycerol is a GPR119 Agonist and Signals GLP-1 Release in Humans.
+Official Title: G Protein-coupled Receptor in the Intestine (GPR 119) Stimulated GLP-1 Secretion
+Status: COMPLETED
+Phase: NA
+Conditions: Type 2 Diabetes
+Sponsor: Glostrup University Hospital, Copenhagen
+
+Brief Summary:
+The purpose of this study is to evaluate the impact of different ligands of GPR 119 (a G protein-coupled receptor in the intestine) on the secretion of the incretin hormones, GLP-1 and GIP.
+
+Detailed Description:
+We have found a new ligand for the GPR 119 receptor. This study evaluate the impact of this ligand on the incretion hormone responses, beta cell function and gall bladder function in healthy young men.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Healthy caucasians v- Normal OGTT (75 g of glucose) according to WHO's criteria
+* Normal hemoglobin
+* Informed consent
+
+Exclusion Criteria:
+
+* Liver disease (ALAT\> 2x normal level)
+* Nephropathy (s-creatinin \>130 microM or albuminuria)
+* Relatives with type 2 diabetes

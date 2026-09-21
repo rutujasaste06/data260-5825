@@ -1,0 +1,39 @@
+NCT ID: NCT05816057
+Brief Title: A Study of the Efficacy and Safety of Semaglutide Injection in the Treatment of Type 2 Diabetes Mellitus
+Official Title: A Multicenter, Randomized, Open-label, and Parallel Assignment Phase III Study to Compare the Efficacy and Safety of Semaglutide Injection With Ozempic® in Combination With Metformin in the Treatment of Type 2 Diabetes
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: Hangzhou Jiuyuan Gene Engineering Co. Ltd.,
+
+Brief Summary:
+Semaglutide injection is a new drug developed according to Ozempic® biosimilars.This trial is conducted in China. The purpose of this study is to investigate the similarities in the efficacy and safety of semaglutide injection and Ozempic® in the treatment of type 2 diabetes, respectively.
+
+Detailed Description:
+This study is a multicenter, randomized, open-label, parallel assignment, which plans to enroll 476 patients with type 2 diabetes And Stable daily dose for 4 weeks prior to the day of screening of the metformin formulations (greater than or equal to 1500 mg to less than or equal to 2000 mg or maximum tolerated dose documented greater than or equal to 1000 mg. The study was divided into three phases: screening, baseline and treatment.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+1. Volunteer to participate in the trial and sign the informed consent form；
+2. Diagnosed with type 2 diabetes And Stable daily dose for 4 weeks prior to the day of screening of the metformin formulations (greater than or equal to 1500 mg to less than or equal to 2000 mg or maximum tolerated dose documented greater than or equal to 1000 mg)；
+3. Male or female, Aged 18-75 years (both inclusive) at the time of signing informed consent；
+4. Glycated haemoglobin (HbA1c) of greater than 7.0% to less than or less than or equal to 11.0%.
+
+Exclusion Criteria:
+
+1. Treatment with any medication for the indication of diabetes other than stated in the inclusion criteria within the past 4 weeks prior to the day of screening. However, short-term insulin treatment for a maximum of 7 days prior to the day of screening is allowed;
+2. Systemic corticosteroids (excluding topical and inhaled preparations) within the past 90 days to the day of screening;
+3. Known or suspected hypersensitivity to trial product(s) or related products;
+4. Have participated in other clinical trials and used investigational drugs within the past 90 days to the day of screening;
+5. Heart failure(Subjects presently classified as being in New York Heart Association Class IV); Acute coronary syndrome or cerebrovascular events, including but not limited to acute myocardial infarction, stroke, unstable angina or transient ischaemic attack; Have undergone heart-related surgery; or investigator assessment of severe ECG abnormalities, poorly controlled hypertension (defined as systolic blood pressure ≥160 mmHg and/or diastolic blood pressure ≥100 mmHg), and other cardiovascular and cerebrovascular disorders that are not suitable within the past 90 days prior to the day of screening;
+6. Known to plan to be hospitalized for any surgery at the time of screening;
+7. Hyperthyroidism, Cushing's syndrome, Diabetic gastroparesis or other gastrointestinal disorders; Gastrointestinal disorders assessed by investigators as increasing post-medication risk, anorexia, alcohol dependence, drug use, drug dependence, epilepsy, psychiatric illness, need for systemic anti-infective therapy, or other conditions assessed by investigators as affecting endpoint assessment;
+8. Family or personal history of Multiple Endocrine Neoplasia Type 2 (MEN 2) or Medullary Thyroid Carcinoma (MTC);
+9. History or presence of pancreatitis (acute or chronic);
+10. Proliferative diabetic retinopathy.
+11. Recurrent severe hypoglycaemia (more than 3 severe hypoglycaemic events) within the past 90 days to the day of screening;
+12. Acute metabolic complications within the past 180 days prior to the day of screening;
+13. Subjects with calcitonin ≥ 50 ng/L pg/mL) ,AMY ≥3×upper normal limit (UNL), triglyceride ≥5.7 mmol/L( 500 mg/dL) ,eGFR\<60 mL/min/1.73 m2,; hemoglobin ≤120 g/L (male) or ≤110 g/L (female), ALT、AST≥ 2.5 ×UNL,TBIL≥2×ULN;
+14. History or presence of malignant neoplasms within the last 5 years (except basal or squamous cell skin cancer and carcinoma in situ);
+15. The female who is pregnant, breast-feeding or Female/male intends to become pregnant or is of child-bearing potential and not using highly effective contraceptive method; （16））Any disorder, which in the investigator's opinion might jeopardise subject's safety or compliance with the protocol.

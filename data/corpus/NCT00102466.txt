@@ -1,0 +1,29 @@
+NCT ID: NCT00102466
+Brief Title: Vildagliptin Compared to Gliclazide in Combination With Metformin in Patients With Type 2 Diabetes
+Official Title: Vildagliptin Compared to Gliclazide in Combination With Metformin in Patients With Type 2 Diabetes
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: Novartis Pharmaceuticals
+
+Brief Summary:
+This study is not being conducted in the United States. Many people with type 2 diabetes cannot maintain target blood glucose levels when taking a single oral drug. The purpose of this study is to assess the safety and effectiveness of vildagliptin, an unapproved drug, compared to that of gliclazide in lowering overall blood glucose levels when added to metformin in people with type 2 diabetes not at target blood glucose levels on metformin alone.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* On a stable dose of metformin as defined by the protocol
+* Blood glucose criteria must be met
+* Body mass index (BMI) in the range 22-45
+
+Exclusion Criteria:
+
+* Pregnancy or lactation
+* Type 1 diabetes
+* Evidence of significant diabetic complications
+* Evidence of serious cardiovascular complications
+* Laboratory value abnormalities as defined by the protocol
+* Other protocol-defined exclusion criteria may apply

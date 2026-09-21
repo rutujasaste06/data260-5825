@@ -1,0 +1,26 @@
+NCT ID: NCT00569426
+Brief Title: Evaluating the Use of Two Different Needles in Subjects With Diabetes
+Official Title: An Open-label, Randomised, Multi-centre Cross-over Trial in Diabetes Patients Evaluating Preference, Injection Pressure, Pain Perception and Handling When Injections Are Performed With Two Different Needles i.e. NovoFine® 32 Gauge Tip x 6mm and NovoFine® 30 Gauge x 8mm Using a FlexPen® Disposable Insulin Injection Pen
+Status: COMPLETED
+Phase: PHASE4
+Conditions: Diabetes, Diabetes Mellitus, Type 1, Diabetes Mellitus, Type 2, Delivery Systems
+Sponsor: Novo Nordisk A/S
+
+Brief Summary:
+This trial is conducted in Europe. The aim of this trial is to compare two needle types when used with a disposable insulin injection pen in the everyday life setting of an insulin treated patient with diabetes.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Signed and dated informed consent obtained before any trial-related activities
+* Diagnosed type 1 or type 2 diabetes
+* Treated with insulin
+
+Exclusion Criteria:
+
+* Previous participation in this trial
+* Mental incapacity, unwillingness or language barriers precluding adequate understanding or co-operation
+* Any disease or condition which the investigator feels would interfere with the trial

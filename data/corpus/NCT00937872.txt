@@ -1,0 +1,49 @@
+NCT ID: NCT00937872
+Brief Title: A Clinical Study to Evaluate the Pharmacokinetics and the Absolute Bioavailability of SRT2104 Given as a 250mg Oral Suspension and Intravenous Microdose of 100 µg Carbon-14 Radio-labeled SRT2104 in Healthy Male Subjects
+Official Title: A Phase I Study to Evaluate the Intravenous Pharmacokinetics and the Absolute Bioavailability of SRT2104 Given as a 250mg Oral Suspension in Healthy Subjects
+Status: COMPLETED
+Phase: PHASE1
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: Sirtris, a GSK Company
+
+Brief Summary:
+The primary objective of this study is to determine the absolute bioavailability of SRT2104 as a 250 mg suspension, and to define the intravenous pharmacokinetics of SRT2104.
+
+The secondary objective of this study is to assess the potential systemic metabolite burden of SRT2104, and to provide plasma and urine samples for subsequent metabolite profiling and identification.
+
+Detailed Description:
+This will be a single centre, combined IV and oral single dose, open-label study in healthy male volunteers.
+
+Each subject will receive the following formulations on a single study day:
+
+1. Regimen A: A single 10 mL oral dose of 250 mg SRT2104 delivered as a suspension formulation;
+2. Regimen B: A single intravenous dose of 10 mL containing 100 µg (not more than 250 nCi, 9.25 kBq) Carbon-14 radio-labeled SRT2104 , administered by IV infusion over 15 minutes, starting 2 hours and 45 minutes after the oral dose.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Healthy males;
+* Aged 18-65 years;
+* Body Mass Index (BMI) of 18-35 kg/m2;
+* Willing and able to participate in the whole study and must provide written informed consent.
+
+Exclusion Criteria:
+
+* Participation in a clinical research study involving investigational drugs or dosage forms within the previous 4 months;
+* Subjects who have previously been enrolled in this study;
+* Subjects who have ever sought advice from or been referred to a GP or counselor for abuse or misuse of alcohol, non medical drugs, medicinal drugs or other substance abuse e.g. solvents;
+* Subjects who admit to any current or previous use of Class A drugs such as opiates, cocaine, ecstasy, lysergic acid diethylamide (LSD) and intravenous amphetamines (Subjects who admit to occasional past use of cannabis will not be excluded as long as they have a negative drugs of abuse test and have been abstinent for at least 12 months;)
+* Positive drugs of abuse test result (Section 7.8);
+* Regular alcohol consumption in males \>21 units per week (1 Unit = ½ pint beer, a 25 mL shot of 40% spirit or a 125 mL glass of wine);
+* Current smokers and those who have smoked within the last 12 months.
+* A breath carbon monoxide reading of greater than 10 ppm at screening;
+* Radiation exposure from clinical trials, including that from the present study and from diagnostic x rays but excluding background radiation, exceeding 5 mSv in the last twelve months or 10 mSv in the last five years. No occupationally exposed worker, as defined in the Ionising Radiation Regulations 1999, shall participate in the study;
+* Clinically significant abnormal biochemistry, haematology or urinalysis as judged by the PI (Section 7.8 )
+* History of adverse reaction or allergy to study drug or its excipients, e.g. lactose.
+* History of significant allergy. If subject suffers from hayfever they must not have or be expecting to have symptoms during the study period;
+* Donation of blood within the previous three months;
+* Subjects will be excluded from the study if they are considered by the PI to be at risk of transmitting, thorough blood or other body fluids, the agents responsible for acquired immunodeficiency syndrome (AIDS) or other sexually transmitted disease or hepatitis;
+* Positive HBV, HCV or HIV results;
+* Subjects receiving prohibited medication as described in Section 6.10;
+* Clinically significant medical history, examination finding or laboratory abnormality which in the opinion of the Investigator makes the subject unsuitable to include in the study;
+* Failure to satisfy the PI of fitness to participate for any other reason.

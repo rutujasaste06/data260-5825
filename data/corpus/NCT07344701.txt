@@ -1,0 +1,57 @@
+NCT ID: NCT07344701
+Brief Title: "Screening for Change: Early Risk Detection and Integrated Prevention for Diabetes and Cardiovascular Diseases in the Marche Region"
+Official Title: Early Risk Detection of Type 2 Diabetes and Cardiovascular Diseases: an Italian Cohort Study
+Status: RECRUITING
+Phase: 
+Conditions: Cardiovascular Diseases, Diabetes Mellitus Type 2
+Sponsor: Marche Region Regional Health Agency
+
+Brief Summary:
+This study aims to test the feasibility of a new systematic screening program to allow the early detection of individuals aged 50 years at risk of type 2 diabetes mellitus (T2DM) and cardiovascular diseases (CVDs) in the resident in the province of Ascoli Piceno and without previous diagnosis, using the CUORE and FINDRISDC tools developed in the Project.
+
+The intervention will be conducted at the premises of the Prevention Department in Ascoli Piceno and San Benedetto del Tronto, within the Local Health Authority of Ascoli Piceno (Marche Region, Italy), throughout 2026.
+
+Eligible individuals will be invited, based on recruitment criteria, to the screening via a letter containing study information and participation instructions. Those willing to participate will book the appointment to undergo the screening in one of the two premises of the Prevention Department involved in the study (namely, San Benedetto del Tronto and Ascoli Piceno), through the regional reservation system (CUP). On the scheduled date, participants will visit the Prevention Department, where healthcare professionals (HCPs) will explain the study, obtain the informed consent, and collect data related to the CUORE and/or FINDRISC questionnaires, as well as sociodemographic information. The calculated scores will determine the 10-year risks of T2DM and major CVD events. Based on these risks, participants will be provided with tailored suggested pathways. A summary letter outlining these pathways will be delivered, and, in case of consent, results will be added to the participants' Electronic Health Record. Follow-up calls will be scheduled at 3 (T1) and 6 (T2) months to assess adherence to the suggested pathway (e.g., visit the General Practitioner (GP), lifestyle counselling) through a phone call.
+
+Detailed Description:
+1. Technical information:
+
+   * All data will be recorded in a dedicated software aiming to manage the screening programme
+   * small medical equipment will be used to collect the clinical parameters, such as anthropometric measures and blood pressure. The total cholesterol and HDL levels, requested by CUORE tool, and the HbA1c, requested by FINDRISC if score \>9, will be collected through finger-prick tests.
+2. Details about recruitment:
+
+   * Prior to the start of the study, the medical directors of the premises of the Prevention Department involved in the study and the nursing healthcare managers of the Local Health Authority will be informed about characteristics, methods and aims of the research.
+   * The principal investigator (PI) of the study will be responsible to conduct a training session on the protocol, the procedures and the data collection to all the HCPs participating in the study as staff (e.g., doctors, nurses), without interfering with clinical-assistance and other priority activities. At the same time, the owners of the medical devices (point-of-care) used in the study will provide specific training on the characteristics, modalities of use, properties, maintenance and technical assistance request, as well as modalities to order the related consumables, when needed. The training will be organised in collaboration with the PI through an in-presence interactive training session of 1 hour for the HCPs involved in the study, in a dedicated time before the study begins.
+   * The invitation letter, containing a description of the characteristics of the screening program object of the study, along with contacts for asking further information, will be delivered with due advance to the eligible participants' homes, providing a time-period to reflect and decide whether to join the screening program and to book the appointment, if willing to participate. The eligible persons will be identified through the Administrative Healthcare Database (HAD) of the Regional Health Service Registry (including demographic data, vital status and residential address of citizens living in the Marche region), based on the residential province and age criteria. Then, the Prevention Department of the Local Health Authority of Ascoli Piceno will prepare, print, and send invitation letters to the participants' homes, keeping track of any letters that are undeliverable and returned to the sender. The letter will also explain the modalities to participate to the screening programme, such as the available options to book the appointments. A communication campaign will also be developed to inform the general population about the study.
+   * Persons will be enrolled in the screening program only after signing the paper-based informed consent form. The doctor will sign the consent form too, making him-/her-self available to provide further details and to solve any doubts of the participants. A signed copy of the informed consent and the information sheet will be given to each participant. Moreover, the participants will be asked to share with the doctor their telephone number, specifying that this will be used only for follow-up evaluations in relation to moderate high and very high-risk levels.
+
+     3- Details about the screening pathway:
+
+The calculation of the scores of the FINDRISC and CUORE questionnaires will provide the 10-years risks of developing T2DM and a major CVD event, respectively. A devoted pathway will be suggested to the participants by the physician, based on the risk level of each individual, as follows:
+
+1. Regarding FINDRISC, in relation to no/low risk score (≤9), the suggested pathway foresees the strengthening of the information about healthy lifestyle a pillar of T2DM prevention; in relation to moderate, high and very high risk scores (\>9), the pathway foresees the lifestyle counselling, the referral to the GP, with the suggestion of performing regular controls of risk factors (namely: overweight and obesity, tobacco use, cardiovascular disease and hypertension screening), fasting blood glucose (FBG), in coherence with recent guidelines, and Glycated Hemoglobin (HbA1C) levels, a relevant criterion in screening and diagnosing diabetes. Specifically, it will be suggested to check FBG and HbA1C levels annually for moderate risk and every 6 months for high/very high risk. Moreover, the participants with a score level ranging from moderate to very high (\> 9), will undergo, immediately after the completion of the questionnaire, the detection of the HbA1c level. In fact, considering that the HbA1c level is able to complete the risk assessment accurately according to the literature, its identification could allow the referring HCPs of the participants to properly define the possible prevention/care trajectories needed. The score levels of FINDRISC tool, used as reference for the pathway indications, were identified in coherence with updated literature on the Italian population, which suggests considering the cut-off \>9 as an indication for further investigations.
+2. Regarding CUORE tool, in relation to no/low risk score (\<3%), the suggested pathway foresees the strengthening of the information about healthy lifestyle, a pillar of CVDs prevention; in relation to moderate, high and very high risk scores, and in extreme values of risk factors related to blood pressure and cholesterolemia, the pathway foresees the lifestyle counselling and the referral to GP, with the suggestion to evaluate the CVD risk over time, ranging from every year (for moderate risk) to every 6 months (for high risk), in coherence with the indications of the CUORE project.
+
+   4\. Legal, ethical and technical considerations:This study, and, consequently, the data collection, usage and storage procedures, will be conducted according to the principles expressed in:
+   * The Declaration of Helsinki 2024
+   * the standards of Good Clinical Practice
+   * the Legislative Decree no. 196/03 Italian Personal Data Protection Code
+   * EU General Data Protection Regulation 2016
+   * Legislative Decree No. 101/2018 on Provisions for the adaptation of national legislation to the provisions of European Regulation 2016/679
+   * Guidelines for the collection of informed consent for participation in clinical trials, National Coordination Centre for Ethics Committees.
+
+   The study will start only after notification and acknowledgement by the Regional Ethics Committee and the completion of the administrative requirements of the institution where the study is being conducted. No sponsorship is envisaged for the conduction of this study
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Citizens resident in Ascoli Piceno province
+* People turning 50 in 2026
+* Capacity to consent
+* Fulfilling and signing the informed consent related to the participation to the study.
+
+Exclusion Criteria:
+
+* a concomitant diagnosis of DM and a previous CVD major event (one or more between Myocardial infarction, Haemorrhagic and/or ischaemic stroke, Revascularization interventions, as percutaneous coronary intervention/coronary artery bypass graft)
+* Failure to meet the inclusion criteria
+* Lack of written informed consent.

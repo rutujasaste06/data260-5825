@@ -1,0 +1,43 @@
+NCT ID: NCT02303405
+Brief Title: Hydroxychloroquine Versus Pioglitazone in Combination Treatment for Type 2 Diabetes Mellitus
+Official Title: Comparing the Effects of Hydroxychloroquine (HCQ) to Pioglitazone in Type 2 Diabetic Patients Failing Maximal Doses of Metformin Plus a Sulfonylurea
+Status: TERMINATED
+Phase: PHASE2
+Conditions: Diabetes Mellitus Type 2 With Hyperglycemia
+Sponsor: Charles Drew University of Medicine and Science
+
+Brief Summary:
+A 4-month, randomized, prospective, open-label comparison trial of hydroxychloroquine vs. pioglitazone in type 2 diabetic patients inadequately controlled on maximally tolerated doses of metformin plus a sulfonylurea.
+
+Detailed Description:
+A 4-month, randomized, prospective, open-label comparison trial of 4 months of hydroxychloroquine vs. pioglitazone in type 2 diabetic patients inadequately controlled on maximally tolerated doses of metformin plus a sulfonylurea.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Male or female, age 18-75, inclusive
+* Known type 2 diabetes (diagnosed according to 1997 ADA diagnostic criteria)
+* At least 3 months of treatment with maximum tolerated doses of metformin and a sulfonylurea
+* Hemoglobin A1c ≥ 7.5% and \< 11.0%
+* Body mass index (BMI) \< 45 kg/m2
+* Able to comply with all scheduled visits and requirements of the protocol
+
+Exclusion Criteria:
+
+* Any contraindications to the use of metformin or a sulfonylurea
+* Extreme hyperglycemia (FPG ≥ 300 mg/dL), symptoms of polyuria or polydipsia, or Hemoglobin A1c ≥ 11.0%
+* Current use of insulin; history or clinical suspicion of type 1 diabetes mellitus
+* Symptomatic hypoglycemia occurring at an average frequency \> once per day
+* Highly erratic dietary schedules, extremely food insecure households, or homelessness that may adversely affect good glycemic control, as judged by the investigators
+* Occupations that involve regular operation of motor vehicles or other heavy machinery that may pose a hazard in the event of unanticipated blurred vision
+* Known history of Class III or IV heart failure, cardiac arrhythmias, severe peripheral edema, advanced osteoporosis, documented bladder malignancies, or other intolerance to pioglitazone
+* Known history of collagen vascular disorders, glucose-6-phosphate dehydrogenase deficiency, hematologic disorders, psoriasis, or any known intolerance to hydroxychloroquine
+* Known history of pre-proliferative or proliferative retinopathy, or any clinically significant retinal abnormalities noted on the patient's most recent (i.e., within 1 year) ophthalmologic exam; subjects who have not received their routine annual ophthalmologic surveillance for diabetic retinopathy within the past year must have their annual surveillance performed before screening
+* An estimated GFR (by the Modification of Diet in Renal Disease (MDRD) formula) \< 45 mL/min, or a history of nephrotic syndrome (defined as a spot urine protein-creatinine ratio of \> 3500 mg per g urine creatinine)
+* Subjects with active hemoglobin abnormalities that render the Hemoglobin A1c measurement unreliable
+* History of any clinically significant hepatic, cardiovascular, infectious, dermatologic, psychiatric, or other major systemic disease that, in the opinion of the investigator, may make the use of pioglitazone or hydroxychloroquine unsafe, or otherwise make the interpretation of the data difficult.
+* Female subjects of childbearing potential who are sexually active and not using a reliable form of contraception or do not agree to use a reliable form of contraception. Reliable forms of contraception include systemic contraceptives (oral, implant or injection), diaphragm with spermicide, cervical cap, IUD, or condoms with spermicide.
+* Current pregnancy or lactation.
+* Subjects who will likely require or initiate therapy with drugs that may interfere with glucose metabolism during the course of the study (e.g., glucocorticoids).
+* Subjects who are in another investigational study or have received another investigational medication within 30 days of study entry
+* Subjects who are unable or unwilling to give informed consent, comply with all components of the study protocol, attend all scheduled follow-up visits, or present other barriers that would make the implementation of the protocol unusually difficult.

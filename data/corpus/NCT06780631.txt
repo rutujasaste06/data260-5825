@@ -1,0 +1,31 @@
+NCT ID: NCT06780631
+Brief Title: The Effect of Web-Based and Face-to-Face Education Based on the Health Promotion Model on Foot Care Behavior in Individuals With Type 2 Diabetes
+Official Title: The Effect of Web-Based and Face-to-Face Education Based on the Health Promotion Model on Foot Care Behavior in Individuals With Type 2 Diabetes
+Status: ACTIVE_NOT_RECRUITING
+Phase: NA
+Conditions: Diabetic Foot, Diabetes Mellitus Type 2
+Sponsor: Marmara University
+
+Brief Summary:
+Diabetic foot is a complication that develops difficult-to-heal foot wounds, reduces the quality of life of individuals with diabetes, causes loss of productivity, and causes economic burden due to the repetition of the problem and the expenditures made for treatment. Diabetic foot is the most common complication requiring hospitalization and is the most common cause of non-traumatic amputations. However, this complication can be prevented with regular foot examinations, patient education and daily foot care. For this reason, diabetic foot education should be given to all diabetic patients and they should be encouraged to participate in their self-care. However, educating patients once does not provide enough knowledge to manage diabetes throughout life. As the rate of individuals using web-based information increases, it is possible to reach large masses. With web-based training, information obtained from current sources is presented to patients on a single web page, patients can access training regardless of place or time, and continuity in training is ensured. The aim of this randomized controlled experimental study is to determine the effect of web-based and face-to-face education based on the health promotion model on diabetic foot knowledge and foot care behavior in individuals with diabetes.
+
+Detailed Description:
+The research will be conducted with individuals with type 2 diabetes who volunteered to participate in the study. As data collection tools, Patient Descriptive Information Form, Diabetic Foot Information Scale, Foot Care Behavior Scale and Diabetic Foot Care Self-Efficacy Scale will be used. As a pre-test, data will be collected from all patients at the first interview. Then, web-based training based on the health promotion model will be applied to the individuals in the experimental group 1 and face-to-face training will be applied to the individuals in the experimental group 2. The individuals in the control group will be given routine training applied in the hospital. Reminder messages about foot care will be sent to the patients once a week. After the first application, data from all individuals in experiment group 1, experiment group 2 and control group will be collected again and analyzed in the 1st and 3rd months, and the research will be completed. Power analysis was performed using the G\*Power (v3.1.9.2) program to determine the number of samples. The power of the study is expressed as 1-β (β = probability of type II error), and in general, studies must have 80% power. The number of samples was determined as 135 in total, 45 people in each group.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Having been diagnosed with type 2 diabetes at least 6 months ago according to ADA criteria
+* Being between the ages of 18 and 80
+* Ability to read and write
+* Not having received diabetic foot training before
+* No existing foot ulcers
+* Using the Internet (from sources such as smartphone, tablet, computer)
+* Being open to communication and collaboration
+* No mental problems
+* Volunteering to participate in the study
+
+Exclusion Criteria:
+
+* Wants to leave the study
+* Foot ulcer development in a diabetic individual during work

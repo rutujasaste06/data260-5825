@@ -1,0 +1,39 @@
+NCT ID: NCT07446179
+Brief Title: Blood Glucose Response to Test Foods Containing Brewer's Spent Grain
+Official Title: Brewer's Spent Grain a Potential Ally for the Prevention of Type II Diabetes: Determination of Blood Glucose Absorption of New Foods
+Status: RECRUITING
+Phase: NA
+Conditions: Glycemic Responses
+Sponsor: Universidad Católica del Uruguay
+
+Brief Summary:
+The objective of this project is to determine the impact of incorporating brewers' spent grain into cookie formulations on postprandial blood glucose absorption levels following consumption. The methodology for assessing blood glucose response to cookies formulated with brewers' spent grain is described as follows.
+
+A total of 20 participants will be recruited from the Universidad Católica del Uruguay. Volunteers will be recruited through institutional email dissemination, with Dr. María Belén Gutiérrez serving as the research contact.
+
+Eligible participants will be healthy adults without diagnosed diseases and not taking regular medication. Inclusion criteria will be: men and women aged 18 to 75 years and a body mass index (BMI) between 18.5 and 30 kg/m². Exclusion criteria will include: pregnancy, diabetes, special dietary regimens, recent surgeries, and hypersensitivity or allergy to any of the components of the tested foods.
+
+A physical assessment will be performed for each participant, including waist and hip circumferences, body weight, and height. Each participant will be assigned a volunteer identification code, and the data analyst will be blinded to the identity of the participants. Volunteers may withdraw from the study at any time without any consequences.
+
+Participants will be studied on four separate occasions (one session per week). On two occasions they will receive 30 g of a commercial María cookie, and on the other two occasions 30 g of a reduced-sugar cookie containing 17% extruded brewers' spent grain. During the study period, participants will be asked to maintain their usual lifestyle.
+
+Participants will attend the University Clinic in the morning after an 8-10 hour overnight fast. After a fasting blood sample is obtained, the corresponding treatment will be provided, and participants will have 15 minutes to consume it. Capillary blood samples will be collected at 15, 30, 45, 60, 90, and 120 minutes after the start of treatment consumption.
+
+Blood sampling will be performed via capillary puncture using a commercially available glucometer, with disposable lancets used for each measurement and safely discarded after each sample. Sample collection will be carried out by trained personnel from the Department of Health and Well-being of the Universidad Católica del Uruguay.
+
+During the testing period, participants will be allowed to drink up to 250 mL of water and must remain seated. For each participant and each treatment day, a data collection sheet will be used to record all measurements. After each experimental session, participants will receive a breakfast voucher.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Body mass index (BMI) between 18.5 and 30 kg/m².
+
+Exclusion Criteria:
+
+* Pregnancy
+* Diabetes
+* Recent surgerys
+* Food allergies

@@ -1,0 +1,26 @@
+NCT ID: NCT05247437
+Brief Title: Digital Lifestyle Intervention For Diabetes/Pre-Diabetes
+Official Title: A Pilot Cluster Randomized Controlled Trial of a Digital Lifestyle Intervention for Individuals With Prediabetes or Type 2 Diabetes
+Status: UNKNOWN
+Phase: NA
+Conditions: Type 2 Diabetes, PreDiabetes, Obesity
+Sponsor: The University of Hong Kong
+
+Brief Summary:
+The study aims to evaluate the acceptability, feasibility, and preliminary efficacy of a digital lifestyle intervention, called Fitness Digital (FitD), for individuals with prediabetes or type 2 diabetes.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Age 18+
+* Hong Kong resident
+* Can understand Chinese and Cantonese
+* Have self-reported diagnosis of type 2 diabetes or prediabetes
+* Have a smart phone and able to use a mobile app
+
+Exclusion Criteria:
+
+* None

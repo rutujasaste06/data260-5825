@@ -2,6 +2,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
+from starlette.middleware.sessions import SessionMiddleware
+from auth import router as auth_router
+
 app = FastAPI(title="Clinical Trial Registry API")
 
 # Allow your webpage (opened as a local file) to talk to this server
@@ -11,6 +14,17 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Session/cookie support for the login system 
+app.add_middleware(
+    SessionMiddleware,
+    secret_key="s5825-dev-secret-change-later",  # signs the cookie
+    session_cookie="s5825_session",                # namespaced with your PREFIX
+    max_age=300,                                    # idle timeout: 5 minutes
+    https_only=True,                                # sets the Secure flag
+)
+
+app.include_router(auth_router)
 
 PORT_BASE = 8425  # SID4 5825 -> 8000 + (5825 mod 900)
 

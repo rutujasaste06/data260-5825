@@ -1,0 +1,44 @@
+NCT ID: NCT00135941
+Brief Title: Insulin Glargine Plus Insulin Glulisine Multiple Daily Injections (MDI) Versus Premix Insulin Treatment in Subjects With Diabetes Mellitus (Type 1 or Type 2)
+Official Title: Insulin Glargine Plus Insulin Glulisine MDI Versus Premix Insulin Treatment in Subjects With Diabetes Mellitus (Type 1 or Type 2) Evaluating Differences in Patient Reported Outcomes
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes Mellitus
+Sponsor: Sanofi
+
+Brief Summary:
+The purpose of this study is to test for superiority in improvements from baseline in patient reported outcomes in subjects with type 1 or type 2 diabetes when treated with insulin glargine plus rapid acting insulin glulisine MDI versus treatment with premix insulin.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Informed consent in writing at enrollment
+* Subjects with type 1 or type 2 diabetes mellitus for at least six months
+* Male or female 21 - 70 years of age
+* Employed, unpaid work or active lifestyle
+* Screening hemoglobin A1c (HbA1c) level of ≥ 7.0 and ≤ 9.0 %
+* Current (last 3 months) daily use of premix insulin 75/25, 70/30, or isophane insulin (NPH) or Lantus with short acting insulin, consisting of 2 or more injections per day with or without concomitant therapy consisting of metformin, thiazolidinedione, and/or alpha-glucosidase inhibitors.
+* Willing and able to inject insulin glargine and multi-day dosing of insulin glulisine.
+* Willing and able to perform self-monitoring of blood glucose (SMBG) four times a day and continuous glucose monitoring (CGMS) for 48 hours at three time periods during the study
+* Willing and able to use adequate contraception if of child bearing age
+* Able to read and understand English (at the sixth grade level) and comply with the study protocol
+
+Exclusion Criteria:
+
+* Cardiac status New York Heart Association (NYHA) III-IV
+* Serum creatinine ≥ 1.5 mg/dl for males, or ≥ 1.4 mg/dl for females.
+* Clinical evidence of active liver disease or serum ALT or AST \> 2.5 times the upper limit of normal range.
+* Subjects currently using an insulin pump
+* Subjects currently taking sulfonylureas, repaglinide, nateglinide, symlin (pramlintide acetate) or byetta (exenatide).
+* Planned pregnancy in next 6 months or pregnant or lactating females
+* Diagnosis of dementia or mental condition rendering the subject unable to understand the nature, scope and possible consequences of the study
+* Unable to obtain complete CGMS data prior to baseline, visit 2 (week 0)
+* Hypersensitivity to insulin glargine or insulin glulisine or premix insulin or any of their components
+* Any disease or condition (including abuse of illicit drugs, prescription medicines or alcohol) that in the opinion of the investigator or sponsor may interfere with the study compliance and completion of the study.
+* Treatment with intermittent doses of systemic steroids or intermittent large doses of inhaled steroids for the past one year (treatment with fixed doses for the past 6 months is acceptable providing there is no plan to change the dosage regimen)
+* Treatment with any investigational product in the last 3 months before study entry
+* Stroke, myocardial infarction (MI), coronary artery bypass graft (CABG), percutaneous transluminal coronary angioplasty (PTCA), or unstable angina pectoris within the last 12 months
+* Current malignancy, any previous breast cancer, any previous malignant melanoma or any cancer within the past 5 years (except adequately treated basal cell skin cancer)

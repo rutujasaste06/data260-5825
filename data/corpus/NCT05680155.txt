@@ -1,0 +1,33 @@
+NCT ID: NCT05680155
+Brief Title: A Phase 3 Study to Evaluate the Efficacy of XW003 Compared With Placebo in T2DM Patients
+Official Title: A Phase 3, Multi-center, Double-blind, Randomized, Placebo-controlled Study to Evaluate the Efficacy and Safety of XW003 in Patients With T2DM Inadequately Controlled by Diet and Exercise Alone
+Status: COMPLETED
+Phase: PHASE3
+Conditions: T2DM, Type 2 Diabetes Mellitus
+Sponsor: Hangzhou Sciwind Biosciences Co., Ltd.
+
+Brief Summary:
+The main purpose of this study is to investigate the efficacy and safety of XW003 versus placebo in patients with type 2 diabetes mellitus (T2DM) inadequately controlled by diet and exercise alone
+
+Detailed Description:
+In this Phase 3 study, eligible participants will be randomized in a 2:2:1:1 ratio to receive once-weekly subcutaneous XW003 (high or low dose) or volume matching placebo as an adjunct to lifestyle intervention for 24 weeks. The core treatment phase will be followed by a 28-week open-label period where all participants receive XW003.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+1. Ability and willingness to participate in the study, give written informed consent, and comply with the study specific requirements and all protocol procedures.
+2. Sex: male or female; Age: 18 to 75 years, inclusive
+3. BMI: 20.0 kg/m\^2 to 35.0 kg/m\^2, inclusive
+4. Have been diagnosed with T2DMthat is inadequately controlled with at least 3 months of diet and exercise prior to screening.
+5. HbA1c ranging from 7.5% to 11.0% at screening, inclusive
+6. FPG ≤13.9 mmol/L at screening.
+
+Exclusion Criteria:
+
+1. History of type 1 or other types of diabetes mellitus.
+2. Use of any GLP-1 analogue during the 3 months preceding to screening.
+3. History of proliferative diabetic retinopathy, diabetic maculopathy, diabetic neuropathy, or diabetic foot during the 6 months preceding screening.
+4. History of acute or chronic pancreatitis or high risk factors for pancreatitis.
+5. Personal or family history of medullary thyroid carcinoma or multiple endocrine neoplasia syndrome type 2.
+6. History of stomach surgeries or disorders associated with slowed emptying of the stomach during the past 6 months.
+7. History of heart attack, stroke, or congestive heart failure of Grade 3 or 4 in the past 6 months.

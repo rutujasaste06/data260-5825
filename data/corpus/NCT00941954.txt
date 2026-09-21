@@ -1,0 +1,32 @@
+NCT ID: NCT00941954
+Brief Title: Walking Away: Structured Education Versus Written Information for Individuals With High Risk of Developing Type 2 Diabetes
+Official Title: Walking Away From Type 2 Diabetes: a Cluster Randomized Controlled Trial to Investigate the Effect of Structured Education on Walking Activity in Those With a High Risk of Developing Type 2 Diabetes
+Status: COMPLETED
+Phase: NA
+Conditions: Diabetes
+Sponsor: University Hospitals, Leicester
+
+Brief Summary:
+Diabetes is a debilitating chronic disease reaching epidemic proportions. Lack of physical activity is a key factor driving this epidemic and it is therefore vital that workable methods of encouraging people to exercise and reducing inactivity are developed and tested if we are to stem the rising tide of diabetes.
+
+This cluster randomised controlled trial will investigate whether a person-centred group educational programme can increase walking activity and reduce the risk of developing diabetes in high-risk individuals identified in primary care settings. In total 804 patients will be recruited to the study. Physical activity levels, glucose control, incidence of type 2 diabetes and anthropometric measurements (e.g. weight) will be tested on an annual basis over three years.
+
+This trial will be the first to test the feasibility, efficacy and value for money of a physical activity intervention aimed at reducing the risk of diabetes in a community setting in a multi-ethnic population in the UK.
+
+Primary research hypothesis: A pragmatic structured education programme aimed at promoting walking activity initiates long-term increases in physical activity in individuals identified through a risk score as having an increased risk of developing type 2 diabetes.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* 18+
+* High risk of developing type 2 diabetes as identified through a risk score
+
+Exclusion Criteria:
+
+* Diagnosed diabetes
+* Taking steroid medication
+* Serious chronic illness preventing participation in trial
+* Unable to speak English

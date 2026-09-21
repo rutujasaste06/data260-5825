@@ -1,0 +1,46 @@
+NCT ID: NCT06805786
+Brief Title: Effect of Switching From Intermittently Scanned to Real-time Continuous Glucose Monitoring on Diabetes Management in Adults With Type 2 Diabetes (Switch CGM T2D)
+Official Title: Effect of Switching From Intermittently Scanned Continuous Glucose Monitoring to Real-time Continuous Glucose Monitoring on Glycemic Outcomes in Adults With Type 2 Diabetes
+Status: RECRUITING
+Phase: 
+Conditions: Type 2 Diabetes
+Sponsor: LMC Diabetes & Endocrinology Ltd.
+
+Brief Summary:
+The goal of this prospective study is to evaluate diabetes outcomes and patient experience following a switch from second generation intermittently scanned continuous glucose monitor (isCGM) to real-time continuous glucose monitor (rtCGM) compared with participants with continued isCGM use among adults with insulin-treated type 2 diabetes (T2D) in a specialist endocrinology clinic setting in Canada. The study aims include:
+
+Primary outcome - Evaluate change in percent time in range (TIR) at 3-6 months follow-up after switching from a second generation isCGM system to a rtCGM system compared with participants with continued second generation isCGM use.
+
+Secondary outcomes - Compare glycemic and metabolic outcomes (ie. additional CGM metrics, HbA1c, and weight), and outcomes related to diabetes management (ie. self-reported hypoglycemia and change in total daily dose \[TDD\] of insulin) at 3-6 months follow-up in the rtCGM switch and isCGM cohorts among adults with insulin-treated T2D.
+
+Exploratory outcomes - Evaluate patient-reported outcomes (PROs) in the rtCGM switch cohort only. PROs will include questions about device satisfaction and psychological distress at baseline and 3-6 months follow-up, and protocol-specific questions about Dexcom Care following use of the rtCGM device at 3-6 months follow-up. Additionally this study will compare percent TIR, percent TBR, percent TAR, and HbA1c between rtCGM switch and isCGM cohorts by insulin therapy subgroup (basal vs MDI therapy).
+
+rtCGM switch participants will be enrolled at an LMC location and asked to complete PROs at baseline and 3-6 month follow-up. Continued isCGM participants will not be asked to complete PROs.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* 18 years or older
+* Clinical diagnosis of T2D ≥ one year
+* Using insulin for ≥ 6 months
+* Continued FreeStyle Libre® 2 isCGM device (isCGM cohort) as of the study start date
+* Would like to switch from a FreeStyle Libre® 2 isCGM device to a Dexcom® G7 rtCGM device (rtCGM switch cohort) as of the study start date
+* Baseline HbA1c ≥ 7.5%
+* Known rtCGM/isCGM start date (month and year)
+* Exclusive use of isCGM for ≥ 3 months
+* Data on LibreView platforms have percent sensor capture ≥ 70% for 14 days of available data up to 6 months prior to index date
+* ≥ 1 value for TIR (%) up to 6 months (± 6 weeks) prior to index date
+* ≥ 1 value for HbA1c (%) up to 6 months (± 6 weeks) prior to index date
+* Data consent
+
+Exclusion Criteria:
+
+* Have a prior history of rtCGM within 12 months of the index date
+* Recent or expectant change to antihyperglycemic medications or doses within 30 days of index date
+* Recent or expectant titration of insulin dose ≥ 20% within 30 days of index date
+* Are pregnant at the time of study enrollment or intending to become pregnant during the study
+* Used the isCGM or rtCGM for \< 3 months
+* Using continuous subcutaneous insulin infusion

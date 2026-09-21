@@ -1,0 +1,47 @@
+NCT ID: NCT05420051
+Brief Title: Boosting Emotional Well-being and Happiness in Outpatients Living With Diabetes
+Official Title: A Novel Psychological-behavioral Intervention to Promote Physical Activity in Type 2 Diabetes
+Status: RECRUITING
+Phase: NA
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: Massachusetts General Hospital
+
+Brief Summary:
+The focus of this study is to test the efficacy of an 8-week, remotely delivered, positive-psychology-motivational interviewing (PP-MI) intervention, with additional twice weekly text messages for a total of 16 weeks (with interactive, algorithm-driven, goal-focused text messages in the final 8 weeks), compared to MI-alone, in a randomized trial of 280 individuals with type 2 diabetes and low baseline physical activity.
+
+Detailed Description:
+The investigators are proposing a study that will focus on testing the efficacy of a PP-MI intervention, with additional twice text messages for a total of 16 weeks (with interactive, algorithm-driven, goal-focused text messages in the final 8 weeks) in individuals with type 2 diabetes. The investigators will enroll 280 type 2 diabetes patients, who will take part in either an 8-week intervention (with 16 weeks of supplemental text messages) or an attention-matched, MI-alone condition.
+
+In this project, the investigators hope to do the following:
+
+1. Examine the efficacy of an 8-week, phone-delivered PP-MI intervention for individuals with type 2 diabetes on physical activity-related outcomes, as compared to the MI-alone condition.
+2. Assess PP-MI's impact on psychological measures (e.g., positive affect \[key secondary outcome\]), diabetes self-care, function, glycemic control, and cardiometabolic risk, compared to MI alone.
+3. Examine causal mediation of PP-MI's effects on MVPA at 16 weeks by positive affect (primary hypothesized mediator) and other psychological/cognitive variables across our theoretical model.
+
+Participants will be adult outpatients with type 2 diabetes. They will attend an in-person visit to provide informed consent and complete baseline outcome measures, then will wear an accelerometer to monitor their physical activity for one week to obtain information about baseline activity levels. Upon confirmation of low moderate to vigorous physical activity, participants will be randomized to receive the PP-MI intervention or the MI-alone intervention.
+
+Participants in both groups will be provided a treatment manual, an activity tracker, and other treatment materials. The intervention will be introduced, and the first exercise will be assigned.
+
+Participants will complete eight weekly phone sessions with a study trainer. The phone sessions primarily will include a review of the prior week's session content and a discussion of the rationale and assignment of the next week's exercise/assignment.
+
+Participants will receive twice weekly text messages throughout the intervention (Weeks 1-8) and initial follow-up period (Weeks 9-16). In the PP-MI condition, these messages will focus on the PP activity and physical activity, while those in the MI-alone condition will focus on physical activity and other health behaviors. During Weeks 9-16, participants in the PP-MI condition will engage with twice weekly, automated, interactive text messages related to PP and physical activity, while those in the MI-alone condition will receive fixed text messages related to engagement in health behaviors.
+
+At Weeks 8, 16, 24, and 52, participants will complete follow-up visits. One week prior to these visits, participants will be mailed an accelerometer and will wear it until their study visit. During these study visits, participants will complete outcome assessments and have a blood sample taken.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Diagnosis of Type 2 Diabetes
+* Low physical activity (\<150 minutes/week of moderate to vigorous physical activity)
+
+Exclusion Criteria:
+
+* Cognitive deficits impeding a participant's ability to provide informed consent or participate
+* Medical conditions likely to lead to death within 6 months.
+* Pre-existing coronary artery disease
+* Moderate-severe depression (Patient Health Questionnaire-9 \[PHQ-9\] score ≥15)
+* Use of non-basal insulin
+* Inability to participate in physical activity due to another medical condition
+* Inability to receive text messages
+* Inability to read, write, or speak in English
+* Current participation in another intervention or program that has been designed to promote well-being or physical activity

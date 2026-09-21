@@ -1,0 +1,37 @@
+NCT ID: NCT02802644
+Brief Title: The Effect of DPP4 Inhibitor on Vasclular Healing
+Official Title: A Prospective, Multi-center, Randomized, Controlled Study to Evaluate the Effect of DiPeptidyl-Peptidase 4 Inhibitor on Vascular Healing After Biodegradable Polymer Based Sirolimus Eluting Stent Implantation in Diabetic Patients: OCT Study (DIAMOND-OCT)
+Status: UNKNOWN
+Phase: PHASE4
+Conditions: Acute Coronary Syndrome, Diabetes Mellitus, Type 2
+Sponsor: Chung-Ang University
+
+Brief Summary:
+This study evaluate the effect of dipeptidyl-peptidase 4 inhibitor on vascular healing after biodegradable polymer based sirolimus eluting stent implantation in diabetic pateints.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Non-ST segement elevation acute coronary syndrome
+
+Exclusion Criteria:
+
+* Left main disease
+* Known hypersensitivity or contraindication to any of the following medications: Heparin, aspirin, clopidogrel, sirolimus, siptagliptin and statin
+* Congestive heart failure (patients with LVEF \<30% or cardiogenic shock)
+* Uncontrolled myocardial ischemia (repeated chest pain or dyspnea after revascularization)
+* Uncontrolled ventricular arrhythmia
+* History of malignancy with chemotherapy
+* Serious hematologic disease (e.g. CML, MDS)
+* Current infectious disease needs antibiotics therapy
+* Creatinine level \>1.5 mg/dL or dependence on dialysis
+* Other severe concurrent illness (e.g. active infection, malignancy).
+* Life expectancy of less than one year
+* Pregnancy or women with potential childbearing
+* Type I DM
+* Treatment with insulin
+* History of pancreatitis
+* Who cannot read the informed consent form (e.g. illiteracy, foreigner)

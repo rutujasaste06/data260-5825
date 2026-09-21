@@ -1,0 +1,27 @@
+NCT ID: NCT06703372
+Brief Title: Photobiomodulation In Treatment Of Xerostomia In Type Ii Diabetic Patients
+Official Title: Effectiveness Of Photobiomodulation In Treatment Of Xerostomia In Type Ii Diabetic Patients (A Randomized, Controlled Clinical Trial)
+Status: COMPLETED
+Phase: NA
+Conditions: Xerostomia, Diabetes Mellitus
+Sponsor: Hams Hamed Abdelrahman
+
+Brief Summary:
+Xerostomia is a major oral health problem that if not recognized and treated can have a significant effect on a patient's quality of life. It leads to difficulties with speech, swallowing and taste alteration. Pathological causes of xerostomia are divided into local and systemic factors. Local factors include smoking, salivary gland diseases and head and neck radiation therapy. Systemic factors include autoimmune diseases as Sjögren syndrome and hormonal disorders as Diabetes Mellitus. Photobiomodulation (PBM) previously known as Low Level Laser Therapy (LLLT) is the application of red and near infra-red light over injuries or lesions to improve wound and soft tissue healing, reduce inflammation and give relief for both acute and chronic pain. It also has grabbed the attention over the last few years as an effective treatment for xerostomia.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Patients with type 2 diabetes mellitus suffering from xerostomia and on oral hypoglycemic drugs.
+* Glycated hemoglobin less than 7%.
+* Duration of diabetes mellitus not less than 4 years and not more than 8 years
+
+Exclusion Criteria:
+
+* Patients receiving any drugs that cause hyposalivation.
+* Patients with any systemic disease reported to produce hyposalivation (sjogren's syndrome, hepatitis c, rheumatoid arthritis and lupus erythematosus).
+* Patients receiving chemotherapy and radiotherapy.
+* Individuals with skin lesions in the treatment zone to avoid any complications occurring in this area by laser exposure

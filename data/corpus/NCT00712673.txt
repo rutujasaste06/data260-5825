@@ -1,0 +1,51 @@
+NCT ID: NCT00712673
+Brief Title: GLP-1 Receptor Agonist Lixisenatide (Morning or Evening) in Patients With Type 2 Diabetes for Glycemic Control and Safety Evaluation, on Top of Metformin
+Official Title: A Randomized, Double-blind, Placebo-controlled, Parallel-group, Multicenter 24-week Study Followed by an Extension Assessing the Efficacy and Safety of AVE0010 on Top of Metformin in Patients With Type 2 Diabetes Not Adequately Controlled With Metformin
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes Mellitus, Type 2
+Sponsor: Sanofi
+
+Brief Summary:
+The purpose of this study is to evaluate the benefits and risks of lixisenatide (AVE0010), in comparison to placebo, as an add-on treatment to metformin, over a period of 24 weeks of treatment, followed by an extension.
+
+The primary objective is to assess the effects of lixisenatide as an add-on treatment to metformin in terms of glycosylated hemoglobin (HbA1c) reduction (absolute change) at Week 24.
+
+The secondary objectives are to assess the effect of lixisenatide, in comparison to placebo, when administered in the evening within 1 hour prior to the meal in terms of HbA1c reduction, percentage of patients reaching HbA1c less than (\<) 7 percent (%), percentage of patients reaching HbA1c less than or equal to 6.5%, fasting plasma glucose (FPG), plasma glucose, plasma insulin, C-peptide, glucagon, and proinsulin during a 2-hour standardized meal test (only in morning injection arms), body weight, beta-cell function assessed by homeostasis model assessment (HOMA)-beta, fasting plasma insulin (FPI) and adiponectin; to evaluate safety, tolerability, pharmacokinetics (PK) and anti-lixisenatide antibody development, beta-cell function 4 weeks after study drug discontinuation (only in patients from the morning injection arms in some selected centers).
+
+Detailed Description:
+Patients who complete the 24-week main double-blind treatment would undergo a variable double-blind extension treatment, which ends for all patients at approximately the scheduled date of Week 76 visit (Visit 25) for the last randomized patient.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Type 2 diabetes mellitus, diagnosed for at least 1 year before screening visit, insufficiently controlled with metformin at a stable dose of at least 1.5 gram/ day (g/day) for at least 3 months prior to screening visit
+
+Exclusion Criteria:
+
+* HbA1c \<7% or greater than (\>) 10% at screening
+* At the time of screening age \< legal age of majority
+* Pregnant or breastfeeding women or women of childbearing potential with no effective contraceptive method
+* Type 1 diabetes mellitus
+* Treatment with an antidiabetic pharmacological agent other than metformin within the 3 months preceding the screening
+* FPG at screening \>250 milligram per deciliter (mg/dL) (\>13.9 millimole per liter \[mmol/L\])
+* Body mass index (BMI) \<=20 kilogram per square meter (kg/m\^2)
+* Weight change of \>5 kg during the 3 months preceding the study screening visit
+* History of unexplained pancreatitis, chronic pancreatitis, pancreatectomy, stomach/gastric surgery, inflammatory bowel disease
+* History of metabolic acidosis, including diabetic ketoacidosis, within 1 year prior to screening
+* Hemoglobinopathy or hemolytic anemia, receipt of blood or plasma products within 3 months prior to the time of screening
+* Within the last 6 months prior to screening, history of myocardial infarction, stroke, or heart failure requiring hospitalization
+* Known history of drug or alcohol abuse within 6 months prior to the time of screening
+* Cardiovascular, hepatic, neurological, endocrine disease, active malignant tumor or other major systemic disease or patients with short life expectancy making implementation of the protocol or interpretation of the study results difficult, history or presence of clinically significant diabetic retinopathy, history or presence of macular edema likely to require laser treatment within the study period
+* Uncontrolled or inadequately controlled hypertension at the time of screening with a resting supine systolic blood pressure or diastolic blood pressure \>180 millimeter of mercury (mmHg) or \>95 mmHg, respectively
+* Laboratory findings at the time of screening: aspartate aminotransferase, alanine aminotransferase, or alkaline phosphatase: \>2 times upper limit of normal (ULN) laboratory range; amylase and/or lipase: \>3 times ULN; total bilirubin: \>1.5 times ULN (except in case of Gilbert's syndrome); Hemoglobin \<11 gram/deciliter and/or neutrophils \<1500 per cubic millimeter (mm\^3) and/or platelets \<100 000/mm\^3; positive test for Hepatitis B surface antigen and/or Hepatitis C antibody; positive serum pregnancy test in females of child bearing potential
+* Any clinically significant abnormality identified on physical examination, laboratory tests, electrocardiogram, or vital signs at the time of screening that, in the judgment of the investigator or any sub-investigator, precludes safe completion of the study or constrains efficacy assessment
+* Patients who are considered by the investigator or any sub-investigator as inappropriate for this study for any reason (for example, impossibility to meet specific protocol requirements \[such as scheduled visits, being able to do self-injections\]; likelihood of requiring treatment during the screening phase and treatment phase with drugs not permitted by the clinical study protocol; investigator or any sub-investigator, pharmacist, study coordinator, other study staff or relative thereof directly involved in the conduct of the protocol)
+* Use of other oral or injectable antidiabetic or hypoglycemic agents other than metformin (for example, sulfonylurea, alpha glucosidase inhibitor, other thiazolidinediones, rimonabant, exenatide, dipeptidyl-peptidase-4 inhibitors, insulin) within 3 months prior to the time of screening
+* Use of systemic glucocorticoids (excluding topical application or inhaled forms) for 1 week or more within 3 months prior to the time of screening
+* Use of any investigational drug within 3 months prior to study
+* Any previous treatment with lixisenatide or participation in a previous study with lixisenatide
+* Renal impairment defined with creatinine \>1.4 mg/dL in women and creatinine \>1.5 mg/dL in men
+* Clinically relevant history of gastrointestinal disease associated with prolonged nausea and vomiting, including, but not limited to, gastroparesis and gastroesophageal reflux disease requiring medical treatment, within 6 months prior to the time of screening
+* Allergic reaction to any glucagon-like peptide-1(GLP-1) agonist in the past (for example, exenatide, liraglutide) or to metacresol
+* Additional exclusion criteria at the end of the run-in phase: informed consent withdrawal; lack of compliance during the single-blind placebo run-in phase (\>2 injections missed); and patient with any adverse event which precludes the inclusion in the study, as assessed by the investigator

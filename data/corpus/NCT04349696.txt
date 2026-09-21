@@ -1,0 +1,55 @@
+NCT ID: NCT04349696
+Brief Title: Pharmacokinetic and Pharmacodynamic Study of Glufast Tablets 10mg(Mitiglinide)
+Official Title: A Pharmacokinetic and Pharmacodynamic Study of Glufast Tablets 10 mg (Mitiglinide) in Type 2 Diabetes Mellitus Patients With Normal or Moderate Impaired Hepatic Function
+Status: COMPLETED
+Phase: PHASE4
+Conditions: Type 2 Diabetes Mellitus, Liver Dysfunction
+Sponsor: Orient Europharma Co., Ltd.
+
+Brief Summary:
+This clinical trial is designed to assess the effect of hepatic impairment on the pharmacokinetic and pharmacodynamic of glufast tablets 10 mg.
+
+Detailed Description:
+Mitiglinide calcium hydrate (Glufast Tablets) is an insulinotropic agent of the glinide class with rapid onset and is chemically designated as (+)-monocalcium bis\[(2S,3a,7a-cis)-α-benzylhexahydro-γ-oxo-2-isoindolinebutyrate\] dihydrate.By transiently increasing insulin secretion, mitiglinide exerts a hypoglycemic effect with rapid onset and short duration of action.This effect results from the inhibitory effect of mitiglinide on the ATP-sensitive potassium (KATP) channel current through binding to sulfonylurea receptor in pancreatic cells.
+
+In an in vitro study, it was confirmed that mitiglinide is metabolized in liver and kidney, and the glucuronide and hydroxyl metabolites are mainly produced by drug metabolizing enzyme,UGT1A9 and 1A3, and by CYP2C9, respectively.Considering that the patient population with T2DM to be targeted appears to have hepatic impairment and the effects of liver dysfunction on pharmacokinetics and pharmacodynamics of mitiglinide are still unknown, this study was designed to investigate the pharmacokinetics (PK), pharmacodynamics (PD) and safety of mitiglinide when administered to T2DM patients with impaired hepatic function.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Subjects between 20-75 years of age, inclusive.
+* Body mass index (BMI) values within 20-35 kg/m2.
+* Diagnosed as type 2 diabetes mellitus and have fasting plasma glucose (FPG) less than 200 mg/dL at screen visit (for subjects under antidiabetic treatment).
+* Having 2-hour postprandial glucose (PPG) level higher than or equal to 200 mg/dL at screen visit (for subjects who are antidiabetic treatment-naïve).
+* Having fasting plasma glucose (FPG) higher than or equal to 126 mg/dL and less than 200 mg/dL at screen visit (for subjects who are antidiabetic treatment-naïve).
+* Having been treated with dietary and exercise therapy alone or with a stable regimen for diabetes, including mitiglinide, α-glucosidase inhibitors (such as acarbose and QPS Taiwan Protocol #: OEP-P2012-01 Version: 7.0 Confidential Page 19 of 32 miglitol), metformin, sulfonylureas, DPP-IV inhibitors, thiazolidinediones (such as pioglitazone and rosiglitazone), insulin preparations or with oral antidiabetic agents in combination with insulin preparations.
+* Have signed the written informed consent to participate in the study.
+* For patients with normal hepatic function (Arm 1): characterized as normal hepatic function with laboratory tests, such as AST (SGOT), ALT (SGPT), -GT, alkaline phosphatase, total bilirubin and albumin, within the acceptable range or results with minor deviations determined to be not clinically significant by the investigator.
+* For patients with moderate impaired hepatic function (Arm 2): patients who have been diagnosed as liver cirrhosis and have Child-Pugh system point between 7 and 9 within 3 months prior to screen visit or who have Child-Pugh system point between 7 and 9 during screening period.
+
+Exclusion Criteria:
+
+* Diagnosed as Type 1 (insulin-dependent) diabetes mellitus.
+* Having 1-hour PPG or 2-hour PPG levels \> 350 mg/dL at screen visit.
+* History of diabetic ketoacidosis with or without coma.
+* With unstable or rapidly progressive diabetic proliferative retinopathy or rapidly progressive diabetic neuropathy under investigator's judgment.
+* Having clinically significant renal disease or dysfunction (e.g. serum creatinine \>1.6 mg/dL) and concurrent anemia.
+* Congestive heart failure (function class III to IV) or myocardial infarction within past 6 months.
+* Recent history of drug or alcohol addiction or abuse.
+* History of allergic response(s) to mitiglinide or related drugs.
+* Pregnant or lactating women or women of childbearing potential whom were not practicing a reliable form of birth control.
+* Receiving any investigational drug within one month prior to screen visit.
+* Taking high-dose sulfonylureas (e.g. taking doses exceeding 5 mg/day of glibenclamide or 80 mg/day of gliclazide or 4 mg/day of glimepiride or 5 mg/day glipizide).
+* Any clinical condition or significant concurrent disease judged by the investigator to complicate the evaluation of the study treatment.
+
+Patients with normal hepatic function (Arm 1):
+
+* A positive test for hepatitis B surface antigen or positive hepatitis C antibody.
+* Presence of liver cirrhosis or liver carcinoma detected by hepatic ultrasound and deemed ineligible in the investigator's judgment.
+
+Patients with moderate impaired hepatic function (Arm 2):
+
+* Having acute liver disease caused by infection or drug toxicity within one month prior to screen visit.
+* History of liver transplantation.
+* Having severe portal hypertension within one month prior to screen visit.
+* Having fluctuating or rapidly deteriorating hepatic function based on clinical signs or laboratory tests during the screening period

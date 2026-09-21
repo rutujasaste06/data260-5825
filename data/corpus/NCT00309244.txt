@@ -1,0 +1,52 @@
+NCT ID: NCT00309244
+Brief Title: Efficacy and Safety in Subjects With Type 2 Diabetes Receiving Subcutaneous Basal Insulin and Prandial Inhalation of Technosphere/Insulin Versus Subcutaneous Premixed Insulin Therapy Over a 52-Week Treatment Period and a 4-Week Follow-up
+Official Title: A Prospective, Multi-Center, Open-Label, Randomized, Controlled Clinical Trial Comparing the Efficacy and Safety in Subjects With Type 2 Diabetes Receiving Subcutaneous Basal Insulin and Prandial Inhalation of Technosphere /Insulin Versus Subcutaneous Premixed Insulin Therapy Over a 52-Week Treatment Period and a 4-Week Follow-up
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes Type 2
+Sponsor: Mannkind Corporation
+
+Brief Summary:
+The purpose of this 13 month study (12 month treatment period and 1 month follow-up period) is to determine whether inhaled insulin is safe and effective in the treatment of type 2 diabetes.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Men or women ≥ 18 and ≤ 80 years old
+* Clinical diagnosis of type 2 diabetes mellitus
+* HbA1c \> 7.0% and ≤ 11.0%
+* BMI ≤ 40 kg/m2
+* Negative smoking status and urine cotinine test
+* Written informed consent
+* Receiving sc insulin 2-3 times daily administered as any of the following 3 regimens: self-mix regimen, pre-mix regimen, or long-acting analogue and regular or rapid-acting insulin analogue not to exceed 3 daily injections. Subjects may also have received oral antidiabetic agents including metformin or thiazolidinediones.
+* No dose adjustments for insulin and oral antidiabetic agents within the preceding 6 weeks.
+* FEV1 ≥ 70% of NHANES III predicted; TLC) ≥ 80% of predicted (Intermountain Thoracic Society); DLCO uncorrected ≥ 70% of predicted
+
+Exclusion Criteria:
+
+* Total daily dose of insulin ≥1.4 IU/kg body weight
+* Treatment with any sulfonylureas and/or meglitinides and/or alpha-glucosidase inhibitors within the preceding 8 weeks
+* Treatment with pramlintide acetate (Symlin®), and/or any incretins (e.g., exenatide \[Byetta®\]) within the preceding 8 weeks
+* Unstable diabetes mellitus control, defined as 2 or more episodes of severe hypoglycemia (requiring third party intervention) and/or any hospitalization or emergency room visit due to poor diabetic control or hyperglycemia requiring hospitalization within the preceding 6 months
+* Exposure to an inhaled insulin at any time, treatment with an investigational drug within the preceding 3 months, and/or current participation in another clinical trial
+* Allergy to insulin or to any drugs to be used as part of the clinical trial, or history of hypersensitivity to the investigational drug or to drugs of similar chemical structures
+* History of active viral and/or cirrhotic hepatic disease and/or abnormal liver enzymes as evidenced by serum aspartate aminotransferase (AST)and/or alanine aminotransferase (ALT) ≥ 3 x Upper Limit of Normal (ULN)(Includes active hepatitis A, positive hepatitis B and/or hepatitis C serology)
+* Serum creatinine \> 1.8 mg/dL in women and \> 2.0 mg/dL in men History of chronic obstructive pulmonary disease (COPD), asthma (any history of bronchospasm or asthma after the age of 14), and/or any other clinically important pulmonary disease confirmed by documented history, pulmonary function testing, or radiologic findings
+* Congestive heart disease graded as class III or class IV according to New York Heart Association criteria and subjects currently being treated pharmacologically for ventricular dysrhythmias using amiodarone
+* History of myocardial infarction, cardiac surgery, coronary angioplasty, and/or stroke within the preceding 3 months
+* Symptomatic coronary artery disease, including crescendo angina, unstable angina, and/or unstable or symptomatic cardiac arrhythmias
+* Poorly controlled arterial hypertension despite pharmacologic treatment, defined as systolic blood pressure (BP) \> 180 mm Hg and/or diastolic BP \> 110 mm Hg at screening
+* History of malignancy within the preceding 5 years (other than excised basal cell carcinoma of the skin), any history of lung neoplasm, and/or subjects with current or previous chemotherapy or radiation therapy that may result in pulmonary toxicity
+* History of acquired immunodeficiency syndrome (AIDS), AIDS-related complex (ARC), or positive human immunodeficiency virus (HIV) serology
+* Prior diagnosis of systemic autoimmune or collagen vascular disease requiring previous or current treatment with systemic corticosteroids, cytotoxic drugs, or penicillamine
+* Visit 1/Screening (Week -3), but prior to Visit 1 PFTs and before Visit 3/Baseline (Week 0), subject will be scheduled for PFTs after 30 days from resolution of respiratory infection. An additional hemoglobin and urine β-HCG (for women of childbearing potential age only) will be required
+* Women who are pregnant, lactating or planning to become pregnant
+* Women of childbearing potential (defined as pre-menopausal and not surgically sterilized or postmenopausal for less than 2 years) not practicing adequate birth control. Adequate birth control is defined as using oral, percutaneous and/or transdermal contraceptives; condoms and diaphragms with a spermicide, or intrauterine devices
+* Current drug and/or alcohol abuse
+* Subjects who in the opinion of the Investigator will be unable to comply with the requirements of the protocol
+* Severe complications of diabetes mellitus, in the opinion of the Investigator, including: symptomatic autonomic neuropathy, disabling peripheral neuropathy, active proliferative retinopathy; nephropathy with renal failure, renal transplant and/or dialysis; history of foot ulcers; nontraumatic amputations due to gangrene;and/or vascular claudication
+* Any other concurrent medical or major psychiatric condition which, in the opinion of the Investigator, makes the subject unsuitable for the clinical trial, or could limit the validity of the ICF and/or impair the subject's ability to participate in the trial
+* Inability to perform PFT maneuvers meeting recommended American Thoracic Society (ATS) acceptability and repeatability criteria.

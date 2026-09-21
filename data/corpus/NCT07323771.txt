@@ -1,0 +1,39 @@
+NCT ID: NCT07323771
+Brief Title: Improving Oral Health Knowledge and Habits in People With Diabetes Through a Theory Guided WhatsApp Education Program
+Official Title: The Effectiveness of Educational Intervention Based on Health Belief Model Delivered Via WhatsApp on Oral Health Knowledge and Behaviors of Individuals With Type 2 Diabetes Mellitus; A Randomized Controlled Trial
+Status: COMPLETED
+Phase: NA
+Conditions: Oral Health Knowledge, Oral Health Behavior Change, Diabetes Type 2
+Sponsor: Dow University of Health Sciences
+
+Brief Summary:
+The goal of this Educational interventional study is to test the usefulness of an educational program delivered through WhatsApp videos in increasing oral health knowledge and habits in people with Diabetes between the age of 18 and 65 years. The main question it aims to answer is:
+
+Does a WhatsApp-based educational Program improve oral health knowledge and behaviors in people with diabetes, and is it more effective than education delivered through brochures? Participants in one group will receive educational videos through WhatsApp, while the other group receive a brochure containing oral health information. Researchers will then compare the groups to see if the intervention made a difference.
+
+Participants will:
+
+* Fill a baseline questionnaire to assess their current knowledge and behaviors.
+* They then either participate in a one-month educational program delivered through WhatsApp, or receive an educational brochure.
+* Wait for 1 month after the program to allow for application of knowledge.
+* Fill a post intervention questionnaire to assess changes in knowledge and behavior.
+
+Detailed Description:
+The purpose of this study is to determine whether an educational intervention based on the Health Belief Model (HBM) and delivered through WhatsApp may improve diabetes patients' oral health behaviors and knowledge. This study is a randomized controlled trial (RCT) with two groups: an intervention group (WhatsApp-based education) and a control group (brochure-based education). Adults (18-65 years) with Type 2 Diabetes Mellitus from a diabetes clinic in Karachi were recruited. 98 participants (49 in each group) were selected through random allocation. The randomization process ensured that participants are evenly distributed between the groups based on key factors, specifically gender, educational level and duration of diabetes to reduce potential bias from these characteristics. This study was a single blinded study in which participants were not informed about the existence of two distinct groups. The WhatsApp based intervention consisted of 12 short educational videos, each approximately 3 to 5 minutes in duration, these videos were sent individually to each participant every alternate day from Monday to Friday, resulting in three videos per week over a period of one month, Reminders were sent the following day after each video to encourage engagement and sustain behavior change. Each week was focused on specific HBM constructs delivered through short, professionally scripted educational videos in Urdu. Each week was focused on specific HBM constructs. The control group received only an educational brochure.
+
+A structured questionnaire was used to evaluate participants' knowledge and oral hygiene practices at two points: baseline (before intervention) and one-month post-intervention. The questionnaire was designed to measure HBM constructs (e.g. perceived susceptibility, severity, benefits, barriers, cues to action, and self-efficacy), awareness of oral care and oral hygiene related behaviors. Data were analyzed using SPSS Version 27.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Adults aged 18-65 years with a confirmed diagnosis of T2DM
+* Able to use WhatsApp for the study duration
+* Able to read and write in Urdu
+
+Exclusion Criteria:
+
+* Edentulous
+* Individuals diagnosed with life-threatening diseases such as advanced cancer, end-stage renal disease, or severe cardiac failure
+* Diminished cognitive ability
+* Radiotherapy in head and neck region.
+* Planning to migrate during the study period.

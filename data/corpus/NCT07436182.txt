@@ -1,0 +1,170 @@
+NCT ID: NCT07436182
+Brief Title: Mitochondrial Redox Modulation in Newly Diagnosed Type 2 Diabetes: A Randomized Controlled Trial Comparing Imeglimin vs. Metformin Monotherapy
+Official Title: Mitochondrial Redox Modulation in Newly Diagnosed Type 2 Diabetes: A Randomized Controlled Trial Comparing Imeglimin vs. Metformin Monotherapy
+Status: NOT_YET_RECRUITING
+Phase: PHASE4
+Conditions: Mitochondria, Metformin
+Sponsor: Mansoura University
+
+Brief Summary:
+he goal of this clinical trial is to compare the mitochondrial redox effects of imeglimin versus metformin monotherapy in adults with newly diagnosed Type 2 diabetes mellitus who are treatment-naive. The main questions it aims to answer are:
+
+Does imeglimin improve the fasting plasma pyruvate/lactate ratio (a validated surrogate of mitochondrial NAD⁺/NADH redox balance) to a greater extent than metformin after 12 weeks of treatment? Does imeglimin produce more favorable changes in secondary mitochondrial and glycemic biomarkers - including fasting plasma lactate, fasting plasma pyruvate, HbA1c, HOMA-IR, and lipid profile - compared to metformin?
+
+Researchers will compare imeglimin 1000 mg twice daily to metformin up to 1000 mg twice daily to see if imeglimin produces superior improvement in mitochondrial oxidative capacity and cytoplasmic redox balance, reflected by a greater increase in the fasting plasma pyruvate/lactate ratio, without compromising glycemic efficacy or safety.
+
+Participants will:
+
+Take either imeglimin 1000 mg twice daily or metformin (titrated up to 1000 mg twice daily) orally for 12 weeks, as assigned by randomization Attend clinic visits at baseline (Week 0) and at Week 12 for fasting blood sample collection, including strict bedside deproteinization of pyruvate samples using ice-cold perchloric acid to ensure analytical accuracy Undergo measurement of fasting plasma pyruvate/lactate ratio, HbA1c, HOMA-IR, fasting glucose, fasting insulin, fasting plasma lactate, fasting plasma pyruvate, and full lipid profile at both visits Be monitored for adverse events and safety parameters, including renal function (eGFR), throughout the study period
+
+Detailed Description:
+Aim of the work:
+
+This study aims to investigate and compare the effect of imeglimin versus metformin monotherapy on mitochondrial redox status in patients with newly diagnosed type 2 diabetes mellitus, using the fasting plasma pyruvate/lactate ratio as a primary in vivo biomarker of mitochondrial NAD⁺/NADH redox balance.
+
+Study Objectives and Endpoints
+
+1. Primary Objective To compare the change in fasting plasma pyruvate/lactate ratio from baseline (Week 0) to the end of the treatment period (Week 12) between patients with newly diagnosed T2DM randomized to imeglimin monotherapy versus metformin monotherapy.
+2. Secondary Objectives
+
+<!-- -->
+
+1. To assess the change in HbA1c (%) from baseline to Week 12 in each treatment arm.
+2. To evaluate the individual changes in fasting plasma lactate (mmol/L) and fasting plasma pyruvate (mmol/L) from baseline to Week 12 between arms.
+3. To compare changes in fasting blood glucose (mg/dL), fasting serum insulin (µIU/mL), and HOMA-IR from baseline to Week 12 between arms.
+4. To compare changes in the lipid profile (total cholesterol, LDL-C, HDL-C, triglycerides) between treatment arms.
+5. To evaluate renal function (eGFR, serum creatinine) and hepatic safety markers throughout the trial.
+6. To characterize the tolerability and adverse event profiles of imeglimin versus metformin, with specific attention to gastrointestinal events, hypoglycemia, and lactate-related parameters.
+
+3 Primary Endpoint Change (Delta) in fasting plasma pyruvate/lactate ratio from Week 0 (Baseline) to Week 12 (end of treatment period).
+
+4 Secondary Endpoints
+
+• Delta HbA1c (%) from baseline to Week 12
+
+* Delta fasting plasma lactate (mmol/L) from baseline to Week 12
+* Delta fasting blood glucose (mg/dL) from baseline to Week 12
+* Delta HOMA-IR from baseline to Week 12
+* Delta fasting lipid panel from baseline to Week 12
+* Incidence, type, and severity of adverse events throughout the 12-week treatment period
+
+Study Design This is a prospective, open-label, randomized, parallel-group, active-controlled, investigator-initiated clinical trial. The study will be conducted at diabetes and geriatrics outpatients clinic of in Mansoura university hospitals . Eligible participants with newly diagnosed T2DM will be randomized in a 1:1 ratio to receive imeglimin or metformin monotherapy for 12 weeks. Mitochondrial redox and metabolic assessments will be performed at baseline (Week 0) and at the end of the treatment period (Week 12).
+
+Treatment Regimens
+
+Parameter Arm A: Imeglimin Arm B: Metformin Notes Drug Imeglimin (Twymeeg) Metformin HCl (standard release) Both oral agents Starting dose 500 mg twice daily (with meals) 500 mg twice daily (with meals) Week 1-2 Uptitration at Week 4 1000 mg twice daily if tolerated 1000 mg twice daily if tolerated Clinician discretion based on tolerability Treatment duration 12 weeks 12 weeks
+
+Study Visit Schedule
+
+Visit Timepoint Key Activities V1 Screening Week -2 to 0 Eligibility assessment; informed consent; demographics; medical and medication history; physical examination; baseline fasting blood glucose; renal function; LFTs; CBC; lipid profile; HbA1c.
+
+V2 - Baseline / Randomization Week 0 (Day 1) CRITICAL BIOMARKER VISIT: Fasting pyruvate/lactate sample collection per strict pre-analytical protocol; fasting insulin; HOMA-IR; repeat HbA1c if \>14 days since screening. Randomization. Study drug dispensing. Patient education on pre-analytical requirements.
+
+V3 - Safety Assessment Week 4 Clinical assessment; fasting blood glucose; renal function; LFTs; dose up titration decision; adverse event documentation.
+
+V4 - End of Treatment Week 12 CRITICAL BIOMARKER VISIT: Repeat all baseline laboratory assessments. Fasting pyruvate/lactate per identical pre-analytical protocol. HOMA-IR; HbA1c; lipid profile; safety labs. Adverse event collection. Drug accountability. Study completion.
+
+Study Population .1 Inclusion Criteria
+
+Participants must meet ALL of the following criteria for enrollment:
+
+1. Age 18 or more inclusive, male or female.
+2. Confirmed diagnosis of T2DM within the preceding 12 months prior to screening, established by ADA or WHO criteria: fasting plasma glucose ≥ 126 mg/dL on two separate occasions, and/or 2-hour OGTT plasma glucose ≥ 200 mg/dL, and/or HbA1c ≥ 6.5%, and/or random plasma glucose ≥ 200 mg/dL with classic hyperglycemic symptoms.
+3. HbA1c between 6.5% and 7.5 % inclusive at screening.
+4. Treatment-naive: no prior antidiabetic pharmacological treatment, or any prior antidiabetic treatment discontinued at least 3 months before screening.
+5. Estimated glomerular filtration rate (eGFR) ≥ 45 mL/min/1.73m² by CKD-EPI formula at screening.
+6. Willing and able to provide written informed consent in Arabic or English.
+7. Able to attend all scheduled study visits and comply with study procedures, dietary restrictions, and pre-analytical blood collection requirements.
+
+2 Exclusion Criteria
+
+Participants meeting ANY of the following criteria will be excluded:
+
+1. Type 1 diabetes mellitus, Latent Autoimmune Diabetes in Adults (LADA), or other specific types of diabetes (anti-GAD antibody positivity, monogenic diabetes).
+2. HbA1c \>7.5 gm%
+3. eGFR \< 45 mL/min/1.73m² - increase risk of drug accumulation and lactic acidosis.
+4. Hepatic impairment defined as ALT or AST \> 2.5 times the upper limit of normal at screening. Hepatic dysfunction independently elevates plasma lactate by impairing lactate clearance and pyruvate metabolism, confounding the primary endpoint.
+5. History of or current congestive heart failure (NYHA Class III-IV) or clinically significant cardiovascular disease with hemodynamic instability major risk factor for lactic acidosis and a confound for tissue lactate metabolism.
+6. Active or recent (within 3 months) use of any antidiabetic pharmacological agent.
+7. Current use of medications known to significantly affect mitochondrial function or lactate/pyruvate metabolism: valproate, linezolid, nucleoside reverse transcriptase inhibitors (NRTIs), phenformin, zidovudine, or high-dose thiamine-depleting regimens.
+8. Pregnancy, planned pregnancy within the trial period, or active breastfeeding.
+9. Active malignancy requiring chemotherapy, radiotherapy, or immunosuppression within the preceding 6 months.
+10. Significant chronic alcohol use: \> 21 units per week (male) or \> 14 units per week (female). Alcohol is a major independent confound for pyruvate/lactate ratio through its own effects on hepatic NAD+/NADH balance.
+11. Acute illness, surgery, trauma, or hospitalization within 4 weeks of screening, acute physiological stress elevates plasma lactate independent of drug effects.
+12. Vigorous or unaccustomed physical exercise within 24 hours of any biomarker blood draw, exercise-induced lactate elevation is a major pre-analytical confound.
+13. Known hypersensitivity or contraindication to imeglimin or metformin.
+14. Participation in another interventional clinical trial within 3 months preceding screening.
+15. Any condition that, in the investigator's judgment, would render the patient unable to safely complete the trial or reliably provide valid biomarker samples.
+
+    Laboratory Assessments Primary Endpoint: Mitochondrial Redox Biomarker Protocol (Pyruvate/Lactate Ratio) The primary endpoint is the change in fasting plasma pyruvate/lactate ratio from Week 0 to Week 12. Given that pyruvate is highly unstable in biological samples - subject to rapid non-enzymatic degradation and continued LDH-mediated conversion to lactate in whole blood at ambient temperature - the following stringent pre-analytical and analytical protocol is mandatory for both the Baseline (V2) and Week 12 (V4) biomarker visits. Any deviation from this protocol must be documented and will result in exclusion of the affected sample from the primary analysis.
+
+    Pre-Analytical Requirements (Mandatory - Critical) • Participant must observe a minimum 10-hour overnight fast (water permitted) before the blood draw.
+
+    • Participant must abstain from vigorous physical activity for at least 24 hours prior to the visit. Exercise independently elevates plasma lactate and may alter pyruvate flux through anaerobic glycolysis, independent of drug mechanism.
+
+    • Participant must rest in a seated position for a minimum of 15 minutes before venipuncture.
+
+    • Tourniquet application must be minimized to less than 30 seconds. The participant must not clench the fist. Forearm muscle activity under venous stasis generates lactate via local anaerobic glycolysis, artifactually reducing the pyruvate/lactate ratio.
+
+    • Blood must be drawn without delay and transferred immediately to pre-labeled, pre-chilled collection tubes placed directly on ice.
+
+    • The precise time of venipuncture, time of tube placement on ice, and time of centrifugation must be recorded in the case report form for each sample.
+
+    IMPORTANT NOTE ON PYRUVATE STABILITY: Pyruvate undergoes rapid non-enzymatic decarboxylation and LDH-mediated conversion to lactate in whole blood at room temperature. Samples not treated with perchloric acid within 5 minutes of collection will yield artifactually low pyruvate concentrations and an unreliable pyruvate/lactate ratio. All laboratory staff involved in sample handling must complete written protocol-specific training before the study commences, and a competency assessment must be documented.
+
+    Sample Size Calculation 1 Statistical Assumptions
+
+    Sample size was calculated for the primary endpoint: the between-group difference in change in pyruvate/lactate ratio from baseline to Week 12. As robust published clinical data on pyruvate/lactate ratio changes specifically with imeglimin or metformin are not yet available, assumptions are derived from mechanistic studies on mitochondrial redox in T2DM and metabolic syndrome populations:
+
+    Statistical Parameter Value Significance level (alpha, two-sided) 0.05 Statistical power (1 - beta) 80% Expected mean change: imeglimin arm +0.030 units (increase in pyruvate/lactate ratio) Expected mean change: metformin arm -0.010 units (decrease in pyruvate/lactate ratio) Between-group difference to detect (delta) 0.040 units Pooled standard deviation (SD) of change 0.060 units N per arm (two-sided independent t-test formula) 36 participants per arm Inflation for 20% dropout / protocol deviation +8 participants per arm FINAL TARGET: per arm 44 participants TOTAL STUDY ENROLLMENT TARGET 88 participants
+
+    A planned blinded interim analysis will be conducted after 50% of participants complete Week 12 assessments to reassess the SD assumption. If the observed SD exceeds the assumed value by \> 20%, sample size will be re-estimated using a group sequential design with O'Brien-Fleming alpha-spending function to maintain the overall two-sided type I error rate at 0.05.
+
+    Statistical Analysis Plan Primary Endpoint Analysis The primary endpoint - change in fasting plasma pyruvate/lactate ratio from baseline to Week 12 - will be analyzed using Analysis of Covariance (ANCOVA). The dependent variable will be the Week 12 pyruvate/lactate ratio value. Fixed effects will include treatment arm (imeglimin versus metformin). Covariates will be the baseline pyruvate/lactate ratio value and the HbA1c randomization stratum (\< 7.5% versus ≥ 7.5%). The between-group least-squares mean difference, 95% confidence interval, and two-sided p-value will be reported. Statistical significance will be declared at p \< 0.05. Missing primary endpoint data will be handled using multiple imputation by chained equations (MICE) under a missing-at-random (MAR) assumption (10 imputed datasets). Sensitivity analysis will be performed using a complete case approach.
+
+    Secondary Endpoint Analyses Continuous secondary endpoints (HbA1c change, fasting glucose change, HOMA-IR change, lactate change, pyruvate change, FGF-21 change, lipid changes) will each be analyzed by ANCOVA with the same covariate structure as the primary analysis. Adverse event frequencies between arms will be compared using Fisher's exact test. Pearson or Spearman correlation analysis (as appropriate based on normality assessment) will explore the relationships between: (i) delta pyruvate/lactate ratio and delta HbA1c; (ii) delta pyruvate/lactate ratio and delta HOMA-IR; and (iii) delta pyruvate/lactate ratio and delta FGF-21. Secondary endpoints will be reported with 95% confidence intervals; no formal adjustment for multiple comparisons will be applied, and all secondary results will be interpreted as exploratory.
+
+    Exploratory Subgroup Analyses
+
+    The following pre-specified exploratory subgroup analyses will be performed for the primary endpoint using treatment-by-subgroup interaction terms:
+
+    • Baseline HbA1c category (\< 7.5% versus ≥ 7.5%)
+    * Sex (male versus female)
+    * Baseline BMI (\< 30 versus ≥ 30 kg/m²)
+    * Baseline eGFR category (45-60 versus \> 60 mL/min/1.73m²)
+    * Baseline pyruvate/lactate ratio (below versus above median)
+
+    Ethical Considerations This study will be conducted in full accordance with the ethical principles established by the World Medical Association Declaration of Helsinki (2013 revision), ICH Guideline for Good Clinical Practice (E6 R2), and applicable national regulatory requirements including the Egyptian Ministry of Health and Population guidelines for clinical research. The protocol, informed consent form, and all participant-facing documents will be submitted to the Institutional Review Board (IRB) of Mansoura university for review and written approval prior to initiation of any study procedures. No participant will be enrolled before written IRB/IEC approval is obtained and documented.
+
+Eligibility Criteria:
+.1 Inclusion Criteria
+
+Participants must meet ALL of the following criteria for enrollment:
+
+1. Age 18 or more inclusive, male or female.
+2. Confirmed diagnosis of T2DM within the preceding 12 months prior to screening, established by ADA or WHO criteria: fasting plasma glucose ≥ 126 mg/dL on two separate occasions, and/or 2-hour OGTT plasma glucose ≥ 200 mg/dL, and/or HbA1c ≥ 6.5%, and/or random plasma glucose ≥ 200 mg/dL with classic hyperglycemic symptoms.
+3. HbA1c between 6.5% and 7.5 % inclusive at screening.
+4. Treatment-naive: no prior antidiabetic pharmacological treatment, or any prior antidiabetic treatment discontinued at least 3 months before screening.
+5. Estimated glomerular filtration rate (eGFR) ≥ 45 mL/min/1.73m² by CKD-EPI formula at screening.
+6. Willing and able to provide written informed consent in Arabic or English.
+7. Able to attend all scheduled study visits and comply with study procedures, dietary restrictions, and pre-analytical blood collection requirements.
+
+2 Exclusion Criteria
+
+Participants meeting ANY of the following criteria will be excluded:
+
+1. Type 1 diabetes mellitus, Latent Autoimmune Diabetes in Adults (LADA), or other specific types of diabetes (anti-GAD antibody positivity, monogenic diabetes).
+2. HbA1c \>7.5 gm%
+3. eGFR \< 45 mL/min/1.73m² - increase risk of drug accumulation and lactic acidosis.
+4. Hepatic impairment defined as ALT or AST \> 2.5 times the upper limit of normal at screening. Hepatic dysfunction independently elevates plasma lactate by impairing lactate clearance and pyruvate metabolism, confounding the primary endpoint.
+5. History of or current congestive heart failure (NYHA Class III-IV) or clinically significant cardiovascular disease with hemodynamic instability major risk factor for lactic acidosis and a confound for tissue lactate metabolism.
+6. Active or recent (within 3 months) use of any antidiabetic pharmacological agent.
+7. Current use of medications known to significantly affect mitochondrial function or lactate/pyruvate metabolism: valproate, linezolid, nucleoside reverse transcriptase inhibitors (NRTIs), phenformin, zidovudine, or high-dose thiamine-depleting regimens.
+8. Pregnancy, planned pregnancy within the trial period, or active breastfeeding.
+9. Active malignancy requiring chemotherapy, radiotherapy, or immunosuppression within the preceding 6 months.
+10. Significant chronic alcohol use: \> 21 units per week (male) or \> 14 units per week (female). Alcohol is a major independent confound for pyruvate/lactate ratio through its own effects on hepatic NAD+/NADH balance.
+11. Acute illness, surgery, trauma, or hospitalization within 4 weeks of screening, acute physiological stress elevates plasma lactate independent of drug effects.
+12. Vigorous or unaccustomed physical exercise within 24 hours of any biomarker blood draw, exercise-induced lactate elevation is a major pre-analytical confound.
+13. Known hypersensitivity or contraindication to imeglimin or metformin.
+14. Participation in another interventional clinical trial within 3 months preceding screening.
+15. Any condition that, in the investigator's judgment, would render the patient unable to safely complete the trial or reliably provide valid biomarker samples.

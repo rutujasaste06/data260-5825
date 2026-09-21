@@ -1,0 +1,128 @@
+NCT ID: NCT06606327
+Brief Title: Diazoxide Suppression Test P&F Study
+Official Title: Human Models of Primary Hyperinsulinemia: Diazoxide Suppression Test (DzST) Pilot & Feasibility Study
+Status: TERMINATED
+Phase: PHASE1
+Conditions: Insulin Resistance, Hyperinsulinemia, Obesity
+Sponsor: Columbia University
+
+Brief Summary:
+The goal of this study is to learn about how the hormone insulin controls blood sugar. The main question it aims to answer is about how much insulin the body actually needs to maintain a normal blood sugar level. People with obesity and high insulin levels will receive eight doses of diazoxide, a drug that suppresses the pancreas's production of insulin, and will have their fasting blood sugar and insulin levels checked daily while taking the drug.
+
+Detailed Description:
+The investigators are interested in determining to what extent the hyperinsulinemia commonly associated with insulin resistance (IR) in those at risk for type 2 diabetes (T2D) is a primary phenomenon, rather than merely a secondary, compensatory response to IR. The study hypothesis is that some people with obesity and hyperinsulinemia exhibit a primary, non-compensatory hyperinsulinemia that may foment IR and its dysmetabolic sequelae. If this were the case, lowering insulin levels should not result in a proportional rise in blood glucose as might be expected if the hyperinsulinemia truly were purely compensatory. This hypothesis has been difficult to prove, however, because of the tight feedback mechanism between blood glucose and insulin secretion; under normal circumstances insulin secretion declines only alongside blood glucose. As such, an attempt to lower insulin levels independently of blood glucose will raise blood glucose and trigger further insulin secretion, negating the purpose of the experiment. In order to circumvent this feedback regulation of glucose-stimulated insulin secretion, the study team has developed a modification of the insulin suppression test (IST) called the "graded IST" (GIST) that suppresses endogenous insulin secretion with octreotide and then measures steady-state plasma glucose (SSPG) at both replacement euinsulinemia and hyperinsulinemia. It is expected that some people with high insulin levels at baseline will not demonstrate a prominent rise in SSPG even when their insulin levels are lowered. However, the GIST is a cumbersome procedure that is difficult to scale for larger study populations. As such, the investigators are also working to develop an outpatient diazoxide suppression test (DzST) that suppresses endogenous insulin secretion with the oral insulin anti-secretagogue diazoxide rather than octreotide, and will validate it against the incipient "gold-standard" GIST. GIST participants found to have evidence of primary hyperinsulinemia (i.e., euinsulinemic euglycemia or near-euglycemia despite baseline hyperinsulinemia) will, several weeks later, take diazoxide 3 mg/kg per dose, twice daily, for four days. The investigators will check fasting glucose and insulin levels daily at baseline and then after each of the four days of diazoxide administration. The investigators expect that suppression of insulin secretion with diazoxide will, in accordance with the GIST, lead to no significant rise in blood glucose in people who have true primary hyperinsulinemia.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Men and women, aged 18-65 years
+* Body mass index of 30-45 kg/m2
+* Able to understand written and spoken English and/or Spanish
+* Fasting hyperinsulinemia (fasting serum insulin ≥ 13 μU/mL)
+* Completion of the graded insulin suppression test (GIST) protocol (Group H)
+* Written informed consent (in English or Spanish) and any locally required authorization (e.g., Health Insurance Portability and Accountability Act) obtained from the participant prior to performing any protocol-related procedures, including screening evaluations.
+
+Exclusion Criteria:
+
+* Unable to provide informed consent in English or Spanish
+* Documented weight loss of ≥ 5% of baseline within the previous 3 months
+* Abnormal blood pressure (including on treatment, if prescribed): Systolic blood pressure \< 90 mm Hg or \> 160 mm Hg, and/or Diastolic blood pressure \< 60 mm Hg or \> 100 mm Hg
+* Abnormal resting heart rate: \< 60 or ≥ 110 bpm
+* Sinus brady- or tachycardia that has been worked up and considered benign by the recruit's personal physician may be permitted at the PI's discretion
+* Abnormal screening electrocardiogram on GIST screening (or if on file, performed within previous 90 d):
+
+  * Non-sinus rhythm
+  * Heart conduction blocks
+  * Previously unknown ischaemic changes that persist on repeat EKG:
+  * ST elevations
+  * T-wave inversions in a vascular distribution
+* Laboratory evidence of dysglycemia on GIST screening:
+
+  * Hemoglobin A1c ≥ 5.7%, and/or
+  * Fasting plasma glucose ≥ 100 mg/dL
+* Positive qualitative β-hCG (i.e., pregnancy test) in women of childbearing potential (both on the day of screening and on the first day of the DzST, prior to receipt of diazoxide doses)
+* Positive urine drug screen during GIST screening or on first day of DzST, except for lawfully prescribed medications and/or marijuana, provided that participant agrees to refrain from marijuana use during the period that they refrain from alcohol.
+* Liver function abnormalities (either of the following) on GIST screening:
+
+  * Transaminases (AST or ALT) \> 3.0 x the upper limit of normal
+  * Total bilirubin \> 1.25 x the upper limit of normal
+  * These exclusion criteria may be waived if the recruit's personal hepatologist approves an exception
+* Abnormal screening serum electrolytes (any of the following) on GIST screening:
+
+  * Abnormal sodium, potassium, chloride, or bicarbonate levels that are considered potentially significant according to the clinical judgment of the PI.
+  * Creatinine equating to estimated glomerular filtration rate \< 60 mL/min/1.73 m2
+* Uric acid level above the upper limit of normal
+* Women currently pregnant, measured by serum and/or urine β-hCG at DzST screening (and on first study visit of DzST)
+* Women currently breastfeeding
+* History of having met any of the American Diabetes Association's definitions of prediabetic state or diabetes mellitus (i.e., overt diabetes):
+
+  * Hemoglobin A1c ≥ 5.7%, or rapid rise in documented HbA1c values causing clinical concern for evolving insulin deficiency
+  * Plasma glucose ≥ 100 mg/dL after 8-h fast
+  * Plasma glucose of ≥ 140 mg/dL at 2 h after ingestion of a 75-g glucose load
+  * Random plasma glucose ≥ 200 mg/dL associated with typical hyperglycemic symptoms, diabetic ketoacidosis, or hyperglycemic-hyperosmolar state
+* History of gestational diabetes mellitus within the previous 5 years
+* Use of most antidiabetic medications within the 30 days prior to screening
+
+  * Excluded: thiazolidinediones, sulfonylureas, meglitinides, dipeptidyl peptidase-4 (DPP4) inhibitors, glucagon-like peptide-1 (GLP-1) receptor agonists, sodium-glucose cotransporter-2 (SGLT2) inhibitors, amylin mimetics, acarbose, insulin
+  * Metformin is acceptable provided that recruits meet all of the inclusion criteria at screening
+* Pancreatic pathology, including but not limited to:
+
+  * Pancreatic neoplasia, unless appropriately evaluated and considered benign and not producing hormones
+  * Chronic pancreatitis
+  * History of acute pancreatitis within the past 5 years
+* Cardiovascular diseases (N.B. uncomplicated hypertension is not exclusionary)
+* Atherosclerotic cardiovascular disease
+* Stable or unstable angina
+* Myocardial infarction
+* Ischaemic or hemorrhagic stroke
+* Peripheral arterial disease (claudication)
+* Use of dual antiplatelet therapy
+* History of percutaneous coronary intervention
+* Heart rhythm abnormalities (non-sinus)
+* Congestive heart failure of any New York Heart Association class
+* Severe valvular heart disease (e.g., aortic stenosis)
+* Pulmonary hypertension
+* Chronic kidney disease, Stage 3 or higher (estimated glomerular filtration rate \< 60 mL/min/1.73 m2), of any cause
+* Advanced or severe liver disease, including but not limited to:
+
+  * Advanced liver fibrosis, as determined by non-invasive testing
+  * Cirrhosis of any etiology
+  * Autoimmune hepatitis or other rheumatologic disorder affecting the liver
+  * Biliopathy (e.g., progressive sclerosing cholangitis, primary biliary cholangitis)
+  * Hepatocellular carcinoma
+  * Infiltrative disorders (e.g., sarcoidosis, hemochromatosis, Wilson disease)
+  * Gout
+  * Chronic viral illness (N.B. diagnosis based only on medical history; investigators will not test for any of these viruses at any point in this study)
+  * Hepatitis B virus (HBV), unless previously successfully eradicated with antiviral drugs that have been discontinued for at least 30 d prior to screening
+  * Hepatitis C virus (HCV) infection, unless previously successfully eradicated with antiviral drugs that have been discontinued for at least 30 d prior to screening
+  * Human immunodeficiency virus (HIV) infection
+* Active seizure disorder (including controlled with antiepileptic drugs)
+* Psychiatric diseases causing functional impairment that:
+
+  * Are or have been decompensated within 1 year of screening, and/or
+  * Require use of anti-dopaminergic antipsychotic drugs associated with significant weight gain/metabolic dysfunction (e.g., clozapine, olanzapine), monoamine oxidase inhibitors, tricyclic antidepressants, or lithium
+* Cushing syndrome (okay if considered in remission after treatment, provided that no exogenous corticosteroids or other ongoing treatment are required)
+* Adrenal insufficiency
+* Active malignancy, or hormonally active benign neoplasm, except allowances for:
+
+  * Non-melanoma skin cancer
+  * Differentiated thyroid cancer (AJCC Stage I only)
+* Clinical concern for increased risk of volume overload, including due to medications and/or heart/liver/kidney problems, as listed above
+* Use of certain medications currently or within 30 d prior to screening:
+
+  * Prescribed medications used for any of the indications in the preceding list of excluded conditions, or their use within 30 d prior to screening, except allowances for use of drugs prescribed for indications other than the exclusionary diagnoses/purposes listed above (e.g., antiepileptic drugs used for non-seizure indications, angiotensin converting enzyme inhibitors or angiotensin receptor blockers used for uncomplicated hypertension rather than for congestive heart failure, etc.)
+  * Oral or parenteral corticosteroids (at greater than prednisone 5 mg daily, or equivalent) for more than 3 days within the previous 30 days; topical and inhaled formulations are permitted
+* History of certain weight-loss (bariatric) surgery, including:
+
+  * Roux-en-Y gastric bypass
+  * Biliopancreatic diversion
+  * Restrictive procedures (lap band, sleeve gastrectomy) performed within the past 6 months
+* Clinical concern for alcohol overuse, including recent documented history during screening and/or participant report of regularly consuming more than 2 drinks per day for males or 1 drink per day for females.
+* Positive urine drug screen, with exceptions for:
+
+  * Lawfully prescribed medications
+  * Marijuana/THC positivity, provided that the participant agrees not to use it during the same period that they will abstain from alcohol
+* History of severe infection or ongoing febrile illness within 14 days of screening
+* Any other disease, condition, or laboratory value that, in the opinion of the investigator, would place the participant at an unacceptable risk and/or interfere with the analysis of study data.
+* Known allergy/hypersensitivity to any component of the medicinal product formulations (including sulfa drugs) or ongoing clinically important allergy/hypersensitivity as judged by the investigator.
+* Concurrent enrollment in another clinical study of any investigational drug therapy within 30 days prior to screening or within 5 half-lives of an investigational agent, whichever is longer. This restriction does not apply to participants who have participated in other studies performed by the PI (Dr. Cook).

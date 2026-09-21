@@ -1,0 +1,29 @@
+NCT ID: NCT06391983
+Brief Title: The Impact of Moderate Resistance Training on IMAT in Elderly Diabetes Patients Without Obesity
+Official Title: Effect of Resistance Training on Intermuscular Adipose Tissue in Patients With Type 2 Diabetes
+Status: COMPLETED
+Phase: NA
+Conditions: Type 2 Diabetes
+Sponsor: Lou Qingqing
+
+Brief Summary:
+Data shows that high intensity resistance training reduces Intermuscular Adipose Tissue (IMAT) in obesity adults. Whether moderate resistance training reduces IMAT for non-obese elderly patients with diabetes is not clear. Therefore, this study aimed to evaluate the impact of moderate resistance training on IMAT in elderly patients with type 2 diabetes, and the independent effect of IMAT reduction on metabolic outcomes.
+
+In this randomized control trial (RCT), 85 type 2 diabetes patients were randomized into the resistance training group (42 participants) and control group (43 participants) for 6-month intervention. The control group was not asked to participate in any regular exercise. However, the group attended online group educational sessions about diabetes self management once a month, and were asked to record their daily physical activities. Online mini program Wechat was used for communication. The intervention group attended online group education sessions on diabetes self management as the control group, as well as resistance exercise training sessions three times weekly; the sessions were approximately 40 minutes long and included 5 minutes of warm up, followed by 30 minutes of resistance exercises and 5 minutes of cool down. The resistance training consisted of ten upper-body and lower-body exercises using elastic band. The initial sessions were 1 to 2 sets of 6 to 8 repetitions at 45% of the one-repetition maximum (1 RM). It was increased progressively to 2 to 3 sets of 8 to 12 repetitions at approximately 50% -55% of 1 RM. The primary outcome were the changes of IMAT measured by computed tomography（CT）scan and magnetic resonance imaging (MRI) interactive decomposition of water and fat with echo asymmetry and least squares qualification sequence (IDEAL-IQ). The secondary outcomes were the changes in metabolic parameters.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Type 2 diabetes
+* ≥60 and \<75 years of age
+* Normal muscle strength
+* Body-mass index (BMI) ≤35
+* Glycosylated hemoglobin A1c (HbA1c) \< 9%
+
+Exclusion Criteria:
+
+* Patients who had severe chronic diabetes complications（e.g., stroke, myocardial infarction, end stage renal disease, proliferative retinopathy)
+* Cognitive impairments

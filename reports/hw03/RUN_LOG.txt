@@ -1,0 +1,37 @@
+Loaded 5 questions from reports/hw03/questions.yaml
+
+============================================================
+Building index for: token
+============================================================
+token: 258 chunks, avg length 935.0 chars
+  q1: top1_cosine=0.8224 mean@3_cosine=0.7731 recall_hit=True latency=5.16ms
+  q2: top1_cosine=0.8100 mean@3_cosine=0.6128 recall_hit=True latency=4.90ms
+  q3: top1_cosine=0.6228 mean@3_cosine=0.6050 recall_hit=True latency=4.92ms
+  q4: top1_cosine=0.6897 mean@3_cosine=0.5949 recall_hit=True latency=4.90ms
+  q5: top1_cosine=0.5319 mean@3_cosine=0.5371 recall_hit=False latency=4.78ms
+
+============================================================
+Building index for: semantic
+============================================================
+semantic: 135 chunks, avg length 1650.8 chars
+  q1: top1_cosine=0.7696 mean@3_cosine=0.6748 recall_hit=True latency=4.25ms
+  q2: top1_cosine=0.8028 mean@3_cosine=0.6088 recall_hit=True latency=4.11ms
+  q3: top1_cosine=0.6996 mean@3_cosine=0.6105 recall_hit=True latency=4.21ms
+  q4: top1_cosine=0.7131 mean@3_cosine=0.5925 recall_hit=True latency=4.13ms
+  q5: top1_cosine=0.5883 mean@3_cosine=0.5646 recall_hit=True latency=4.16ms
+
+============================================================
+Building index for: sentence_window
+============================================================
+sentence_window: 1063 chunks, avg length 209.7 chars
+  q1: top1_cosine=0.7674 mean@3_cosine=0.7291 recall_hit=True latency=13.02ms
+  q2: top1_cosine=0.8475 mean@3_cosine=0.7673 recall_hit=True latency=12.61ms
+  q3: top1_cosine=0.6408 mean@3_cosine=0.6238 recall_hit=True latency=9.75ms
+  q4: top1_cosine=0.7209 mean@3_cosine=0.6743 recall_hit=True latency=9.58ms
+  q5: top1_cosine=0.5858 mean@3_cosine=0.5856 recall_hit=True latency=9.64ms
+Wrote reports/hw03/raw/retrieval_token.csv
+Wrote reports/hw03/raw/retrieval_semantic.csv
+Wrote reports/hw03/raw/retrieval_sentence_window.csv
+Wrote reports/hw03/raw/retrieval_all.json
+Wrote reports/hw03/raw/chunk_stats.json
+Wrote reports/hw03/METRICS.md

@@ -1,0 +1,103 @@
+{
+  "run_timestamp": "2026-09-21T01:55:33.586007",
+  "checks_passed": 19,
+  "checks_total": 19,
+  "all_passed": true,
+  "results": [
+    {
+      "check": "Corpus directory exists with .txt files",
+      "status": "PASS",
+      "detail": "55 files found"
+    },
+    {
+      "check": "Corpus size >= 200KB",
+      "status": "PASS",
+      "detail": "217.9 KB"
+    },
+    {
+      "check": "SOURCES.md exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "CORPUS_MANIFEST.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Manifest file count matches corpus file count",
+      "status": "PASS",
+      "detail": "manifest says 55, found 55"
+    },
+    {
+      "check": "questions.yaml has 5 questions",
+      "status": "PASS",
+      "detail": "found 5"
+    },
+    {
+      "check": "All questions have required fields",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "At least 2 questions marked single_source",
+      "status": "PASS",
+      "detail": "4 found"
+    },
+    {
+      "check": "METRICS.md exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "METRICS.md mentions all 3 techniques",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw/retrieval_sentence_window.csv exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw/retrieval_token.csv exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw/retrieval_semantic.csv exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "raw/retrieval_all.json exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "retrieval_sentence_window.csv has 15 data rows (5 questions x top-3)",
+      "status": "PASS",
+      "detail": "found 15 rows"
+    },
+    {
+      "check": "retrieval_token.csv has 15 data rows (5 questions x top-3)",
+      "status": "PASS",
+      "detail": "found 15 rows"
+    },
+    {
+      "check": "retrieval_semantic.csv has 15 data rows (5 questions x top-3)",
+      "status": "PASS",
+      "detail": "found 15 rows"
+    },
+    {
+      "check": "RUN_LOG.txt exists",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "AI_USE.md exists",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

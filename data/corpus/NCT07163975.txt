@@ -1,0 +1,53 @@
+NCT ID: NCT07163975
+Brief Title: Complete Pulpotomy and Root Canal Treatment Patients With Irreversible Pulpitis With Type 2 Diabetes Mellitus
+Official Title: Success of Complete Pulpotomy and Root Canal Treatment and Quality of Life in Patients With Symptomatic Irreversible Pulpitis With Type 2 Diabetes Mellitus: A Randomized Clinical Trial
+Status: RECRUITING
+Phase: NA
+Conditions: Type 2 Diabetes Mellitus (T2DM), Irreversible Pulpitis
+Sponsor: Postgraduate Institute of Dental Sciences Rohtak
+
+Brief Summary:
+there is limited endodontic research on the effects of DM on pulp tissues. Diabetic human and animal histological research have demonstrated decreased wound repair, chronic pulp inflammation and reduced dentin bridge formation. To date, no human clinical trial has examined the impact of diabetes mellitus on teeth with irreversible pulpitis. Due to the paucity of data in the literature, there is a clinical dilemma whether to recommend root canal therapy or vital pulp therapy in diabetic patients with irreversible pulpitis.
+
+To the best of our knowledge, no prospective study has evaluated the outcome of complete pulpotomy versus root canal treatment in T2DM patients with irreversible pulpitis. The aim of this study is to compare and evaluate the success rates of pulpotomy and root canal treatment in type 2 diabetes mellitus patients in mature permanent teeth presenting with clinical symptoms of irreversible pulpitis.
+
+Detailed Description:
+Rationale: - Preservation of pulp vitality is a critical factor in long-term tooth survival. In extremely deep carious lesion with symptomatic irreversible pulpitis, vital pulp therapy procedures in the form of complete pulpotomy is a more conservative treatment strategy, based on the premise that a biologically active material placed in direct contact with the pulp wound can determine the pulpal response and result in the development of a reparative hard tissue bridge to preserve pulp vitality. Scientific literature indicates that type 2 diabetes mellitus has a detrimental effect on the wound healing capacity of dental pulp, however lacks evidence in clinical studies. to the best of our knowledge no study has been done till date comparing the outcome of complete pulpotomy and root canal treatment in patients with type 2 diabetes mellitus with clinical signs of irreversible pulpitis.
+
+Aim- To compare the outcome of complete pulpotomy and root canal treatment in mandibular permanent posterior teeth with clinical signs indicative of irreversible pulpitis in patients with type 2 diabetes mellitus
+
+Objectives-
+
+1. To evaluate the clinical and radiographic success of complete pulpotomy in type 2 diabetic patients in permanent mandibular posterior teeth with clinical signs indicative of irreversible pulpitis.
+2. To evaluate the clinical and radiographic success of root canal treatment in type 2 diabetic patients mandibular permanent posterior teeth with clinical signs indicative of irreversible pulpitis.
+
+Population - Permanent mandibular posterior teeth with diagnosis of symptomatic irreversible pulpitis in patients with Type 2 Diabetes Mellitus.
+
+Intervention/Treatment- complete pulpotomy
+
+Comparator- Root canal treatment
+
+Outcome- success of complete pulpotomy versus root canal treatment based on clinical and radiographic findings at 3, 6 and 12 months secondary outcome: assessment of quality of life 1 week, 6 and 12 months post treatment.
+
+Time frame - 1 year
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Type 2 diabetes mellitus defined by HbA1c levels 6.5% - 8% OR FPG ≥126 mg/dL OR 2-hour plasma glucose ≥200 mg/dL during an OGTT OR A random plasma glucose of 200 mg/dL or higher in a patient with classic symptoms of hyperglycemia or hyperglycemic crisis
+* Age between 18 - 70 years.
+* Permanent mandibular posterior teeth with clinical and radiographic signs and symptoms indicative of irreversible pulpitis (PAI score ≤2)
+* Tooth showing positive response to pulp sensibility testing with no tenderness on percussion.
+* BMI\<30 Kg/m2
+
+Exclusion Criteria:
+
+* Patients with immunocompromised diseases or chronic kidney disease
+* Smokers, pregnant and lactating women
+* Teeth with immature roots or retained deciduous tooth.
+* Bleeding could not be controlled in ≥5 minutes.
+* Tooth with signs and symptoms of apical periodontitis.
+* Teeth with procedural errors, cracks, fractured teeth
+* Tooth with probing depth more than 4mm.
+* Positive history of antibiotic use in the past 1 month or requiring antibiotic prophylaxis and/or analgesic usage in past 3 days.
+* Patients taking drugs that affect bone metabolism such as immune- suppressants, SSRIs, bisphosphonates, hormone replacement therapy

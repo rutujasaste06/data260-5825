@@ -1,0 +1,35 @@
+NCT ID: NCT03593746
+Brief Title: Effects of High Intensity Interval Training and Combined Training in Type 2 Diabetic (T2D) Patients
+Official Title: Effects of High Intensity Interval Training and Combined Training Associated With Photobiomodulation in Type 2 Diabetic (T2D) Patients: a Randomized Controlled Clinical Trial
+Status: UNKNOWN
+Phase: NA
+Conditions: Diabetes Mellitus, Type 2, High-Intensity Interval Training, Exercise Training, Hyperglycaemia Due to Type 2 Diabetes Mellitus
+Sponsor: University of Nove de Julho
+
+Brief Summary:
+Diabetes has become a widespread epidemic, primarily because of the increasing prevalence and incidence of type 2 diabetes (T2D). T2D is a significant cause of premature mortality and morbidity related to cardiovascular disease, blindness, kidney and nerve disease, and amputation.
+
+Physical activity improves blood glucose control and can prevent or delay T2D, along with positively affecting lipids, blood pressure, cardiovascular events, mortality, and quality of life. At present, although physical activity is a key element in the prevention and management of T2D, the most effective exercise strategy (intensity, duration, and type of exercise) for improving glucose control and reducing cardiometabolic risk in type 2 diabetes has not been defined.
+
+Studies with Light-Emitting Diode (LED) therapy have demonstrated its ability to promote pain relief, improve muscle and cardiopulmonary performance, minimize muscle fatigue, and stimulate wound healing. In relation to patients with T2D, who have prolonged conditions of hyperglycemia, studies to investigate the impact of photobiomodulation associated with physical training have not been found so far.
+
+The objective of this study is to investigate the effects of different types of physical training associated with Light-Emitting Diode (LED) therapy on cardiometabolic status and quality of life in patients with T2D.
+
+Detailed Description:
+Type 2 diabetes (T2D) is a significant health problem worldwide due to its high prevalence and mortality. It is chronic metabolic disorder characterized by hyperglycemia resulting from a relative deficiency in insulin through either reduced insulin secretion or reduced insulin action or both. The subsequent chronic hyperglycaemia causes glycation of tissues, which almost inevitably leads to acute disturbances in metabolism and long term end organ damage, especially the blood vessels, heart, and nerves, and severe health complications.
+
+Individuals with T2D have reduced aerobic fitness characterized by lower peak pulmonary oxygen uptake. Many potential mechanisms could explain this impaired response, for example, reduced muscle blood flow and capillary density, defects in muscular oxygen diffusion, and lower mitochondrial oxygen utilization and function.
+
+T2D is also associated with lower baroreflex sensitivity and abnormal chronotropic response, altering heart rate regulation. In addition, prolonged hyperglycemia in T2D causes a number of pathological changes in vascular endothelial cells, increasing the production of reactive oxygen species and inflammatory cytokines that cause mitochondrial dysfunction and oxidative damage.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Age ≥ 18 years;
+* Confirmed diagnosis of type 2 diabetes;
+* Sedentary lifestyle in the last six months, according to the criteria established by the American Heart Association (AHA).
+
+Exclusion Criteria:
+
+* Confirmed diagnosis of any (1) heart disease; (2) musculoskeletal disorder; (3) respiratory disease; (4) uncontrolled arterial hypertension; (5) peripheral neuropathy or (6) factors that limit the performance of any of the study evaluations and/or training.
+* During the study, individuals with a presence of less than 80% in the training sessions will be excluded.

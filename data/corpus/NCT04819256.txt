@@ -1,0 +1,53 @@
+NCT ID: NCT04819256
+Brief Title: Primary Care Based Integrated Community Care Team Intervention
+Official Title: PACE-It Study : Primary Care Based Integrated Community Care Team Intervention to Improve the Health Outcomes of Patients Living With Diabetes and Complex Needs - a Feasibility Study
+Status: TERMINATED
+Phase: NA
+Conditions: Diabetes, Diabetes Mellitus, Diabetes Mellitus, Type 2, Diabetes type2
+Sponsor: SingHealth Polyclinics
+
+Brief Summary:
+PACE-It study is a non-blinded, mix-method randomized controlled trial within a single site. This study aims to test the feasibility of implementing a complex intervention comprising of a) a Primary Care Based integrated community care team delivery of person centered care, b) supported by a care co-ordination platform using a mobile application and its effectiveness in improving the glycemic control of patients living with Diabetes and have complex needs.
+
+Detailed Description:
+PACE-It study aims to test the feasibility of implementing a complex intervention comprising of a) a Primary Care Based Community Care Team delivery of person centered care b) supported by a care co-ordination platform using a mobile application and its effectiveness in improving the glycemic control of patients living with Diabetes and complex needs.
+
+This is a non-blinded, mix-method randomised controlled trial within the Marine Parade Community. The primary outcome will be glycemic control measure by the Glycated Haemoglobin (HbA1c). Secondary outcomes include blood pressure, LDL-cholesterol, Patient Activation Measure, Medication Adherence and Quality of Life. Data on patient and provider satisfaction and implementation process will be collected by the Qualitative method.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Living within the designated geographical zone
+* 50 years and above
+* Satisfy the Medical Criteria below:
+
+  1. Diabetes with HbA1c ≥ 9% (within past 6 months), and
+  2. At least 1 complication
+
+     1. chronic kidney impairment stage 3 and above, or diabetes overt nephropathy,
+     2. ischaemic heart disease, or congestive cardiac failure,
+     3. peripheral arterial disease, or diabetes foot/ diabetes foot-related complications,
+     4. diabetic retinopathy/ treatment for retinopathy, and
+     5. stroke, or transient ischaemic attack
+* Satisfy at least 2 conditions in the psycho-social, functional or activation domain of which 1 criteria must be from the psycho-social domain:
+
+  1. Psycho-social issues
+
+     a. Lack of care giver support i. No care-giver (when indicated) ii. Care-giver skills gap/ stress iii. Inability of copy when patient is the care-giver b. Difficult relationships (family/ workplace/ social network) c. Social isolation/ lack of social connectivity i. Lives alone ii. Lack of social network support d. Financial i. Financial difficulty/ insecurity ii. Housing/ shelter issues iii. Poor money management
+  2. Functional
+
+     1. Clinical Frailty Score ≥ 4, requiring help in instrumental activities of daily living (iADL)
+     2. Requires assistance in ADL or iADL
+  3. Activation a. Lack of ability to manage health - disengaged or overwhelmed i. Anxiety or disease-related distress ii. Confusion or lack of understanding of care plans iii. Non-adherence to medications/ follow up
+* Patient gives consent to participate
+* For patients who may be seeing a Primary Care Physician (PCP) outside of the polyclinic for chronic disease management and where the PCP has indicated consent to co-manage the patient with the PACE-It team including the polyclinic physician
+* Patient must be willing to receive care in the polyclinic
+
+Exclusion Criteria:
+
+* Patients who are on follow up with Primary Care Physicians or General Practitioners elsewhere for management of their chronic conditions and they do not consent to co-managing patient with the PACE-It team
+* Patients who have severe cognitive impairment, depression or psychiatric conditions that interfere with the ability to engage with the healthcare team
+* Patients who are (i) not community ambulant or (ii) bed bound
+* Patients with terminal illness
+* Patients who have are in other programs or research studies
+* Patients who do not give consent

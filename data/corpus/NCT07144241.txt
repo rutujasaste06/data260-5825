@@ -1,0 +1,29 @@
+NCT ID: NCT07144241
+Brief Title: Mesenchymal Stromal/Stem Cells-Derived Exosomes (MSC-Exos) Therapy for Type 2 Diabetes Mellitus Patients
+Official Title: Mesenchymal Stromal/Stem Cells-Derived Exosomes (MSC-Exos) Therapy for Type 2 Diabetes Mellitus Patients
+Status: NOT_YET_RECRUITING
+Phase: PHASE2
+Conditions: Type 2 Diabetes Mellitus
+Sponsor: Universitas Indonesia
+
+Brief Summary:
+This is an open-label randomized controlled trial with a pre-and-post-test control group design to evaluate the effect of Mesenchymal Stromal/Stem Cells-Derived Exosomes (MSC-Exos) as an adjunctive therapy on glycemic control and clinical outcomes in patients with Type 2 Diabetes Mellitus (T2DM). The study aims to determine if the addition of exosome therapy to standard care can improve glycemic parameters (fasting blood glucose, 2-hour postprandial glucose, HbA1c, and C-peptide), quality of life, and inflammatory biomarkers (IL-6, IL-10, D-dimer, and CRP). The study will involve 50 subjects, randomly allocated into two groups: an intervention group and a control group. The intervention group will receive standard T2DM therapy plus a combination of exosomes (1 vial Exo-HWS + 1 vial Exo-HUVEC). The control group will receive standard T2DM therapy plus 1 vial Exo-HWS. The study duration is from June to December 2025.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Patients diagnosed with Type 2 Diabetes Mellitus.
+* Patients aged 40 to 65 years.
+* Patients who are willing to participate in the study and sign the informed consent form after receiving a detailed explanation of the research procedure.
+
+Exclusion Criteria:
+
+* Patients with severe comorbidities that could affect the immune response, such as autoimmune diseases, malignancies, and severe infections.
+* Patients currently undergoing anticoagulant therapy.
+* Patients currently undergoing immunosuppressive therapy.
+* Pregnant women, as the effects of exosome therapy on them have not been sufficiently studied.
+* Patients with a history of severe allergies to components of the exosome therapy.
+* Patients with CKD (Chronic Kidney Disease) on HD (Hemodialysis).

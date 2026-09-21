@@ -1,0 +1,27 @@
+NCT ID: NCT00318461
+Brief Title: To Compare the Effect of Liraglutide When Given Together With Metformin With the Effect of Metformin Given Alone and With the Effect of Glimepiride and Metformin Given Together
+Official Title: Liraglutide Effect and Action in Diabetes (LEAD-2): Effect on Glycaemic Control After Once Daily Administration of Liraglutide in Combination With Metformin Versus Metformin Monotherapy Versus Metformin and Glimepiride Combination Therapy in Subjects With Type 2 Diabetes
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes, Diabetes Mellitus, Type 2
+Sponsor: Novo Nordisk A/S
+
+Brief Summary:
+This trial is conducted in Europe, Oceania, Africa, Asia and South America. This trial is designed to show the effect of treatment with liraglutide when adding to existing metformin therapy and to compare it with the effects of metformin monotherapy and combination therapy of metformin and glimepiride. Two trial periods: A 6 month (26 weeks) randomised, double-blinded period followed by an 18 months open-label extension, in total 2 years (104 weeks).
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Subjects diagnosed with type 2 diabetes and treated with oral anti-diabetic drugs (OADs) for at least 3 months
+* HbA1c: 7.0-11.0 % (both incl.) in subjects on OAD monotherapy. 7.0-10.0 % (both incl.) in subjects on OAD combination therapy
+* Body Mass Index (BMI) less than or equal 40 kg/m2
+
+Exclusion Criteria:
+
+* Subjects treated with insulin within the last three months
+* Subjects with any serious medical condition
+* Females of child bearing potential who are pregnant, breast-feeding or have the intention of becoming pregnant or not using adequate contraceptive methods
+* Subjects using any drug (except for OADs), which in the Investigator's opinion could interfere with the glucose level (e.g. systemic corticosteroids)

@@ -1,0 +1,24 @@
+NCT ID: NCT03864705
+Brief Title: Compliance of Diabetic Patients Treated With Metformin
+Official Title: Compliance of Diabetic Patients Treated With Metformin
+Status: UNKNOWN
+Phase: 
+Conditions: Type 2 Diabetes Mellitus
+Sponsor: Institute for Clinical and Experimental Medicine
+
+Brief Summary:
+Metformin is the 1st line treatment in all subjects with type 2 diabetes without a contraindication to its use. The compliance with the use of metformin is not optimal mainly owing to relatively frequent gastrointestinal side effects. However, hard data about the real compliance are currently not available.
+
+In this trial we aim at assessing the compliance with metformin intake using a combination of serum metformin measurement and a specific questionnaire. We will further evaluate the impact of different pharmacological forms of metformin (standard vs. XR - extended release) on its compliance and try to identify common characteristics associated with reduced compliance.
+
+Detailed Description:
+
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Type 2 diabetes mellitus on metformin therapy for at least 3 months
+
+Exclusion Criteria:
+
+\-

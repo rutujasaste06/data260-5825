@@ -1,0 +1,36 @@
+NCT ID: NCT07503366
+Brief Title: Standardized Italian netwoRk Enrolling iNdividuals With Islet-Autoantibodies
+Official Title: Standardized Italian netwoRk Enrolling iNdividuals With Islet-Autoantibodies (SIRENA)
+Status: NOT_YET_RECRUITING
+Phase: 
+Conditions: Type 1 Diabetes (T1D), Autoantibodies, Hyperglycemia, Impaired Glucose Tolerance (Prediabetes)
+Sponsor: Società Italiana di Endocrinologia e Diabetologia Pediatrica
+
+Brief Summary:
+This project characterizes the longitudinal progression of children and adults who have tested positive for one or more islet cell autoantibodies across the early stages of type 1 diabetes (T1D). Despite advances in screening, limited evidence exists on how clinical, metabolic, and immunological markers evolve over time and predict progression to symptomatic disease. Using a screened cohort, participants are followed for up to 10 years with repeated standardized assessments. The study evaluates whether population-based screening can reduce diabetic ketoacidosis (DKA) at diagnosis and identify early predictors of progression to clinical T1D. Results are expected to improve risk stratification, inform surveillance strategies, and guide the timing of preventive interventions, with implications for clinical practice and health policy.
+
+Detailed Description:
+This is a multicenter, prospective, observational study of individuals who have tested positive for one or more islet cell autoantibodies and do not have clinical diabetes at enrolment. Participants undergo longitudinal follow-up for up to 10 years in accordance with standard clinical practice. Follow-up assessments include measures of glucose metabolism (fasting plasma glucose, HbA1c, oral glucose tolerance test \[OGTT\], and C-peptide), repeated islet cell autoantibody testing, and documentation of autoimmune comorbidities. Where available, continuous glucose monitoring (CGM) may be used to detect early dysglycemia. Psychological well-being is assessed at predefined intervals using validated instruments.
+
+Data are collected and managed through a secure REDCap platform with pseudonymization and built-in quality control procedures.
+
+No experimental interventions are planned; all evaluations are performed as part of routine care.
+
+The study is approved by the National ethics committee for clinical trials of public research bodies (EPR) and other national public institutions (CEN), and written informed consent is obtained from all participants or, where applicable, from a parent or legal guardian.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Individuals of any age who test positive for at least one islet autoantibody.
+* Absence of clinical symptoms of diabetes.
+* Do not meet ADA diagnostic criteria for diabetes (no overt hyperglycemia).
+* Ability to comply with follow-up procedures according to clinical practice.
+* Written informed consent obtained from the participant or, for minors, from a parent or legal guardian.
+
+Exclusion Criteria:
+
+* Prior diagnosis of type 1 or type 2 diabetes.
+* Fasting plasma glucose ≥126 mg/dL, HbA1c ≥6.5%, or OGTT 2-hour glucose ≥200 mg/dL.
+* Presence of symptoms suggestive of diabetes (e.g., polyuria, polydipsia, unexplained weight loss, fatigue, visual disturbances, acetone breath, Kussmaul respiration).
+* Any medical or psychological condition judged by the investigator to interfere with study participation or data reliability.
+* Inability or unwillingness to provide informed consent.

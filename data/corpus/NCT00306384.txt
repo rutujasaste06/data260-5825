@@ -1,0 +1,46 @@
+NCT ID: NCT00306384
+Brief Title: Long-term Safety of Alogliptin in Patients With Type 2 Diabetes Mellitus
+Official Title: A Long-Term, Open-Label Extension Study to Investigate the Long-Term Safety of SYR110322 (SYR-322) in Subjects With Type 2 Diabetes
+Status: COMPLETED
+Phase: PHASE3
+Conditions: Diabetes Mellitus
+Sponsor: Takeda
+
+Brief Summary:
+The purpose of this study is to evaluate the long-term safety of alogliptin, once daily (QD), following participation in 1 of 7 controlled studies in patients with type 2 diabetes mellitus.
+
+Detailed Description:
+SYR-322 (alogliptin) is an inhibitor of the dipeptidyl peptidase IV enzyme. Dipeptidyl peptidase IV is thought to be primarily responsible for the degradation of 2 peptide hormones released in response to nutrient ingestion, namely glucagon-like peptide-1 and glucose-dependent insulinotropic peptide. It is expected that inhibition of dipeptidyl peptidase IV will improve glycemic (glucose) control in patients with type 2 diabetes mellitus by prolonging the beneficial effects of glucagon-like peptide-1.
+
+The rising incidence of type 2 diabetes mellitus and the limitations of the currently available treatments suggest the need for new therapies for glycemic control. Studies have been undertaken in humans that evaluated the effects of directly augmenting glucagon-like peptide-1 and glucose-dependent insulinotropic peptide levels and of inhibiting the activity of dipeptidyl peptidase IV.
+
+This study is an extension of 7 controlled phase 3 studies of alogliptin. These phase 3 studies included 1 monotherapy study of alogliptin (SYR-322-PLC-010; NCT00286455); 4 placebo-controlled add-on studies of alogliptin, namely in combination with a sulfonylurea (SYR-322-SULF-007; NCT00286468), metformin (SYR-322-MET-008; NCT00286442), a thiazolidinedione (pioglitazone; SYR-322-TZD-009; NCT00286494), and insulin (SYR-322-INS-011; NCT00286429); 1 coadministration study with pioglitazone in combination with metformin (01-05-TL-322OPI-001; NCT00328627), and 1 coadministration study with pioglitazone (01-06-TL-322OPI-002; NCT00395512).
+
+The end of treatment or early withdrawal visit from the preceding study will be the screening visit for this study, after which enrolled patients will be required to commit to approximately 22 additional visits at the study center.
+
+Eligibility Criteria:
+Inclusion Criteria:
+
+* Females of childbearing potential who are sexually active must agree to use adequate contraception, and can neither be pregnant nor lactating from Screening throughout the duration of the study.
+* Type 2 diabetes mellitus and was enrolled in one of the following 7 controlled Phase III studies. The study will be open to all patients who completed one of these studies through the end-of-treatment visit:
+
+  * SYR-322-PLC-010 - NCT00286455
+  * SYR-322-SULF-007 - NCT00286468
+  * SYR-322-MET-008 - NCT00286442
+  * SYR-322-TZD-009 - NCT00286494
+  * SYR-322-INS-011 - NCT00286429
+  * 01-05-TL-322OPI-001 - NCT00328627
+  * 01-06-TL-322OPI-002 - NCT00395512
+* Alanine aminotransferase less than or equal to 3 times the upper limit of normal and serum creatinine less than or equal to 2.0 mg per dL.
+* Able and willing to monitor own blood glucose concentrations with a home glucose monitor.
+* No major illness or debility that in the investigator's opinion prohibits the patient from completing the study.
+
+Exclusion Criteria
+
+* The occurrence of any adverse event or condition during the controlled Phase III studies, which, in the opinion of the investigator, should exclude the patient from participating in the open-label extension.
+* Is required to take or intends to continue taking any disallowed medication, any prescription medication, herbal treatment or over-the counter medication that may interfere with evaluation of the study medication, including:
+
+  * Weight-loss drugs
+  * Investigational antidiabetics, additional dipeptidyl peptidase-4 (DPP-4) and glucagon-like peptide-1 (GLP 1) inhibitors
+  * Incretin Mimetics,
+  * Oral or systemically injected glucocorticoids.
