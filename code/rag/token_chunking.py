@@ -24,7 +24,8 @@ CHUNK_OVERLAP = 20
 
 
 def build_index():
-   
+    """Splits all documents into token-based chunks and builds an
+    in-memory vector index over them."""
     splitter = TokenTextSplitter(chunk_size=CHUNK_SIZE, chunk_overlap=CHUNK_OVERLAP)
     documents = load_documents()
     nodes = splitter.get_nodes_from_documents(documents)
