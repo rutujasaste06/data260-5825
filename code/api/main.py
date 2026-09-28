@@ -1,29 +1,32 @@
 from fastapi import FastAPI, Depends, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
-from sqlalchemy.orm import Session
+from sqlalchemy import event
+from sqlalchemy.orm import Session, joinedload
 from sqlalchemy.exc import IntegrityError
 
 from database import Base, db_session_basede26, get_db
 import crud
+import models
 import schema
-from auth import router as auth_router   #  HTML login pages
+from auth import router as auth_router   # HW3 HTML login pages, kept as-is
 
-# Create the tables in MySQL 
+# Create the tables in MySQL if they don't exist yet
 Base.metadata.create_all(bind=db_session_basede26)
 
 app = FastAPI(title="Clinical Trial Registry API")
 
-# Lets the React app (port 5173) call this API and send its cookie
+# Lets the React app call this API and send its cookie
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173","http://localhost:5174"],
+    allow_origins=["http://localhost:5173", "http://localhost:5174"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["X-SQL-Count"],
 )
 
-#  session cookie support
+# HW3 session cookie support (unchanged)
 app.add_middleware(
     SessionMiddleware,
     secret_key="s5825-dev-secret-change-later",
@@ -34,6 +37,14 @@ app.add_middleware(
 app.include_router(auth_router)
 
 PORT_BASE = 8425
+
+
+# ---------- Counts every SQL statement sent to MySQL (for Part 3) ----------
+SQL_COUNT = [0]
+
+@event.listens_for(db_session_basede26, "before_cursor_execute")
+def count_sql(conn, cursor, statement, parameters, context, executemany):
+    SQL_COUNT[0] += 1
 
 
 # ---------- Gatekeeper: blocks requests without a valid session ----------
@@ -86,6 +97,34 @@ def logout(request: Request, response: Response, db: Session = Depends(get_db)):
         crud.delete_session(db, token)
     response.delete_cookie("session_id")
     return {"message": "logged out"}
+
+
+# ---------- Part 3: N+1 naive vs fixed list endpoints ----------
+@app.get("/trials-naive", response_model=list[schema.TrialWithSitesOut])
+def trials_naive(response: Response, limit: int = 10, db: Session = Depends(get_db),
+                 _s=Depends(require_session)):
+    start = SQL_COUNT[0]
+    trials = db.query(models.Trial).order_by(models.Trial.id).limit(limit).all()   # 1 query
+    result = []
+    for t in trials:
+        sites = db.query(models.TrialSite).filter(models.TrialSite.trial_id == t.id).all()  # +1 per record
+        result.append({
+            "id": t.id, "trial_title": t.trial_title, "nct_number": t.nct_number,
+            "sites": [{"id": s.id, "site_name": s.site_name, "city": s.city} for s in sites],
+        })
+    response.headers["X-SQL-Count"] = str(SQL_COUNT[0] - start)
+    return result
+
+
+@app.get("/trials-fixed", response_model=list[schema.TrialWithSitesOut])
+def trials_fixed(response: Response, limit: int = 10, db: Session = Depends(get_db),
+                 _s=Depends(require_session)):
+    start = SQL_COUNT[0]
+    trials = (db.query(models.Trial)
+                .options(joinedload(models.Trial.sites))   # one JOIN query
+                .order_by(models.Trial.id).limit(limit).all())
+    response.headers["X-SQL-Count"] = str(SQL_COUNT[0] - start)
+    return trials
 
 
 # ---------- Trials CRUD (all need a valid session) ----------

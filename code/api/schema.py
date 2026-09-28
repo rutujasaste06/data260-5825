@@ -29,3 +29,21 @@ class UserCreate(BaseModel):
 class LoginRequest(BaseModel):
     email: EmailStr
     password: str
+
+class SiteOut(BaseModel):
+    id: int
+    site_name: str
+    city: str
+
+    class Config:
+        from_attributes = True
+
+
+class TrialWithSitesOut(BaseModel):
+    id: int
+    trial_title: str
+    nct_number: str
+    sites: list[SiteOut] = []
+
+    class Config:
+        from_attributes = True

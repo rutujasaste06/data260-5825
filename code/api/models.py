@@ -2,13 +2,14 @@ from sqlalchemy import Column, Integer, String, DateTime, ForeignKey, Text
 from sqlalchemy.sql import func
 from database import Base
 
-
+from sqlalchemy.orm import relationship
 class Trial(Base):
     __tablename__ = "trials"
 
     id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    trial_title = Column(String(255), nullable=False)      # primary field
-    nct_number = Column(String(50), nullable=False)        # secondary field
+    trial_title = Column(String(255), nullable=False)
+    nct_number = Column(String(50), nullable=False)
+    sites = relationship("TrialSite", cascade="all, delete-orphan", passive_deletes=True)
 
 
 class User(Base):
@@ -27,3 +28,11 @@ class SessionToken(Base):
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     created_at = Column(DateTime, server_default=func.now())
     expires_at = Column(DateTime, nullable=False)
+
+class TrialSite(Base):
+    __tablename__ = "trial_sites"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    trial_id = Column(Integer, ForeignKey("trials.id", ondelete="CASCADE"), nullable=False)
+    site_name = Column(String(255), nullable=False)
+    city = Column(String(100), nullable=False)
