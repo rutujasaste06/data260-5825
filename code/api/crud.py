@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 import models
 import schema
 
-SESSION_TTL_MINUTES = 0.5
+SESSION_TTL_MINUTES = 30
 
 
 # ---------- Trials ----------

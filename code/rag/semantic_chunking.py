@@ -12,8 +12,7 @@ BREAKPOINT_PERCENTILE_THRESHOLD = 95
 
 
 def build_index():
-    """Splits all documents into semantically coherent chunks and builds
-    an in-memory vector index over them."""
+    
     embed_model = get_embed_model()
     splitter = SemanticSplitterNodeParser(
         buffer_size=BUFFER_SIZE,
