@@ -17,7 +17,7 @@ app = FastAPI(title="Clinical Trial Registry API")
 # Lets the React app (port 5173) call this API and send its cookie
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["http://localhost:5173","http://localhost:5174"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
