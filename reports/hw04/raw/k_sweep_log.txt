@@ -1,0 +1,91 @@
+==========================================================================================
+Q2  k=1
+
+QUESTION: What is the name of the HW4 session cookie, and how long is the HW3 idle timeout?
+  [1] score=0.8052 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+
+  (B) Basic RAG   : **Name of the HW4 session cookie:** The question does not provide specific information about the HW4 session cookie, so we cannot determine its name based on the given context.
+
+**HW3 idle timeout:** The HW3 idle timeout is **5 minutes (300 seconds)**.
+  (C) Context RAG : The name of the HW4 session cookie is not provided in the context [1]. The HW3 idle timeout is 5 minutes (max_age of 300 seconds) [1].  [kept 1 of 1 chunks]
+==========================================================================================
+Q2  k=3
+
+QUESTION: What is the name of the HW4 session cookie, and how long is the HW3 idle timeout?
+  [1] score=0.8052 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [2] score=0.7954 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#2
+      d, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.  A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the ...
+  [3] score=0.6539 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+
+  (B) Basic RAG   : The name of the HW4 session cookie is **`session_id`**.
+
+The HW3 idle timeout is **5 minutes (300 seconds)**.
+  (C) Context RAG : The name of the HW4 session cookie is session_id [3]. The HW3 idle timeout is 5 minutes [1].  [kept 3 of 3 chunks]
+==========================================================================================
+Q2  k=5
+
+QUESTION: What is the name of the HW4 session cookie, and how long is the HW3 idle timeout?
+  [1] score=0.8052 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [2] score=0.7954 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#2
+      d, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.  A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the ...
+  [3] score=0.6539 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+  [4] score=0.6280 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#1
+      e is marked HttpOnly, SameSite=lax and Secure. The dashboard page sends the header Cache-Control: no-store, and a small pageshow script reloads the page when the browser back-forward cache restores it...
+  [5] score=0.6264 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+
+  (B) Basic RAG   : The name of the HW4 session cookie is **`session_id`**, and the HW3 idle timeout is **300 seconds (5 minutes)**.
+  (C) Context RAG : The name of the HW4 session cookie is session_id [3]. The HW3 idle timeout is 5 minutes [1].  [kept 5 of 5 chunks]
+==========================================================================================
+Q3  k=1
+
+QUESTION: How do the HW3 and HW4 sessions differ in where the session data is stored?
+  [1] score=0.7324 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+
+  (B) Basic RAG   : **Answer:**  
+In HW3, session data was likely stored in a cookie on the client side (browser), whereas in HW4, session data is stored in a database table (the `sessions` table), with the session token acting as the primary key and the `user_id` linking the session to a user. This change reflects a shift from client-side session storage to server-side session storage using a database.
+  (C) Context RAG : The context provided does not contain information about HW3 sessions. The context only describes the database setup for HW4, mentioning that session data is stored in the sessions table [1]. There is no information provided about where session data is stored for HW3. 
+
+I cannot answer this question from the provided documents.  [kept 1 of 1 chunks]
+==========================================================================================
+Q3  k=3
+
+QUESTION: How do the HW3 and HW4 sessions differ in where the session data is stored?
+  [1] score=0.7324 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+  [2] score=0.7196 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [3] score=0.6675 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+
+  (B) Basic RAG   : **Answer:**  
+In **HW3**, session data is stored in a **signed cookie** named `s5825_session` on the client side (browser), while in **HW4**, session data is stored in a **database table** (the `sessions` table) on the server side.
+  (C) Context RAG : HW3 stores session data in a signed cookie named s5825_session [2]. HW4 stores session data in a database table named sessions [1].  [kept 3 of 3 chunks]
+==========================================================================================
+Q3  k=5
+
+QUESTION: How do the HW3 and HW4 sessions differ in where the session data is stored?
+  [1] score=0.7324 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+  [2] score=0.7196 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [3] score=0.6675 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+  [4] score=0.6635 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#2
+      d, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.  A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the ...
+  [5] score=0.6226 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#1
+      e is marked HttpOnly, SameSite=lax and Secure. The dashboard page sends the header Cache-Control: no-store, and a small pageshow script reloads the page when the browser back-forward cache restores it...
+
+  (B) Basic RAG   : **Answer:**  
+In **HW3**, session data is stored in a **signed cookie** named `s5825_session`, which is sent to the browser. This cookie is **not encrypted**, so its contents can be read by the user, but tampering is detected due to the signature.  
+
+In **HW4**, session data is stored in a **database table** called `sessions`, which contains the session token, user ID, creation time, and expiry time. The session token is stored **server-side** and is sent to the browser as an **HTTP-only cookie** named `session_id`. This approach keeps session data **secure and server-side**, preventing direct access by the client.
+  (C) Context RAG : HW3 stores session data in a signed cookie named s5825_session [2]. HW4 stores session data in a database table named sessions [3].  [kept 5 of 5 chunks]
+
+saved reports/hw04/raw/k_sweep_results.json

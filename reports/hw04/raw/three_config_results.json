@@ -1,0 +1,172 @@
+[
+  {
+    "id": "Q1",
+    "type": "one chunk",
+    "question": "How long does a HW4 session last?",
+    "expected": "30 minutes",
+    "source": "01_session_auth_hw4.txt",
+    "retrieved": [
+      {
+        "chunk_id": "01_session_auth_hw4.txt#2",
+        "score": 0.7595
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.6627
+      },
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.6506
+      }
+    ],
+    "kept_in_C": [
+      "01_session_auth_hw4.txt#2",
+      "02_session_hw3_legacy.txt#0",
+      "03_database_setup.txt#0"
+    ],
+    "A": "A \"HW4 session\" is not a standard term, and its meaning can vary depending on the context in which it is used. Here are a few possible interpretations:\n\n1. **Homework Session (HW4)**: If \"HW4\" refers to Homework 4 in a class or course, then the duration of a \"session\" could depend on the instructor's schedule. It might be a single class period (e.g., 50\u201375 minutes), or it could refer to the time students spend working on the assignment outside of class.\n\n2. **Software or Application Session**: If \"HW4\" is part of a software or application (e.g., a homework platform or learning management system), the session duration might be defined by the system. For example, some platforms might have time limits for completing assignments or taking quizzes.\n\n3. **Custom or Institutional Definition**: In some educational institutions or online learning platforms, \"HW4 session\" might be a specific term used internally, and the duration would be defined by the institution.\n\nIf you can provide more context (e.g., which course, platform, or institution you're referring to), I can give a more accurate answer.",
+    "B": "A **HW4 session lasts 30 minutes**. \n\nThis is explicitly stated in the context: *\"A HW4 session lasts 30 minutes on the server.\"* \n\nAdditionally, logging out deletes the session row and clears the cookie, which aligns with the behavior of session management in the system.",
+    "C": "A HW4 session lasts 30 minutes on the server [1]."
+  },
+  {
+    "id": "Q2",
+    "type": "two chunks",
+    "question": "What is the name of the HW4 session cookie, and how long is the HW3 idle timeout?",
+    "expected": "session_id; 5 minutes",
+    "source": "01_session_auth_hw4.txt + 02_session_hw3_legacy.txt",
+    "retrieved": [
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.8052
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#2",
+        "score": 0.7954
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6539
+      }
+    ],
+    "kept_in_C": [
+      "02_session_hw3_legacy.txt#0",
+      "01_session_auth_hw4.txt#2",
+      "01_session_auth_hw4.txt#0"
+    ],
+    "A": "The questions you've asked appear to be related to specific technical details of a web application or system, possibly from a course or lab (like HW4 and HW3). However, without additional context such as the specific course, platform, or system being referred to, it's not possible to provide exact answers.\n\nIf you're referring to a particular course or platform (e.g., a university course, a coding lab, or a specific web application), please provide more details, such as:\n\n- The name of the course or platform\n- Any relevant documentation or code snippets\n- The context in which HW4 and HW3 are mentioned\n\nWith that information, I can help you identify the session cookie name and the idle timeout duration.",
+    "B": "The name of the HW4 session cookie is **`session_id`**.\n\nThe HW3 idle timeout is **5 minutes (300 seconds)**.",
+    "C": "The name of the HW4 session cookie is session_id [3]. The HW3 idle timeout is 5 minutes [1]."
+  },
+  {
+    "id": "Q3",
+    "type": "similar info across documents",
+    "question": "How do the HW3 and HW4 sessions differ in where the session data is stored?",
+    "expected": "HW3: inside a signed cookie; HW4: in the sessions table in MySQL, cookie holds only a token",
+    "source": "01_session_auth_hw4.txt + 02_session_hw3_legacy.txt",
+    "retrieved": [
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.7324
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.7196
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6675
+      }
+    ],
+    "kept_in_C": [
+      "03_database_setup.txt#0",
+      "02_session_hw3_legacy.txt#0",
+      "01_session_auth_hw4.txt#0"
+    ],
+    "A": "In the context of web development, particularly when using frameworks like **Express.js** or **Node.js**, the **HW3** and **HW4** sessions (which likely refer to different homework assignments or versions of a project) may differ in how they store session data. Here's a breakdown of how they might differ:\n\n---\n\n### \ud83d\udd39 **HW3: In-Memory Session Storage**\n\n- **Storage Location:** Session data is stored **in memory** (i.e., in the server's RAM).\n- **How It Works:**\n  - The session data is stored on the **server side**.\n  - Each session is stored in a **JavaScript object** in memory.\n  - The session ID is sent to the client (usually via a cookie), and the server uses that ID to retrieve the session data.\n- **Pros:**\n  - Simple to implement.\n  - No external dependencies.\n- **Cons:**\n  - Not scalable (data is lost if the server restarts).\n  - Not suitable for distributed systems (multiple servers can't share the same in-memory store).\n- **Example:**\n  ```js\n  app.use(session({\n    secret: 'mysecretkey',\n    resave: false,\n    saveUninitialized: false,\n    store: new MemoryStore() // or just default\n  }));\n  ```\n\n---\n\n### \ud83d\udd39 **HW4: Persistent Session Storage (e.g., Redis, MongoDB, etc.)**\n\n- **Storage Location:** Session data is stored in a **persistent storage system** like **Redis**, **MongoDB**, or a **database**.\n- **How It Works:**\n  - The session data is stored **externally**, not in memory.\n  - The server still uses a session ID (cookie) to reference the session, but the actual data is stored in a **database or cache**.\n  - This allows for **scalability**, **session persistence**, and **load balancing** across multiple servers.\n- **Pros:**\n  - Persistent across server restarts.\n  - Suitable for distributed systems.\n  - Can be shared across multiple servers.\n- **Cons:**\n  - Requires additional setup (e.g., Redis server, database).\n  - Slightly more complex to implement.\n- **Example:**\n  ```js\n  app.use(session({\n    secret: 'mysecretkey',\n    resave: false,\n    saveUninitialized: false,\n    store: new RedisStore({ host: 'localhost', port: 6379 }) // or MongoDB store\n  }));\n  ```\n\n---\n\n### \u2705 **Summary of Differences**\n\n| Feature | HW3 (In-Memory) | HW4 (Persistent) |\n|--------|------------------|-------------------|\n| **Storage Location** | In server memory | In external storage (Redis, DB, etc.) |\n| **Persistence** | Not persistent (lost on restart) | Persistent |\n| **Scalability** | Not scalable | Scalable |\n| **Distributed Systems** | Not suitable | Suitable |\n| **Complexity** | Simple | More complex |\n| **Use Case** | Small, local apps | Larger, distributed apps |\n\n---\n\nIf you're referring to a **specific framework or course**, let me know, and I can tailor the explanation further!",
+    "B": "**Answer:**  \nIn **HW3**, session data is stored in a **signed cookie** named `s5825_session` on the client side (browser), while in **HW4**, session data is stored in a **database table** (the `sessions` table) on the server side.",
+    "C": "HW3 stores session data in a signed cookie named s5825_session [2]. HW4 stores session data in a database table named sessions [1]."
+  },
+  {
+    "id": "Q4",
+    "type": "ambiguous",
+    "question": "How long does the session last?",
+    "expected": "ambiguous: HW3 is 5 minutes, HW4 is 30 minutes",
+    "source": "01_session_auth_hw4.txt + 02_session_hw3_legacy.txt",
+    "retrieved": [
+      {
+        "chunk_id": "01_session_auth_hw4.txt#2",
+        "score": 0.6828
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6347
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.623
+      }
+    ],
+    "kept_in_C": [
+      "01_session_auth_hw4.txt#2",
+      "01_session_auth_hw4.txt#0",
+      "02_session_hw3_legacy.txt#0"
+    ],
+    "A": "The duration of a session can vary depending on the context. Here are a few common examples:\n\n1. **Online Meetings or Webinars**: Typically last from 30 minutes to several hours, depending on the agenda.\n2. **Therapy or Counseling Sessions**: Usually last 45 to 60 minutes.\n3. **Classroom Sessions**: Can range from 45 minutes to 2 hours, depending on the institution and subject.\n4. **Workshops or Training Sessions**: Often last 1 to 3 hours.\n5. **Video Calls**: Can be as short as 10 minutes or as long as several hours.\n\nIf you're referring to a specific type of session (e.g., a therapy session, a Zoom meeting, a class), please provide more details so I can give you a more accurate answer.",
+    "B": "The session lasts **30 minutes**.\n\n### Explanation:\n- The **HW4** session lasts **30 minutes** on the server.\n- When a user logs in, a session token is created and stored in the `sessions` table with an **expiry time** set to 30 minutes from creation.\n- If the session expires (after 30 minutes), the server returns a **401 Unauthorized** response with the message *\"Session expired or invalid\"*, and the expired session row is deleted from the database.\n- Logging out explicitly deletes the session row and clears the cookie.\n\nIn contrast, **HW3** uses a different session handling mechanism with a **5-minute idle timeout**, but that is unrelated to the **HW4** session duration.",
+    "C": "The session lasts 30 minutes [1]. \n\nThe HW3 idle timeout is 5 minutes [3]."
+  },
+  {
+    "id": "Q5",
+    "type": "not in documents",
+    "question": "What was the p99 latency of the fixed endpoint at page size 200 in the second measurement run?",
+    "expected": "REFUSE (p99 is not in the documents)",
+    "source": "none",
+    "retrieved": [
+      {
+        "chunk_id": "04_n_plus_one.txt#2",
+        "score": 0.664
+      },
+      {
+        "chunk_id": "04_n_plus_one.txt#3",
+        "score": 0.6227
+      },
+      {
+        "chunk_id": "03_database_setup.txt#2",
+        "score": 0.5792
+      }
+    ],
+    "kept_in_C": [
+      "04_n_plus_one.txt#2",
+      "04_n_plus_one.txt#3",
+      "03_database_setup.txt#2"
+    ],
+    "A": "To answer your question about the **p99 latency** of the fixed endpoint at **page size 200** in the **second measurement run**, I would need access to the specific data or results from that measurement run.\n\nSince I don't have access to external data or previous measurement runs, I can't provide the exact value. If you can share the relevant data or results (e.g., a table, graph, or log), I\u2019d be happy to help you extract the p99 latency for that specific case.",
+    "B": "The question asks for the **p99 latency of the fixed endpoint at page size 200 in the second measurement run**.\n\nFrom the context:\n\n- For **page size 200**, the **latency** for the **fixed endpoint** is given as **2.43 ms**.\n- The **p99 latency** is **computed from the 30 values**, and in this case, it is **reported as 2.43 ms**.\n\nTherefore, the **p99 latency of the fixed endpoint at page size 200** is:\n\n**Answer: 2.43 ms**.",
+    "C": "I cannot answer this question from the provided documents."
+  },
+  {
+    "id": "Q6",
+    "type": "unrelated",
+    "question": "What is the capital of France?",
+    "expected": "REFUSE",
+    "source": "none",
+    "retrieved": [
+      {
+        "chunk_id": "03_database_setup.txt#1",
+        "score": 0.3994
+      },
+      {
+        "chunk_id": "05_react_client.txt#0",
+        "score": 0.3729
+      },
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.3692
+      }
+    ],
+    "kept_in_C": [],
+    "A": "The capital of France is Paris.",
+    "B": "Paris.",
+    "C": "I cannot answer this question from the provided documents."
+  }
+]

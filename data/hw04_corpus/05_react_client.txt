@@ -1,0 +1,7 @@
+React client for the Clinical Trial Registry
+
+The frontend is a React app built with Vite and React Router. It has five pages: Login.jsx, Home.jsx, CreateRecord.jsx, UpdateRecord.jsx and DeleteRecord.jsx. The routes are / for the list, /login, /create, /update/:id and /delete/:id.
+
+App.jsx is the hub. It keeps the login state and the list of trials with useState, loads data with useEffect, and passes the functions onAdd, onUpdate and onDelete down to the pages as props. After each change it calls navigate to return to the home page.
+
+The React dev server runs on port 5173 by default, or on the next free port such as 5174. It calls the FastAPI backend on port 8425 through axios with withCredentials set to true, so the browser sends the session_id cookie. When the user is not logged in, Home.jsx shows the message Login required and the Add Trial link is hidden. On page load, App.jsx calls /auth/me to find out whether the cookie is still valid.

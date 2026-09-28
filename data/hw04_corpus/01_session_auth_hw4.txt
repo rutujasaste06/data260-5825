@@ -1,0 +1,9 @@
+Session authentication in the Clinical Trial Registry (HW4)
+
+When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. The plain password is never stored. If the password matches, the server creates a random 64-character session token and saves it in the sessions table together with the user id, the creation time and an expiry time.
+
+The token is sent to the browser in an HTTP-only cookie named session_id. The cookie holds only the opaque token and never any user data. Because the cookie is HttpOnly, JavaScript running in the page cannot read it.
+
+Every protected route runs a function called require_session. It reads the session_id cookie and looks the token up in the sessions table. If no cookie is sent, the server answers 401 with the message Not logged in. If the token is unknown or has expired, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.
+
+A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the cookie.

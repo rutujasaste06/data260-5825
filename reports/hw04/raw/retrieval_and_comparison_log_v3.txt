@@ -1,0 +1,206 @@
+==========================================================================================
+Q1 (one chunk)
+
+QUESTION: How long does a HW4 session last?
+  [1] score=0.7595 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#2
+      d, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.  A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the ...
+  [2] score=0.6627 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [3] score=0.6506 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+
+  (A) No RAG      : A "HW4 session" is not a standard term, and its meaning can vary depending on the context in which it is used. Here are a few possible interpretations:
+
+1. **Homework Session (HW4)**: If "HW4" refers to Homework 4 in a class or course, then the duration of a "session" could depend on the instructor's schedule. It might be a single class period (e.g., 50–75 minutes), or it could refer to the time students spend working on the assignment outside of class.
+
+2. **Software or Application Session**: If "HW4" is part of a software or application (e.g., a homework platform or learning management system), the session duration might be defined by the system. For example, some platforms might have time limits for completing assignments or taking quizzes.
+
+3. **Custom or Institutional Definition**: In some educational institutions or online learning platforms, "HW4 session" might be a specific term used internally, and the duration would be defined by the institution.
+
+If you can provide more context (e.g., which course, platform, or institution you're referring to), I can give a more accurate answer.
+  (B) Basic RAG   : A **HW4 session lasts 30 minutes**. 
+
+This is explicitly stated in the context: *"A HW4 session lasts 30 minutes on the server."* 
+
+Additionally, logging out deletes the session row and clears the cookie, which aligns with the behavior of session management in the system.
+  (C) Context RAG : A HW4 session lasts 30 minutes on the server [1].  [kept 3 of 3 chunks]
+==========================================================================================
+Q2 (two chunks)
+
+QUESTION: What is the name of the HW4 session cookie, and how long is the HW3 idle timeout?
+  [1] score=0.8052 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [2] score=0.7954 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#2
+      d, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.  A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the ...
+  [3] score=0.6539 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+
+  (A) No RAG      : The questions you've asked appear to be related to specific technical details of a web application or system, possibly from a course or lab (like HW4 and HW3). However, without additional context such as the specific course, platform, or system being referred to, it's not possible to provide exact answers.
+
+If you're referring to a particular course or platform (e.g., a university course, a coding lab, or a specific web application), please provide more details, such as:
+
+- The name of the course or platform
+- Any relevant documentation or code snippets
+- The context in which HW4 and HW3 are mentioned
+
+With that information, I can help you identify the session cookie name and the idle timeout duration.
+  (B) Basic RAG   : The name of the HW4 session cookie is **`session_id`**.
+
+The HW3 idle timeout is **5 minutes (300 seconds)**.
+  (C) Context RAG : The name of the HW4 session cookie is session_id [3]. The HW3 idle timeout is 5 minutes [1].  [kept 3 of 3 chunks]
+==========================================================================================
+Q3 (similar info across documents)
+
+QUESTION: How do the HW3 and HW4 sessions differ in where the session data is stored?
+  [1] score=0.7324 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+  [2] score=0.7196 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+  [3] score=0.6675 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+
+  (A) No RAG      : In the context of web development, particularly when using frameworks like **Express.js** or **Node.js**, the **HW3** and **HW4** sessions (which likely refer to different homework assignments or versions of a project) may differ in how they store session data. Here's a breakdown of how they might differ:
+
+---
+
+### 🔹 **HW3: In-Memory Session Storage**
+
+- **Storage Location:** Session data is stored **in memory** (i.e., in the server's RAM).
+- **How It Works:**
+  - The session data is stored on the **server side**.
+  - Each session is stored in a **JavaScript object** in memory.
+  - The session ID is sent to the client (usually via a cookie), and the server uses that ID to retrieve the session data.
+- **Pros:**
+  - Simple to implement.
+  - No external dependencies.
+- **Cons:**
+  - Not scalable (data is lost if the server restarts).
+  - Not suitable for distributed systems (multiple servers can't share the same in-memory store).
+- **Example:**
+  ```js
+  app.use(session({
+    secret: 'mysecretkey',
+    resave: false,
+    saveUninitialized: false,
+    store: new MemoryStore() // or just default
+  }));
+  ```
+
+---
+
+### 🔹 **HW4: Persistent Session Storage (e.g., Redis, MongoDB, etc.)**
+
+- **Storage Location:** Session data is stored in a **persistent storage system** like **Redis**, **MongoDB**, or a **database**.
+- **How It Works:**
+  - The session data is stored **externally**, not in memory.
+  - The server still uses a session ID (cookie) to reference the session, but the actual data is stored in a **database or cache**.
+  - This allows for **scalability**, **session persistence**, and **load balancing** across multiple servers.
+- **Pros:**
+  - Persistent across server restarts.
+  - Suitable for distributed systems.
+  - Can be shared across multiple servers.
+- **Cons:**
+  - Requires additional setup (e.g., Redis server, database).
+  - Slightly more complex to implement.
+- **Example:**
+  ```js
+  app.use(session({
+    secret: 'mysecretkey',
+    resave: false,
+    saveUninitialized: false,
+    store: new RedisStore({ host: 'localhost', port: 6379 }) // or MongoDB store
+  }));
+  ```
+
+---
+
+### ✅ **Summary of Differences**
+
+| Feature | HW3 (In-Memory) | HW4 (Persistent) |
+|--------|------------------|-------------------|
+| **Storage Location** | In server memory | In external storage (Redis, DB, etc.) |
+| **Persistence** | Not persistent (lost on restart) | Persistent |
+| **Scalability** | Not scalable | Scalable |
+| **Distributed Systems** | Not suitable | Suitable |
+| **Complexity** | Simple | More complex |
+| **Use Case** | Small, local apps | Larger, distributed apps |
+
+---
+
+If you're referring to a **specific framework or course**, let me know, and I can tailor the explanation further!
+  (B) Basic RAG   : **Answer:**  
+In **HW3**, session data is stored in a **signed cookie** named `s5825_session` on the client side (browser), while in **HW4**, session data is stored in a **database table** (the `sessions` table) on the server side.
+  (C) Context RAG : HW3 stores session data in a signed cookie named s5825_session [2]. HW4 stores session data in a database table named sessions [1].  [kept 3 of 3 chunks]
+==========================================================================================
+Q4 (ambiguous)
+
+QUESTION: How long does the session last?
+  [1] score=0.6828 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#2
+      d, the server answers 401 with the message Session expired or invalid, and an expired row is deleted.  A HW4 session lasts 30 minutes on the server. Logging out deletes the session row and clears the ...
+  [2] score=0.6347 source=01_session_auth_hw4.txt chunk_id=01_session_auth_hw4.txt#0
+      Session authentication in the Clinical Trial Registry (HW4)  When a user logs in with an email and a password, the FastAPI backend checks the password against a bcrypt hash stored in the users table. ...
+  [3] score=0.6230 source=02_session_hw3_legacy.txt chunk_id=02_session_hw3_legacy.txt#0
+      Session handling in the HW3 login pages  The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead o...
+
+  (A) No RAG      : The duration of a session can vary depending on the context. Here are a few common examples:
+
+1. **Online Meetings or Webinars**: Typically last from 30 minutes to several hours, depending on the agenda.
+2. **Therapy or Counseling Sessions**: Usually last 45 to 60 minutes.
+3. **Classroom Sessions**: Can range from 45 minutes to 2 hours, depending on the institution and subject.
+4. **Workshops or Training Sessions**: Often last 1 to 3 hours.
+5. **Video Calls**: Can be as short as 10 minutes or as long as several hours.
+
+If you're referring to a specific type of session (e.g., a therapy session, a Zoom meeting, a class), please provide more details so I can give you a more accurate answer.
+  (B) Basic RAG   : The session lasts **30 minutes**.
+
+### Explanation:
+- The **HW4** session lasts **30 minutes** on the server.
+- When a user logs in, a session token is created and stored in the `sessions` table with an **expiry time** set to 30 minutes from creation.
+- If the session expires (after 30 minutes), the server returns a **401 Unauthorized** response with the message *"Session expired or invalid"*, and the expired session row is deleted from the database.
+- Logging out explicitly deletes the session row and clears the cookie.
+
+In contrast, **HW3** uses a different session handling mechanism with a **5-minute idle timeout**, but that is unrelated to the **HW4** session duration.
+  (C) Context RAG : The session lasts 30 minutes [1]. 
+
+The HW3 idle timeout is 5 minutes [3].  [kept 3 of 3 chunks]
+==========================================================================================
+Q5 (not in documents)
+
+QUESTION: What was the p99 latency of the fixed endpoint at page size 200 in the second measurement run?
+  [1] score=0.6640 source=04_n_plus_one.txt chunk_id=04_n_plus_one.txt#2
+      easured requests. The number of SQL statements per request was read from the X-SQL-Count response header, which does not count the one session check query. Latency was measured with a timer around eac...
+  [2] score=0.6227 source=04_n_plus_one.txt chunk_id=04_n_plus_one.txt#3
+      or naive and 1.67 ms for fixed at size 10, 7.38 ms and 1.56 ms at size 50, and 25.13 ms and 2.43 ms at size 200. The speed-up was 2.3 times, 4.7 times and 10.3 times. The speed-up grows because every ...
+  [3] score=0.5792 source=03_database_setup.txt chunk_id=03_database_setup.txt#2
+      Before the index, EXPLAIN showed a table scan with an estimated cost of 514 over about 5077 rows. After the index, EXPLAIN showed an index lookup with an estimated cost of 0.35 and 1 row....
+
+  (A) No RAG      : To answer your question about the **p99 latency** of the fixed endpoint at **page size 200** in the **second measurement run**, I would need access to the specific data or results from that measurement run.
+
+Since I don't have access to external data or previous measurement runs, I can't provide the exact value. If you can share the relevant data or results (e.g., a table, graph, or log), I’d be happy to help you extract the p99 latency for that specific case.
+  (B) Basic RAG   : The question asks for the **p99 latency of the fixed endpoint at page size 200 in the second measurement run**.
+
+From the context:
+
+- For **page size 200**, the **latency** for the **fixed endpoint** is given as **2.43 ms**.
+- The **p99 latency** is **computed from the 30 values**, and in this case, it is **reported as 2.43 ms**.
+
+Therefore, the **p99 latency of the fixed endpoint at page size 200** is:
+
+**Answer: 2.43 ms**.
+  (C) Context RAG : The p99 latency of the fixed endpoint at page size 200 was 2.43 ms [2].  [kept 3 of 3 chunks]
+==========================================================================================
+Q6 (unrelated)
+
+QUESTION: What is the capital of France?
+  [1] score=0.3994 source=03_database_setup.txt chunk_id=03_database_setup.txt#1
+      le holds the session token as its id, the user_id, created_at and expires_at. The trial_sites table holds test data, with an id, a trial_id that points to a trial, a site_name and a city.  The databas...
+  [2] score=0.3729 source=05_react_client.txt chunk_id=05_react_client.txt#0
+      React client for the Clinical Trial Registry  The frontend is a React app built with Vite and React Router. It has five pages: Login.jsx, Home.jsx, CreateRecord.jsx, UpdateRecord.jsx and DeleteRecord....
+  [3] score=0.3692 source=03_database_setup.txt chunk_id=03_database_setup.txt#0
+      Database setup for HW4  The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and S...
+
+  (A) No RAG      : The capital of France is Paris.
+  (B) Basic RAG   : Paris.
+  (C) Context RAG : I cannot answer this question from the provided documents.  [kept 0 of 3 chunks]
+
+saved reports/hw04/raw/three_config_results.json

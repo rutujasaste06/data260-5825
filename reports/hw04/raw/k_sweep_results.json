@@ -1,0 +1,152 @@
+[
+  {
+    "id": "Q2",
+    "k": 1,
+    "retrieved": [
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.8052
+      }
+    ],
+    "kept_in_C": [
+      "02_session_hw3_legacy.txt#0"
+    ],
+    "B": "**Name of the HW4 session cookie:** The question does not provide specific information about the HW4 session cookie, so we cannot determine its name based on the given context.\n\n**HW3 idle timeout:** The HW3 idle timeout is **5 minutes (300 seconds)**.",
+    "C": "The name of the HW4 session cookie is not provided in the context [1]. The HW3 idle timeout is 5 minutes (max_age of 300 seconds) [1]."
+  },
+  {
+    "id": "Q2",
+    "k": 3,
+    "retrieved": [
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.8052
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#2",
+        "score": 0.7954
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6539
+      }
+    ],
+    "kept_in_C": [
+      "02_session_hw3_legacy.txt#0",
+      "01_session_auth_hw4.txt#2",
+      "01_session_auth_hw4.txt#0"
+    ],
+    "B": "The name of the HW4 session cookie is **`session_id`**.\n\nThe HW3 idle timeout is **5 minutes (300 seconds)**.",
+    "C": "The name of the HW4 session cookie is session_id [3]. The HW3 idle timeout is 5 minutes [1]."
+  },
+  {
+    "id": "Q2",
+    "k": 5,
+    "retrieved": [
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.8052
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#2",
+        "score": 0.7954
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6539
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#1",
+        "score": 0.628
+      },
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.6264
+      }
+    ],
+    "kept_in_C": [
+      "02_session_hw3_legacy.txt#0",
+      "01_session_auth_hw4.txt#2",
+      "01_session_auth_hw4.txt#0",
+      "02_session_hw3_legacy.txt#1",
+      "03_database_setup.txt#0"
+    ],
+    "B": "The name of the HW4 session cookie is **`session_id`**, and the HW3 idle timeout is **300 seconds (5 minutes)**.",
+    "C": "The name of the HW4 session cookie is session_id [3]. The HW3 idle timeout is 5 minutes [1]."
+  },
+  {
+    "id": "Q3",
+    "k": 1,
+    "retrieved": [
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.7324
+      }
+    ],
+    "kept_in_C": [
+      "03_database_setup.txt#0"
+    ],
+    "B": "**Answer:**  \nIn HW3, session data was likely stored in a cookie on the client side (browser), whereas in HW4, session data is stored in a database table (the `sessions` table), with the session token acting as the primary key and the `user_id` linking the session to a user. This change reflects a shift from client-side session storage to server-side session storage using a database.",
+    "C": "The context provided does not contain information about HW3 sessions. The context only describes the database setup for HW4, mentioning that session data is stored in the sessions table [1]. There is no information provided about where session data is stored for HW3. \n\nI cannot answer this question from the provided documents."
+  },
+  {
+    "id": "Q3",
+    "k": 3,
+    "retrieved": [
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.7324
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.7196
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6675
+      }
+    ],
+    "kept_in_C": [
+      "03_database_setup.txt#0",
+      "02_session_hw3_legacy.txt#0",
+      "01_session_auth_hw4.txt#0"
+    ],
+    "B": "**Answer:**  \nIn **HW3**, session data is stored in a **signed cookie** named `s5825_session` on the client side (browser), while in **HW4**, session data is stored in a **database table** (the `sessions` table) on the server side.",
+    "C": "HW3 stores session data in a signed cookie named s5825_session [2]. HW4 stores session data in a database table named sessions [1]."
+  },
+  {
+    "id": "Q3",
+    "k": 5,
+    "retrieved": [
+      {
+        "chunk_id": "03_database_setup.txt#0",
+        "score": 0.7324
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#0",
+        "score": 0.7196
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#0",
+        "score": 0.6675
+      },
+      {
+        "chunk_id": "01_session_auth_hw4.txt#2",
+        "score": 0.6635
+      },
+      {
+        "chunk_id": "02_session_hw3_legacy.txt#1",
+        "score": 0.6226
+      }
+    ],
+    "kept_in_C": [
+      "03_database_setup.txt#0",
+      "02_session_hw3_legacy.txt#0",
+      "01_session_auth_hw4.txt#0",
+      "01_session_auth_hw4.txt#2",
+      "02_session_hw3_legacy.txt#1"
+    ],
+    "B": "**Answer:**  \nIn **HW3**, session data is stored in a **signed cookie** named `s5825_session`, which is sent to the browser. This cookie is **not encrypted**, so its contents can be read by the user, but tampering is detected due to the signature.  \n\nIn **HW4**, session data is stored in a **database table** called `sessions`, which contains the session token, user ID, creation time, and expiry time. The session token is stored **server-side** and is sent to the browser as an **HTTP-only cookie** named `session_id`. This approach keeps session data **secure and server-side**, preventing direct access by the client.",
+    "C": "HW3 stores session data in a signed cookie named s5825_session [2]. HW4 stores session data in a database table named sessions [3]."
+  }
+]

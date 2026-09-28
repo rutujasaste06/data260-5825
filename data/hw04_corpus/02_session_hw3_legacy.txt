@@ -1,0 +1,7 @@
+Session handling in the HW3 login pages
+
+The HW3 pages (/login, /dashboard and /logout) use Starlette SessionMiddleware. The session data is stored inside a signed cookie named s5825_session instead of in a database table. The cookie is signed with a secret key so that tampering can be detected, but it is not encrypted, so its contents can be read by the browser user.
+
+The HW3 idle timeout is 5 minutes (max_age of 300 seconds). The cookie is marked HttpOnly, SameSite=lax and Secure. The dashboard page sends the header Cache-Control: no-store, and a small pageshow script reloads the page when the browser back-forward cache restores it, so a logged-out user cannot see a stale dashboard by pressing Back.
+
+The HW3 users are a small hard-coded list in auth.py. These pages were kept in HW4 so that the earlier work still runs.

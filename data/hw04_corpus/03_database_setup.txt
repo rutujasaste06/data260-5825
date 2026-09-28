@@ -1,0 +1,9 @@
+Database setup for HW4
+
+The application stores its data in a MySQL database named s5825_rel, where s5825 is the student prefix. The connection object in database.py is named db_session_basede26, and SQLAlchemy is used to talk to MySQL.
+
+There are four tables. The trials table holds the primary entity, with an auto-increment id, a trial_title and an nct_number. The users table holds id, name, a unique email and a password_hash. The sessions table holds the session token as its id, the user_id, created_at and expires_at. The trial_sites table holds test data, with an id, a trial_id that points to a trial, a site_name and a city.
+
+The database was seeded with SEED 5825 so the data is identical on every run. It contains 5000 trials and 200 trial_sites rows, and each site row belongs to one trial.
+
+One index was added: idx_trials_nct_number on the nct_number column of the trials table. Before the index, EXPLAIN showed a table scan with an estimated cost of 514 over about 5077 rows. After the index, EXPLAIN showed an index lookup with an estimated cost of 0.35 and 1 row.

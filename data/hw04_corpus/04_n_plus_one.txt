@@ -1,0 +1,11 @@
+The N+1 problem and its fix
+
+A list endpoint has the N+1 problem when it runs one query to load the list and then one extra query for every record to load that record's related data. The naive endpoint /trials-naive works this way. It loads the trials with one query and then, inside a loop, runs a separate SELECT on trial_sites for each trial.
+
+The fixed endpoint /trials-fixed uses SQLAlchemy joinedload. The trials and their sites are loaded together in a single JOIN query, so the number of SQL statements does not depend on the page size.
+
+Both endpoints return the same JSON. Each trial has a list called sites, which is empty for trials that have no site row. Both endpoints require a valid session cookie.
+
+How it was measured. A script logged in once and then sent 30 timed requests for each combination of page size (10, 50 and 200) and version (naive and fixed), which makes 180 measured requests. The number of SQL statements per request was read from the X-SQL-Count response header, which does not count the one session check query. Latency was measured with a timer around each request, and p50, p95 and p99 were computed from the 30 values.
+
+Results. The naive endpoint used 11, 51 and 201 SQL statements at page sizes 10, 50 and 200. The fixed endpoint used 1 statement at every page size. The median latency was 3.78 ms for naive and 1.67 ms for fixed at size 10, 7.38 ms and 1.56 ms at size 50, and 25.13 ms and 2.43 ms at size 200. The speed-up was 2.3 times, 4.7 times and 10.3 times. The speed-up grows because every extra record adds one more database round trip to the naive version.

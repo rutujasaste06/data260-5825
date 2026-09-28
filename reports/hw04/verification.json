@@ -1,0 +1,60 @@
+{
+  "homework": "HW4",
+  "SID4": "5825",
+  "commit_hash": "420a25c8e64718af904cff146949c5019dd1fba4",
+  "SEED": 5825,
+  "VERIFY_SEED": 265825,
+  "checks": [
+    {
+      "check": "backend responds on port 8425",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "login succeeds",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "check": "naive endpoint returns 5 trials",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "check": "fixed endpoint returns 5 trials",
+      "pass": true,
+      "detail": "status=200"
+    },
+    {
+      "check": "fixed endpoint uses fewer SQL statements than naive",
+      "pass": true,
+      "detail": "naive=51 fixed=1"
+    },
+    {
+      "check": "unauthenticated request rejected",
+      "pass": true,
+      "detail": "status=401"
+    },
+    {
+      "check": "corpus has 5 documents",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "three_config_results.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "k_sweep_results.json exists",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "evaluation_table.csv exists",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "all_passed": true
+}
