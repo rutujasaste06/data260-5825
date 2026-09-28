@@ -1,110 +1,125 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, Depends, HTTPException, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-
 from starlette.middleware.sessions import SessionMiddleware
-from auth import router as auth_router
+from sqlalchemy.orm import Session
+from sqlalchemy.exc import IntegrityError
+
+from database import Base, db_session_basede26, get_db
+import crud
+import schema
+from auth import router as auth_router   #  HTML login pages
+
+# Create the tables in MySQL 
+Base.metadata.create_all(bind=db_session_basede26)
 
 app = FastAPI(title="Clinical Trial Registry API")
 
-# Allow your webpage (opened as a local file) to talk to this server
+# Lets the React app (port 5173) call this API and send its cookie
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Session/cookie support for the login system 
+#  session cookie support
 app.add_middleware(
     SessionMiddleware,
-    secret_key="s5825-dev-secret-change-later",  # signs the cookie
-    session_cookie="s5825_session",                # namespaced with your PREFIX
-    max_age=300,                                    # idle timeout: 5 minutes
-    https_only=True,                                # sets the Secure flag
+    secret_key="s5825-dev-secret-change-later",
+    session_cookie="s5825_session",
+    max_age=300,
+    https_only=True,
 )
-
 app.include_router(auth_router)
 
-PORT_BASE = 8425  # SID4 5825 -> 8000 + (5825 mod 900)
+PORT_BASE = 8425
 
 
-# --Pydantic model-Valid trials fields defined with the specific datatypes 
-
-class Trial(BaseModel):    
-    trialTitle: str
-    nctNumber: str
-    submitterEmail: str
-    trialDescription: str
-    trialPhase: str
-
-#Trial record inserted in the db is assigned with an id as int
-class TrialRecord(Trial):
-    id: int
+# ---------- Gatekeeper: blocks requests without a valid session ----------
+def require_session(request: Request, db: Session = Depends(get_db)):
+    token = request.cookies.get("session_id")
+    if not token:
+        raise HTTPException(status_code=401, detail="Not logged in")
+    s = crud.get_session(db, token)
+    if not s:
+        raise HTTPException(status_code=401, detail="Session expired or invalid")
+    return s
 
 
-# --In-memory store having 2 sample records 
-
-trials_db: list[TrialRecord] = [
-    TrialRecord(
-        id=1,
-        trialTitle="Metformin Extended-Release for Type 2 Diabetes",
-        nctNumber="NCT04567890",
-        submitterEmail="researcher@sjsu.edu",
-        trialDescription="Evaluates efficacy and safety of extended-release metformin in adults with type 2 diabetes over 12 weeks.",
-        trialPhase="Phase II",
-    ),
-    TrialRecord(
-        id=2,
-        trialTitle="Aspirin Cardioprotective Study",
-        nctNumber="NCT04987654",
-        submitterEmail="researcher2@sjsu.edu",
-        trialDescription="Assesses low-dose aspirin's effect on cardiovascular event rates in older adults.",
-        trialPhase="Phase III",
-    ),
-]
-
-next_id = 3
+# ---------- Auth ----------
+@app.post("/auth/register")
+def register(payload: schema.UserCreate, db: Session = Depends(get_db)):
+    try:
+        user = crud.create_user(db, payload)
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(status_code=409, detail="Email already exists")
+    return {"id": user.id, "name": user.name, "email": user.email}
 
 
-# --Endpoints- POST,GET,PUT,DELETE
-
-@app.get("/trials")
-def list_trials():
-    return trials_db
-
-
-@app.get("/trials/search")
-def search_trials(q: str = ""):
-    q_lower = q.lower()
-    return [
-        t for t in trials_db
-        if q_lower in t.trialTitle.lower() or q_lower in t.nctNumber.lower()
-    ]
-
-
-@app.post("/trials")
-def add_trial(trial: Trial):
-    global next_id
-    new_record = TrialRecord(id=next_id, **trial.model_dump())
-    trials_db.append(new_record)
-    next_id += 1
-    return {"message": "Trial added", "trial": new_record}
+@app.post("/auth/login")
+def login(payload: schema.LoginRequest, response: Response, db: Session = Depends(get_db)):
+    user = crud.authenticate_user(db, payload.email, payload.password)
+    if not user:
+        raise HTTPException(status_code=401, detail="Invalid email or password")
+    s = crud.create_session(db, user.id)
+    response.set_cookie(
+        key="session_id",
+        value=s.id,          # random opaque token, no user data inside
+        httponly=True,
+        samesite="lax",
+        max_age=30 * 60,
+    )
+    return {"message": "logged in", "user_id": user.id, "name": user.name}
 
 
-@app.put("/trials/1")
-def update_trial_1(trial: Trial):
-    for i, t in enumerate(trials_db):
-        if t.id == 1:
-            trials_db[i] = TrialRecord(id=1, **trial.model_dump())
-            return {"message": "Trial 1 updated", "trial": trials_db[i]}
-    raise HTTPException(status_code=404, detail="Trial with ID 1 not found")
+@app.get("/auth/me")
+def me(session=Depends(require_session)):
+    return {"logged_in": True, "user_id": session.user_id}
 
 
-@app.delete("/trials/highest")
-def delete_highest_trial():
-    if not trials_db:
-        raise HTTPException(status_code=404, detail="No trials to delete")
-    highest = max(trials_db, key=lambda t: t.id)
-    trials_db.remove(highest)
-    return {"message": f"Deleted trial with highest ID ({highest.id})", "trial": highest}
+@app.post("/auth/logout")
+def logout(request: Request, response: Response, db: Session = Depends(get_db)):
+    token = request.cookies.get("session_id")
+    if token:
+        crud.delete_session(db, token)
+    response.delete_cookie("session_id")
+    return {"message": "logged out"}
+
+
+# ---------- Trials CRUD (all need a valid session) ----------
+@app.post("/trials", response_model=schema.TrialOut)
+def add_trial(payload: schema.TrialCreate, db: Session = Depends(get_db),
+              _s=Depends(require_session)):
+    return crud.create_trial(db, payload)
+
+
+@app.get("/trials", response_model=list[schema.TrialOut])
+def list_trials(db: Session = Depends(get_db), _s=Depends(require_session)):
+    return crud.get_trials(db)
+
+
+@app.get("/trials/{trial_id}", response_model=schema.TrialOut)
+def get_trial(trial_id: int, db: Session = Depends(get_db), _s=Depends(require_session)):
+    trial = crud.get_trial(db, trial_id)
+    if not trial:
+        raise HTTPException(status_code=404, detail="Trial not found")
+    return trial
+
+
+@app.put("/trials/{trial_id}", response_model=schema.TrialOut)
+def edit_trial(trial_id: int, payload: schema.TrialUpdate, db: Session = Depends(get_db),
+               _s=Depends(require_session)):
+    trial = crud.update_trial(db, trial_id, payload)
+    if not trial:
+        raise HTTPException(status_code=404, detail="Trial not found")
+    return trial
+
+
+@app.delete("/trials/{trial_id}", response_model=schema.TrialOut)
+def remove_trial(trial_id: int, db: Session = Depends(get_db), _s=Depends(require_session)):
+    trial = crud.delete_trial(db, trial_id)
+    if not trial:
+        raise HTTPException(status_code=404, detail="Trial not found")
+    return trial

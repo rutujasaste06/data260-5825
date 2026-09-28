@@ -9,9 +9,7 @@
 </div>
 
 <script>
-    // If this page is being shown from the browser's back-forward cache
-    // (a saved snapshot, not a fresh request), force a real reload so the
-    // server re-checks the session instead of showing stale content.
+
     window.addEventListener("pageshow", function (event) {
         if (event.persisted) {
             window.location.reload();
