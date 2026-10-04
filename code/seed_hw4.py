@@ -37,11 +37,11 @@ for i in range(N_TRIALS):
 db.add_all(trials)
 db.commit()
 
-ids = [t.id for t in trials]
-chosen = rng.sample(ids, N_SITES)
+ids = [t.id for t in trials]. # get all 5000 real trial id numbers
+chosen = rng.sample(ids, N_SITES). # randomly pick 200 of those ids
 sites = [
     models.TrialSite(
-        trial_id=tid,
+        trial_id=tid,        # this actually writes the real number in
         site_name=f"{rng.choice(CITIES)} {rng.choice(HOSPITALS)}",
         city=rng.choice(CITIES),
     )

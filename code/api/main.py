@@ -5,6 +5,7 @@ from sqlalchemy import event
 from sqlalchemy.orm import Session, joinedload
 from sqlalchemy.exc import IntegrityError
 
+
 from database import Base, db_session_basede26, get_db
 import crud
 import models
@@ -26,7 +27,7 @@ app.add_middleware(
     expose_headers=["X-SQL-Count"],
 )
 
-# HW3 session cookie support (unchanged)
+#  session cookie support 
 app.add_middleware(
     SessionMiddleware,
     secret_key="s5825-dev-secret-change-later",
@@ -97,6 +98,63 @@ def logout(request: Request, response: Response, db: Session = Depends(get_db)):
         crud.delete_session(db, token)
     response.delete_cookie("session_id")
     return {"message": "logged out"}
+
+# ---------- Sponsors CRUD (all need a valid session) ----------
+@app.post("/sponsors", response_model=schema.SponsorOut)
+def add_sponsor(payload: schema.SponsorCreate, db: Session = Depends(get_db),
+                 _s=Depends(require_session)):
+    try:
+        return crud.create_sponsor(db, payload)
+    except IntegrityError:
+        db.rollback()
+        raise HTTPException(status_code=409, detail="Email already exists")
+
+
+@app.get("/sponsors", response_model=list[schema.SponsorOut])
+def list_sponsors(skip: int = 0, limit: int = 20, db: Session = Depends(get_db),
+                   _s=Depends(require_session)):
+    return crud.get_sponsors(db, skip, limit)
+
+
+@app.get("/sponsors/{sponsor_id}", response_model=schema.SponsorOut)
+def get_sponsor(sponsor_id: int, db: Session = Depends(get_db),
+                 _s=Depends(require_session)):
+    sponsor = crud.get_sponsor(db, sponsor_id)
+    if not sponsor:
+        raise HTTPException(status_code=404, detail="Sponsor not found")
+    return sponsor
+
+
+@app.put("/sponsors/{sponsor_id}", response_model=schema.SponsorOut)
+def edit_sponsor(sponsor_id: int, payload: schema.SponsorUpdate, db: Session = Depends(get_db),
+                  _s=Depends(require_session)):
+    sponsor = crud.update_sponsor(db, sponsor_id, payload)
+    if not sponsor:
+        raise HTTPException(status_code=404, detail="Sponsor not found")
+    return sponsor
+
+
+@app.delete("/sponsors/{sponsor_id}", response_model=schema.SponsorOut)
+def remove_sponsor(sponsor_id: int, db: Session = Depends(get_db),
+                    _s=Depends(require_session)):
+    sponsor, reason = crud.delete_sponsor(db, sponsor_id)
+    if reason == "not_found":
+        raise HTTPException(status_code=404, detail="Sponsor not found")
+    if reason == "has_trials":
+        raise HTTPException(status_code=409, detail="Cannot delete sponsor: trials are still linked to it")
+    return sponsor
+
+
+# ---------- Relationship query: all trials for one sponsor ----------
+@app.get("/sponsors/{sponsor_id}/trials", response_model=list[schema.TrialOut])
+def trials_for_sponsor(sponsor_id: int, db: Session = Depends(get_db),
+                        _s=Depends(require_session)):
+    sponsor = crud.get_sponsor(db, sponsor_id)
+    if not sponsor:
+        raise HTTPException(status_code=404, detail="Sponsor not found")
+    return crud.get_trials_by_sponsor(db, sponsor_id)
+
+
 
 
 # ---------- Part 3: N+1 naive vs fixed list endpoints ----------

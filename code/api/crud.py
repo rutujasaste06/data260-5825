@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta
+from sqlalchemy.exc import IntegrityError
 import secrets
 
 import bcrypt
@@ -9,10 +10,64 @@ import schema
 
 SESSION_TTL_MINUTES = 30
 
+# ---------- Sponsors ----------
+def create_sponsor(db: Session, payload: schema.SponsorCreate):
+    sponsor = models.Sponsor(
+        sponsor_name=payload.sponsor_name,
+        contact_person=payload.contact_person,
+        email=payload.email,
+    )
+    db.add(sponsor)
+    db.commit()
+    db.refresh(sponsor)
+    return sponsor
+
+
+def get_sponsors(db: Session, skip: int = 0, limit: int = 20):
+    return db.query(models.Sponsor).order_by(models.Sponsor.id.asc()).offset(skip).limit(limit).all()
+
+
+def get_sponsor(db: Session, sponsor_id: int):
+    return db.query(models.Sponsor).filter(models.Sponsor.id == sponsor_id).first()
+
+
+def update_sponsor(db: Session, sponsor_id: int, payload: schema.SponsorUpdate):
+    sponsor = get_sponsor(db, sponsor_id)
+    if not sponsor:
+        return None
+    sponsor.sponsor_name = payload.sponsor_name
+    sponsor.contact_person = payload.contact_person
+    sponsor.email = payload.email
+    db.commit()
+    db.refresh(sponsor)
+    return sponsor
+
+def delete_sponsor(db: Session, sponsor_id: int):
+    sponsor = get_sponsor(db, sponsor_id)
+    if not sponsor:
+        return None, "not_found"
+
+    # Prevent deletion if any trial still points to this sponsor
+    linked_trials = db.query(models.Trial).filter(models.Trial.sponsor_id == sponsor_id).count()
+    if linked_trials > 0:
+        return None, "has_trials"
+
+    db.delete(sponsor)
+    db.commit()
+    return sponsor, None
+
+
+def get_trials_by_sponsor(db: Session, sponsor_id: int):
+    return db.query(models.Trial).filter(models.Trial.sponsor_id == sponsor_id).all()
 
 # ---------- Trials ----------
 def create_trial(db: Session, payload: schema.TrialCreate):
-    trial = models.Trial(trial_title=payload.trial_title, nct_number=payload.nct_number)
+    trial = models.Trial(
+        trial_title=payload.trial_title,
+        nct_number=payload.nct_number,
+        available_slots=payload.available_slots,
+        sponsor_id=payload.sponsor_id,
+    )
     db.add(trial)
     db.commit()
     db.refresh(trial)
@@ -33,6 +88,8 @@ def update_trial(db: Session, trial_id: int, payload: schema.TrialUpdate):
         return None
     trial.trial_title = payload.trial_title
     trial.nct_number = payload.nct_number
+    trial.available_slots = payload.available_slots
+    trial.sponsor_id = payload.sponsor_id
     db.commit()
     db.refresh(trial)
     return trial

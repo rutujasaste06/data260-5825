@@ -1,24 +1,27 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { deleteTrial } from "../store/trialsSlice";
 
-export default function DeleteRecord({ trials, onDelete }) {
+export default function DeleteRecord() {
   const { id } = useParams();
-  const existing = trials.find((t) => t.id === Number(id));
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const existing = useSelector((s) => s.trials.items.find((t) => t.id === Number(id)));
 
   if (!existing) return <p className="empty">Trial not found.</p>;
+
+  async function handleDelete() {
+    await dispatch(deleteTrial(Number(id)));
+    navigate("/");
+  }
 
   return (
     <div className="card narrow">
       <h2>Delete Trial #{id}</h2>
-      <p className="subtitle">This action cannot be undone.</p>
-      <p>
-        <strong>{existing.trial_title}</strong>{" "}
-        <span className="badge">{existing.nct_number}</span>
-      </p>
+      <p><strong>{existing.trial_title}</strong> <span className="badge">{existing.nct_number}</span></p>
       <div className="form-actions">
-        <button className="btn btn-danger" onClick={() => onDelete(Number(id))}>
-          Delete Trial
-        </button>
+        <button className="btn btn-danger" onClick={handleDelete}>Delete Trial</button>
         <Link className="btn btn-outline" to="/">Cancel</Link>
       </div>
     </div>

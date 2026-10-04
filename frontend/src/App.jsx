@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 import Login from "./pages/Login.jsx";
 import Home from "./pages/Home.jsx";
@@ -7,20 +8,13 @@ import CreateRecord from "./pages/CreateRecord.jsx";
 import UpdateRecord from "./pages/UpdateRecord.jsx";
 import DeleteRecord from "./pages/DeleteRecord.jsx";
 
-import {
-  me,
-  logout,
-  fetchTrials,
-  createTrial,
-  updateTrial,
-  deleteTrial,
-} from "./api/trialsApi.js";
+import { me, logout } from "./api/trialsApi.js";
+import { fetchTrials } from "./store/trialsSlice";
 
 export default function App() {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [auth, setAuth] = useState({ loggedIn: false, userId: null, name: "" });
-  const [trials, setTrials] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   // On page load: ask the backend if the cookie is still valid
   useEffect(() => {
@@ -29,36 +23,10 @@ export default function App() {
       .catch(() => setAuth({ loggedIn: false, userId: null, name: "" }));
   }, []);
 
-  // Load trials whenever login state changes
+  // Once logged in, tell Redux to load the trials
   useEffect(() => {
-    if (!auth.loggedIn) {
-      setTrials([]);
-      return;
-    }
-    setLoading(true);
-    fetchTrials()
-      .then(setTrials)
-      .catch(() => setAuth({ loggedIn: false, userId: null, name: "" }))
-      .finally(() => setLoading(false));
-  }, [auth.loggedIn]);
-
-  async function onAdd(newTrial) {
-    const created = await createTrial(newTrial);
-    setTrials((prev) => [...prev, created]);
-    navigate("/");
-  }
-
-  async function onUpdate(id, updated) {
-    const saved = await updateTrial(id, updated);
-    setTrials((prev) => prev.map((t) => (t.id === id ? saved : t)));
-    navigate("/");
-  }
-
-  async function onDelete(id) {
-    await deleteTrial(id);
-    setTrials((prev) => prev.filter((t) => t.id !== id));
-    navigate("/");
-  }
+    if (auth.loggedIn) dispatch(fetchTrials());
+  }, [auth.loggedIn, dispatch]);
 
   async function handleLogout() {
     await logout();
@@ -66,7 +34,7 @@ export default function App() {
     navigate("/");
   }
 
-    return (
+  return (
     <>
       <header className="navbar">
         <div className="navbar-inner">
@@ -76,9 +44,7 @@ export default function App() {
             {auth.loggedIn ? (
               <>
                 <Link to="/create">Add Trial</Link>
-                <button className="btn btn-light btn-sm" onClick={handleLogout}>
-                  Logout
-                </button>
+                <button className="btn btn-light btn-sm" onClick={handleLogout}>Logout</button>
               </>
             ) : (
               <Link to="/login">Login</Link>
@@ -89,11 +55,11 @@ export default function App() {
 
       <main className="container">
         <Routes>
-          <Route path="/" element={<Home trials={trials} loading={loading} auth={auth} />} />
+          <Route path="/" element={<Home auth={auth} />} />
           <Route path="/login" element={<Login setAuth={setAuth} />} />
-          <Route path="/create" element={<CreateRecord onAdd={onAdd} />} />
-          <Route path="/update/:id" element={<UpdateRecord trials={trials} onUpdate={onUpdate} />} />
-          <Route path="/delete/:id" element={<DeleteRecord trials={trials} onDelete={onDelete} />} />
+          <Route path="/create" element={<CreateRecord />} />
+          <Route path="/update/:id" element={<UpdateRecord />} />
+          <Route path="/delete/:id" element={<DeleteRecord />} />
         </Routes>
       </main>
     </>
