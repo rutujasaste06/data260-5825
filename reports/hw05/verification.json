@@ -1,0 +1,42 @@
+{
+  "homework": 5,
+  "sid4": 5825,
+  "commit_hash": "1264db4d6e8a097b1065da73f41a4f5dfe037c1c",
+  "model": "qwen3:8b (Ollama)",
+  "seed": 5825,
+  "verify_seed": 265825,
+  "run_at": "2026-10-05T11:58:24",
+  "checks": [
+    {
+      "check": "FastAPI backend responds on port 8425",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "trials MCP server lists 3 tools and answers a call",
+      "passed": true,
+      "detail": "['search_trials', 'get_trial', 'count_trials_by_sponsor']"
+    },
+    {
+      "check": "meals MCP server lists 4 tools and answers a call",
+      "passed": true,
+      "detail": "['search_meals_by_name', 'meals_by_ingredient', 'random_meal', 'meal_details']"
+    },
+    {
+      "check": "offline tests all pass",
+      "passed": true,
+      "detail": "['11/11 tests passed']"
+    },
+    {
+      "check": "150 fault-injection records saved",
+      "passed": true,
+      "detail": "150"
+    },
+    {
+      "check": "agent_runs.jsonl exists",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "all_passed": true
+}

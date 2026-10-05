@@ -1,0 +1,23 @@
+{
+  "verify_seed": 265825,
+  "summary": [
+    {
+      "injected_failure_rate": "0%",
+      "success_rate_pct": 100.0,
+      "mean_latency_ms": 0.99,
+      "p99_latency_ms": 3.1
+    },
+    {
+      "injected_failure_rate": "20%",
+      "success_rate_pct": 100.0,
+      "mean_latency_ms": 35.4,
+      "p99_latency_ms": 355.13
+    },
+    {
+      "injected_failure_rate": "50%",
+      "success_rate_pct": 94.0,
+      "mean_latency_ms": 103.93,
+      "p99_latency_ms": 355.86
+    }
+  ]
+}

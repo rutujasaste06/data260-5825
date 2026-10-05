@@ -24,7 +24,7 @@ HOSPITALS = ["General Hospital", "University Medical Center", "Research Institut
 Base.metadata.create_all(bind=db_session_basede26)
 db = SessionLocal()
 
-# start clean so the same SEED always gives the same data
+
 db.execute(text("DELETE FROM trial_sites"))
 db.execute(text("DELETE FROM trials"))
 db.execute(text("ALTER TABLE trials AUTO_INCREMENT = 1"))
@@ -41,7 +41,7 @@ ids = [t.id for t in trials] # get all 5000 real trial id numbers
 chosen = rng.sample(ids, N_SITES)  # randomly pick 200 of those ids
 sites = [
     models.TrialSite(
-        trial_id=tid,        # this actually writes the real number in
+        trial_id=tid,        
         site_name=f"{rng.choice(CITIES)} {rng.choice(HOSPITALS)}",
         city=rng.choice(CITIES),
     )
