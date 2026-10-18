@@ -1,0 +1,36 @@
+<!-- last_consolidated: 2026-10-18T00:26:53.301451+00:00 -->
+- (2026-09-01) User name is Rutuja Saste and studies at SJSU.
+- (2026-09-01) Course is DATA 260 in the MSADI program.
+- (2026-09-02) Project domain is Clinical Trial Listings.
+- (2026-09-02) SID4 is 5825.
+- (2026-09-06) Collaborators are Sbnikitha and supriyaselvanganesan.
+- (2026-09-07) The Part 1 collection is trials_docs.
+- (2026-09-08) Memory collections are messages, summaries and episodes.
+- (2026-09-10) The virtual environment is in the venv folder.
+- (2026-09-12) Homework 5 was tagged hw5.
+- (2026-09-13) Trial statuses are recruiting, active, completed and withdrawn.
+- (2026-09-13) Trial phases are phase1 to phase4.
+- (2026-09-14) Dates are stored as ISODate in MongoDB.
+- (2026-09-16) The backend is written in Python 3.11 with FastAPI.
+- (2026-09-18) User likes short answers in bullets.
+- (2026-09-19) The model used locally is qwen3:8b.
+- (2026-09-19) User uses a MacBook with an M5 chip.
+- (2026-09-20) The data lives in MongoDB.
+- (2026-09-20) The default short-term window is 12 messages.
+- (2026-09-21) Session summaries run every 5 user messages.
+- (2026-09-21) Top 3 episodic facts are retrieved.
+- (2026-09-22) Embeddings come from nomic-embed-text.
+- (2026-09-22) Passwords must never be committed to Git.
+- (2026-09-23) The repo is data260-5825.
+- (2026-09-24) Explanations should be simple and in plain words.
+- (2026-09-24) The database is named s5825_doc.
+- (2026-09-25) Tests use pytest.
+- (2026-10-01) The Phase 3 report deadline moved to December 5 (confirmed by the sponsor).
+- (2026-10-02) Favorite sponsor is now Novartis Research.
+- (2026-10-03) User now prefers long detailed paragraph answers.
+- (2026-10-04) The API runs on port 8000.
+- Merged 15 duplicate lines (details in dedupe_log.txt)
+## Resolved contradictions
+- KEPT: (2026-10-04) The API runs on port 8000. | REPLACED: (2026-09-03) The API runs on port 8425.; (2026-09-14) The memory API runs on port 8427.; (2026-09-17) The API port is 8425.; (2026-09-23) The memory API listens on port 8427. | WHY: later date
+- KEPT: (2026-10-02) Favorite sponsor is now Novartis Research. | REPLACED: (2026-09-03) Favorite sponsor is Pfizer Research.; (2026-09-15) Pfizer Research is the sponsor the user likes most.; (2026-09-17) Pfizer Research is the favorite sponsor. | WHY: later date
+- KEPT: (2026-10-01) The Phase 3 report deadline moved to December 5 (confirmed by the sponsor). | REPLACED: (2026-09-03) Phase 3 report deadline is November 20.; (2026-09-15) The Phase 3 report is due on November 20.; (2026-09-18) November 20 is the deadline for the Phase 3 report. | WHY: later date

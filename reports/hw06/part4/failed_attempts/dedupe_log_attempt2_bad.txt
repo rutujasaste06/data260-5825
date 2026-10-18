@@ -1,0 +1,27 @@
+line 7 merged into line 36: - (2026-09-03) Favorite sponsor is Pfizer Research.
+line 31 merged into line 36: - (2026-09-15) Pfizer Research is the sponsor the user likes most.
+line 8 merged into line 37: - (2026-09-03) Phase 3 report deadline is November 20.
+line 22 merged into line 37: - (2026-09-10) The virtual environment is in the venv folder.
+line 27 merged into line 37: - (2026-09-13) Trial statuses are recruiting, active, completed and withdrawn.
+line 32 merged into line 37: - (2026-09-15) The Phase 3 report is due on November 20.
+line 9 merged into line 38: - (2026-09-04) User prefers short bullet-point answers.
+line 16 merged into line 38: - (2026-09-07) The Part 1 collection is trials_docs.
+line 33 merged into line 38: - (2026-09-16) Answers should be short bullet points.
+line 10 merged into line 34: - (2026-09-04) Backend uses Python 3.11 and FastAPI.
+line 14 merged into line 34: - (2026-09-06) Collaborators are Sbnikitha and supriyaselvanganesan.
+line 11 merged into line 50: - (2026-09-05) The database is MongoDB.
+line 15 merged into line 50: - (2026-09-07) The database name is s5825_doc.
+line 40 merged into line 50: - (2026-09-19) User uses a MacBook with an M5 chip.
+line 41 merged into line 50: - (2026-09-20) The data lives in MongoDB.
+line 12 merged into line 49: - (2026-09-05) The local model is qwen3:8b via Ollama.
+line 24 merged into line 49: - (2026-09-11) User wants simple explanations in plain words.
+line 13 merged into line 51: - (2026-09-06) Tests are written with pytest.
+line 17 merged into line 44: - (2026-09-08) Memory collections are messages, summaries and episodes.
+line 28 merged into line 44: - (2026-09-13) Trial phases are phase1 to phase4.
+line 19 merged into line 48: - (2026-09-09) A session summary is created every 5 user messages.
+line 39 merged into line 48: - (2026-09-19) The model used locally is qwen3:8b.
+line 20 merged into line 46: - (2026-09-09) Episodic retrieval returns the top 3 facts.
+line 25 merged into line 46: - (2026-09-12) Never commit passwords to Git.
+line 21 merged into line 47: - (2026-09-10) User works on a Mac with an M5 chip.
+line 26 merged into line 47: - (2026-09-12) Homework 5 was tagged hw5.
+line 23 merged into line 45: - (2026-09-11) The embedding model is nomic-embed-text.

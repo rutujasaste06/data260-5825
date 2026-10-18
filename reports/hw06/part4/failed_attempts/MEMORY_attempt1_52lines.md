@@ -1,0 +1,53 @@
+<!-- last_consolidated: 2026-10-17T02:58:22.142433+00:00 -->
+- (2026-09-01) User name is Rutuja Saste and studies at SJSU.  
+- (2026-09-01) Course is DATA 260 in the MSADI program.  
+- (2026-09-02) Project domain is Clinical Trial Listings.  
+- (2026-09-02) SID4 is 5825.  
+- (2026-09-02) The repository is data260-5825 on GitHub.  
+- (2026-09-03) API runs on port 8425.  
+- (2026-09-03) Favorite sponsor is Pfizer Research.  
+- (2026-09-03) Phase 3 report deadline is November 20.  
+- (2026-09-04) User prefers short bullet-point answers.  
+- (2026-09-04) Backend uses Python 3.11 and FastAPI.  
+- (2026-09-05) Database is MongoDB.  
+- (2026-09-05) Local model is qwen3:8b via Ollama.  
+- (2026-09-06) Tests are written with pytest.  
+- (2026-09-06) Collaborators are Sbnikitha and supriyaselvanganesan.  
+- (2026-09-07) Database name is s5825_doc.  
+- (2026-09-07) Part 1 collection is trials_docs.  
+- (2026-09-08) Memory collections are messages, summaries and episodes.  
+- (2026-09-08) Short-term window default is 12 messages.  
+- (2026-09-09) Session summary created every 5 user messages.  
+- (2026-09-09) Episodic retrieval returns top 3 facts.  
+- (2026-09-10) User works on a Mac with an M5 chip.  
+- (2026-09-10) Virtual environment is in the venv folder.  
+- (2026-09-11) Embedding model is nomic-embed-text.  
+- (2026-09-11) User wants simple explanations in plain words.  
+- (2026-09-12) Never commit passwords to Git.  
+- (2026-09-12) Homework 5 was tagged hw5.  
+- (2026-09-13) Trial statuses are recruiting, active, completed and withdrawn.  
+- (2026-09-13) Trial phases are phase1 to phase4.  
+- (2026-09-14) Dates stored as ISODate in MongoDB.  
+- (2026-09-14) Memory API runs on port 8427.  
+- (2026-09-15) Pfizer Research is the favorite sponsor.  
+- (2026-09-15) Phase 3 report due November 20.  
+- (2026-09-16) Answers should be short bullet points.  
+- (2026-09-16) Backend is Python 3.11 with FastAPI.  
+- (2026-09-17) API port is 8425.  
+- (2026-09-17) Favorite sponsor is Pfizer Research.  
+- (2026-09-18) Phase 3 report deadline is November 20.  
+- (2026-09-18) User likes short answers in bullets.  
+- (2026-09-19) Local model is qwen3:8b.  
+- (2026-09-19) User uses a MacBook with an M5 chip.  
+- (2026-09-20) Data lives in MongoDB.  
+- (2026-09-20) Default short-term window is 12 messages.  
+- (2026-09-21) Session summaries run every 5 user messages.  
+- (2026-09-21) Top 3 episodic facts are retrieved.  
+- (2026-09-22) Embeddings come from nomic-embed-text.  
+- (2026-09-22) Passwords must never be committed to Git.  
+- (2026-09-23) Repo is data260-5825.  
+- (2026-09-23) Memory API listens on port 8427.  
+- (2026-09-24) Explanations should be simple and in plain words.  
+- (2026-09-24) Database is named s5825_doc.  
+- (2026-09-25) Tests use pytest.  
+- (202
