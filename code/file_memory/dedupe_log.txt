@@ -1,0 +1,15 @@
+line 5 merged into line 47: - (2026-09-02) The repository is data260-5825 on GitHub.
+line 9 merged into line 38: - (2026-09-04) User prefers short bullet-point answers.
+line 33 merged into line 38: - (2026-09-16) Answers should be short bullet points.
+line 10 merged into line 34: - (2026-09-04) Backend uses Python 3.11 and FastAPI.
+line 11 merged into line 41: - (2026-09-05) The database is MongoDB.
+line 12 merged into line 39: - (2026-09-05) The local model is qwen3:8b via Ollama.
+line 13 merged into line 51: - (2026-09-06) Tests are written with pytest.
+line 15 merged into line 50: - (2026-09-07) The database name is s5825_doc.
+line 18 merged into line 42: - (2026-09-08) The short-term window default is 12 messages.
+line 19 merged into line 43: - (2026-09-09) A session summary is created every 5 user messages.
+line 20 merged into line 44: - (2026-09-09) Episodic retrieval returns the top 3 facts.
+line 21 merged into line 40: - (2026-09-10) User works on a Mac with an M5 chip.
+line 23 merged into line 45: - (2026-09-11) The embedding model is nomic-embed-text.
+line 24 merged into line 49: - (2026-09-11) User wants simple explanations in plain words.
+line 25 merged into line 46: - (2026-09-12) Never commit passwords to Git.
