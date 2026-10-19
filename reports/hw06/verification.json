@@ -1,0 +1,74 @@
+{
+  "homework": "HW6",
+  "sid4": 5825,
+  "commit_hash": "3f4af3df9e9a320556c14953eef39afb3c5e8078",
+  "tag_hw6_commit": null,
+  "model_configuration": {
+    "chat_model": "qwen3:8b",
+    "embed_model": "nomic-embed-text",
+    "short_term_n": 12,
+    "top_k_episodes": 3
+  },
+  "seed": 5825,
+  "verify_seed": 265825,
+  "port_base": 8425,
+  "run_at_utc": "2026-10-19T05:27:20.920548+00:00",
+  "checks": [
+    {
+      "check": "MongoDB reachable",
+      "passed": true,
+      "detail": "MongoDB answered ping"
+    },
+    {
+      "check": "Doc API responds on PORT_BASE",
+      "passed": true,
+      "detail": "GET / -> 200 on port 8425"
+    },
+    {
+      "check": "Doc API: POST creates a trial (201)",
+      "passed": true,
+      "detail": "POST -> 201"
+    },
+    {
+      "check": "Doc API: GET by id returns it (200)",
+      "passed": true,
+      "detail": "GET by id -> 200"
+    },
+    {
+      "check": "Doc API: empty title rejected (422)",
+      "passed": true,
+      "detail": "empty title -> 422"
+    },
+    {
+      "check": "Doc API: unknown id gives 404",
+      "passed": true,
+      "detail": "unknown id -> 404"
+    },
+    {
+      "check": "Doc API: DELETE removes the trial (200)",
+      "passed": true,
+      "detail": "DELETE -> 200"
+    },
+    {
+      "check": "Memory API is up",
+      "passed": true,
+      "detail": "memory API answers on port 8427"
+    },
+    {
+      "check": "Memory API: POST /api/chat returns a reply",
+      "passed": true,
+      "detail": "POST /api/chat -> 200, keys ['memory_used', 'metrics', 'reply', 'session_id', 'summary_updated']"
+    },
+    {
+      "check": "Memory API: GET /api/memory/{user} works",
+      "passed": true,
+      "detail": "GET /api/memory -> 200"
+    },
+    {
+      "check": "File memory: MEMORY.md < 40 lines with stamp, AGENT.md exists",
+      "passed": true,
+      "detail": "MEMORY.md 35 lines (<40), stamp=True, AGENT.md exists=True"
+    }
+  ],
+  "all_passed": true
+}
