@@ -1,0 +1,5 @@
+setting,name,short_term_n,turns,mean_prompt_tokens,mean_completion_tokens,mean_latency_ms,avg_quality,cost_usd
+n4,SHORT_TERM_N=4,4,35,243.4,23.9,4461.1,5.0,108.89
+n12,SHORT_TERM_N=12,12,35,404.1,25.9,5104.8,4.4,160.09
+n30,SHORT_TERM_N=30,30,35,687.5,27.1,5664.9,4.4,246.87
+policy,"Eviction/compression policy (N=12, older messages cut to 80 chars)",12,35,365.0,24.3,4889.8,4.4,145.92

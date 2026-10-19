@@ -25,7 +25,7 @@ def to_out(d):
 
 @router.post("", response_model=TrialOut, status_code=201)
 def create(payload: TrialIn):
-    doc = payload.model_dump(mode="python")
+    doc = payload.model_dump(mode="python", exclude_none=True)
     doc["status"] = payload.status.value
     doc["phase"] = payload.phase.value
     doc["created_at"] = doc["updated_at"] = now()

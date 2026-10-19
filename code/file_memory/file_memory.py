@@ -184,10 +184,12 @@ def _plan(items: list):
             for idx in members.values() if len(idx) > 1]
 
 def consolidate():
-    """Merge duplicates, resolve contradictions (newest date wins), save only if under MAX_LINES."""
+    """Merge duplicates and resolve contradictions; keep old notes and append to the log."""
     old = read_file(MEMORY_PATH)
     before = count_memory_lines(old)
-    items = [l for l in old.splitlines() if l.strip() and not l.strip().startswith("<!--")]
+    lines = [l for l in old.splitlines() if l.strip() and not l.strip().startswith("<!--")]
+    protected = [l for l in lines if l.startswith(("## ", "- KEPT:", "- Merged "))]
+    items = [l for l in lines if l not in protected]
     groups = []
     for _ in range(3):
         try:
@@ -207,12 +209,15 @@ def consolidate():
             n_dup += len(others)
             dup_log += [f"line {i + 1} merged into line {keep + 1}: {items[i]}" for i in others]
     result = [t for i, t in enumerate(items) if i not in drop]
+    result += [l for l in protected if l.startswith("- Merged ")]
     if n_dup:
-        result.append(f"- Merged {n_dup} duplicate lines (details in dedupe_log.txt)")
-    if notes:
-        result += ["## Resolved contradictions"] + notes
+        result.append(f"- Merged {n_dup} more duplicate lines (details in dedupe_log.txt)")
+    resolved = [l for l in protected if l.startswith("- KEPT:")] + notes
+    if resolved:
+        result += ["## Resolved contradictions"] + resolved
     if dup_log:
-        write_file(os.path.join(HERE, "dedupe_log.txt"), "\n".join(dup_log) + "\n")
+        log_path = os.path.join(HERE, "dedupe_log.txt")
+        write_file(log_path, read_file(log_path) + "\n".join(dup_log) + "\n")
     new = "\n".join(result)
     if count_memory_lines(new) >= MAX_LINES:
         return before, before

@@ -1,0 +1,46 @@
+[
+  {
+    "setting": "n4",
+    "name": "SHORT_TERM_N=4",
+    "short_term_n": 4,
+    "turns": 35,
+    "mean_prompt_tokens": 243.4,
+    "mean_completion_tokens": 23.9,
+    "mean_latency_ms": 4461.1,
+    "avg_quality": 5.0,
+    "cost_usd": 108.89
+  },
+  {
+    "setting": "n12",
+    "name": "SHORT_TERM_N=12",
+    "short_term_n": 12,
+    "turns": 35,
+    "mean_prompt_tokens": 404.1,
+    "mean_completion_tokens": 25.9,
+    "mean_latency_ms": 5104.8,
+    "avg_quality": 4.4,
+    "cost_usd": 160.09
+  },
+  {
+    "setting": "n30",
+    "name": "SHORT_TERM_N=30",
+    "short_term_n": 30,
+    "turns": 35,
+    "mean_prompt_tokens": 687.5,
+    "mean_completion_tokens": 27.1,
+    "mean_latency_ms": 5664.9,
+    "avg_quality": 4.4,
+    "cost_usd": 246.87
+  },
+  {
+    "setting": "policy",
+    "name": "Eviction/compression policy (N=12, older messages cut to 80 chars)",
+    "short_term_n": 12,
+    "turns": 35,
+    "mean_prompt_tokens": 365.0,
+    "mean_completion_tokens": 24.3,
+    "mean_latency_ms": 4889.8,
+    "avg_quality": 4.4,
+    "cost_usd": 145.92
+  }
+]

@@ -1,0 +1,141 @@
+setting,phase,turn,prompt_tokens,completion_tokens,system_tokens_est,long_term_tokens_est,short_term_tokens_est,episodic_tokens_est,latency_ms,message
+n4,setup,1,54,24,26,1,0,0,2351.8,"Hi, I'm Rutuja and I run trial registry reports."
+n4,setup,2,105,33,26,1,35,8,2827.8,My favorite sponsor is Pfizer Research.
+n4,setup,3,171,33,26,1,83,20,2885.8,Our deadline for the Phase 3 report is November 20.
+n4,setup,4,189,28,26,1,94,32,2394.2,I prefer short bullet-point answers.
+n4,setup,5,186,8,26,1,84,32,4281.6,We are focused on diabetes trials this quarter.
+n4,setup,6,207,24,26,50,58,35,5790.5,What does Phase 1 mean in a clinical trial?
+n4,setup,7,226,19,26,50,55,59,4511.5,What does Phase 2 usually test?
+n4,setup,8,228,26,26,50,63,58,5194.5,Explain what a placebo is.
+n4,setup,9,233,23,26,50,65,59,5203.0,What is a double-blind trial?
+n4,setup,10,232,18,26,50,75,55,3458.9,What does 'recruiting' status mean?
+n4,setup,11,220,30,26,50,68,46,5434.1,What does 'withdrawn' status mean?
+n4,setup,12,227,28,26,50,71,44,4973.1,Why do trials have start dates?
+n4,setup,13,231,21,26,50,88,52,1447.7,What is an inclusion criterion?
+n4,setup,14,229,20,26,50,79,64,1367.4,What is an exclusion criterion?
+n4,setup,15,222,29,26,50,64,67,6288.3,What is an adverse event?
+n4,setup,16,276,28,26,102,75,59,5556.2,What is a control group?
+n4,setup,17,279,27,26,102,84,59,5398.2,What is randomization?
+n4,setup,18,287,23,26,102,84,70,5829.1,What is an endpoint in a trial?
+n4,setup,19,283,35,26,102,78,73,5726.3,What is informed consent?
+n4,setup,20,286,33,26,102,87,58,9973.1,What does an IRB do?
+n4,setup,21,289,25,26,101,102,55,1808.1,What is a registry number?
+n4,setup,22,292,25,26,101,87,72,5179.8,What is a primary outcome?
+n4,setup,23,278,28,26,101,73,63,4914.6,What is a secondary outcome?
+n4,setup,24,270,24,26,101,80,49,4871.3,What is a sponsor in a trial?
+n4,setup,25,276,31,26,101,84,56,9923.5,What is a site investigator?
+n4,setup,26,288,17,26,108,90,63,1473.1,What is enrollment?
+n4,setup,27,285,33,26,108,79,73,5121.5,What is a protocol amendment?
+n4,setup,28,283,22,26,108,80,66,5050.2,What does 'completed' status mean?
+n4,setup,29,278,31,26,108,88,47,5557.5,What is an interim analysis?
+n4,setup,30,277,32,26,108,86,54,10950.6,What is a data monitoring committee?
+n4,probe,31,299,14,26,110,99,62,1501.7,What is my name and what do I do?
+n4,probe,32,274,9,26,110,72,47,1007.4,Which sponsor is my favorite?
+n4,probe,33,254,15,26,110,39,45,1151.6,When is my Phase 3 report due?
+n4,probe,34,250,10,26,110,35,50,893.8,How do I like my answers formatted?
+n4,probe,35,255,11,26,110,37,50,5839.5,What disease area are we focused on this quarter?
+n12,setup,1,54,23,26,1,0,0,2167.6,"Hi, I'm Rutuja and I run trial registry reports."
+n12,setup,2,104,35,26,1,34,8,2718.8,My favorite sponsor is Pfizer Research.
+n12,setup,3,172,32,26,1,83,20,2921.9,Our deadline for the Phase 3 report is November 20.
+n12,setup,4,235,27,26,1,126,32,2738.1,I prefer short bullet-point answers.
+n12,setup,5,280,8,26,1,163,32,4285.2,We are focused on diabetes trials this quarter.
+n12,setup,6,356,25,26,49,183,35,5935.7,What does Phase 1 mean in a clinical trial?
+n12,setup,7,420,20,26,49,219,58,4804.1,What does Phase 2 usually test?
+n12,setup,8,404,33,26,49,215,58,5869.6,Explain what a placebo is.
+n12,setup,9,409,23,26,49,214,58,5871.3,What is a double-blind trial?
+n12,setup,10,389,18,26,49,208,54,7640.5,What does 'recruiting' status mean?
+n12,setup,11,386,27,26,49,201,65,5926.2,What does 'withdrawn' status mean?
+n12,setup,12,393,23,26,49,218,43,5539.6,Why do trials have start dates?
+n12,setup,13,385,26,26,49,222,53,2016.7,What is an inclusion criterion?
+n12,setup,14,398,25,26,49,232,63,2061.8,What is an exclusion criterion?
+n12,setup,15,384,24,26,49,224,56,6498.1,What is an adverse event?
+n12,setup,16,433,31,26,106,223,54,6457.9,What is a control group?
+n12,setup,17,461,34,26,106,240,77,5540.6,What is randomization?
+n12,setup,18,464,24,26,106,250,74,5982.8,What is an endpoint in a trial?
+n12,setup,19,459,35,26,106,248,68,6253.3,What is informed consent?
+n12,setup,20,463,33,26,106,259,63,10434.9,What does an IRB do?
+n12,setup,21,474,34,26,110,270,60,2474.3,What is a registry number?
+n12,setup,22,494,25,26,110,281,77,5441.8,What is a primary outcome?
+n12,setup,23,481,27,26,110,275,67,5441.4,What is a secondary outcome?
+n12,setup,24,477,37,26,110,271,66,5910.1,What is a sponsor in a trial?
+n12,setup,25,482,32,26,110,288,59,10599.4,What is a site investigator?
+n12,setup,26,484,17,26,109,286,67,5067.3,What is enrollment?
+n12,setup,27,471,36,26,109,264,74,6142.3,What is a protocol amendment?
+n12,setup,28,469,33,26,109,268,62,5617.9,What does 'completed' status mean?
+n12,setup,29,472,40,26,109,282,62,6208.2,What is an interim analysis?
+n12,setup,30,483,34,26,109,293,57,12626.6,What is a data monitoring committee?
+n12,probe,31,483,27,26,110,297,59,2156.0,What is my name and what do I do?
+n12,probe,32,474,8,26,110,283,53,1119.9,Which sponsor is my favorite?
+n12,probe,33,474,12,26,110,271,47,1280.9,When is my Phase 3 report due?
+n12,probe,34,441,11,26,110,235,47,1223.1,How do I like my answers formatted?
+n12,probe,35,434,8,26,110,200,61,5692.9,What disease area are we focused on this quarter?
+n30,setup,1,54,23,26,1,0,0,2413.0,"Hi, I'm Rutuja and I run trial registry reports."
+n30,setup,2,104,29,26,1,34,8,2537.8,My favorite sponsor is Pfizer Research.
+n30,setup,3,166,31,26,1,77,20,2876.1,Our deadline for the Phase 3 report is November 20.
+n30,setup,4,228,26,26,1,119,32,2304.8,I prefer short bullet-point answers.
+n30,setup,5,272,8,26,1,155,32,3968.0,We are focused on diabetes trials this quarter.
+n30,setup,6,348,35,26,49,175,35,6694.5,What does Phase 1 mean in a clinical trial?
+n30,setup,7,422,34,26,49,214,58,5751.9,What does Phase 2 usually test?
+n30,setup,8,467,33,26,49,253,58,6395.3,Explain what a placebo is.
+n30,setup,9,521,29,26,49,300,58,5961.6,What is a double-blind trial?
+n30,setup,10,554,18,26,49,345,42,4325.8,What does 'recruiting' status mean?
+n30,setup,11,589,20,26,49,375,42,5911.6,What does 'withdrawn' status mean?
+n30,setup,12,628,22,26,49,406,43,5715.7,Why do trials have start dates?
+n30,setup,13,672,27,26,49,446,62,6685.0,What is an inclusion criterion?
+n30,setup,14,726,23,26,49,487,83,2380.2,What is an exclusion criterion?
+n30,setup,15,752,35,26,49,525,61,7856.3,What is an adverse event?
+n30,setup,16,860,33,26,108,574,73,6921.6,What is a control group?
+n30,setup,17,856,33,26,108,590,65,6516.2,What is randomization?
+n30,setup,18,871,24,26,108,594,74,7011.6,What is an endpoint in a trial?
+n30,setup,19,865,34,26,108,589,91,6984.6,What is informed consent?
+n30,setup,20,852,33,26,108,604,63,11397.9,What does an IRB do?
+n30,setup,21,868,34,26,104,635,54,3110.9,What is a registry number?
+n30,setup,22,881,25,26,104,643,78,6667.6,What is a primary outcome?
+n30,setup,23,867,33,26,104,643,73,6674.8,What is a secondary outcome?
+n30,setup,24,860,28,26,104,647,66,6249.2,What is a sponsor in a trial?
+n30,setup,25,852,38,26,104,643,57,12349.3,What is a site investigator?
+n30,setup,26,889,21,26,120,671,74,2544.6,What is enrollment?
+n30,setup,27,880,33,26,120,674,63,6512.5,What is a protocol amendment?
+n30,setup,28,895,30,26,120,679,68,6137.7,What does 'completed' status mean?
+n30,setup,29,892,33,26,120,688,63,7045.3,What is an interim analysis?
+n30,setup,30,911,35,26,120,699,77,12893.5,What is a data monitoring committee?
+n30,probe,31,908,45,26,123,714,59,3874.2,What is my name and what do I do?
+n30,probe,32,912,9,26,123,718,45,2471.7,Which sponsor is my favorite?
+n30,probe,33,894,15,26,123,688,40,2306.9,When is my Phase 3 report due?
+n30,probe,34,884,10,26,123,669,49,2142.5,How do I like my answers formatted?
+n30,probe,35,861,9,26,123,636,48,6681.3,What disease area are we focused on this quarter?
+policy,setup,1,54,24,26,1,0,0,2451.4,"Hi, I'm Rutuja and I run trial registry reports."
+policy,setup,2,105,33,26,1,35,8,2648.5,My favorite sponsor is Pfizer Research.
+policy,setup,3,171,30,26,1,83,20,2807.3,Our deadline for the Phase 3 report is November 20.
+policy,setup,4,231,25,26,1,120,32,2643.2,I prefer short bullet-point answers.
+policy,setup,5,260,8,26,1,135,32,4187.0,We are focused on diabetes trials this quarter.
+policy,setup,6,330,24,26,47,147,35,6020.0,What does Phase 1 mean in a clinical trial?
+policy,setup,7,398,18,26,47,177,60,5036.3,What does Phase 2 usually test?
+policy,setup,8,371,31,26,47,171,55,5787.4,Explain what a placebo is.
+policy,setup,9,387,23,26,47,182,59,5426.0,What is a double-blind trial?
+policy,setup,10,384,17,26,47,188,63,7995.8,What does 'recruiting' status mean?
+policy,setup,11,360,22,26,47,169,58,5303.0,What does 'withdrawn' status mean?
+policy,setup,12,376,18,26,47,170,59,4776.2,Why do trials have start dates?
+policy,setup,13,359,22,26,47,169,53,1681.2,What is an inclusion criterion?
+policy,setup,14,357,21,26,47,170,60,5366.3,What is an exclusion criterion?
+policy,setup,15,361,22,26,47,173,68,6149.0,What is an adverse event?
+policy,setup,16,418,27,26,107,173,63,5824.6,What is a control group?
+policy,setup,17,410,22,26,107,180,51,4970.0,What is randomization?
+policy,setup,18,416,23,26,107,184,64,5901.1,What is an endpoint in a trial?
+policy,setup,19,404,35,26,107,178,58,6071.8,What is informed consent?
+policy,setup,20,410,29,26,107,190,53,10881.5,What does an IRB do?
+policy,setup,21,424,24,26,110,198,60,2174.3,What is a registry number?
+policy,setup,22,428,25,26,110,185,78,5394.4,What is a primary outcome?
+policy,setup,23,413,31,26,110,182,66,5261.3,What is a secondary outcome?
+policy,setup,24,420,23,26,110,194,60,4974.4,What is a sponsor in a trial?
+policy,setup,25,416,28,26,110,191,59,9708.2,What is a site investigator?
+policy,setup,26,408,23,26,97,188,72,1991.0,What is enrollment?
+policy,setup,27,408,34,26,97,186,72,5459.4,What is a protocol amendment?
+policy,setup,28,410,32,26,97,192,60,5420.1,What does 'completed' status mean?
+policy,setup,29,417,41,26,97,205,55,6090.7,What is an interim analysis?
+policy,setup,30,426,39,26,97,211,64,11458.4,What is a data monitoring committee?
+policy,probe,31,446,40,26,109,227,60,2762.7,What is my name and what do I do?
+policy,probe,32,431,8,26,109,221,45,1097.3,Which sponsor is my favorite?
+policy,probe,33,410,12,26,109,178,44,1239.6,When is my Phase 3 report due?
+policy,probe,34,378,9,26,109,144,40,941.1,How do I like my answers formatted?
+policy,probe,35,377,7,26,109,135,52,5242.1,What disease area are we focused on this quarter?

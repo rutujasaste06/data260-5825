@@ -1,0 +1,61 @@
+rubric:
+  5: "Fully correct and specific; matches the expected answer."
+  4: "Correct but slightly incomplete or wordy."
+  3: "Partly correct or vague."
+  2: "Mostly wrong, or heavily hedged."
+  1: "Wrong, or says it does not know."
+
+setup:
+  - "Hi, I'm Rutuja and I run trial registry reports."
+  - "My favorite sponsor is Pfizer Research."
+  - "Our deadline for the Phase 3 report is November 20."
+  - "I prefer short bullet-point answers."
+  - "We are focused on diabetes trials this quarter."
+  - "What does Phase 1 mean in a clinical trial?"
+  - "What does Phase 2 usually test?"
+  - "Explain what a placebo is."
+  - "What is a double-blind trial?"
+  - "What does 'recruiting' status mean?"
+  - "What does 'withdrawn' status mean?"
+  - "Why do trials have start dates?"
+  - "What is an inclusion criterion?"
+  - "What is an exclusion criterion?"
+  - "What is an adverse event?"
+  - "What is a control group?"
+  - "What is randomization?"
+  - "What is an endpoint in a trial?"
+  - "What is informed consent?"
+  - "What does an IRB do?"
+  - "What is a registry number?"
+  - "What is a primary outcome?"
+  - "What is a secondary outcome?"
+  - "What is a sponsor in a trial?"
+  - "What is a site investigator?"
+  - "What is enrollment?"
+  - "What is a protocol amendment?"
+  - "What does 'completed' status mean?"
+  - "What is an interim analysis?"
+  - "What is a data monitoring committee?"
+
+probes:
+  - id: P1_name_role
+    question: "What is my name and what do I do?"
+    expected: "Rutuja; runs trial registry reports"
+    keywords: ["rutuja", "registry"]
+    need_all: true
+  - id: P2_sponsor
+    question: "Which sponsor is my favorite?"
+    expected: "Pfizer Research"
+    keywords: ["pfizer"]
+  - id: P3_deadline
+    question: "When is my Phase 3 report due?"
+    expected: "November 20"
+    keywords: ["november 20", "nov 20"]
+  - id: P4_format
+    question: "How do I like my answers formatted?"
+    expected: "Short bullet points"
+    keywords: ["bullet", "short"]
+  - id: P5_focus
+    question: "What disease area are we focused on this quarter?"
+    expected: "Diabetes trials"
+    keywords: ["diabetes"]

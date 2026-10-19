@@ -1,0 +1,142 @@
+[
+  {
+    "setting": "n4",
+    "id": "P1_name_role",
+    "reply": "- Your name is Rutuja. You manage trial registry reports.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n4",
+    "id": "P2_sponsor",
+    "reply": "- Your favorite sponsor is Pfizer Research.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n4",
+    "id": "P3_deadline",
+    "reply": "- Your Phase 3 report is due by November 20.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n4",
+    "id": "P4_format",
+    "reply": "- You prefer concise, bullet-point responses.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n4",
+    "id": "P5_focus",
+    "reply": "- The focus area this quarter is diabetes trials.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n12",
+    "id": "P1_name_role",
+    "reply": "- Your name: [Name]  \n- Your role: Run trial registry reports, with a focus on diabetes trials this quarter.",
+    "score": 2,
+    "keyword_hit": false
+  },
+  {
+    "setting": "n12",
+    "id": "P2_sponsor",
+    "reply": "- Your favorite sponsor: Pfizer Research",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n12",
+    "id": "P3_deadline",
+    "reply": "- Phase 3 report due: November 20",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n12",
+    "id": "P4_format",
+    "reply": "- Preferred format: Short, bullet-point answers.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n12",
+    "id": "P5_focus",
+    "reply": "- Disease area focus: Diabetes trials",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n30",
+    "id": "P1_name_role",
+    "reply": "- Your name: [Name not provided]  \n- Your role: Preparing trial registry reports for diabetes trials, with a Phase 3 report deadline on November 20.  \n- Favorite sponsor: Pfizer Research.",
+    "score": 2,
+    "keyword_hit": false
+  },
+  {
+    "setting": "n30",
+    "id": "P2_sponsor",
+    "reply": "- Your favorite sponsor: Pfizer Research.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n30",
+    "id": "P3_deadline",
+    "reply": "- Your Phase 3 report is due by November 20.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n30",
+    "id": "P4_format",
+    "reply": "- You prefer concise, bullet-point answers.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "n30",
+    "id": "P5_focus",
+    "reply": "- Disease area focus: Diabetes trials.",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "policy",
+    "id": "P1_name_role",
+    "reply": "- Your name: [Name not provided]  \n- Your role: Clinical trial registry reports for diabetes trials, with a focus on Pfizer Research and Phase 3 deadlines by November 20.",
+    "score": 2,
+    "keyword_hit": false
+  },
+  {
+    "setting": "policy",
+    "id": "P2_sponsor",
+    "reply": "- Your favorite sponsor: Pfizer Research",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "policy",
+    "id": "P3_deadline",
+    "reply": "- Phase 3 report due: November 20",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "policy",
+    "id": "P4_format",
+    "reply": "- Preferred format: Short bullet-point answers",
+    "score": 5,
+    "keyword_hit": true
+  },
+  {
+    "setting": "policy",
+    "id": "P5_focus",
+    "reply": "- Disease focus: Diabetes trials",
+    "score": 5,
+    "keyword_hit": true
+  }
+]
