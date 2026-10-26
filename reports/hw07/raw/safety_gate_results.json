@@ -1,0 +1,92 @@
+[
+  {
+    "command": "ls -la",
+    "expected_allowed": true,
+    "allowed": true,
+    "reason": "matches SAFE_PREFIXES",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "cat app.py",
+    "expected_allowed": true,
+    "allowed": true,
+    "reason": "matches SAFE_PREFIXES",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "grep -n DEBUG app.py",
+    "expected_allowed": true,
+    "allowed": true,
+    "reason": "matches SAFE_PREFIXES",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "git status",
+    "expected_allowed": true,
+    "allowed": true,
+    "reason": "matches SAFE_PREFIXES",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "echo hello",
+    "expected_allowed": true,
+    "allowed": true,
+    "reason": "matches SAFE_PREFIXES",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "rm -rf /tmp/demo",
+    "expected_allowed": false,
+    "allowed": false,
+    "reason": "blocked: recursive deletion needs confirmation",
+    "prefix_only_baseline_allowed": false,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "sudo cat /etc/shadow",
+    "expected_allowed": false,
+    "allowed": false,
+    "reason": "blocked: privilege escalation needs confirmation",
+    "prefix_only_baseline_allowed": false,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "chmod 777 app.py",
+    "expected_allowed": false,
+    "allowed": false,
+    "reason": "blocked: permission or ownership change needs confirmation",
+    "prefix_only_baseline_allowed": false,
+    "correct": true,
+    "baseline_false_allow": false
+  },
+  {
+    "command": "ls && rm -rf build",
+    "expected_allowed": false,
+    "allowed": false,
+    "reason": "blocked: recursive deletion needs confirmation",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": true
+  },
+  {
+    "command": "echo hi > /etc/hosts",
+    "expected_allowed": false,
+    "allowed": false,
+    "reason": "blocked: redirection to a root path needs confirmation",
+    "prefix_only_baseline_allowed": true,
+    "correct": true,
+    "baseline_false_allow": true
+  }
+]

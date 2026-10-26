@@ -1,0 +1,15 @@
+{
+  "tasks": 12,
+  "original_success": 12,
+  "reflexion_success": 12,
+  "original_rate": 1.0,
+  "reflexion_rate": 1.0,
+  "avg_tool_calls_original": 2.33,
+  "avg_tool_calls_reflexion": 2.33,
+  "avg_tokens_original": 2605,
+  "avg_tokens_reflexion": 2605,
+  "stop_reasons": {
+    "success": 12
+  },
+  "verifier_false_rejections": 0
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bike-Share Decision Agent</title>
+<style>
+:root{--bg:#f6f7f9;--card:#fff;--ink:#1c2430;--mute:#5b6675;--line:#dfe3ea;--acc:#1d5fd6;--ok:#117a3d;--warn:#b25b00}
+@media (prefers-color-scheme:dark){:root{--bg:#12161c;--card:#1b212b;--ink:#e8ecf2;--mute:#9aa6b6;--line:#2b3442;--acc:#6aa3ff;--ok:#4cc38a;--warn:#f0a050}}
+*{box-sizing:border-box}body{margin:0;font:14px/1.4 system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:12px 20px;border-bottom:1px solid var(--line);background:var(--card)}h1{font-size:17px;margin:0}
+.bar{display:flex;gap:10px;flex-wrap:wrap;padding:12px 20px;align-items:end}
+label{font-size:12px;color:var(--mute);display:block;margin-bottom:3px}
+input[type=text]{width:420px;max-width:90vw;padding:7px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink)}
+button{padding:8px 18px;border:0;border-radius:6px;background:var(--acc);color:#fff;font-weight:600;cursor:pointer}button:disabled{opacity:.5}
+main{display:grid;grid-template-columns:1fr 1.25fr;gap:12px;padding:0 20px 16px}@media(max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;overflow:auto}
+h2{font-size:13px;margin:0 0 8px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em}
+#timeline{max-height:520px}.ev{border-left:3px solid var(--line);padding:3px 8px;margin:0 0 6px;font:12px/1.35 ui-monospace,Menlo,monospace;word-break:break-word}
+.ev.action{border-color:var(--acc)}.ev.observation{border-color:var(--ok)}.ev.error,.ev.repair{border-color:var(--warn)}
+.decision{font-size:18px;font-weight:700;margin:2px 0 6px}table{border-collapse:collapse;width:100%;font-size:12.5px;margin:4px 0 8px}
+td,th{border-bottom:1px solid var(--line);padding:3px 6px;text-align:right}td:first-child,th:first-child{text-align:left}
+.strip{display:flex;gap:18px;flex-wrap:wrap;padding:8px 12px;border-top:1px solid var(--line);font-size:13px}.strip b{color:var(--acc)}
+.small{font-size:12px;color:var(--mute)}.bad{color:var(--warn)}.good{color:var(--ok)}code{font-size:11.5px;word-break:break-all}
+</style></head><body>
+<header><h1>Bike-Share Decision Agent — membership vs pay-per-use (Bay Wheels)</h1></header>
+<div class="bar">
+ <div><label>Trips CSV</label><input type="file" id="csv" accept=".csv"></div>
+ <div><label>Pricing page URL</label><input type="text" id="url" value="https://www.lyft.com/bikes/bay-wheels/pricing"></div>
+ <button id="run">Run</button><span id="status" class="small"></span>
+</div>
+<main>
+ <section class="card"><h2>Timeline (tool calls and observations)</h2><div id="timeline"><span class="small">Nothing yet.</span></div></section>
+ <section class="card"><h2>Results</h2><div id="results"><span class="small">Upload a CSV and press Run.</span></div></section>
+</main>
+<div class="strip card" id="strip"><span class="small">Metrics: steps · tool calls · total time · stop reason</span></div>
+<script>
+const $=id=>document.getElementById(id);let timer=null;
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const money=v=>'$'+Number(v).toLocaleString(undefined,{minimumFractionDigits:2,maximumFractionDigits:2});
+function drawTimeline(events){$('timeline').innerHTML=events.map(e=>{
+ const body=e.type==='action'?`ACTION ${e.tool}(${esc(JSON.stringify(e.input)).slice(0,300)})`:e.type==='observation'?`OBSERVATION ${e.tool}: ${esc(e.output)}`:(e.type==='repair'?'REPAIR ':'')+esc(e.output||'');
+ return `<div class="ev ${e.type}">${body}</div>`}).join('')||'<span class="small">Waiting for the first step…</span>';
+ $('timeline').scrollTop=$('timeline').scrollHeight}
+function drawResults(r){const c=r.check,a=r.answer||{},m=r.metrics;let h='';
+ h+=`<div class="decision">${esc(r.decision||'No decision')}</div>`;
+ if(c){h+=`<table><tr><th>Cost comparison</th><th>Amount</th></tr>
+ <tr><td>Pay-per-use total (${c.rides} rides)</td><td>${money(c.pay_per_use_total)}</td></tr>
+ <tr><td>Membership fees (${c.months} month${c.months>1?'s':''} × ${money(c.prices.month_fee)})</td><td>${money(c.membership_fee_total)}</td></tr>
+ <tr><td>Membership residual charges</td><td>${money(c.membership_residual)}</td></tr>
+ <tr><td><b>Membership total</b></td><td><b>${money(c.membership_total)}</b></td></tr>
+ <tr><td>Break-even rides / month (actual)</td><td>${c.break_even_rides_per_month??'never'} (${c.rides_per_month_actual})</td></tr>
+ <tr><td>Actual minutes / month</td><td>${c.minutes_per_month_actual}</td></tr></table>`;
+ h+=`<div class="small">Weekly table (first 8 of ${c.weekly.length} weeks)</div><table><tr><th>Week</th><th>Rides</th><th>Avg min</th><th>Spend (pay-per-use)</th></tr>`+
+ c.weekly.slice(0,8).map(w=>`<tr><td>${w.week}</td><td>${w.rides}</td><td>${w.avg_minutes}</td><td>${money(w.spend)}</td></tr>`).join('')+`</table>`;
+ h+=`<div class="small ${r.agrees_with_cost_model?'good':'bad'}">Cross-check with deterministic cost model: ${r.agrees_with_cost_model?'agrees':'DISAGREES ('+esc(c.decision)+')'}</div>`}
+ h+=`<p>${esc(a.justification||'')}</p>`;
+ if((a.assumptions||[]).length)h+=`<div class="small"><b>Assumptions:</b> ${a.assumptions.map(esc).join(' · ')}</div>`;
+ h+=(r.citations||[]).map(x=>`<div class="small"><b>Citation:</b> ${esc(x.url)} · captured ${esc(x.access_ts)}<br>SHA-256 <code>${esc(x.sha256)}</code></div>`).join('');
+ $('results').innerHTML=h;
+ $('strip').innerHTML=`<span>Steps <b>${m.steps}</b></span><span>Tool calls <b>${m.tool_calls}</b></span><span>Repairs <b>${m.repairs||0}</b></span><span>Total time <b>${m.seconds}s</b></span><span>Stop reason <b>${esc(m.stop_reason)}</b></span>`}
+async function poll(id){const j=await (await fetch('/api/job/'+id)).json();drawTimeline(j.events||[]);
+ if(j.done){clearInterval(timer);$('run').disabled=false;$('status').textContent=j.error?('Error: '+j.error):'Done.';if(j.result)drawResults(j.result)}}
+$('run').onclick=async()=>{const f=$('csv').files[0];if(!f){$('status').textContent='Choose a CSV first.';return}
+ const fd=new FormData();fd.append('csv_file',f);fd.append('url',$('url').value);
+ $('run').disabled=true;$('status').textContent='Running…';$('results').innerHTML='';$('timeline').innerHTML='';
+ const {job_id}=await (await fetch('/api/run',{method:'POST',body:fd})).json();timer=setInterval(()=>poll(job_id),1500)};
+</script></body></html>

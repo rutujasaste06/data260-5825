@@ -1,0 +1,48 @@
+[
+  {
+    "id": "A",
+    "kind": "search_then_detail",
+    "term": "obesity",
+    "first_id": 5,
+    "nct": "NCT10000004",
+    "title": "Sitagliptin for Obesity #5",
+    "sponsor": "AstraZeneca Labs",
+    "prompt": "Search for clinical trials about 'obesity'. Then look up the first result in detail and tell me its NCT number and the name of its sponsor."
+  },
+  {
+    "id": "B",
+    "kind": "aggregate_plus_example",
+    "sponsor_id": 1,
+    "sponsor_name": "Pfizer Research",
+    "count": 2517,
+    "example_id": 1,
+    "example_nct": "NCT10000000",
+    "example_title": "Sitagliptin for Stroke Prevention #1",
+    "prompt": "How many trials does sponsor 1 have in total? Then, as one supporting example, look up trial 1 and tell me its title."
+  },
+  {
+    "id": "C",
+    "kind": "compare_two",
+    "term": "empagliflozin",
+    "ids": [
+      6,
+      10
+    ],
+    "ncts": [
+      "NCT10000005",
+      "NCT10000009"
+    ],
+    "sponsors": [
+      "Pfizer Research",
+      "Novartis Research"
+    ],
+    "same_sponsor": false,
+    "prompt": "Search for clinical trials about 'empagliflozin'. Then compare trial 6 and trial 10 using get_trial for each one. Give each trial's NCT number and sponsor name, and say whether they have the same sponsor."
+  },
+  {
+    "id": "E",
+    "kind": "error_recovery",
+    "missing_id": 99999999,
+    "prompt": "Give me the full details of trial 99999999."
+  }
+]

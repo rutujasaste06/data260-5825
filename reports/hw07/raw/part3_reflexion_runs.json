@@ -1,0 +1,1262 @@
+[
+  {
+    "case": "A",
+    "seed": 5925,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 2424
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "The NCT number is **NCT10000004**, and the sponsor is **AstraZeneca Labs**.",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "obesity",
+                "limit": 1
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 5,
+                    "trial_title": "Sitagliptin for Obesity #5",
+                    "nct_number": "NCT10000004",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 5
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 5,
+                  "trial_title": "Sitagliptin for Obesity #5",
+                  "nct_number": "NCT10000004",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 4,
+                    "sponsor_name": "AstraZeneca Labs"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 1315,
+          "completion_tokens": 1109,
+          "latency_ms": 46729.6
+        }
+      }
+    ]
+  },
+  {
+    "case": "B",
+    "seed": 5925,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 1752
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Sponsor 1 (Pfizer Research) has **2,517 trials** in total.  \n\nAs an example, trial 1 is titled: **\"Sitagliptin for Stroke Prevention #1\"**.",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "count_trials_by_sponsor",
+              "inputs": {
+                "sponsor_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "sponsor_id": 1,
+                  "sponsor_name": "Pfizer Research",
+                  "trial_count": 2517,
+                  "total_available_slots": 25170
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 1,
+                  "trial_title": "Sitagliptin for Stroke Prevention #1",
+                  "nct_number": "NCT10000000",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 2,
+          "prompt_tokens": 854,
+          "completion_tokens": 898,
+          "latency_ms": 38064.1
+        }
+      }
+    ]
+  },
+  {
+    "case": "C",
+    "seed": 5925,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 3,
+      "tokens": 3696
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Trial 6: NCT10000005, sponsored by Pfizer Research.  \nTrial 10: NCT10000009, sponsored by Novartis Research.  \nThey have different sponsors.",
+          "stop_reason": "completed",
+          "tool_calls": 3,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "empagliflozin",
+                "limit": 10
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 6,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                    "nct_number": "NCT10000005",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 9,
+                    "trial_title": "Empagliflozin for Kidney Disease #9",
+                    "nct_number": "NCT10000008",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 10,
+                    "trial_title": "Empagliflozin for High Cholesterol #10",
+                    "nct_number": "NCT10000009",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 18,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #18",
+                    "nct_number": "NCT10000017",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 30,
+                    "trial_title": "Empagliflozin for Kidney Disease #30",
+                    "nct_number": "NCT10000029",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 38,
+                    "trial_title": "Empagliflozin for High Cholesterol #38",
+                    "nct_number": "NCT10000037",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 49,
+                    "trial_title": "Empagliflozin for Hypertension #49",
+                    "nct_number": "NCT10000048",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 53,
+                    "trial_title": "Empagliflozin for Heart Failure #53",
+                    "nct_number": "NCT10000052",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 56,
+                    "trial_title": "Empagliflozin for High Cholesterol #56",
+                    "nct_number": "NCT10000055",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 59,
+                    "trial_title": "Empagliflozin for Obesity #59",
+                    "nct_number": "NCT10000058",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 6
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 6,
+                  "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                  "nct_number": "NCT10000005",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 10
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 10,
+                  "trial_title": "Empagliflozin for High Cholesterol #10",
+                  "nct_number": "NCT10000009",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 3,
+                    "sponsor_name": "Novartis Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 2541,
+          "completion_tokens": 1155,
+          "latency_ms": 50268.4
+        }
+      }
+    ]
+  },
+  {
+    "case": "A",
+    "seed": 5926,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 2038
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "The NCT number is **NCT10000004**, and the sponsor is **AstraZeneca Labs**.",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "obesity",
+                "limit": 1
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 5,
+                    "trial_title": "Sitagliptin for Obesity #5",
+                    "nct_number": "NCT10000004",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 5
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 5,
+                  "trial_title": "Sitagliptin for Obesity #5",
+                  "nct_number": "NCT10000004",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 4,
+                    "sponsor_name": "AstraZeneca Labs"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 1315,
+          "completion_tokens": 723,
+          "latency_ms": 30650.7
+        }
+      }
+    ]
+  },
+  {
+    "case": "B",
+    "seed": 5926,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 1554
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Sponsor 1 (Pfizer Research) has **2,517 trials** with **25,170 total available slots**.  \n\nAs an example:  \n**Trial 1**: *Sitagliptin for Stroke Prevention #1* (NCT10000000, 10 slots).",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "count_trials_by_sponsor",
+              "inputs": {
+                "sponsor_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "sponsor_id": 1,
+                  "sponsor_name": "Pfizer Research",
+                  "trial_count": 2517,
+                  "total_available_slots": 25170
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 1,
+                  "trial_title": "Sitagliptin for Stroke Prevention #1",
+                  "nct_number": "NCT10000000",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 2,
+          "prompt_tokens": 854,
+          "completion_tokens": 700,
+          "latency_ms": 30746.9
+        }
+      }
+    ]
+  },
+  {
+    "case": "C",
+    "seed": 5926,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 3,
+      "tokens": 3690
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Trial 6: NCT10000005, sponsored by Pfizer Research.  \nTrial 10: NCT10000009, sponsored by Novartis Research.  \nThey have different sponsors.",
+          "stop_reason": "completed",
+          "tool_calls": 3,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "empagliflozin",
+                "limit": 10
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 6,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                    "nct_number": "NCT10000005",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 9,
+                    "trial_title": "Empagliflozin for Kidney Disease #9",
+                    "nct_number": "NCT10000008",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 10,
+                    "trial_title": "Empagliflozin for High Cholesterol #10",
+                    "nct_number": "NCT10000009",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 18,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #18",
+                    "nct_number": "NCT10000017",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 30,
+                    "trial_title": "Empagliflozin for Kidney Disease #30",
+                    "nct_number": "NCT10000029",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 38,
+                    "trial_title": "Empagliflozin for High Cholesterol #38",
+                    "nct_number": "NCT10000037",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 49,
+                    "trial_title": "Empagliflozin for Hypertension #49",
+                    "nct_number": "NCT10000048",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 53,
+                    "trial_title": "Empagliflozin for Heart Failure #53",
+                    "nct_number": "NCT10000052",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 56,
+                    "trial_title": "Empagliflozin for High Cholesterol #56",
+                    "nct_number": "NCT10000055",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 59,
+                    "trial_title": "Empagliflozin for Obesity #59",
+                    "nct_number": "NCT10000058",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 6
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 6,
+                  "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                  "nct_number": "NCT10000005",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 10
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 10,
+                  "trial_title": "Empagliflozin for High Cholesterol #10",
+                  "nct_number": "NCT10000009",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 3,
+                    "sponsor_name": "Novartis Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 2541,
+          "completion_tokens": 1149,
+          "latency_ms": 49820.0
+        }
+      }
+    ]
+  },
+  {
+    "case": "A",
+    "seed": 5927,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 2490
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "The NCT number for the first trial is **NCT10000004**, and its sponsor is **AstraZeneca Labs**.",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "obesity",
+                "limit": 5
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 5,
+                    "trial_title": "Sitagliptin for Obesity #5",
+                    "nct_number": "NCT10000004",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 16,
+                    "trial_title": "Vildagliptin for Obesity #16",
+                    "nct_number": "NCT10000015",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 31,
+                    "trial_title": "Insulin for Obesity #31",
+                    "nct_number": "NCT10000030",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 32,
+                    "trial_title": "Lisinopril for Obesity #32",
+                    "nct_number": "NCT10000031",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 44,
+                    "trial_title": "Metformin for Obesity #44",
+                    "nct_number": "NCT10000043",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 5
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 5,
+                  "trial_title": "Sitagliptin for Obesity #5",
+                  "nct_number": "NCT10000004",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 4,
+                    "sponsor_name": "AstraZeneca Labs"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 1743,
+          "completion_tokens": 747,
+          "latency_ms": 32559.3
+        }
+      }
+    ]
+  },
+  {
+    "case": "B",
+    "seed": 5927,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 1489
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Sponsor 1 (Pfizer Research) has **2,517 trials** with **25,170 total available slots**.  \n\nAs an example, trial 1 is titled:  \n**\"Sitagliptin for Stroke Prevention #1\"** (NCT10000000).",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "count_trials_by_sponsor",
+              "inputs": {
+                "sponsor_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "sponsor_id": 1,
+                  "sponsor_name": "Pfizer Research",
+                  "trial_count": 2517,
+                  "total_available_slots": 25170
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 1,
+                  "trial_title": "Sitagliptin for Stroke Prevention #1",
+                  "nct_number": "NCT10000000",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 2,
+          "prompt_tokens": 854,
+          "completion_tokens": 635,
+          "latency_ms": 27361.7
+        }
+      }
+    ]
+  },
+  {
+    "case": "C",
+    "seed": 5927,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 3,
+      "tokens": 3975
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Trial 6: NCT10000005 (Pfizer Research)  \nTrial 10: NCT10000009 (Novartis Research)  \nThey have different sponsors.",
+          "stop_reason": "completed",
+          "tool_calls": 3,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "empagliflozin",
+                "limit": 10
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 6,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                    "nct_number": "NCT10000005",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 9,
+                    "trial_title": "Empagliflozin for Kidney Disease #9",
+                    "nct_number": "NCT10000008",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 10,
+                    "trial_title": "Empagliflozin for High Cholesterol #10",
+                    "nct_number": "NCT10000009",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 18,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #18",
+                    "nct_number": "NCT10000017",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 30,
+                    "trial_title": "Empagliflozin for Kidney Disease #30",
+                    "nct_number": "NCT10000029",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 38,
+                    "trial_title": "Empagliflozin for High Cholesterol #38",
+                    "nct_number": "NCT10000037",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 49,
+                    "trial_title": "Empagliflozin for Hypertension #49",
+                    "nct_number": "NCT10000048",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 53,
+                    "trial_title": "Empagliflozin for Heart Failure #53",
+                    "nct_number": "NCT10000052",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 56,
+                    "trial_title": "Empagliflozin for High Cholesterol #56",
+                    "nct_number": "NCT10000055",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 59,
+                    "trial_title": "Empagliflozin for Obesity #59",
+                    "nct_number": "NCT10000058",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 6
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 6,
+                  "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                  "nct_number": "NCT10000005",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 10
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 10,
+                  "trial_title": "Empagliflozin for High Cholesterol #10",
+                  "nct_number": "NCT10000009",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 3,
+                    "sponsor_name": "Novartis Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 2541,
+          "completion_tokens": 1434,
+          "latency_ms": 62139.0
+        }
+      }
+    ]
+  },
+  {
+    "case": "A",
+    "seed": 5928,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 2316
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "The NCT number is **NCT10000004** and the sponsor is **AstraZeneca Labs**.",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "obesity",
+                "limit": 5
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 5,
+                    "trial_title": "Sitagliptin for Obesity #5",
+                    "nct_number": "NCT10000004",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 16,
+                    "trial_title": "Vildagliptin for Obesity #16",
+                    "nct_number": "NCT10000015",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 31,
+                    "trial_title": "Insulin for Obesity #31",
+                    "nct_number": "NCT10000030",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 32,
+                    "trial_title": "Lisinopril for Obesity #32",
+                    "nct_number": "NCT10000031",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 44,
+                    "trial_title": "Metformin for Obesity #44",
+                    "nct_number": "NCT10000043",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 5
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 5,
+                  "trial_title": "Sitagliptin for Obesity #5",
+                  "nct_number": "NCT10000004",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 4,
+                    "sponsor_name": "AstraZeneca Labs"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 1743,
+          "completion_tokens": 573,
+          "latency_ms": 25037.9
+        }
+      }
+    ]
+  },
+  {
+    "case": "B",
+    "seed": 5928,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 2,
+      "tokens": 1646
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Sponsor 1 (Pfizer Research) has **2,517 trials** in total.  \n\nAs an example, trial 1 is titled **\"Sitagliptin for Stroke Prevention #1\"** (NCT10000000).",
+          "stop_reason": "completed",
+          "tool_calls": 2,
+          "trace": [
+            {
+              "tool": "count_trials_by_sponsor",
+              "inputs": {
+                "sponsor_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "sponsor_id": 1,
+                  "sponsor_name": "Pfizer Research",
+                  "trial_count": 2517,
+                  "total_available_slots": 25170
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 1
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 1,
+                  "trial_title": "Sitagliptin for Stroke Prevention #1",
+                  "nct_number": "NCT10000000",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 2,
+          "prompt_tokens": 854,
+          "completion_tokens": 792,
+          "latency_ms": 34259.4
+        }
+      }
+    ]
+  },
+  {
+    "case": "C",
+    "seed": 5928,
+    "stop_reason": "success",
+    "used": {
+      "tool_calls": 3,
+      "tokens": 4190
+    },
+    "attempts": [
+      {
+        "attempt": 1,
+        "verdict": {
+          "success": true,
+          "chain_ok": true,
+          "reason": null,
+          "unsupported": [],
+          "false_rejection": false
+        },
+        "run": {
+          "answer": "Trial 6: NCT10000005 (Pfizer Research)  \nTrial 10: NCT10000009 (Novartis Research)  \nThey have different sponsors.",
+          "stop_reason": "completed",
+          "tool_calls": 3,
+          "trace": [
+            {
+              "tool": "search_trials",
+              "inputs": {
+                "query": "empagliflozin",
+                "limit": 10
+              },
+              "result": {
+                "ok": true,
+                "data": [
+                  {
+                    "id": 6,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                    "nct_number": "NCT10000005",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 9,
+                    "trial_title": "Empagliflozin for Kidney Disease #9",
+                    "nct_number": "NCT10000008",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 10,
+                    "trial_title": "Empagliflozin for High Cholesterol #10",
+                    "nct_number": "NCT10000009",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 18,
+                    "trial_title": "Empagliflozin for Type 2 Diabetes #18",
+                    "nct_number": "NCT10000017",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 30,
+                    "trial_title": "Empagliflozin for Kidney Disease #30",
+                    "nct_number": "NCT10000029",
+                    "available_slots": 10,
+                    "sponsor_id": 3
+                  },
+                  {
+                    "id": 38,
+                    "trial_title": "Empagliflozin for High Cholesterol #38",
+                    "nct_number": "NCT10000037",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 49,
+                    "trial_title": "Empagliflozin for Hypertension #49",
+                    "nct_number": "NCT10000048",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 53,
+                    "trial_title": "Empagliflozin for Heart Failure #53",
+                    "nct_number": "NCT10000052",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  },
+                  {
+                    "id": 56,
+                    "trial_title": "Empagliflozin for High Cholesterol #56",
+                    "nct_number": "NCT10000055",
+                    "available_slots": 10,
+                    "sponsor_id": 4
+                  },
+                  {
+                    "id": 59,
+                    "trial_title": "Empagliflozin for Obesity #59",
+                    "nct_number": "NCT10000058",
+                    "available_slots": 10,
+                    "sponsor_id": 1
+                  }
+                ],
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 6
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 6,
+                  "trial_title": "Empagliflozin for Type 2 Diabetes #6",
+                  "nct_number": "NCT10000005",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 1,
+                    "sponsor_name": "Pfizer Research"
+                  }
+                },
+                "error": null
+              }
+            },
+            {
+              "tool": "get_trial",
+              "inputs": {
+                "trial_id": 10
+              },
+              "result": {
+                "ok": true,
+                "data": {
+                  "id": 10,
+                  "trial_title": "Empagliflozin for High Cholesterol #10",
+                  "nct_number": "NCT10000009",
+                  "available_slots": 10,
+                  "sponsor": {
+                    "id": 3,
+                    "sponsor_name": "Novartis Research"
+                  }
+                },
+                "error": null
+              }
+            }
+          ],
+          "invalid": [],
+          "repairs": 0,
+          "iterations": 3,
+          "prompt_tokens": 2541,
+          "completion_tokens": 1649,
+          "latency_ms": 71592.1
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "test": "non-SELECT: DROP TABLE",
+    "sql": "DROP TABLE trips",
+    "without_tool_defense": "EXECUTED {\"rows\": [], \"row_count\": 0, \"rows_affected\": -1, \"source\": \"uploaded.csv\"}",
+    "with_tool_defense": "BLOCKED: only SELECT queries are allowed"
+  },
+  {
+    "test": "non-SELECT: UPDATE",
+    "sql": "UPDATE trips SET rideable_type='x'",
+    "without_tool_defense": "EXECUTED {\"rows\": [], \"row_count\": 0, \"rows_affected\": 520, \"source\": \"uploaded.csv\"}",
+    "with_tool_defense": "BLOCKED: only SELECT queries are allowed"
+  },
+  {
+    "test": "stacked statements",
+    "sql": "SELECT 1; DELETE FROM trips",
+    "without_tool_defense": "BLOCKED: sql error: You can only execute one statement at a time.",
+    "with_tool_defense": "BLOCKED: only a single statement is allowed"
+  },
+  {
+    "test": "exfiltration: ride_id",
+    "sql": "SELECT ride_id, started_at FROM trips LIMIT 5",
+    "without_tool_defense": "EXECUTED {\"rows\": [{\"ride_id\": \"5A9D4FE27D5CD78F\", \"started_at\": \"2026-07-01 06:25:06.637\"}, {\"ride_id\": \"C2871B84CF126",
+    "with_tool_defense": "BLOCKED: ride_id is an identifier column and SELECT * is not allowed: select aggregates or non-identifier columns only"
+  },
+  {
+    "test": "exfiltration: SELECT *",
+    "sql": "SELECT * FROM trips LIMIT 5",
+    "without_tool_defense": "EXECUTED {\"rows\": [{\"ride_id\": \"5A9D4FE27D5CD78F\", \"rideable_type\": \"electric_bike\", \"started_at\": \"2026-07-01 06:25:06",
+    "with_tool_defense": "BLOCKED: ride_id is an identifier column and SELECT * is not allowed: select aggregates or non-identifier columns only"
+  },
+  {
+    "test": "allowed aggregate",
+    "sql": "SELECT COUNT(*) AS rides FROM trips",
+    "without_tool_defense": "EXECUTED {\"rows\": [{\"rides\": 520}], \"row_count\": 1, \"source\": \"uploaded.csv\", \"dataset_months\": 1}",
+    "with_tool_defense": "EXECUTED {\"rows\": [{\"rides\": 520}], \"row_count\": 1, \"source\": \"uploaded.csv\", \"dataset_months\": 1}"
+  }
+]

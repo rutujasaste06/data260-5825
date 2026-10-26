@@ -1,0 +1,193 @@
+{
+  "case": "A",
+  "seed": 5825,
+  "stop_reason": "success",
+  "used": {
+    "tool_calls": 4,
+    "tokens": 4513
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "verdict": {
+        "success": false,
+        "chain_ok": true,
+        "reason": "run stopped with max_iterations",
+        "unsupported": [],
+        "false_rejection": false
+      },
+      "run": {
+        "answer": null,
+        "stop_reason": "max_iterations",
+        "tool_calls": 2,
+        "trace": [
+          {
+            "tool": "search_trials",
+            "inputs": {
+              "query": "obesity",
+              "limit": 5
+            },
+            "result": {
+              "ok": true,
+              "data": [
+                {
+                  "id": 5,
+                  "trial_title": "Sitagliptin for Obesity #5",
+                  "nct_number": "NCT10000004",
+                  "available_slots": 10,
+                  "sponsor_id": 4
+                },
+                {
+                  "id": 16,
+                  "trial_title": "Vildagliptin for Obesity #16",
+                  "nct_number": "NCT10000015",
+                  "available_slots": 10,
+                  "sponsor_id": 4
+                },
+                {
+                  "id": 31,
+                  "trial_title": "Insulin for Obesity #31",
+                  "nct_number": "NCT10000030",
+                  "available_slots": 10,
+                  "sponsor_id": 1
+                },
+                {
+                  "id": 32,
+                  "trial_title": "Lisinopril for Obesity #32",
+                  "nct_number": "NCT10000031",
+                  "available_slots": 10,
+                  "sponsor_id": 3
+                },
+                {
+                  "id": 44,
+                  "trial_title": "Metformin for Obesity #44",
+                  "nct_number": "NCT10000043",
+                  "available_slots": 10,
+                  "sponsor_id": 3
+                }
+              ],
+              "error": null
+            }
+          },
+          {
+            "tool": "get_trial",
+            "inputs": {
+              "trial_id": 5
+            },
+            "result": {
+              "ok": true,
+              "data": {
+                "id": 5,
+                "trial_title": "Sitagliptin for Obesity #5",
+                "nct_number": "NCT10000004",
+                "available_slots": 10,
+                "sponsor": {
+                  "id": 4,
+                  "sponsor_name": "AstraZeneca Labs"
+                }
+              },
+              "error": null
+            }
+          }
+        ],
+        "invalid": [],
+        "repairs": 0,
+        "iterations": 2,
+        "prompt_tokens": 983,
+        "completion_tokens": 711,
+        "latency_ms": 32649.4
+      }
+    },
+    {
+      "attempt": 2,
+      "verdict": {
+        "success": true,
+        "chain_ok": true,
+        "reason": null,
+        "unsupported": [],
+        "false_rejection": false
+      },
+      "run": {
+        "answer": "The NCT number for the first trial is **NCT10000004**, and its sponsor is **AstraZeneca Labs**.",
+        "stop_reason": "completed",
+        "tool_calls": 2,
+        "trace": [
+          {
+            "tool": "search_trials",
+            "inputs": {
+              "limit": 5,
+              "query": "obesity"
+            },
+            "result": {
+              "ok": true,
+              "data": [
+                {
+                  "id": 5,
+                  "trial_title": "Sitagliptin for Obesity #5",
+                  "nct_number": "NCT10000004",
+                  "available_slots": 10,
+                  "sponsor_id": 4
+                },
+                {
+                  "id": 16,
+                  "trial_title": "Vildagliptin for Obesity #16",
+                  "nct_number": "NCT10000015",
+                  "available_slots": 10,
+                  "sponsor_id": 4
+                },
+                {
+                  "id": 31,
+                  "trial_title": "Insulin for Obesity #31",
+                  "nct_number": "NCT10000030",
+                  "available_slots": 10,
+                  "sponsor_id": 1
+                },
+                {
+                  "id": 32,
+                  "trial_title": "Lisinopril for Obesity #32",
+                  "nct_number": "NCT10000031",
+                  "available_slots": 10,
+                  "sponsor_id": 3
+                },
+                {
+                  "id": 44,
+                  "trial_title": "Metformin for Obesity #44",
+                  "nct_number": "NCT10000043",
+                  "available_slots": 10,
+                  "sponsor_id": 3
+                }
+              ],
+              "error": null
+            }
+          },
+          {
+            "tool": "get_trial",
+            "inputs": {
+              "trial_id": 5
+            },
+            "result": {
+              "ok": true,
+              "data": {
+                "id": 5,
+                "trial_title": "Sitagliptin for Obesity #5",
+                "nct_number": "NCT10000004",
+                "available_slots": 10,
+                "sponsor": {
+                  "id": 4,
+                  "sponsor_name": "AstraZeneca Labs"
+                }
+              },
+              "error": null
+            }
+          }
+        ],
+        "invalid": [],
+        "repairs": 0,
+        "iterations": 3,
+        "prompt_tokens": 1938,
+        "completion_tokens": 881,
+        "latency_ms": 39011.8
+      }
+    }
+  ]
+}

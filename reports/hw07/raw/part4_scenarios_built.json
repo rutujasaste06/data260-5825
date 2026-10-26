@@ -1,0 +1,15 @@
+{
+  "seed": 5825,
+  "scenarios": [
+    {
+      "file": "scenario1_membership_wins.csv",
+      "rows": 520,
+      "note": "real rows, real timestamps (July 2026)"
+    },
+    {
+      "file": "scenario2_pay_per_use_wins.csv",
+      "rows": 500,
+      "note": "real durations and bike types; dates re-spaced to about 8 rides a month from 2021-01 (synthetic schedule)"
+    }
+  ]
+}

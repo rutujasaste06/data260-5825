@@ -2,3 +2,6 @@ venv/
 __pycache__/ 
 *.pyc 
 .env
+code/hw7_agent/data/
+
+code/hw7_agent/part4/uploads/
