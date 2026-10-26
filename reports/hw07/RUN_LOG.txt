@@ -278,3 +278,6 @@ They have different sponsors.
 2026-10-26 14:32:11,032 === attack2_sql_misuse | prompt_defense ===
 2026-10-26 14:32:12,625 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
 2026-10-26 14:32:39,591 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-26 15:00:39,382 === attack1_override | before ===
+2026-10-26 15:00:42,110 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-10-26 15:02:08,282 HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"

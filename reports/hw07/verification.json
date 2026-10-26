@@ -1,0 +1,88 @@
+{
+  "homework": "HW7",
+  "sid4": 5825,
+  "commit_hash": "5447fda547002389518a5f089bbf82d58837849a",
+  "tag_hw7_commit": "5447fda547002389518a5f089bbf82d58837849a",
+  "model_configuration": {
+    "chat_model": "qwen3:8b",
+    "embed_model": "nomic-embed-text",
+    "framework_agent": "langgraph create_react_agent"
+  },
+  "seed": 5825,
+  "verify_seed": 265825,
+  "port_base": 8425,
+  "run_at_utc": "2026-10-26T21:57:05.090467+00:00",
+  "checks": [
+    {
+      "check": "API responds on PORT_BASE",
+      "passed": true,
+      "detail": "GET /docs on port 8425"
+    },
+    {
+      "check": "Auth: valid login returns a token",
+      "passed": true,
+      "detail": "valid login -> 200, token returned"
+    },
+    {
+      "check": "Auth: wrong password gives 401",
+      "passed": true,
+      "detail": "wrong password -> 401"
+    },
+    {
+      "check": "Auth: /auth/me without token gives 401",
+      "passed": true,
+      "detail": "no token -> 401"
+    },
+    {
+      "check": "Auth: invalid token gives 401",
+      "passed": true,
+      "detail": "invalid token -> 401"
+    },
+    {
+      "check": "Roles: reader cannot create a trial (403)",
+      "passed": true,
+      "detail": "reader POST /trials -> 403"
+    },
+    {
+      "check": "Roles: writer can create a trial (201)",
+      "passed": true,
+      "detail": "writer POST /trials -> 201"
+    },
+    {
+      "check": "Roles: writer cannot delete (403)",
+      "passed": true,
+      "detail": "writer DELETE -> 403"
+    },
+    {
+      "check": "Roles: moderator can delete (200)",
+      "passed": true,
+      "detail": "moderator DELETE -> 200"
+    },
+    {
+      "check": "Passwords are stored as bcrypt hashes in MySQL",
+      "passed": true,
+      "detail": "3 users, all bcrypt hashes: True"
+    },
+    {
+      "check": "csv_sql allows one SELECT and rejects unsafe SQL",
+      "passed": true,
+      "detail": "SELECT ok=True, 4 unsafe queries all rejected=True"
+    },
+    {
+      "check": "calculator evaluates arithmetic and rejects code",
+      "passed": true,
+      "detail": "calculator -> {'value': 519.0}, code injection rejected=True"
+    },
+    {
+      "check": "Part 6 gate allows safe and flags destructive commands",
+      "passed": true,
+      "detail": "3 safe commands allowed=True, 4 destructive commands flagged=True"
+    },
+    {
+      "check": "Hand-written agent loop completes a verification case",
+      "passed": true,
+      "detail": "case E (missing trial): stop=completed, tool_calls=1, verifier success=True"
+    }
+  ],
+  "all_passed": true
+}
