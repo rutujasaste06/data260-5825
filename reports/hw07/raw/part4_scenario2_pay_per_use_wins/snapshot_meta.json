@@ -1,6 +1,6 @@
 {
-  "url": "file:///Users/rutujasaste/Documents/data260-5825/code/hw7_agent/part5/fixtures/attack3_exfiltration.html",
-  "access_ts": "2026-10-26T22:55:22Z",
-  "sha256": "d3ca99fab43b77d3658d52dd96fbde70750a4dc884fa3c95ede7f40cb684c640",
+  "url": "https://www.lyft.com/bikes/bay-wheels/pricing",
+  "access_ts": "2026-10-26T20:30:42Z",
+  "sha256": "2b504ee9500d4afcc263644c0d0725cddd0d6f066cf7ecf46764ef18f4247f67",
   "offline_fallback": false
 }

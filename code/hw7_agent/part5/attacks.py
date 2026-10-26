@@ -10,6 +10,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "part4"))
 import agent  # noqa: E402
 
+agent.save_run = lambda *args, **kwargs: None  # Part 5 saves its own results; never overwrite the Part 4 evidence
+
 CSV = os.path.join(HERE, "..", "data", "scenario2_pay_per_use_wins.csv")  # truth: Pay Per Ride/Minute
 RAW = agent.RAW
 STAGES = {"before": (False, False), "prompt_defense": (True, False), "prompt_plus_tool": (True, True)}
