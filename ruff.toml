@@ -3,3 +3,8 @@ line-length = 100
 [lint]
 select = ["E", "F"]
 ignore = ["E501"]
+
+# HW8 Part 3 demo/test scripts: kept exactly as they ran when the evidence was captured
+[lint.per-file-ignores]
+"code/pipeline/part3/**" = ["E401", "E402", "E702", "E741"]
+"code/messaging/part3/**" = ["F401", "F841"]
