@@ -1,3 +1,150 @@
+2026-11-02 10:55:18 ===== HW8 RUN LOG | Rutuja Saste | SID4 5825 =====
+2026-11-02 10:55:18 ===== PART 1: homework_demo.py =====
+2026-11-02 10:55:18 ======================================================================
+2026-11-02 10:55:18 HW8 Part 1 Demonstration - CREATE_TRIAL -> GET_TRIAL over Kafka
+2026-11-02 10:55:18 ======================================================================
+2026-11-02 10:55:18 /Users/rutujasaste/Documents/data260-5825/code/messaging/homework_demo.py:92: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+2026-11-02 10:55:18   create_response = send_and_wait("CREATE_TRIAL", {
+2026-11-02 10:55:18 /Users/rutujasaste/Documents/data260-5825/code/messaging/homework_demo.py:44: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+2026-11-02 10:55:18   consumer = KafkaConsumer(
+2026-11-02 10:55:18 
+2026-11-02 10:55:18 [STEP] Sending CREATE_TRIAL request to 's5825_entity_requests'
+2026-11-02 10:55:18 [SENT]  {'correlation_id': '65234a32-9dd8-4879-9245-fd4c1b965581', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+2026-11-02 10:55:18 [STEP] (worker receives/processes this - see worker.py terminal for that log)
+2026-11-02 10:55:18 [RECEIVED BY CLIENT] {'correlation_id': '65234a32-9dd8-4879-9245-fd4c1b965581', 'success': True, 'entity_id': 'aee17d58-5b91-4508-a302-3eae19f39b62', 'message': 'Trial created'}
+2026-11-02 10:55:18 
+2026-11-02 10:55:18 [STEP] Extracted generated entity_id: aee17d58-5b91-4508-a302-3eae19f39b62
+2026-11-02 10:55:18 /Users/rutujasaste/Documents/data260-5825/code/messaging/homework_demo.py:104: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+2026-11-02 10:55:18   get_response = send_and_wait("GET_TRIAL", {"trial_id": trial_id})
+2026-11-02 10:55:18 
+2026-11-02 10:55:18 [STEP] Sending GET_TRIAL request to 's5825_entity_requests'
+2026-11-02 10:55:18 [SENT]  {'correlation_id': '7af726d7-5b08-4525-90d2-5e1a285b47f1', 'reply_to': 's5825_entity_responses', 'operation': 'GET_TRIAL', 'data': {'trial_id': 'aee17d58-5b91-4508-a302-3eae19f39b62'}}
+2026-11-02 10:55:18 [STEP] (worker receives/processes this - see worker.py terminal for that log)
+2026-11-02 10:55:18 [RECEIVED BY CLIENT] {'correlation_id': '7af726d7-5b08-4525-90d2-5e1a285b47f1', 'success': True, 'entity': {'trial_id': 'aee17d58-5b91-4508-a302-3eae19f39b62', 'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+2026-11-02 10:55:18 
+2026-11-02 10:55:18 [STEP] Final retrieved entity:
+2026-11-02 10:55:18 {
+2026-11-02 10:55:18   "trial_id": "aee17d58-5b91-4508-a302-3eae19f39b62",
+2026-11-02 10:55:18   "trialTitle": "Phase II Study of Metformin",
+2026-11-02 10:55:18   "nctNumber": "NCT00000001",
+2026-11-02 10:55:18   "trialPhase": "Phase II"
+2026-11-02 10:55:18 }
+2026-11-02 10:55:18 
+2026-11-02 10:55:18 [CHECK] correlation_id on this response: 7af726d7-5b08-4525-90d2-5e1a285b47f1
+2026-11-02 10:55:18 [CHECK] This confirms the response is matched to its own request, not any other message.
+2026-11-02 10:55:18 
+2026-11-02 10:55:18 ======================================================================
+2026-11-02 10:55:18 Demonstration complete - CREATE_TRIAL and GET_TRIAL both succeeded.
+2026-11-02 10:55:18 ======================================================================
+2026-11-02 10:57:17 ===== PART 1: worker log for the run above (docker logs hw8-worker) =====
+2026-11-02T18:55:18.414137130Z [worker] Received request: {'correlation_id': '65234a32-9dd8-4879-9245-fd4c1b965581', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+2026-11-02T18:55:18.416166380Z [worker] Sent response to s5825_entity_responses: {'correlation_id': '65234a32-9dd8-4879-9245-fd4c1b965581', 'success': True, 'entity_id': 'aee17d58-5b91-4508-a302-3eae19f39b62', 'message': 'Trial created'}
+2026-11-02T18:55:18.541835755Z [worker] Received request: {'correlation_id': '7af726d7-5b08-4525-90d2-5e1a285b47f1', 'reply_to': 's5825_entity_responses', 'operation': 'GET_TRIAL', 'data': {'trial_id': 'aee17d58-5b91-4508-a302-3eae19f39b62'}}
+2026-11-02T18:55:18.543574505Z [worker] Sent response to s5825_entity_responses: {'correlation_id': '7af726d7-5b08-4525-90d2-5e1a285b47f1', 'success': True, 'entity': {'trial_id': 'aee17d58-5b91-4508-a302-3eae19f39b62', 'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+2026-11-02 10:57:41 ===== PART 3: duplicate delivery test (test_duplicate_delivery.py) =====
+2026-11-02 10:57:41 /Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_duplicate_delivery.py:99: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+2026-11-02 10:57:41   main()
+2026-11-02 10:57:41 /Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_duplicate_delivery.py:48: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+2026-11-02 10:57:41   consumer = KafkaConsumer(
+2026-11-02 10:57:41 [test] correlation_id for this test: 4db262fa-8eb4-490d-a779-91965de0031e
+2026-11-02 10:57:41 
+2026-11-02 10:57:41 [test] Sending CREATE_TRIAL request (1st time, original)
+2026-11-02 10:57:41 [test] (scanned 38 messages on this topic before finding the match)
+2026-11-02 10:57:41 [test] Response #1: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'success': True, 'entity_id': 'edf35ac5-3e63-4d04-87a5-872f3e1eb747', 'message': 'Trial created'}
+2026-11-02 10:57:41 
+2026-11-02 10:57:41 [test] Replaying the EXACT SAME message (same correlation_id) - simulating a duplicate delivery
+2026-11-02 10:57:41 [test] (scanned 1 messages on this topic before finding the match)
+2026-11-02 10:57:41 [test] Response #2: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'success': True, 'entity_id': 'edf35ac5-3e63-4d04-87a5-872f3e1eb747', 'message': 'Trial created'}
+2026-11-02 10:57:41 
+2026-11-02 10:57:41 === RESULT ===
+2026-11-02 10:57:41 entity_id from response #1: edf35ac5-3e63-4d04-87a5-872f3e1eb747
+2026-11-02 10:57:41 entity_id from response #2: edf35ac5-3e63-4d04-87a5-872f3e1eb747
+2026-11-02 10:57:41 SAME entity_id both times -> idempotent. No duplicate trial was created.
+2026-11-02 10:58:01 ===== PART 3: worker log for the duplicate test (docker logs hw8-worker) =====
+2026-11-02T18:57:41.628315210Z [worker] Received request: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Duplicate Delivery Test Trial', 'nctNumber': 'NCT00000099', 'trialPhase': 'Phase I'}}
+2026-11-02T18:57:41.630139794Z [worker] Sent response to s5825_entity_responses: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'success': True, 'entity_id': 'edf35ac5-3e63-4d04-87a5-872f3e1eb747', 'message': 'Trial created'}
+2026-11-02T18:57:41.646017919Z [worker] Received request: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Duplicate Delivery Test Trial', 'nctNumber': 'NCT00000099', 'trialPhase': 'Phase I'}}
+2026-11-02T18:57:41.646033627Z [worker] DUPLICATE detected for correlation_id=4db262fa-8eb4-490d-a779-91965de0031e - returning cached response, no new trial created
+2026-11-02T18:57:41.647451169Z [worker] Sent response to s5825_entity_responses: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'success': True, 'entity_id': 'edf35ac5-3e63-4d04-87a5-872f3e1eb747', 'message': 'Trial created'}
+2026-11-02 10:58:20 ===== PART 3: poison message test (test_poison_message.py) =====
+2026-11-02 10:58:20 /Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:125: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+2026-11-02 10:58:20   main()
+2026-11-02 10:58:20 /Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:61: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+2026-11-02 10:58:20   response_consumer = KafkaConsumer(
+2026-11-02 10:58:20 /Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:70: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+2026-11-02 10:58:20   dead_letter_consumer = KafkaConsumer(
+2026-11-02 10:58:20 [test] normal_id_1 = b5335caf-3e31-48b3-9900-f7744f9b6d81
+2026-11-02 10:58:20 [test] poison_id   = ef78c5c0-0482-42ad-abc8-fa36e889f521
+2026-11-02 10:58:20 [test] normal_id_2 = a1359c57-4a62-4f2c-a630-e7d44662f078
+2026-11-02 10:58:20 
+2026-11-02 10:58:20 [test] Sending normal request #1 ...
+2026-11-02 10:58:20 [test] Sending POISON request (trialTitle=POISON_TEST_TRIGGER_CRASH) ...
+2026-11-02 10:58:20 [test] Sending normal request #2 (right after the poison message) ...
+2026-11-02 10:58:20 
+2026-11-02 10:58:20 [test] Waiting for responses to the two NORMAL requests ...
+2026-11-02 10:58:20 [test] Normal request #1 response: {'correlation_id': 'b5335caf-3e31-48b3-9900-f7744f9b6d81', 'success': True, 'entity_id': '6da4f1ad-4737-4e7a-8465-4d3ce7fd203f', 'message': 'Trial created'}
+2026-11-02 10:58:20 [test] Normal request #2 response: {'correlation_id': 'a1359c57-4a62-4f2c-a630-e7d44662f078', 'success': True, 'entity_id': '57d5ee98-d34f-4093-90e4-47a01a88e524', 'message': 'Trial created'}
+2026-11-02 10:58:20 [test] BOTH normal requests succeeded -> poison message did NOT block later messages. GOOD.
+2026-11-02 10:58:20 
+2026-11-02 10:58:20 [test] Waiting for the poison message to appear on the dead-letter topic (it must retry and fail a bounded number of times first, so this takes a few seconds) ...
+2026-11-02 10:58:20 
+2026-11-02 10:58:20 [test] Dead-letter result for poison_id: {'correlation_id': 'ef78c5c0-0482-42ad-abc8-fa36e889f521', 'original_request': {'correlation_id': 'ef78c5c0-0482-42ad-abc8-fa36e889f521', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 3}, 'error': 'Simulated processing crash (poison message test)', 'failed_attempts': 4}
+2026-11-02 10:58:20 [test] Poison message correctly ended up on the dead-letter topic after retries. GOOD.
+2026-11-02 10:58:38 ===== PART 3: worker log for the poison test (docker logs hw8-worker) =====
+2026-11-02T18:57:41.628315210Z [worker] Received request: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Duplicate Delivery Test Trial', 'nctNumber': 'NCT00000099', 'trialPhase': 'Phase I'}}
+2026-11-02T18:57:41.630139794Z [worker] Sent response to s5825_entity_responses: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'success': True, 'entity_id': 'edf35ac5-3e63-4d04-87a5-872f3e1eb747', 'message': 'Trial created'}
+2026-11-02T18:57:41.646017919Z [worker] Received request: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Duplicate Delivery Test Trial', 'nctNumber': 'NCT00000099', 'trialPhase': 'Phase I'}}
+2026-11-02T18:57:41.646033627Z [worker] DUPLICATE detected for correlation_id=4db262fa-8eb4-490d-a779-91965de0031e - returning cached response, no new trial created
+2026-11-02T18:57:41.647451169Z [worker] Sent response to s5825_entity_responses: {'correlation_id': '4db262fa-8eb4-490d-a779-91965de0031e', 'success': True, 'entity_id': 'edf35ac5-3e63-4d04-87a5-872f3e1eb747', 'message': 'Trial created'}
+2026-11-02T18:58:20.507793173Z [worker] Received request: {'correlation_id': 'b5335caf-3e31-48b3-9900-f7744f9b6d81', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Normal Trial A', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+2026-11-02T18:58:20.509691840Z [worker] Sent response to s5825_entity_responses: {'correlation_id': 'b5335caf-3e31-48b3-9900-f7744f9b6d81', 'success': True, 'entity_id': '6da4f1ad-4737-4e7a-8465-4d3ce7fd203f', 'message': 'Trial created'}
+2026-11-02T18:58:20.509713631Z [worker] Received request: {'correlation_id': 'ef78c5c0-0482-42ad-abc8-fa36e889f521', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+2026-11-02T18:58:20.509719173Z [worker] ERROR processing correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 (attempt 1/3): Simulated processing crash (poison message test)
+2026-11-02T18:58:20.515486298Z [worker] Requeued correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 for retry 1/3 (other messages can be processed in between - this does not block the queue)
+2026-11-02T18:58:20.515527673Z [worker] Received request: {'correlation_id': 'a1359c57-4a62-4f2c-a630-e7d44662f078', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Normal Trial B', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+2026-11-02T18:58:20.517677256Z [worker] Sent response to s5825_entity_responses: {'correlation_id': 'a1359c57-4a62-4f2c-a630-e7d44662f078', 'success': True, 'entity_id': '57d5ee98-d34f-4093-90e4-47a01a88e524', 'message': 'Trial created'}
+2026-11-02T18:58:20.520679256Z [worker] Received request: {'correlation_id': 'ef78c5c0-0482-42ad-abc8-fa36e889f521', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 1}
+2026-11-02T18:58:20.520703340Z [worker] ERROR processing correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 (attempt 2/3): Simulated processing crash (poison message test)
+2026-11-02T18:58:20.523071673Z [worker] Requeued correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 for retry 2/3 (other messages can be processed in between - this does not block the queue)
+2026-11-02T18:58:20.525185090Z [worker] Received request: {'correlation_id': 'ef78c5c0-0482-42ad-abc8-fa36e889f521', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 2}
+2026-11-02T18:58:20.525222006Z [worker] ERROR processing correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 (attempt 3/3): Simulated processing crash (poison message test)
+2026-11-02T18:58:20.526544631Z [worker] Requeued correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 for retry 3/3 (other messages can be processed in between - this does not block the queue)
+2026-11-02T18:58:20.528123506Z [worker] Received request: {'correlation_id': 'ef78c5c0-0482-42ad-abc8-fa36e889f521', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 3}
+2026-11-02T18:58:20.528140798Z [worker] ERROR processing correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 (attempt 4/3): Simulated processing crash (poison message test)
+2026-11-02T18:58:20.621753381Z [worker] GIVING UP after 4 attempts - sent correlation_id=ef78c5c0-0482-42ad-abc8-fa36e889f521 to s5825_dead_letter
+2026-11-02 10:59:03 ===== SELF-CHECK: make verify-hw08 =====
+2026-11-02 10:59:03 python code/verify_hw8.py
+2026-11-02 10:59:04 PASS  Kafka broker reachable - broker localhost:9092 answered; s5825_entity_requests and s5825_entity_responses exist=True
+2026-11-02 10:59:04 [client] Sending CREATE_TRIAL (correlation_id=5428b3bf-3ac1-4d3a-8f54-371784d95f08): {'correlation_id': '5428b3bf-3ac1-4d3a-8f54-371784d95f08', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Verify HW8 trial', 'nctNumber': 'NCT00000008', 'trialPhase': 'Phase II'}}
+2026-11-02 10:59:04 [client] Received response: {'correlation_id': '5428b3bf-3ac1-4d3a-8f54-371784d95f08', 'success': True, 'entity_id': '380bc7a6-40e4-4cfb-9d58-bacb6552aa80', 'message': 'Trial created'}
+2026-11-02 10:59:04 PASS  CREATE_TRIAL succeeds with a UUID entity_id - success=True, entity_id is a UUID=True
+2026-11-02 10:59:04 [client] Sending GET_TRIAL (correlation_id=f4463ccb-dcb6-4a51-bbbe-2762fe0ced4e): {'correlation_id': 'f4463ccb-dcb6-4a51-bbbe-2762fe0ced4e', 'reply_to': 's5825_entity_responses', 'operation': 'GET_TRIAL', 'data': {'trial_id': '380bc7a6-40e4-4cfb-9d58-bacb6552aa80'}}
+2026-11-02 10:59:04 [client] Received response: {'correlation_id': 'f4463ccb-dcb6-4a51-bbbe-2762fe0ced4e', 'success': True, 'entity': {'trial_id': '380bc7a6-40e4-4cfb-9d58-bacb6552aa80', 'trialTitle': 'Verify HW8 trial', 'nctNumber': 'NCT00000008', 'trialPhase': 'Phase II'}}
+2026-11-02 10:59:04 PASS  GET_TRIAL returns the created trial - success=True, same entity returned=True
+2026-11-02 10:59:04 [client] Sending GET_TRIAL (correlation_id=93458b38-0d1c-441c-a19f-3db9e5e481f4): {'correlation_id': '93458b38-0d1c-441c-a19f-3db9e5e481f4', 'reply_to': 's5825_entity_responses', 'operation': 'GET_TRIAL', 'data': {'trial_id': 'does-not-exist'}}
+2026-11-02 10:59:04 [client] Received response: {'correlation_id': '93458b38-0d1c-441c-a19f-3db9e5e481f4', 'success': False, 'error': 'Entity not found'}
+2026-11-02 10:59:04 PASS  GET_TRIAL with unknown id returns a clean error - success=False, error present=True, correlation_id present
+2026-11-02 10:59:04 [client] Sending DELETE_EVERYTHING (correlation_id=3baba5ca-1747-4727-89d3-b86154b72698): {'correlation_id': '3baba5ca-1747-4727-89d3-b86154b72698', 'reply_to': 's5825_entity_responses', 'operation': 'DELETE_EVERYTHING', 'data': {}}
+2026-11-02 10:59:04 [client] Received response: {'correlation_id': '3baba5ca-1747-4727-89d3-b86154b72698', 'success': False, 'error': 'Unknown operation'}
+2026-11-02 10:59:04 PASS  Unknown operation returns a clean error - success=False, error present
+2026-11-02 10:59:04 [client] Sending CREATE_TRIAL (correlation_id=48600f1f-c2db-498d-ae13-592dfe677ffc): {'correlation_id': '48600f1f-c2db-498d-ae13-592dfe677ffc', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': '', 'nctNumber': 'NCT1', 'trialPhase': 'Phase I'}}
+2026-11-02 10:59:04 [client] Received response: {'correlation_id': '48600f1f-c2db-498d-ae13-592dfe677ffc', 'success': False, 'error': 'Missing or empty required field: trialTitle'}
+2026-11-02 10:59:04 PASS  Empty required field is rejected - empty trialTitle rejected: success=False
+2026-11-02 10:59:04 PASS  Duplicate correlation_id returns the same entity_id (idempotent) - 2 responses, distinct entity_ids=1
+2026-11-02 10:59:04 Wrote /Users/rutujasaste/Documents/data260-5825/reports/hw08/verification.json | all_passed = True
+
+
+##############################################################################
+APPENDIX - EARLIER TERMINAL SESSIONS (Nov 1 - Nov 2, 2026)
+The sections below are copied unchanged from my terminal during the Part 2 and
+Part 3 work. These sessions were NOT run through the timestamp filter, so their
+lines carry no per-line timestamps (Docker worker lines and Kafka's own error
+line carry their own where shown). Lines marked [... ...] are trimmed (Python
+traceback text from pressing Ctrl+C); nothing else was changed.
+The timestamped runs for Part 1, duplicate delivery, poison message and the
+self-check are above. The 20-message ordering data is in raw/.
+##############################################################################
+
 ===== PART 1: client.py - CREATE_TRIAL then GET_TRIAL round trip (earlier run) =====
 (venv) rutujasaste@Rutujas-MacBook-Pro messaging % python client.py
 /Users/rutujasaste/Documents/data260-5825/code/messaging/client.py:67: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
@@ -466,3 +613,7 @@ python writer.py writer-B
 [writer-B] ORDER partition 0 offset 26 entity 28fd79e0 seq 2 (msg 3)
 [... remaining messages and Ctrl+C traceback trimmed; full data in raw/ordering_*_log.jsonl ...]
 
+===== NOTES =====
+Lines starting with 2026-11-02 HH:MM:SS are local time (Pacific, UTC-8), added by a timestamp filter on the console output.
+Worker lines from "docker logs --timestamps" use UTC (18:55 UTC = 10:55 Pacific).
+The 20-message ordering runs (Part 3.IV) are logged with their own timestamps in raw/ordering_nokey_log.jsonl and raw/ordering_key_log.jsonl.
