@@ -1,0 +1,51 @@
+{
+  "homework": "HW8",
+  "sid4": 5825,
+  "commit_hash": "7a638636b79295fdc4c1db12811769b02dd56ac5",
+  "tag_hw8_commit": null,
+  "model_configuration": {
+    "chat_model": "qwen3:8b",
+    "note": "model used by the Part 2 pipeline; this smoke test checks Part 1/3 messaging only"
+  },
+  "seed": 5825,
+  "verify_seed": 265825,
+  "run_at_utc": "2026-11-02T19:17:09.538728+00:00",
+  "checks": [
+    {
+      "check": "Kafka broker reachable",
+      "passed": true,
+      "detail": "broker localhost:9092 answered; s5825_entity_requests and s5825_entity_responses exist=True"
+    },
+    {
+      "check": "CREATE_TRIAL succeeds with a UUID entity_id",
+      "passed": true,
+      "detail": "success=True, entity_id is a UUID=True"
+    },
+    {
+      "check": "GET_TRIAL returns the created trial",
+      "passed": true,
+      "detail": "success=True, same entity returned=True"
+    },
+    {
+      "check": "GET_TRIAL with unknown id returns a clean error",
+      "passed": true,
+      "detail": "success=False, error present=True, correlation_id present"
+    },
+    {
+      "check": "Unknown operation returns a clean error",
+      "passed": true,
+      "detail": "success=False, error present"
+    },
+    {
+      "check": "Empty required field is rejected",
+      "passed": true,
+      "detail": "empty trialTitle rejected: success=False"
+    },
+    {
+      "check": "Duplicate correlation_id returns the same entity_id (idempotent)",
+      "passed": true,
+      "detail": "2 responses, distinct entity_ids=1"
+    }
+  ],
+  "all_passed": true
+}

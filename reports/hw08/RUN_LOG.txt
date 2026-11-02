@@ -1,0 +1,468 @@
+===== PART 1: client.py - CREATE_TRIAL then GET_TRIAL round trip (earlier run) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro messaging % python client.py
+/Users/rutujasaste/Documents/data260-5825/code/messaging/client.py:67: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  created = send_request("CREATE_TRIAL", {
+/Users/rutujasaste/Documents/data260-5825/code/messaging/client.py:27: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+[client] Sending CREATE_TRIAL (correlation_id=a6b73bbe-3eaa-4f05-9591-c3e0716d8488): {'correlation_id': 'a6b73bbe-3eaa-4f05-9591-c3e0716d8488', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+[client] Received response: {'correlation_id': 'a6b73bbe-3eaa-4f05-9591-c3e0716d8488', 'success': True, 'entity_id': '6e95e21a-5df5-48e4-b804-86ede60301fb', 'message': 'Trial created'}
+/Users/rutujasaste/Documents/data260-5825/code/messaging/client.py:74: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  fetched = send_request("GET_TRIAL", {"trial_id": trial_id})
+[client] Sending GET_TRIAL (correlation_id=56652aa2-6584-41c9-9c3a-3c2a226c390c): {'correlation_id': '56652aa2-6584-41c9-9c3a-3c2a226c390c', 'reply_to': 's5825_entity_responses', 'operation': 'GET_TRIAL', 'data': {'trial_id': '6e95e21a-5df5-48e4-b804-86ede60301fb'}}
+[client] Received response: {'correlation_id': '56652aa2-6584-41c9-9c3a-3c2a226c390c', 'success': True, 'entity': {'trial_id': '6e95e21a-5df5-48e4-b804-86ede60301fb', 'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+
+===== PART 1: homework_demo.py - required 10-step demonstration (earlier successful run) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro messaging % python homework_demo.py
+======================================================================
+HW8 Part 1 Demonstration - CREATE_TRIAL -> GET_TRIAL over Kafka
+======================================================================
+/Users/rutujasaste/Documents/data260-5825/code/messaging/homework_demo.py:90: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  create_response = send_and_wait("CREATE_TRIAL", {
+/Users/rutujasaste/Documents/data260-5825/code/messaging/homework_demo.py:42: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+
+[STEP] Sending CREATE_TRIAL request to 's5825_entity_requests'
+[SENT]  {'correlation_id': 'e1d24fa5-6dd4-4693-a63a-15861cebf2f5', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+[STEP] (worker receives/processes this - see worker.py terminal for that log)
+[RECEIVED BY CLIENT] {'correlation_id': 'e1d24fa5-6dd4-4693-a63a-15861cebf2f5', 'success': True, 'entity_id': '32300ef3-2e4a-443a-b8aa-a0aa8c74ecaa', 'message': 'Trial created'}
+
+[STEP] Extracted generated entity_id: 32300ef3-2e4a-443a-b8aa-a0aa8c74ecaa
+/Users/rutujasaste/Documents/data260-5825/code/messaging/homework_demo.py:102: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  get_response = send_and_wait("GET_TRIAL", {"trial_id": trial_id})
+
+[STEP] Sending GET_TRIAL request to 's5825_entity_requests'
+[SENT]  {'correlation_id': 'acc8ca88-38e6-42cf-b2fd-15ae197e3d90', 'reply_to': 's5825_entity_responses', 'operation': 'GET_TRIAL', 'data': {'trial_id': '32300ef3-2e4a-443a-b8aa-a0aa8c74ecaa'}}
+[STEP] (worker receives/processes this - see worker.py terminal for that log)
+[RECEIVED BY CLIENT] {'correlation_id': 'acc8ca88-38e6-42cf-b2fd-15ae197e3d90', 'success': True, 'entity': {'trial_id': '32300ef3-2e4a-443a-b8aa-a0aa8c74ecaa', 'trialTitle': 'Phase II Study of Metformin', 'nctNumber': 'NCT00000001', 'trialPhase': 'Phase II'}}
+
+[STEP] Final retrieved entity:
+{
+  "trial_id": "32300ef3-2e4a-443a-b8aa-a0aa8c74ecaa",
+  "trialTitle": "Phase II Study of Metformin",
+  "nctNumber": "NCT00000001",
+  "trialPhase": "Phase II"
+}
+
+[CHECK] correlation_id on this response: acc8ca88-38e6-42cf-b2fd-15ae197e3d90
+[CHECK] This confirms the response is matched to its own request, not any other message.
+
+======================================================================
+Demonstration complete - CREATE_TRIAL and GET_TRIAL both succeeded.
+======================================================================
+
+===== PART 2: create the 4 pipeline topics (s5825_tasks has 2 partitions) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % docker exec hw8-kafka kafka-topics --create --topic s5825_inbox --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+docker exec hw8-kafka kafka-topics --create --topic s5825_tasks --partitions 2 --replication-factor 1 --bootstrap-server localhost:9092
+docker exec hw8-kafka kafka-topics --create --topic s5825_drafts --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+docker exec hw8-kafka kafka-topics --create --topic s5825_final --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic s5825_inbox.
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic s5825_tasks.
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic s5825_drafts.
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic s5825_final.
+
+===== PART 2: Writer agent - receives a plan from s5825_tasks, sends a draft to s5825_drafts =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % cd ~/Documents/data260-5825/code/pipeline
+source ../../venv/bin/activate
+python writer.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:36: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:71: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer] Ready and listening on s5825_tasks
+[writer] Received plan (correlation_id=5cdb3983-6975-437d-a3e5-bc5477f081d4)
+[writer] Generated draft: Before joining a Phase II trial, a patient should understand the trial’s purpose: evaluating treatment efficacy and monitoring side effects, unlike Phase I’s safety focus. Review the informed consent document to grasp risks, benefits, procedures, and the right to withdraw at any time. Clarify treatment specifics, such as dosage, frequency, duration, and how it compares to standard care. Discuss potential side effects, monitoring protocols (e.g., regular check-ups, lab tests), and available support during and after the trial. Ensure clarity on time commitments and how the trial aligns with their health goals. Always ask questions and seekclarification to make an informed decision.
+[writer] Sent draft to s5825_drafts
+[... Ctrl+C traceback trimmed ...]
+
+===== PART 2: Reviewer agent - receives the draft, approves, sends final result to s5825_final =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % cd ~/Documents/data260-5825/code/pipeline
+source ../../venv/bin/activate
+python reviewer.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/reviewer.py:28: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/reviewer.py:62: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[reviewer] Ready and listening on s5825_drafts
+[reviewer] Received draft (correlation_id=5cdb3983-6975-437d-a3e5-bc5477f081d4)
+[reviewer] Verdict: approved
+[reviewer] Sent final result to s5825_final
+[reviewer] Received draft (correlation_id=05038906-8b41-4514-bf2d-6418f0c6d409)
+
+===== PART 2: send_question.py - question goes in at s5825_inbox, same correlation_id comes out of s5825_final =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % cd ~/Documents/data260-5825/code/pipeline
+source ../../venv/bin/activate
+python send_question.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/send_question.py:67: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/send_question.py:32: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+[send_question] Sending question to s5825_inbox (correlation_id=5cdb3983-6975-437d-a3e5-bc5477f081d4)
+[send_question] Question: What should a patient know before joining a Phase II clinical trial?
+[send_question] Waiting on s5825_final for the matching result ...
+
+=== FINAL RESULT ===
+{
+  "correlation_id": "5cdb3983-6975-437d-a3e5-bc5477f081d4",
+  "status": "approved",
+  "answer": "Before joining a Phase II trial, a patient should understand the trial\u2019s purpose: evaluating treatment efficacy and monitoring side effects, unlike Phase I\u2019s safety focus. Review the informed consent document to grasp risks, benefits, procedures, and the right to withdraw at any time. Clarify treatment specifics, such as dosage, frequency, duration, and how it compares to standard care. Discuss potential side effects, monitoring protocols (e.g., regular check-ups, lab tests),and available support during and after the trial. Ensure clarity on time commitments and how the trial aligns with their health goals. Always ask questions and seek clarification to make an informed decision."
+}
+
+===== PART 2: s5825_tasks has 2 partitions =====
+(venv) rutujasaste@Rutujas-MacBook-Pro pipeline % docker exec hw8-kafka kafka-topics --alter --topic s5825_tasks --partitions 2 --bootstrap-server localhost:9092
+Error while executing topic command : Topic already has 2 partitions.
+[2026-11-01 08:12:48,539] ERROR org.apache.kafka.common.errors.InvalidPartitionsException: Topic already has 2 partitions.
+ (kafka.admin.TopicCommand$)
+(venv) rutujasaste@Rutujas-MacBook-Pro pipeline % docker exec hw8-kafka kafka-topics --describe --topic s5825_tasks --bootstrap-server localhost:9092
+Topic: s5825_tasks      TopicId: 2noS32fVTCK58QMdgcG31A PartitionCount: 2       ReplicationFactor: 1    Configs: 
+        Topic: s5825_tasks      Partition: 0    Leader: 1       Replicas: 1     Isr: 1
+        Topic: s5825_tasks      Partition: 1    Leader: 1       Replicas: 1     Isr: 1
+
+===== PART 3: create the dead-letter topic =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % docker exec hw8-kafka kafka-topics --create --topic s5825_dead_letter --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+WARNING: Due to limitations in metric names, topics with a period ('.') or underscore ('_') could collide. To avoid issues it is best to use either, but not both.
+Created topic s5825_dead_letter.
+
+===== PART 3 BEFORE FIX: duplicate delivery (worker without idempotency) - correlation_id ddb212a5... =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % python test_duplicate_delivery.py
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_duplicate_delivery.py:99: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_duplicate_delivery.py:48: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+[test] correlation_id for this test: ddb212a5-b506-410a-a16b-da238a05f255
+
+[test] Sending CREATE_TRIAL request (1st time, original)
+[test] (scanned 13 messages on this topic before finding the match)
+[test] Response #1: {'correlation_id': 'ddb212a5-b506-410a-a16b-da238a05f255', 'success': True, 'entity_id': '8eca8d1b-b6c0-407c-a03f-0ebea33991e3', 'message': 'Trial created'}
+
+[test] Replaying the EXACT SAME message (same correlation_id) - simulating a duplicate delivery
+[test] (scanned 1 messages on this topic before finding the match)
+[test] Response #2: {'correlation_id': 'ddb212a5-b506-410a-a16b-da238a05f255', 'success': True, 'entity_id': '92826e87-2dc1-4fb2-9bc0-bf0d7c294121', 'message': 'Trial created'}
+
+=== RESULT ===
+entity_id from response #1: 8eca8d1b-b6c0-407c-a03f-0ebea33991e3
+entity_id from response #2: 92826e87-2dc1-4fb2-9bc0-bf0d7c294121
+DIFFERENT entity_id each time -> NOT idempotent. A duplicate trial was created. BUG.
+
+===== PART 3 AFTER FIX: duplicate delivery (idempotent worker) - correlation_id de829fe1... =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % python test_duplicate_delivery.py
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_duplicate_delivery.py:99: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_duplicate_delivery.py:48: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+[test] correlation_id for this test: de829fe1-3b6e-4500-a15d-ed709f9e89f2
+
+[test] Sending CREATE_TRIAL request (1st time, original)
+[test] (scanned 17 messages on this topic before finding the match)
+[test] Response #1: {'correlation_id': 'de829fe1-3b6e-4500-a15d-ed709f9e89f2', 'success': True, 'entity_id': 'd21e877a-731b-4aa7-8042-9232803adf46', 'message': 'Trial created'}
+
+[test] Replaying the EXACT SAME message (same correlation_id) - simulating a duplicate delivery
+[test] (scanned 1 messages on this topic before finding the match)
+[test] Response #2: {'correlation_id': 'de829fe1-3b6e-4500-a15d-ed709f9e89f2', 'success': True, 'entity_id': 'd21e877a-731b-4aa7-8042-9232803adf46', 'message': 'Trial created'}
+
+=== RESULT ===
+entity_id from response #1: d21e877a-731b-4aa7-8042-9232803adf46
+entity_id from response #2: d21e877a-731b-4aa7-8042-9232803adf46
+SAME entity_id both times -> idempotent. No duplicate trial was created.
+
+===== PART 3 AFTER FIX: worker log for the duplicate test above (docker logs hw8-worker) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % docker logs hw8-worker
+/app/worker.py:109: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/app/worker.py:136: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+Consumer is ready and listening...
+[worker] Received request: {'correlation_id': 'de829fe1-3b6e-4500-a15d-ed709f9e89f2', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Duplicate Delivery Test Trial', 'nctNumber': 'NCT00000099', 'trialPhase': 'Phase I'}}
+[worker] Sent response to s5825_entity_responses: {'correlation_id': 'de829fe1-3b6e-4500-a15d-ed709f9e89f2', 'success': True, 'entity_id': 'd21e877a-731b-4aa7-8042-9232803adf46', 'message': 'Trial created'}
+[worker] Received request: {'correlation_id': 'de829fe1-3b6e-4500-a15d-ed709f9e89f2', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Duplicate Delivery Test Trial', 'nctNumber': 'NCT00000099', 'trialPhase': 'Phase I'}}
+[worker] DUPLICATE detected for correlation_id=de829fe1-3b6e-4500-a15d-ed709f9e89f2 - returning cached response, no new trial created
+[worker] Sent response to s5825_entity_responses: {'correlation_id': 'de829fe1-3b6e-4500-a15d-ed709f9e89f2', 'success': True, 'entity_id': 'd21e877a-731b-4aa7-8042-9232803adf46', 'message': 'Trial created'}
+
+===== PART 3 BEFORE FIX: consumer killed mid-work - send one task, then writer_before_fix.py commits on receipt, killed during the LLM call =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % cd ~/Documents/data260-5825/code/pipeline/part3/before_fix
+source ../../../../venv/bin/activate
+python send_one_task.py
+[send_one_task] sent correlation_id=9ab8f7b8-30e6-4af3-abb7-88c8222aa691  -> partition 1, offset 37
+(venv) rutujasaste@Rutujas-MacBook-Pro before_fix % (venv) rutujasaste@Rutujas-MacBook-Pro pipeline % cd ~/Documents/data260-5825/code/pipeline/part3/before_fix
+source ../../../../venv/bin/activate
+python writer_before_fix.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/part3/before_fix/writer_before_fix.py:34: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/part3/before_fix/writer_before_fix.py:71: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer-BEFORE-FIX] Ready and listening on s5825_tasks
+[writer-BEFORE-FIX] Received plan (correlation_id=9ab8f7b8-30e6-4af3-abb7-88c8222aa691) partition=1 offset=37
+[writer-BEFORE-FIX] Offset committed IMMEDIATELY (before work) for correlation_id=9ab8f7b8-30e6-4af3-abb7-88c8222aa691
+[writer-BEFORE-FIX] Starting LLM work ...
+^CTraceback (most recent call last):
+[... Ctrl+C traceback trimmed ...]
+
+===== PART 3 BEFORE FIX: after restart, writer_before_fix.py is idle - message 9ab8f7b8... is never redelivered =====
+(venv) rutujasaste@Rutujas-MacBook-Pro before_fix % python writer_before_fix.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/part3/before_fix/writer_before_fix.py:34: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/part3/before_fix/writer_before_fix.py:71: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer-BEFORE-FIX] Ready and listening on s5825_tasks
+^CTraceback (most recent call last):
+[... Ctrl+C traceback trimmed ...]
+
+===== PART 3 AFTER FIX: consumer killed mid-work - writer.py killed during the LLM call (offset NOT committed) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro pipeline % python writer.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:45: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:87: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer] Ready and listening on s5825_tasks
+[writer] Received plan (correlation_id=05038906-8b41-4514-bf2d-6418f0c6d409) - starting work (offset NOT committed yet - if I die right now, this message is NOT lost)
+^CTraceback (most recent call last):
+[... Ctrl+C traceback trimmed ...]
+
+===== PART 3 AFTER FIX: writer.py restarted - same message 05038906... redelivered, finished, offset committed after the send =====
+(venv) rutujasaste@Rutujas-MacBook-Pro pipeline % python writer.py
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:45: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:87: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer] Ready and listening on s5825_tasks
+[writer] Received plan (correlation_id=05038906-8b41-4514-bf2d-6418f0c6d409) - starting work (offset NOT committed yet - if I die right now, this message is NOT lost)
+[writer] Generated draft: Before joining a Phase II clinical trial, a patient should understand the trial’s purpose: this phase evaluates treatment effectiveness and monitors side effects. They must weigh potential risks, benefits, and how the experimental therapy differs from standard care. Review the informed consent process, whichoutlines rights to withdraw at any time. Clarify the trial’s timeline, required visits, and how participation might affect daily life. Ensure all questions are addressed with the research team to make an informed decision. Stay proactive about your health and treatment goals throughout the process.
+[writer] Sent draft to s5825_drafts
+[writer] Offset committed for correlation_id=05038906-8b41-4514-bf2d-6418f0c6d409 - now safe
+[... Ctrl+C traceback trimmed ...]
+
+===== PART 3 BEFORE FIX: poison message - worker_before_fix.py crashes on the poison message =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % cd ~/Documents/data260-5825/code/messaging/part3/before_fix
+source ../../../../venv/bin/activate
+python worker_before_fix.py
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/before_fix/worker_before_fix.py:91: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/before_fix/worker_before_fix.py:137: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[worker-BEFORE-FIX] Consumer is ready and listening...
+[worker] Received request: {'correlation_id': '17ff148f-399c-46c6-a8f4-4327aa7a0572', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Normal Trial A', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+[worker] Sent response to s5825_entity_responses: {'correlation_id': '17ff148f-399c-46c6-a8f4-4327aa7a0572', 'success': True, 'entity_id': 'fb16d7eb-c658-420a-8e13-2d741a362ebc', 'message': 'Trial created'}
+[worker] Received request: {'correlation_id': '99143ad0-d668-4599-b4ed-1eec340773ef', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+Traceback (most recent call last):
+  File "/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/before_fix/worker_before_fix.py", line 137, in <module>
+    main()
+  File "/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/before_fix/worker_before_fix.py", line 127, in main
+    response = process_operation(correlation_id, operation, data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/before_fix/worker_before_fix.py", line 47, in process_operation
+    raise RuntimeError("Simulated processing crash (poison message test)")
+RuntimeError: Simulated processing crash (poison message test)
+(venv) rutujasaste@Rutujas-MacBook-Pro before_fix % 
+
+===== PART 3 BEFORE FIX: poison message test - normal request #2 gets no response, nothing on the dead-letter topic =====
+(venv) rutujasaste@Rutujas-MacBook-Pro data260-5825 % cd ~/Documents/data260-5825/code/messaging/part3
+source ../../../venv/bin/activate
+python test_poison_message.py
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:125: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:61: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  response_consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:70: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  dead_letter_consumer = KafkaConsumer(
+[test] normal_id_1 = 17ff148f-399c-46c6-a8f4-4327aa7a0572
+[test] poison_id   = 99143ad0-d668-4599-b4ed-1eec340773ef
+[test] normal_id_2 = 81ff08ac-2f4f-456d-80ec-7b3925d5629e
+
+[test] Sending normal request #1 ...
+[test] Sending POISON request (trialTitle=POISON_TEST_TRIGGER_CRASH) ...
+[test] Sending normal request #2 (right after the poison message) ...
+
+[test] Waiting for responses to the two NORMAL requests ...
+[test] Normal request #1 response: {'correlation_id': '17ff148f-399c-46c6-a8f4-4327aa7a0572', 'success': True, 'entity_id': 'fb16d7eb-c658-420a-8e13-2d741a362ebc', 'message': 'Trial created'}
+[test] Normal request #2 response: None
+[test] One of the normal requests did not get a successful response - investigate.
+
+[test] Waiting for the poison message to appear on the dead-letter topic (it must retry and fail a bounded number of times first, so this takes a few seconds) ...
+
+[test] Dead-letter result for poison_id: None
+[test] Poison message was NOT found on the dead-letter topic within the timeout.
+
+===== PART 3 AFTER FIX: poison message test, then worker log - retries and dead-letter - poison id 17f042b7... =====
+python test_poison_message.py
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:125: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:61: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  response_consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/messaging/part3/test_poison_message.py:70: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  dead_letter_consumer = KafkaConsumer(
+[test] normal_id_1 = 36848a2e-5add-454a-9400-13d57711424d
+[test] poison_id   = 17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5
+[test] normal_id_2 = c62429b0-9b73-4d41-abd9-127e431d5596
+
+[test] Sending normal request #1 ...
+[test] Sending POISON request (trialTitle=POISON_TEST_TRIGGER_CRASH) ...
+[test] Sending normal request #2 (right after the poison message) ...
+
+[test] Waiting for responses to the two NORMAL requests ...
+[test] Normal request #1 response: {'correlation_id': '36848a2e-5add-454a-9400-13d57711424d', 'success': True, 'entity_id': 'c4d389e3-6ab4-4ecf-8837-6461687c1d7c', 'message': 'Trial created'}
+[test] Normal request #2 response: {'correlation_id': 'c62429b0-9b73-4d41-abd9-127e431d5596', 'success': True, 'entity_id': '348323b0-ed10-41af-8c9c-9e4d3f925163', 'message': 'Trial created'}
+[test] BOTH normal requests succeeded -> poison message did NOT block later messages. GOOD.
+
+[test] Waiting for the poison message to appear on the dead-letter topic (it must retry and fail a bounded number of times first, so this takes a few seconds) ...
+
+[test] Dead-letter result for poison_id: {'correlation_id': '17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5', 'original_request': {'correlation_id': '17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 3}, 'error': 'Simulated processing crash (poison message test)', 'failed_attempts': 4}
+[test] Poison message correctly ended up on the dead-letter topic after retries. GOOD.
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % docker logs hw8-worker --tail 40
+/app/worker.py:104: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/app/worker.py:174: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+Consumer is ready and listening...
+[worker] Received request: {'correlation_id': '36848a2e-5add-454a-9400-13d57711424d', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Normal Trial A', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+[worker] Sent response to s5825_entity_responses: {'correlation_id': '36848a2e-5add-454a-9400-13d57711424d', 'success': True, 'entity_id': 'c4d389e3-6ab4-4ecf-8837-6461687c1d7c', 'message': 'Trial created'}
+[worker] Received request: {'correlation_id': '17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+[worker] ERROR processing correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 (attempt 1/3): Simulated processing crash (poison message test)
+[worker] Requeued correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 for retry 1/3 (other messages can be processed in between - this does not block the queue)
+[worker] Received request: {'correlation_id': 'c62429b0-9b73-4d41-abd9-127e431d5596', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'Normal Trial B', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}}
+[worker] Sent response to s5825_entity_responses: {'correlation_id': 'c62429b0-9b73-4d41-abd9-127e431d5596', 'success': True, 'entity_id': '348323b0-ed10-41af-8c9c-9e4d3f925163', 'message': 'Trial created'}
+[worker] Received request: {'correlation_id': '17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 1}
+[worker] ERROR processing correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 (attempt 2/3): Simulated processing crash (poison message test)
+[worker] Requeued correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 for retry 2/3 (other messages can be processed in between - this does not block the queue)
+[worker] Received request: {'correlation_id': '17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 2}
+[worker] ERROR processing correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 (attempt 3/3): Simulated processing crash (poison message test)
+[worker] Requeued correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 for retry 3/3 (other messages can be processed in between - this does not block the queue)
+[worker] Received request: {'correlation_id': '17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5', 'reply_to': 's5825_entity_responses', 'operation': 'CREATE_TRIAL', 'data': {'trialTitle': 'POISON_TEST_TRIGGER_CRASH', 'nctNumber': 'NCT00000077', 'trialPhase': 'Phase I'}, 'retry_count': 3}
+[worker] ERROR processing correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 (attempt 4/3): Simulated processing crash (poison message test)
+[worker] GIVING UP after 4 attempts - sent correlation_id=17f042b7-2f2a-4404-af7f-3dbbe7d0f4e5 to s5825_dead_letter
+
+===== PART 3.IV ORDERING (real Writers): 20-message run, no key then key (ordering_producer.py / ordering_analyze.py) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % cd ~/Documents/data260-5825/code/pipeline/part3
+source ../../../venv/bin/activate
+python ordering_producer.py nokey
+[producer] mode=nokey  topic=s5825_tasks  VERIFY_SEED=265825
+[producer] msg  1  entity 4e65b0c7  seq 1  -> partition 0
+[producer] msg  2  entity 28fd79e0  seq 1  -> partition 1
+[producer] msg  3  entity 28fd79e0  seq 2  -> partition 0
+[producer] msg  4  entity cad4529f  seq 1  -> partition 1
+[producer] msg  5  entity e4b1c347  seq 1  -> partition 0
+[producer] msg  6  entity e4b1c347  seq 2  -> partition 1
+[producer] msg  7  entity 28fd79e0  seq 3  -> partition 0
+[producer] msg  8  entity 4e65b0c7  seq 2  -> partition 1
+[producer] msg  9  entity cad4529f  seq 2  -> partition 0
+[producer] msg 10  entity cad4529f  seq 3  -> partition 1
+[producer] msg 11  entity 28fd79e0  seq 4  -> partition 1
+[producer] msg 12  entity 28fd79e0  seq 5  -> partition 1
+[producer] msg 13  entity 4e65b0c7  seq 3  -> partition 1
+[producer] msg 14  entity 4e65b0c7  seq 4  -> partition 1
+[producer] msg 15  entity e4b1c347  seq 3  -> partition 0
+[producer] msg 16  entity cad4529f  seq 4  -> partition 1
+[producer] msg 17  entity 28fd79e0  seq 6  -> partition 0
+[producer] msg 18  entity 4e65b0c7  seq 5  -> partition 1
+[producer] msg 19  entity 28fd79e0  seq 7  -> partition 1
+[producer] msg 20  entity 4e65b0c7  seq 6  -> partition 1
+
+[producer] partitions used per entity:
+   entity e4b1c347: partitions [0, 1]
+   entity 4e65b0c7: partitions [0, 1]
+   entity 28fd79e0: partitions [0, 1]
+   entity cad4529f: partitions [0, 1]
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % python ordering_analyze.py nokey
+Run: nokey   messages processed: 20 / 20
+
+entity 4e65b0c7: processed seq order = [1, 2, 3, 4, 5, 6]
+   partitions = [0, 1]   writers = ['writer-A', 'writer-B']   -> IN ORDER
+entity 28fd79e0: processed seq order = [1, 2, 3, 4, 6, 5, 7]
+   partitions = [0, 1]   writers = ['writer-A', 'writer-B']   -> OUT OF ORDER
+entity cad4529f: processed seq order = [1, 2, 3, 4]
+   partitions = [0, 1]   writers = ['writer-A', 'writer-B']   -> IN ORDER
+entity e4b1c347: processed seq order = [1, 2, 3]
+   partitions = [0, 1]   writers = ['writer-A', 'writer-B']   -> IN ORDER
+
+RESULT: ORDER BROKEN for at least one entity
+saved reports/hw08/raw/ordering_nokey.csv
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % python ordering_producer.py key
+[producer] mode=key  topic=s5825_tasks  VERIFY_SEED=265825
+[producer] msg  1  entity 4e65b0c7  seq 1  -> partition 0
+[producer] msg  2  entity 28fd79e0  seq 1  -> partition 0
+[producer] msg  3  entity 28fd79e0  seq 2  -> partition 0
+[producer] msg  4  entity cad4529f  seq 1  -> partition 1
+[producer] msg  5  entity e4b1c347  seq 1  -> partition 1
+[producer] msg  6  entity e4b1c347  seq 2  -> partition 1
+[producer] msg  7  entity 28fd79e0  seq 3  -> partition 0
+[producer] msg  8  entity 4e65b0c7  seq 2  -> partition 0
+[producer] msg  9  entity cad4529f  seq 2  -> partition 1
+[producer] msg 10  entity cad4529f  seq 3  -> partition 1
+[producer] msg 11  entity 28fd79e0  seq 4  -> partition 0
+[producer] msg 12  entity 28fd79e0  seq 5  -> partition 0
+[producer] msg 13  entity 4e65b0c7  seq 3  -> partition 0
+[producer] msg 14  entity 4e65b0c7  seq 4  -> partition 0
+[producer] msg 15  entity e4b1c347  seq 3  -> partition 1
+[producer] msg 16  entity cad4529f  seq 4  -> partition 1
+[producer] msg 17  entity 28fd79e0  seq 6  -> partition 0
+[producer] msg 18  entity 4e65b0c7  seq 5  -> partition 0
+[producer] msg 19  entity 28fd79e0  seq 7  -> partition 0
+[producer] msg 20  entity 4e65b0c7  seq 6  -> partition 0
+
+[producer] partitions used per entity:
+   entity e4b1c347: partitions [1]
+   entity 4e65b0c7: partitions [0]
+   entity 28fd79e0: partitions [0]
+   entity cad4529f: partitions [1]
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % python ordering_analyze.py key
+Run: key   messages processed: 20 / 20
+
+entity cad4529f: processed seq order = [1, 2, 3, 4]
+   partitions = [1]   writers = ['writer-A']   -> IN ORDER
+entity 4e65b0c7: processed seq order = [1, 2, 3, 4, 5, 6]
+   partitions = [0]   writers = ['writer-B']   -> IN ORDER
+entity e4b1c347: processed seq order = [1, 2, 3]
+   partitions = [1]   writers = ['writer-A']   -> IN ORDER
+entity 28fd79e0: processed seq order = [1, 2, 3, 4, 5, 6, 7]
+   partitions = [0]   writers = ['writer-B']   -> IN ORDER
+
+RESULT: all entities processed in order
+saved reports/hw08/raw/ordering_key.csv
+
+===== PART 3.IV ORDERING: real Writer instance writer-A (first messages) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % cd ~/Documents/data260-5825/code/pipeline
+source ../../venv/bin/activate
+python writer.py writer-A
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:51: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:120: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer-A] Ready and listening on s5825_tasks
+[writer-A] assigned partitions: [0, 1]
+[writer-A] assigned partitions: [1]
+[writer-A] Received plan (correlation_id=e155b1d8-896d-5602-b4f9-4e495ae72c22) partition=1 offset=17 - starting work (offset NOT committed yet - if I die right now, this message is NOT lost)
+[writer-A] Generated draft: Clinical trial 28fd79e0, update 1, evaluates a novel therapy for [specific condition]. Participants must meet specific criteria, such as [details], to qualify.
+[writer-A] Sent draft to s5825_drafts
+[writer-A] Offset committed for correlation_id=e155b1d8-896d-5602-b4f9-4e495ae72c22 - now safe
+[writer-A] ORDER partition 1 offset 17 entity 28fd79e0 seq 1 (msg 2)
+[writer-A] Received plan (correlation_id=b679bfec-53de-52a7-bec0-47a7796e1f5f) partition=1 offset=18 - starting work (offset NOT committed yet - if I die right now, this message is NOT lost)
+[writer-A] Generated draft: Clinical trial cad4529f, update 1, investigates a novel treatment for [specific condition]. Patients should consult their healthcare provider for eligibility and enrollment details.
+[writer-A] Sent draft to s5825_drafts
+[writer-A] Offset committed for correlation_id=b679bfec-53de-52a7-bec0-47a7796e1f5f - now safe
+[writer-A] ORDER partition 1 offset 18 entity cad4529f seq 1 (msg 4)
+[... remaining messages and Ctrl+C traceback trimmed; full data in raw/ordering_*_log.jsonl ...]
+
+===== PART 3.IV ORDERING: real Writer instance writer-B (first messages) =====
+(venv) rutujasaste@Rutujas-MacBook-Pro part3 % cd ~/Documents/data260-5825/code/pipeline
+source ../../venv/bin/activate
+python writer.py writer-B
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:51: DeprecationWarning: value_deserializer does not implement kafka.serializer.Deserializer
+  consumer = KafkaConsumer(
+/Users/rutujasaste/Documents/data260-5825/code/pipeline/writer.py:120: DeprecationWarning: value_serializer does not implement kafka.serializer.Serializer
+  main()
+[writer-B] Ready and listening on s5825_tasks
+[writer-B] assigned partitions: [0]
+[writer-B] Received plan (correlation_id=572e730f-ae76-5902-ad9b-632509a53de2) partition=0 offset=25 - starting work (offset NOT committed yet - if I die right now, this message is NOT lost)
+[writer-B] Generated draft: Clinical trial 4e65b0c7, update 1, is a Phase III study evaluating a novel therapy for hypertension. Participants will receive either the experimental drug or a standard treatment, with regular monitoring to assess safety and efficacy.
+[writer-B] Sent draft to s5825_drafts
+[writer-B] Offset committed for correlation_id=572e730f-ae76-5902-ad9b-632509a53de2 - now safe
+[writer-B] ORDER partition 0 offset 25 entity 4e65b0c7 seq 1 (msg 1)
+[writer-B] Received plan (correlation_id=c8ca7ab3-e31a-5937-993f-d1a9d9594ffe) partition=0 offset=26 - starting work (offset NOT committed yet - if I die right now, this message is NOT lost)
+[writer-B] Generated draft: Clinical trial 28fd79e0, update 2, evaluates a new treatment for [specific condition], aiming to improve outcomes compared to current standards. Patients should review eligibility criteria and contact the study team for enrollment details to determine if they qualify.
+[writer-B] Sent draft to s5825_drafts
+[writer-B] Offset committed for correlation_id=c8ca7ab3-e31a-5937-993f-d1a9d9594ffe - now safe
+[writer-B] ORDER partition 0 offset 26 entity 28fd79e0 seq 2 (msg 3)
+[... remaining messages and Ctrl+C traceback trimmed; full data in raw/ordering_*_log.jsonl ...]
+
