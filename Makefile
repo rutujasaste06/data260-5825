@@ -3,3 +3,6 @@ verify-hw06:
 
 verify-hw07:
 	python code/verify_hw7.py
+
+verify-hw08:
+	python code/verify_hw8.py
