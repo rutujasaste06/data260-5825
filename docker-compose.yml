@@ -49,3 +49,10 @@ services:
       KAFKA_BROKER: kafka:29092
       PORT_BASE: "8425"
     command: ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8425"]
+
+  redis:
+    # Redis Stack = Redis + the search/vector module (needed for the HW9 Part 2 semantic cache)
+    image: redis/redis-stack-server:latest
+    container_name: hw9-redis
+    ports:
+      - "6379:6379"
