@@ -1,0 +1,30 @@
+[
+  {
+    "id": "va1",
+    "question": "How many open slots are left in the NeuroCalm Migraine Trial?"
+  },
+  {
+    "id": "va2",
+    "question": "What is the status of the SleepWell Insomnia Trial? Is it still recruiting?"
+  },
+  {
+    "id": "va3",
+    "question": "What phase is the BreathEasy Asthma Trial in?"
+  },
+  {
+    "id": "va4",
+    "question": "What is the NCT number of the GlucoBalance Diabetes Study?"
+  },
+  {
+    "id": "va5",
+    "question": "How many available slots does the MindBright Depression Study have?"
+  },
+  {
+    "id": "va6",
+    "question": "How many available slots does the VisionClear Glaucoma Study have?"
+  },
+  {
+    "id": "va7",
+    "question": "How many available slots does the BreathEasy Asthma Trial have?"
+  }
+]

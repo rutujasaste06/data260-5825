@@ -1,0 +1,34 @@
+[
+  {
+    "id": "te1",
+    "question": "How many available slots are left in the NeuroCalm Migraine Trial?"
+  },
+  {
+    "id": "te2",
+    "question": "How many available slots does the ClearSkin Eczema Study have right now?"
+  },
+  {
+    "id": "te3",
+    "question": "How many slots are currently available in the VisionClear Glaucoma Study?"
+  },
+  {
+    "id": "te4",
+    "question": "What is the status of the HeartRhythm Arrhythmia Trial?"
+  },
+  {
+    "id": "te5",
+    "question": "What phase is the BoneStrong Osteoporosis Study in?"
+  },
+  {
+    "id": "te6",
+    "question": "Who sponsors the JointFlex Arthritis Study?"
+  },
+  {
+    "id": "te7",
+    "question": "What is the NCT number of the SleepWell Insomnia Trial?"
+  },
+  {
+    "id": "te8",
+    "question": "How many available slots does the Aurora Kidney Trial have?"
+  }
+]

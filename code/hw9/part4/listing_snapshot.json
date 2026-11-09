@@ -1,0 +1,92 @@
+[
+  {
+    "id": "T01",
+    "title": "Cardio-Protect Heart Study",
+    "nct_number": "NCT05010001",
+    "phase": "Phase I",
+    "available_slots": 20,
+    "sponsor": "Bayview Medical Research",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T02",
+    "title": "NeuroCalm Migraine Trial",
+    "nct_number": "NCT05010002",
+    "phase": "Phase II",
+    "available_slots": 12,
+    "sponsor": "Northgate Pharma",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T03",
+    "title": "GlucoBalance Diabetes Study",
+    "nct_number": "NCT05010003",
+    "phase": "Phase III",
+    "available_slots": 30,
+    "sponsor": "Harborline Health",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T04",
+    "title": "BreathEasy Asthma Trial",
+    "nct_number": "NCT05010004",
+    "phase": "Phase II",
+    "available_slots": 15,
+    "sponsor": "Summit Biosciences",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T05",
+    "title": "ClearSkin Eczema Study",
+    "nct_number": "NCT05010005",
+    "phase": "Phase III",
+    "available_slots": 9,
+    "sponsor": "Lakeshore Dermatology Group",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T06",
+    "title": "BoneStrong Osteoporosis Study",
+    "nct_number": "NCT05010006",
+    "phase": "Phase IV",
+    "available_slots": 40,
+    "sponsor": "Redwood Clinical Partners",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T07",
+    "title": "SleepWell Insomnia Trial",
+    "nct_number": "NCT05010007",
+    "phase": "Phase II",
+    "available_slots": 0,
+    "sponsor": "Evergreen Neuroscience",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T08",
+    "title": "VisionClear Glaucoma Study",
+    "nct_number": "NCT05010008",
+    "phase": "Phase III",
+    "available_slots": 18,
+    "sponsor": "Clearview Eye Institute",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T09",
+    "title": "HeartRhythm Arrhythmia Trial",
+    "nct_number": "NCT05010009",
+    "phase": "Phase II",
+    "available_slots": 0,
+    "sponsor": "Pacific Cardiac Research",
+    "status": "Recruiting"
+  },
+  {
+    "id": "T10",
+    "title": "JointFlex Arthritis Study",
+    "nct_number": "NCT05010010",
+    "phase": "Phase I",
+    "available_slots": 25,
+    "sponsor": "Cascade Rheumatology",
+    "status": "Recruiting"
+  }
+]

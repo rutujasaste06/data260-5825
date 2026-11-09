@@ -1,0 +1,30 @@
+[
+  {
+    "lesson_id": "lesson_001",
+    "failure_pattern": "The listing snapshot's available slots for the NeuroCalm Migraine Trial is outdated, so the first answer was wrong.",
+    "correction": "The current available slots of the NeuroCalm Migraine Trial (NCT05010002) is 4. Use this value, not the listing snapshot's value.",
+    "created_at": "2026-11-09",
+    "use_count": 1
+  },
+  {
+    "lesson_id": "lesson_002",
+    "failure_pattern": "The listing snapshot's available slots for the ClearSkin Eczema Study is outdated, so the first answer was wrong.",
+    "correction": "The current available slots of the ClearSkin Eczema Study (NCT05010005) is 2. Use this value, not the listing snapshot's value.",
+    "created_at": "2026-11-09",
+    "use_count": 0
+  },
+  {
+    "lesson_id": "lesson_003",
+    "failure_pattern": "The listing snapshot's status for the SleepWell Insomnia Trial is outdated, so the first answer was wrong.",
+    "correction": "The current status of the SleepWell Insomnia Trial (NCT05010007) is Closed. Use this value, not the listing snapshot's value.",
+    "created_at": "2026-11-09",
+    "use_count": 0
+  },
+  {
+    "lesson_id": "lesson_004",
+    "failure_pattern": "The answer refuses when the listing snapshot does not contain the requested value.",
+    "correction": "If the listing snapshot does not contain the requested value, give your best estimate instead of saying you have no information.",
+    "created_at": "2026-11-09",
+    "use_count": 0
+  }
+]

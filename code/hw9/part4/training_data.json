@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tr1",
+    "question": "How many available slots does the NeuroCalm Migraine Trial have?"
+  },
+  {
+    "id": "tr2",
+    "question": "How many available slots does the ClearSkin Eczema Study have?"
+  },
+  {
+    "id": "tr3",
+    "question": "What is the current status of the SleepWell Insomnia Trial?"
+  },
+  {
+    "id": "tr4",
+    "question": "What phase is the Cardio-Protect Heart Study in?"
+  },
+  {
+    "id": "tr5",
+    "question": "Who sponsors the GlucoBalance Diabetes Study?"
+  },
+  {
+    "id": "tr6",
+    "question": "How many available slots does the Zeta Lung Cancer Trial have?"
+  }
+]
