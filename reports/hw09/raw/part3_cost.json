@@ -1,0 +1,61 @@
+{
+  "miss_cost": 0.01,
+  "false_hit_cost": 5.0,
+  "rows": [
+    {
+      "threshold": 0.75,
+      "hits": 26,
+      "hit_rate_percent": 65.0,
+      "false_hits": 7,
+      "false_hit_rate_percent": 35.0,
+      "missed_hits": 1,
+      "mean_latency_ms": 11246.584961518529,
+      "misses": 14,
+      "total_cost": 35.14
+    },
+    {
+      "threshold": 0.8,
+      "hits": 23,
+      "hit_rate_percent": 57.5,
+      "false_hits": 6,
+      "false_hit_rate_percent": 30.0,
+      "missed_hits": 3,
+      "mean_latency_ms": 13655.003025590267,
+      "misses": 17,
+      "total_cost": 30.17
+    },
+    {
+      "threshold": 0.85,
+      "hits": 20,
+      "hit_rate_percent": 50.0,
+      "false_hits": 6,
+      "false_hit_rate_percent": 30.0,
+      "missed_hits": 6,
+      "mean_latency_ms": 16063.421089662006,
+      "misses": 20,
+      "total_cost": 30.2
+    },
+    {
+      "threshold": 0.9,
+      "hits": 14,
+      "hit_rate_percent": 35.0,
+      "false_hits": 4,
+      "false_hit_rate_percent": 20.0,
+      "missed_hits": 10,
+      "mean_latency_ms": 20880.257217805483,
+      "misses": 26,
+      "total_cost": 20.26
+    },
+    {
+      "threshold": 0.95,
+      "hits": 11,
+      "hit_rate_percent": 27.5,
+      "false_hits": 1,
+      "false_hit_rate_percent": 5.0,
+      "missed_hits": 10,
+      "mean_latency_ms": 23288.675281877222,
+      "misses": 29,
+      "total_cost": 5.29
+    }
+  ]
+}

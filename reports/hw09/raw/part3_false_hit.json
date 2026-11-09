@@ -1,0 +1,8 @@
+{
+  "case": "D01",
+  "cached_query": "What should a patient know before joining a Phase II clinical trial?",
+  "incoming_query": "What should a patient know before joining a Phase I clinical trial?",
+  "similarity": 0.9597654342651,
+  "cached_answer": "Before joining a Phase II trial, a patient should understand the trial\u2019s purpose: this phase evaluates treatment efficacy and monitors side effects, differing from Phase I\u2019s safety focus. Review risks and benefits, including potential side effects, treatment goals, and whether the drug is experimental or standard care. Confirm informed consent by ensuring all procedures, trial duration, and patient rights (e.g., withdrawal) are clearly explained. Clarify eligibility criteria, such as inclusion/exclusion factors, and what participation entails (e.g., visit frequency, tests). This ensures the patient makes an informed decision, balancing potential benefits against risks while understanding their role in the research.",
+  "correct_answer": "Before joining a Phase I clinical trial, a patient should understand the trial\u2019s purpose: safety, dosage, and initial side effect evaluation. Review informed consent details, including risks, benefits, procedures, and the right to withdraw at any time. Learn about the trial\u2019s structure\u2014duration, visit frequency, required tests, and medication administration. Discuss potential side effects and monitoring protocols with the research team. Clarify eligibility criteria and how your health will be tracked during the trial. Phase I trials prioritize safety, so open communication with the team is crucial. Always ask questions and ensure you comprehend all aspects before agreeing to participate. Your health and informed consent are paramount."
+}

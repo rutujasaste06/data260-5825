@@ -1,0 +1,492 @@
+{
+  "mean_agent_ms": 32112.24085428985,
+  "cases": [
+    {
+      "id": "E01",
+      "type": "exact",
+      "query": "What should a patient know before joining a Phase II clinical trial?",
+      "expected_seed": "S01",
+      "should_hit": true,
+      "similarity": 0.9999998807907104,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "matched_seed": "S01",
+      "lookup_ms": 11.446208925917745
+    },
+    {
+      "id": "E02",
+      "type": "exact",
+      "query": "How is informed consent obtained in a clinical trial?",
+      "expected_seed": "S02",
+      "should_hit": true,
+      "similarity": 1.0,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "matched_seed": "S02",
+      "lookup_ms": 6.19687489233911
+    },
+    {
+      "id": "E03",
+      "type": "exact",
+      "query": "What does Phase I testing of a new drug focus on?",
+      "expected_seed": "S03",
+      "should_hit": true,
+      "similarity": 1.0000001192092896,
+      "matched_query": "What does Phase I testing of a new drug focus on?",
+      "matched_seed": "S03",
+      "lookup_ms": 5.7754580629989505
+    },
+    {
+      "id": "E04",
+      "type": "exact",
+      "query": "What are the eligibility requirements for a Phase III trial?",
+      "expected_seed": "S04",
+      "should_hit": true,
+      "similarity": 0.9999999403953552,
+      "matched_query": "What are the eligibility requirements for a Phase III trial?",
+      "matched_seed": "S04",
+      "lookup_ms": 6.145540974102914
+    },
+    {
+      "id": "E05",
+      "type": "exact",
+      "query": "How long does a typical Phase III clinical trial last?",
+      "expected_seed": "S05",
+      "should_hit": true,
+      "similarity": 1.0,
+      "matched_query": "How long does a typical Phase III clinical trial last?",
+      "matched_seed": "S05",
+      "lookup_ms": 6.385416956618428
+    },
+    {
+      "id": "E06",
+      "type": "exact",
+      "query": "What is a placebo in a clinical trial?",
+      "expected_seed": "S06",
+      "should_hit": true,
+      "similarity": 1.0,
+      "matched_query": "What is a placebo in a clinical trial?",
+      "matched_seed": "S06",
+      "lookup_ms": 5.265374900773168
+    },
+    {
+      "id": "E07",
+      "type": "exact",
+      "query": "What is the purpose of an NCT number on a trial listing?",
+      "expected_seed": "S07",
+      "should_hit": true,
+      "similarity": 1.0,
+      "matched_query": "What is the purpose of an NCT number on a trial listing?",
+      "matched_seed": "S07",
+      "lookup_ms": 5.477207945659757
+    },
+    {
+      "id": "E08",
+      "type": "exact",
+      "query": "Can a participant withdraw from a clinical trial at any time?",
+      "expected_seed": "S08",
+      "should_hit": true,
+      "similarity": 1.0,
+      "matched_query": "Can a participant withdraw from a clinical trial at any time?",
+      "matched_seed": "S08",
+      "lookup_ms": 5.403707968071103
+    },
+    {
+      "id": "E09",
+      "type": "exact",
+      "query": "What is a double-blind clinical trial?",
+      "expected_seed": "S09",
+      "should_hit": true,
+      "similarity": 0.9999998807907104,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 4.875374957919121
+    },
+    {
+      "id": "E10",
+      "type": "exact",
+      "query": "Who reviews and approves a clinical trial before it starts?",
+      "expected_seed": "S10",
+      "should_hit": true,
+      "similarity": 1.0,
+      "matched_query": "Who reviews and approves a clinical trial before it starts?",
+      "matched_seed": "S10",
+      "lookup_ms": 5.213416996411979
+    },
+    {
+      "id": "P01",
+      "type": "paraphrase",
+      "query": "Before enrolling in a Phase 2 trial, what should a participant be aware of?",
+      "expected_seed": "S01",
+      "should_hit": true,
+      "similarity": 0.844216704369,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "matched_seed": "S01",
+      "lookup_ms": 6.284915958531201
+    },
+    {
+      "id": "P02",
+      "type": "paraphrase",
+      "query": "How does a participant give informed consent for a clinical study?",
+      "expected_seed": "S02",
+      "should_hit": true,
+      "similarity": 0.882444858551,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "matched_seed": "S02",
+      "lookup_ms": 5.482292035594583
+    },
+    {
+      "id": "P03",
+      "type": "paraphrase",
+      "query": "What is the main goal of Phase 1 trials for a new medication?",
+      "expected_seed": "S03",
+      "should_hit": true,
+      "similarity": 0.723502457142,
+      "matched_query": "What does Phase I testing of a new drug focus on?",
+      "matched_seed": "S03",
+      "lookup_ms": 5.655499990098178
+    },
+    {
+      "id": "P04",
+      "type": "paraphrase",
+      "query": "Who is eligible to take part in a Phase 3 trial?",
+      "expected_seed": "S04",
+      "should_hit": true,
+      "similarity": 0.871679186821,
+      "matched_query": "What are the eligibility requirements for a Phase III trial?",
+      "matched_seed": "S04",
+      "lookup_ms": 5.41791704017669
+    },
+    {
+      "id": "P05",
+      "type": "paraphrase",
+      "query": "About how many months or years does a Phase III trial usually run?",
+      "expected_seed": "S05",
+      "should_hit": true,
+      "similarity": 0.881144702435,
+      "matched_query": "How long does a typical Phase III clinical trial last?",
+      "matched_seed": "S05",
+      "lookup_ms": 5.410999990999699
+    },
+    {
+      "id": "P06",
+      "type": "paraphrase",
+      "query": "What does placebo mean in a clinical study?",
+      "expected_seed": "S06",
+      "should_hit": true,
+      "similarity": 0.8471710681919999,
+      "matched_query": "What is a placebo in a clinical trial?",
+      "matched_seed": "S06",
+      "lookup_ms": 5.220292019657791
+    },
+    {
+      "id": "P07",
+      "type": "paraphrase",
+      "query": "What does the NCT number on a clinical trial listing mean?",
+      "expected_seed": "S07",
+      "should_hit": true,
+      "similarity": 0.885333418846,
+      "matched_query": "What is the purpose of an NCT number on a trial listing?",
+      "matched_seed": "S07",
+      "lookup_ms": 4.858125001192093
+    },
+    {
+      "id": "P08",
+      "type": "paraphrase",
+      "query": "Is it possible for a volunteer to leave a clinical trial whenever they want?",
+      "expected_seed": "S08",
+      "should_hit": true,
+      "similarity": 0.775230705738,
+      "matched_query": "Can a participant withdraw from a clinical trial at any time?",
+      "matched_seed": "S08",
+      "lookup_ms": 5.479375016875565
+    },
+    {
+      "id": "P09",
+      "type": "paraphrase",
+      "query": "What does it mean when a trial is double blinded?",
+      "expected_seed": "S09",
+      "should_hit": true,
+      "similarity": 0.760522127151,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 5.316458991728723
+    },
+    {
+      "id": "P10",
+      "type": "paraphrase",
+      "query": "Which body approves a clinical trial before it can begin?",
+      "expected_seed": "S10",
+      "should_hit": true,
+      "similarity": 0.847592234612,
+      "matched_query": "Who reviews and approves a clinical trial before it starts?",
+      "matched_seed": "S10",
+      "lookup_ms": 5.883167032152414
+    },
+    {
+      "id": "D01",
+      "type": "similar_different",
+      "query": "What should a patient know before joining a Phase I clinical trial?",
+      "expected_seed": "S01",
+      "should_hit": false,
+      "similarity": 0.9597654342651,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "matched_seed": "S01",
+      "lookup_ms": 5.423041991889477
+    },
+    {
+      "id": "D02",
+      "type": "similar_different",
+      "query": "How is informed consent withdrawn in a clinical trial?",
+      "expected_seed": "S02",
+      "should_hit": false,
+      "similarity": 0.867087125778,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "matched_seed": "S02",
+      "lookup_ms": 7.664542063139379
+    },
+    {
+      "id": "D03",
+      "type": "similar_different",
+      "query": "What does Phase III testing of a new drug focus on?",
+      "expected_seed": "S03",
+      "should_hit": false,
+      "similarity": 0.87997674942,
+      "matched_query": "What does Phase I testing of a new drug focus on?",
+      "matched_seed": "S03",
+      "lookup_ms": 7.229333044961095
+    },
+    {
+      "id": "D04",
+      "type": "similar_different",
+      "query": "What are the eligibility requirements for a Phase I trial?",
+      "expected_seed": "S04",
+      "should_hit": false,
+      "similarity": 0.9366037249565,
+      "matched_query": "What are the eligibility requirements for a Phase III trial?",
+      "matched_seed": "S04",
+      "lookup_ms": 5.717291031032801
+    },
+    {
+      "id": "D05",
+      "type": "similar_different",
+      "query": "How long does a typical Phase I clinical trial last?",
+      "expected_seed": "S05",
+      "should_hit": false,
+      "similarity": 0.9312036037445,
+      "matched_query": "How long does a typical Phase III clinical trial last?",
+      "matched_seed": "S05",
+      "lookup_ms": 5.359500064514577
+    },
+    {
+      "id": "D06",
+      "type": "similar_different",
+      "query": "What is a control group in a clinical trial?",
+      "expected_seed": "S06",
+      "should_hit": false,
+      "similarity": 0.596339941025,
+      "matched_query": "What is a placebo in a clinical trial?",
+      "matched_seed": "S06",
+      "lookup_ms": 5.84354205057025
+    },
+    {
+      "id": "D07",
+      "type": "similar_different",
+      "query": "What is the purpose of the phase number on a trial listing?",
+      "expected_seed": "S07",
+      "should_hit": false,
+      "similarity": 0.639433026314,
+      "matched_query": "What is the purpose of an NCT number on a trial listing?",
+      "matched_seed": "S07",
+      "lookup_ms": 7.590999943204224
+    },
+    {
+      "id": "D08",
+      "type": "similar_different",
+      "query": "Can a sponsor end a clinical trial early at any time?",
+      "expected_seed": "S08",
+      "should_hit": false,
+      "similarity": 0.668738245964,
+      "matched_query": "Can a participant withdraw from a clinical trial at any time?",
+      "matched_seed": "S08",
+      "lookup_ms": 5.644791992381215
+    },
+    {
+      "id": "D09",
+      "type": "similar_different",
+      "query": "What is a single-blind clinical trial?",
+      "expected_seed": "S09",
+      "should_hit": false,
+      "similarity": 0.9085026979446,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 5.419749999418855
+    },
+    {
+      "id": "D10",
+      "type": "similar_different",
+      "query": "Who pays for a clinical trial before it starts?",
+      "expected_seed": "S10",
+      "should_hit": false,
+      "similarity": 0.77189707756,
+      "matched_query": "Who reviews and approves a clinical trial before it starts?",
+      "matched_seed": "S10",
+      "lookup_ms": 5.450207972899079
+    },
+    {
+      "id": "U01",
+      "type": "unrelated",
+      "query": "What is the capital of France?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.08617442846300005,
+      "matched_query": "What does Phase I testing of a new drug focus on?",
+      "matched_seed": "S03",
+      "lookup_ms": 6.379458005540073
+    },
+    {
+      "id": "U02",
+      "type": "unrelated",
+      "query": "How do I bake sourdough bread at home?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.129002332687,
+      "matched_query": "What is a placebo in a clinical trial?",
+      "matched_seed": "S06",
+      "lookup_ms": 5.306124920025468
+    },
+    {
+      "id": "U03",
+      "type": "unrelated",
+      "query": "What is the boiling point of water at sea level?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.104022562504,
+      "matched_query": "What are the eligibility requirements for a Phase III trial?",
+      "matched_seed": "S04",
+      "lookup_ms": 5.360041977837682
+    },
+    {
+      "id": "U04",
+      "type": "unrelated",
+      "query": "Who wrote the novel Pride and Prejudice?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.11796522140499999,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 65.45958295464516
+    },
+    {
+      "id": "U05",
+      "type": "unrelated",
+      "query": "How many players are on a soccer team?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.12981081008899997,
+      "matched_query": "What are the eligibility requirements for a Phase III trial?",
+      "matched_seed": "S04",
+      "lookup_ms": 6.762999924831092
+    },
+    {
+      "id": "U06",
+      "type": "unrelated",
+      "query": "What is the square root of 144?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.086463451385,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "matched_seed": "S02",
+      "lookup_ms": 6.2188750598579645
+    },
+    {
+      "id": "U07",
+      "type": "unrelated",
+      "query": "How do I change a flat tire on a car?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.12256413698199997,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "matched_seed": "S02",
+      "lookup_ms": 6.35229202453047
+    },
+    {
+      "id": "U08",
+      "type": "unrelated",
+      "query": "What is the tallest mountain in the world?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.12055957317400001,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 4.4994578929618
+    },
+    {
+      "id": "U09",
+      "type": "unrelated",
+      "query": "How do I convert Celsius to Fahrenheit?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.03565633297000004,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 3.753917058929801
+    },
+    {
+      "id": "U10",
+      "type": "unrelated",
+      "query": "What does a Python decorator do?",
+      "expected_seed": null,
+      "should_hit": false,
+      "similarity": 0.08749610185599999,
+      "matched_query": "What is a double-blind clinical trial?",
+      "matched_seed": "S09",
+      "lookup_ms": 3.3971250522881746
+    }
+  ],
+  "table": [
+    {
+      "threshold": 0.75,
+      "hits": 26,
+      "hit_rate_percent": 65.0,
+      "false_hits": 7,
+      "false_hit_rate_percent": 35.0,
+      "missed_hits": 1,
+      "mean_latency_ms": 11246.584961518529
+    },
+    {
+      "threshold": 0.8,
+      "hits": 23,
+      "hit_rate_percent": 57.5,
+      "false_hits": 6,
+      "false_hit_rate_percent": 30.0,
+      "missed_hits": 3,
+      "mean_latency_ms": 13655.003025590267
+    },
+    {
+      "threshold": 0.85,
+      "hits": 20,
+      "hit_rate_percent": 50.0,
+      "false_hits": 6,
+      "false_hit_rate_percent": 30.0,
+      "missed_hits": 6,
+      "mean_latency_ms": 16063.421089662006
+    },
+    {
+      "threshold": 0.9,
+      "hits": 14,
+      "hit_rate_percent": 35.0,
+      "false_hits": 4,
+      "false_hit_rate_percent": 20.0,
+      "missed_hits": 10,
+      "mean_latency_ms": 20880.257217805483
+    },
+    {
+      "threshold": 0.95,
+      "hits": 11,
+      "hit_rate_percent": 27.5,
+      "false_hits": 1,
+      "false_hit_rate_percent": 5.0,
+      "missed_hits": 10,
+      "mean_latency_ms": 23288.675281877222
+    }
+  ]
+}

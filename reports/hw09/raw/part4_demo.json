@@ -1,0 +1,217 @@
+{
+  "controlled_revision": {
+    "question": "How many available slots does the NeuroCalm Migraine Trial have?",
+    "attempts": [
+      {
+        "attempt": 1,
+        "answer": "The NeuroCalm Migraine Trial has 12 available slots.",
+        "trial": "NeuroCalm Migraine Trial",
+        "nct": "NCT05010002",
+        "field": "available_slots",
+        "expected": 4,
+        "result": "REVISE",
+        "explanation": "The available slots in the answer does not match the reference dataset.",
+        "feedback": "The correct available slots of the NeuroCalm Migraine Trial is 4. The listing snapshot is outdated for this value. Answer with 4."
+      },
+      {
+        "attempt": 2,
+        "answer": "The NeuroCalm Migraine Trial has 4 available slots.",
+        "trial": "NeuroCalm Migraine Trial",
+        "nct": "NCT05010002",
+        "field": "available_slots",
+        "expected": 4,
+        "result": "PASS",
+        "feedback": "",
+        "explanation": "The available slots matches the reference dataset (4)."
+      }
+    ],
+    "final_answer": "The NeuroCalm Migraine Trial has 4 available slots.",
+    "final_result": "PASS",
+    "n_attempts": 2,
+    "lessons_used": [],
+    "latency_s": 13.152665416011587
+  },
+  "training": [
+    {
+      "question": "How many available slots does the NeuroCalm Migraine Trial have?",
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "The NeuroCalm Migraine Trial has 12 available slots.",
+          "trial": "NeuroCalm Migraine Trial",
+          "nct": "NCT05010002",
+          "field": "available_slots",
+          "expected": 4,
+          "result": "REVISE",
+          "explanation": "The available slots in the answer does not match the reference dataset.",
+          "feedback": "The correct available slots of the NeuroCalm Migraine Trial is 4. The listing snapshot is outdated for this value. Answer with 4."
+        },
+        {
+          "attempt": 2,
+          "answer": "The NeuroCalm Migraine Trial has 4 available slots.",
+          "trial": "NeuroCalm Migraine Trial",
+          "nct": "NCT05010002",
+          "field": "available_slots",
+          "expected": 4,
+          "result": "PASS",
+          "feedback": "",
+          "explanation": "The available slots matches the reference dataset (4)."
+        }
+      ],
+      "final_answer": "The NeuroCalm Migraine Trial has 4 available slots.",
+      "final_result": "PASS",
+      "n_attempts": 2,
+      "lessons_used": [],
+      "latency_s": 19.65980345895514
+    },
+    {
+      "question": "How many available slots does the ClearSkin Eczema Study have?",
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "The ClearSkin Eczema Study has 9 available slots.",
+          "trial": "ClearSkin Eczema Study",
+          "nct": "NCT05010005",
+          "field": "available_slots",
+          "expected": 2,
+          "result": "REVISE",
+          "explanation": "The available slots in the answer does not match the reference dataset.",
+          "feedback": "The correct available slots of the ClearSkin Eczema Study is 2. The listing snapshot is outdated for this value. Answer with 2."
+        },
+        {
+          "attempt": 2,
+          "answer": "The ClearSkin Eczema Study has 2 available slots.",
+          "trial": "ClearSkin Eczema Study",
+          "nct": "NCT05010005",
+          "field": "available_slots",
+          "expected": 2,
+          "result": "PASS",
+          "feedback": "",
+          "explanation": "The available slots matches the reference dataset (2)."
+        }
+      ],
+      "final_answer": "The ClearSkin Eczema Study has 2 available slots.",
+      "final_result": "PASS",
+      "n_attempts": 2,
+      "lessons_used": [],
+      "latency_s": 17.78085787501186
+    },
+    {
+      "question": "What is the current status of the SleepWell Insomnia Trial?",
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "The current status of the SleepWell Insomnia Trial is Recruiting.",
+          "trial": "SleepWell Insomnia Trial",
+          "nct": "NCT05010007",
+          "field": "status",
+          "expected": "Closed",
+          "result": "REVISE",
+          "explanation": "The status in the answer does not match the reference dataset.",
+          "feedback": "The correct status of the SleepWell Insomnia Trial is Closed. The listing snapshot is outdated for this value. Answer with Closed."
+        },
+        {
+          "attempt": 2,
+          "answer": "The current status of the SleepWell Insomnia Trial is Closed.",
+          "trial": "SleepWell Insomnia Trial",
+          "nct": "NCT05010007",
+          "field": "status",
+          "expected": "Closed",
+          "result": "PASS",
+          "feedback": "",
+          "explanation": "The status matches the reference dataset (Closed)."
+        }
+      ],
+      "final_answer": "The current status of the SleepWell Insomnia Trial is Closed.",
+      "final_result": "PASS",
+      "n_attempts": 2,
+      "lessons_used": [],
+      "latency_s": 12.757140375091694
+    },
+    {
+      "question": "What phase is the Cardio-Protect Heart Study in?",
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "The Cardio-Protect Heart Study is in Phase I.",
+          "trial": "Cardio-Protect Heart Study",
+          "nct": "NCT05010001",
+          "field": "phase",
+          "expected": "Phase I",
+          "result": "PASS",
+          "feedback": "",
+          "explanation": "The phase matches the reference dataset (Phase I)."
+        }
+      ],
+      "final_answer": "The Cardio-Protect Heart Study is in Phase I.",
+      "final_result": "PASS",
+      "n_attempts": 1,
+      "lessons_used": [],
+      "latency_s": 6.962119500036351
+    },
+    {
+      "question": "Who sponsors the GlucoBalance Diabetes Study?",
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "The GlucoBalance Diabetes Study is sponsored by Harborline Health.",
+          "trial": "GlucoBalance Diabetes Study",
+          "nct": "NCT05010003",
+          "field": "sponsor",
+          "expected": "Harborline Health",
+          "result": "PASS",
+          "feedback": "",
+          "explanation": "The sponsor matches the reference dataset (Harborline Health)."
+        }
+      ],
+      "final_answer": "The GlucoBalance Diabetes Study is sponsored by Harborline Health.",
+      "final_result": "PASS",
+      "n_attempts": 1,
+      "lessons_used": [],
+      "latency_s": 8.529623290989548
+    },
+    {
+      "question": "How many available slots does the Zeta Lung Cancer Trial have?",
+      "attempts": [
+        {
+          "attempt": 1,
+          "answer": "I have no information about the Zeta Lung Cancer Trial.",
+          "result": "PASS",
+          "trial": null,
+          "field": null,
+          "expected": null,
+          "explanation": "The trial is not in the reference dataset and the answer correctly says so.",
+          "feedback": ""
+        }
+      ],
+      "final_answer": "I have no information about the Zeta Lung Cancer Trial.",
+      "final_result": "PASS",
+      "n_attempts": 1,
+      "lessons_used": [],
+      "latency_s": 10.736329375067726
+    }
+  ],
+  "lesson_reuse": {
+    "question": "How many open slots are left in the NeuroCalm Migraine Trial?",
+    "attempts": [
+      {
+        "attempt": 1,
+        "answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 open slots available.",
+        "trial": "NeuroCalm Migraine Trial",
+        "nct": "NCT05010002",
+        "field": "available_slots",
+        "expected": 4,
+        "result": "PASS",
+        "feedback": "",
+        "explanation": "The available slots matches the reference dataset (4)."
+      }
+    ],
+    "final_answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 open slots available.",
+    "final_result": "PASS",
+    "n_attempts": 1,
+    "lessons_used": [
+      "lesson_001"
+    ],
+    "latency_s": 8.571884625009261
+  }
+}

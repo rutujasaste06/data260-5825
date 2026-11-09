@@ -1,0 +1,222 @@
+{
+  "baseline": {
+    "va1": {
+      "correct": false,
+      "answer": "The NeuroCalm Migraine Trial has 12 open slots available."
+    },
+    "va2": {
+      "correct": false,
+      "answer": "The SleepWell Insomnia Trial is currently Recruiting."
+    },
+    "va3": {
+      "correct": true,
+      "answer": "The BreathEasy Asthma Trial is in Phase II."
+    },
+    "va4": {
+      "correct": true,
+      "answer": "The NCT number of the GlucoBalance Diabetes Study is NCT05010003."
+    },
+    "va5": {
+      "correct": true,
+      "answer": "I have no information about the MindBright Depression Study in the provided listing snapshot."
+    },
+    "va6": {
+      "correct": false,
+      "answer": "The VisionClear Glaucoma Study has 18 available slots."
+    },
+    "va7": {
+      "correct": true,
+      "answer": "The BreathEasy Asthma Trial has 15 available slots."
+    }
+  },
+  "lessons": [
+    {
+      "lesson_id": "lesson_001",
+      "improved": [
+        "va1"
+      ],
+      "regressed": [],
+      "decision": "KEEP",
+      "answers_with_lesson": {
+        "va1": {
+          "correct": true,
+          "answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 open slots available."
+        },
+        "va2": {
+          "correct": false,
+          "answer": "The SleepWell Insomnia Trial is currently Recruiting."
+        },
+        "va3": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial is in Phase II."
+        },
+        "va4": {
+          "correct": true,
+          "answer": "The NCT number of the GlucoBalance Diabetes Study is NCT05010003."
+        },
+        "va5": {
+          "correct": true,
+          "answer": "The MindBright Depression Study is not listed in the provided snapshot, so I have no information about it."
+        },
+        "va6": {
+          "correct": false,
+          "answer": "The VisionClear Glaucoma Study has 18 available slots."
+        },
+        "va7": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial has 15 available slots."
+        }
+      }
+    },
+    {
+      "lesson_id": "lesson_002",
+      "improved": [],
+      "regressed": [],
+      "decision": "KEEP",
+      "answers_with_lesson": {
+        "va1": {
+          "correct": false,
+          "answer": "The NeuroCalm Migraine Trial has 12 open slots available."
+        },
+        "va2": {
+          "correct": false,
+          "answer": "The SleepWell Insomnia Trial is currently Recruiting."
+        },
+        "va3": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial is in Phase II."
+        },
+        "va4": {
+          "correct": true,
+          "answer": "The NCT number of the GlucoBalance Diabetes Study is NCT05010003."
+        },
+        "va5": {
+          "correct": true,
+          "answer": "The MindBright Depression Study is not listed in the provided snapshot, so I have no information about it."
+        },
+        "va6": {
+          "correct": false,
+          "answer": "The VisionClear Glaucoma Study has 18 available slots."
+        },
+        "va7": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial has 15 available slots."
+        }
+      }
+    },
+    {
+      "lesson_id": "lesson_003",
+      "improved": [
+        "va2"
+      ],
+      "regressed": [],
+      "decision": "KEEP",
+      "answers_with_lesson": {
+        "va1": {
+          "correct": false,
+          "answer": "The NeuroCalm Migraine Trial has 12 open slots available."
+        },
+        "va2": {
+          "correct": true,
+          "answer": "The status of the SleepWell Insomnia Trial (NCT05010007) is Closed, so it is no longer recruiting."
+        },
+        "va3": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial is in Phase II."
+        },
+        "va4": {
+          "correct": true,
+          "answer": "The NCT number of the GlucoBalance Diabetes Study is NCT05010003."
+        },
+        "va5": {
+          "correct": true,
+          "answer": "I have no information about the MindBright Depression Study in the provided listing snapshot."
+        },
+        "va6": {
+          "correct": false,
+          "answer": "The VisionClear Glaucoma Study has 18 available slots."
+        },
+        "va7": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial has 15 available slots."
+        }
+      }
+    },
+    {
+      "lesson_id": "lesson_004",
+      "improved": [],
+      "regressed": [],
+      "decision": "KEEP",
+      "answers_with_lesson": {
+        "va1": {
+          "correct": false,
+          "answer": "The NeuroCalm Migraine Trial has 12 open slots available."
+        },
+        "va2": {
+          "correct": false,
+          "answer": "The SleepWell Insomnia Trial is currently Recruiting."
+        },
+        "va3": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial is in Phase II."
+        },
+        "va4": {
+          "correct": true,
+          "answer": "The NCT number of the GlucoBalance Diabetes Study is NCT05010003."
+        },
+        "va5": {
+          "correct": true,
+          "answer": "The MindBright Depression Study is not listed in the provided snapshot, so there is no information available about its available slots."
+        },
+        "va6": {
+          "correct": false,
+          "answer": "The VisionClear Glaucoma Study has 18 available slots."
+        },
+        "va7": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial has 15 available slots."
+        }
+      }
+    },
+    {
+      "lesson_id": "lesson_005",
+      "improved": [
+        "va1"
+      ],
+      "regressed": [
+        "va7"
+      ],
+      "decision": "REMOVE",
+      "answers_with_lesson": {
+        "va1": {
+          "correct": true,
+          "answer": "The NeuroCalm Migraine Trial has 4 open slots available."
+        },
+        "va2": {
+          "correct": false,
+          "answer": "The SleepWell Insomnia Trial is still recruiting."
+        },
+        "va3": {
+          "correct": true,
+          "answer": "The BreathEasy Asthma Trial is in Phase II."
+        },
+        "va4": {
+          "correct": true,
+          "answer": "The NCT number of the GlucoBalance Diabetes Study is NCT05010003."
+        },
+        "va5": {
+          "correct": true,
+          "answer": "I have no information about the MindBright Depression Study."
+        },
+        "va6": {
+          "correct": false,
+          "answer": "The VisionClear Glaucoma Study has 4 available slots, based on the most recent updated information overriding the listing snapshot."
+        },
+        "va7": {
+          "correct": false,
+          "answer": "The BreathEasy Asthma Trial has 4 available slots."
+        }
+      }
+    }
+  ]
+}

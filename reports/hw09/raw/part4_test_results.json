@@ -1,0 +1,854 @@
+{
+  "summary": [
+    {
+      "variant": "Baseline",
+      "correct": 4,
+      "incorrect": 4,
+      "avg_attempts": 1.0,
+      "avg_latency_s": 11.380452119992697
+    },
+    {
+      "variant": "Evaluator Repair",
+      "correct": 8,
+      "incorrect": 0,
+      "avg_attempts": 1.5,
+      "avg_latency_s": 14.739448338616057
+    },
+    {
+      "variant": "Lesson Memory",
+      "correct": 8,
+      "incorrect": 0,
+      "avg_attempts": 1.375,
+      "avg_latency_s": 15.094193781507784
+    },
+    {
+      "variant": "Validated Improvement",
+      "correct": 8,
+      "incorrect": 0,
+      "avg_attempts": 1.25,
+      "avg_latency_s": 19.811226994759636
+    }
+  ],
+  "details": {
+    "Baseline": [
+      {
+        "question": "How many available slots are left in the NeuroCalm Migraine Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NeuroCalm Migraine Trial has 12 available slots.",
+            "trial": "NeuroCalm Migraine Trial",
+            "nct": "NCT05010002",
+            "field": "available_slots",
+            "expected": 4,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the NeuroCalm Migraine Trial is 4. The listing snapshot is outdated for this value. Answer with 4."
+          }
+        ],
+        "final_answer": "The NeuroCalm Migraine Trial has 12 available slots.",
+        "final_result": "REVISE",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 16.158939584041946
+      },
+      {
+        "question": "How many available slots does the ClearSkin Eczema Study have right now?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The ClearSkin Eczema Study has 9 available slots.",
+            "trial": "ClearSkin Eczema Study",
+            "nct": "NCT05010005",
+            "field": "available_slots",
+            "expected": 2,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the ClearSkin Eczema Study is 2. The listing snapshot is outdated for this value. Answer with 2."
+          }
+        ],
+        "final_answer": "The ClearSkin Eczema Study has 9 available slots.",
+        "final_result": "REVISE",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 9.375155666959472
+      },
+      {
+        "question": "How many slots are currently available in the VisionClear Glaucoma Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The VisionClear Glaucoma Study has 18 slots currently available.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the VisionClear Glaucoma Study is 6. The listing snapshot is outdated for this value. Answer with 6."
+          }
+        ],
+        "final_answer": "The VisionClear Glaucoma Study has 18 slots currently available.",
+        "final_result": "REVISE",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 13.47465245903004
+      },
+      {
+        "question": "What is the status of the HeartRhythm Arrhythmia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The HeartRhythm Arrhythmia Trial is Recruiting.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "REVISE",
+            "explanation": "The status in the answer does not match the reference dataset.",
+            "feedback": "The correct status of the HeartRhythm Arrhythmia Trial is Closed. The listing snapshot is outdated for this value. Answer with Closed."
+          }
+        ],
+        "final_answer": "The HeartRhythm Arrhythmia Trial is Recruiting.",
+        "final_result": "REVISE",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 11.994147874996997
+      },
+      {
+        "question": "What phase is the BoneStrong Osteoporosis Study in?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+            "trial": "BoneStrong Osteoporosis Study",
+            "nct": "NCT05010006",
+            "field": "phase",
+            "expected": "Phase IV",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The phase matches the reference dataset (Phase IV)."
+          }
+        ],
+        "final_answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 11.229303041938692
+      },
+      {
+        "question": "Who sponsors the JointFlex Arthritis Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+            "trial": "JointFlex Arthritis Study",
+            "nct": "NCT05010010",
+            "field": "sponsor",
+            "expected": "Cascade Rheumatology",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The sponsor matches the reference dataset (Cascade Rheumatology)."
+          }
+        ],
+        "final_answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 10.29109666601289
+      },
+      {
+        "question": "What is the NCT number of the SleepWell Insomnia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+            "trial": "SleepWell Insomnia Trial",
+            "nct": "NCT05010007",
+            "field": "nct_number",
+            "expected": "NCT05010007",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The NCT number matches the reference dataset (NCT05010007)."
+          }
+        ],
+        "final_answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 10.336412791977637
+      },
+      {
+        "question": "How many available slots does the Aurora Kidney Trial have?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "I have no information about the Aurora Kidney Trial.",
+            "result": "PASS",
+            "trial": null,
+            "field": null,
+            "expected": null,
+            "explanation": "The trial is not in the reference dataset and the answer correctly says so.",
+            "feedback": ""
+          }
+        ],
+        "final_answer": "I have no information about the Aurora Kidney Trial.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 8.1839088749839
+      }
+    ],
+    "Evaluator Repair": [
+      {
+        "question": "How many available slots are left in the NeuroCalm Migraine Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NeuroCalm Migraine Trial has 12 available slots.",
+            "trial": "NeuroCalm Migraine Trial",
+            "nct": "NCT05010002",
+            "field": "available_slots",
+            "expected": 4,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the NeuroCalm Migraine Trial is 4. The listing snapshot is outdated for this value. Answer with 4."
+          },
+          {
+            "attempt": 2,
+            "answer": "The NeuroCalm Migraine Trial has 4 available slots.",
+            "trial": "NeuroCalm Migraine Trial",
+            "nct": "NCT05010002",
+            "field": "available_slots",
+            "expected": 4,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (4)."
+          }
+        ],
+        "final_answer": "The NeuroCalm Migraine Trial has 4 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [],
+        "latency_s": 24.18774016702082
+      },
+      {
+        "question": "How many available slots does the ClearSkin Eczema Study have right now?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The ClearSkin Eczema Study has 9 available slots.",
+            "trial": "ClearSkin Eczema Study",
+            "nct": "NCT05010005",
+            "field": "available_slots",
+            "expected": 2,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the ClearSkin Eczema Study is 2. The listing snapshot is outdated for this value. Answer with 2."
+          },
+          {
+            "attempt": 2,
+            "answer": "The ClearSkin Eczema Study currently has 2 available slots.",
+            "trial": "ClearSkin Eczema Study",
+            "nct": "NCT05010005",
+            "field": "available_slots",
+            "expected": 2,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (2)."
+          }
+        ],
+        "final_answer": "The ClearSkin Eczema Study currently has 2 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [],
+        "latency_s": 16.17349049996119
+      },
+      {
+        "question": "How many slots are currently available in the VisionClear Glaucoma Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The VisionClear Glaucoma Study has 18 slots currently available.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the VisionClear Glaucoma Study is 6. The listing snapshot is outdated for this value. Answer with 6."
+          },
+          {
+            "attempt": 2,
+            "answer": "The VisionClear Glaucoma Study currently has 6 slots available.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (6)."
+          }
+        ],
+        "final_answer": "The VisionClear Glaucoma Study currently has 6 slots available.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [],
+        "latency_s": 21.29611454193946
+      },
+      {
+        "question": "What is the status of the HeartRhythm Arrhythmia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The HeartRhythm Arrhythmia Trial is Recruiting.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "REVISE",
+            "explanation": "The status in the answer does not match the reference dataset.",
+            "feedback": "The correct status of the HeartRhythm Arrhythmia Trial is Closed. The listing snapshot is outdated for this value. Answer with Closed."
+          },
+          {
+            "attempt": 2,
+            "answer": "The status of the HeartRhythm Arrhythmia Trial is Closed.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The status matches the reference dataset (Closed)."
+          }
+        ],
+        "final_answer": "The status of the HeartRhythm Arrhythmia Trial is Closed.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [],
+        "latency_s": 19.599181332974695
+      },
+      {
+        "question": "What phase is the BoneStrong Osteoporosis Study in?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+            "trial": "BoneStrong Osteoporosis Study",
+            "nct": "NCT05010006",
+            "field": "phase",
+            "expected": "Phase IV",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The phase matches the reference dataset (Phase IV)."
+          }
+        ],
+        "final_answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 8.46014495799318
+      },
+      {
+        "question": "Who sponsors the JointFlex Arthritis Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+            "trial": "JointFlex Arthritis Study",
+            "nct": "NCT05010010",
+            "field": "sponsor",
+            "expected": "Cascade Rheumatology",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The sponsor matches the reference dataset (Cascade Rheumatology)."
+          }
+        ],
+        "final_answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 10.180595749989152
+      },
+      {
+        "question": "What is the NCT number of the SleepWell Insomnia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+            "trial": "SleepWell Insomnia Trial",
+            "nct": "NCT05010007",
+            "field": "nct_number",
+            "expected": "NCT05010007",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The NCT number matches the reference dataset (NCT05010007)."
+          }
+        ],
+        "final_answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 9.909450709004886
+      },
+      {
+        "question": "How many available slots does the Aurora Kidney Trial have?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "I have no information about the Aurora Kidney Trial.",
+            "result": "PASS",
+            "trial": null,
+            "field": null,
+            "expected": null,
+            "explanation": "The trial is not in the reference dataset and the answer correctly says so.",
+            "feedback": ""
+          }
+        ],
+        "final_answer": "I have no information about the Aurora Kidney Trial.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [],
+        "latency_s": 8.108868750045076
+      }
+    ],
+    "Lesson Memory": [
+      {
+        "question": "How many available slots are left in the NeuroCalm Migraine Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 available slots.",
+            "trial": "NeuroCalm Migraine Trial",
+            "nct": "NCT05010002",
+            "field": "available_slots",
+            "expected": 4,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (4)."
+          }
+        ],
+        "final_answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_001",
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 8.85130079195369
+      },
+      {
+        "question": "How many available slots does the ClearSkin Eczema Study have right now?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The ClearSkin Eczema Study has 2 available slots.",
+            "trial": "ClearSkin Eczema Study",
+            "nct": "NCT05010005",
+            "field": "available_slots",
+            "expected": 2,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (2)."
+          }
+        ],
+        "final_answer": "The ClearSkin Eczema Study has 2 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_002",
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 14.998471291037276
+      },
+      {
+        "question": "How many slots are currently available in the VisionClear Glaucoma Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The VisionClear Glaucoma Study currently has 4 available slots.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the VisionClear Glaucoma Study is 6. The listing snapshot is outdated for this value. Answer with 6."
+          },
+          {
+            "attempt": 2,
+            "answer": "The VisionClear Glaucoma Study currently has 6 available slots.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (6)."
+          }
+        ],
+        "final_answer": "The VisionClear Glaucoma Study currently has 6 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 20.783305541961454
+      },
+      {
+        "question": "What is the status of the HeartRhythm Arrhythmia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The status of the HeartRhythm Arrhythmia Trial is Recruiting.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "REVISE",
+            "explanation": "The status in the answer does not match the reference dataset.",
+            "feedback": "The correct status of the HeartRhythm Arrhythmia Trial is Closed. The listing snapshot is outdated for this value. Answer with Closed."
+          },
+          {
+            "attempt": 2,
+            "answer": "The status of the HeartRhythm Arrhythmia Trial is Closed.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The status matches the reference dataset (Closed)."
+          }
+        ],
+        "final_answer": "The status of the HeartRhythm Arrhythmia Trial is Closed.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 21.28063908405602
+      },
+      {
+        "question": "What phase is the BoneStrong Osteoporosis Study in?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+            "trial": "BoneStrong Osteoporosis Study",
+            "nct": "NCT05010006",
+            "field": "phase",
+            "expected": "Phase IV",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The phase matches the reference dataset (Phase IV)."
+          }
+        ],
+        "final_answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 12.267827749950811
+      },
+      {
+        "question": "Who sponsors the JointFlex Arthritis Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+            "trial": "JointFlex Arthritis Study",
+            "nct": "NCT05010010",
+            "field": "sponsor",
+            "expected": "Cascade Rheumatology",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The sponsor matches the reference dataset (Cascade Rheumatology)."
+          }
+        ],
+        "final_answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 9.08254204201512
+      },
+      {
+        "question": "What is the NCT number of the SleepWell Insomnia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+            "trial": "SleepWell Insomnia Trial",
+            "nct": "NCT05010007",
+            "field": "nct_number",
+            "expected": "NCT05010007",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The NCT number matches the reference dataset (NCT05010007)."
+          }
+        ],
+        "final_answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_003",
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 11.550651584053412
+      },
+      {
+        "question": "How many available slots does the Aurora Kidney Trial have?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The Aurora Kidney Trial has 4 available slots.",
+            "result": "REVISE",
+            "trial": null,
+            "field": null,
+            "expected": null,
+            "explanation": "The trial is not in the reference dataset, but the answer gives a value anyway.",
+            "feedback": "That trial is not in the listings. Say you have no information about it instead of giving a value."
+          },
+          {
+            "attempt": 2,
+            "answer": "That trial is not in the listings. Say you have no information about it instead of giving a value.",
+            "result": "PASS",
+            "trial": null,
+            "field": null,
+            "expected": null,
+            "explanation": "The trial is not in the reference dataset and the answer correctly says so.",
+            "feedback": ""
+          }
+        ],
+        "final_answer": "That trial is not in the listings. Say you have no information about it instead of giving a value.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [
+          "lesson_004",
+          "lesson_005"
+        ],
+        "latency_s": 21.938812167034484
+      }
+    ],
+    "Validated Improvement": [
+      {
+        "question": "How many available slots are left in the NeuroCalm Migraine Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 available slots remaining.",
+            "trial": "NeuroCalm Migraine Trial",
+            "nct": "NCT05010002",
+            "field": "available_slots",
+            "expected": 4,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (4)."
+          }
+        ],
+        "final_answer": "The NeuroCalm Migraine Trial (NCT05010002) has 4 available slots remaining.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_001",
+          "lesson_004"
+        ],
+        "latency_s": 7.873840040992945
+      },
+      {
+        "question": "How many available slots does the ClearSkin Eczema Study have right now?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The ClearSkin Eczema Study (NCT05010005) currently has 2 available slots.",
+            "trial": "ClearSkin Eczema Study",
+            "nct": "NCT05010005",
+            "field": "available_slots",
+            "expected": 2,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (2)."
+          }
+        ],
+        "final_answer": "The ClearSkin Eczema Study (NCT05010005) currently has 2 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_002",
+          "lesson_004"
+        ],
+        "latency_s": 8.611361040966585
+      },
+      {
+        "question": "How many slots are currently available in the VisionClear Glaucoma Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The VisionClear Glaucoma Study has 18 slots currently available.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "REVISE",
+            "explanation": "The available slots in the answer does not match the reference dataset.",
+            "feedback": "The correct available slots of the VisionClear Glaucoma Study is 6. The listing snapshot is outdated for this value. Answer with 6."
+          },
+          {
+            "attempt": 2,
+            "answer": "The VisionClear Glaucoma Study currently has 6 available slots.",
+            "trial": "VisionClear Glaucoma Study",
+            "nct": "NCT05010008",
+            "field": "available_slots",
+            "expected": 6,
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The available slots matches the reference dataset (6)."
+          }
+        ],
+        "final_answer": "The VisionClear Glaucoma Study currently has 6 available slots.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [
+          "lesson_004"
+        ],
+        "latency_s": 35.878810917027295
+      },
+      {
+        "question": "What is the status of the HeartRhythm Arrhythmia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The HeartRhythm Arrhythmia Trial is Recruiting.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "REVISE",
+            "explanation": "The status in the answer does not match the reference dataset.",
+            "feedback": "The correct status of the HeartRhythm Arrhythmia Trial is Closed. The listing snapshot is outdated for this value. Answer with Closed."
+          },
+          {
+            "attempt": 2,
+            "answer": "The status of the HeartRhythm Arrhythmia Trial is Closed.",
+            "trial": "HeartRhythm Arrhythmia Trial",
+            "nct": "NCT05010009",
+            "field": "status",
+            "expected": "Closed",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The status matches the reference dataset (Closed)."
+          }
+        ],
+        "final_answer": "The status of the HeartRhythm Arrhythmia Trial is Closed.",
+        "final_result": "PASS",
+        "n_attempts": 2,
+        "lessons_used": [
+          "lesson_004"
+        ],
+        "latency_s": 18.59383525000885
+      },
+      {
+        "question": "What phase is the BoneStrong Osteoporosis Study in?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+            "trial": "BoneStrong Osteoporosis Study",
+            "nct": "NCT05010006",
+            "field": "phase",
+            "expected": "Phase IV",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The phase matches the reference dataset (Phase IV)."
+          }
+        ],
+        "final_answer": "The BoneStrong Osteoporosis Study is in Phase IV.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_004"
+        ],
+        "latency_s": 7.246801584027708
+      },
+      {
+        "question": "Who sponsors the JointFlex Arthritis Study?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+            "trial": "JointFlex Arthritis Study",
+            "nct": "NCT05010010",
+            "field": "sponsor",
+            "expected": "Cascade Rheumatology",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The sponsor matches the reference dataset (Cascade Rheumatology)."
+          }
+        ],
+        "final_answer": "The JointFlex Arthritis Study is sponsored by Cascade Rheumatology.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_004"
+        ],
+        "latency_s": 10.246579458005726
+      },
+      {
+        "question": "What is the NCT number of the SleepWell Insomnia Trial?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+            "trial": "SleepWell Insomnia Trial",
+            "nct": "NCT05010007",
+            "field": "nct_number",
+            "expected": "NCT05010007",
+            "result": "PASS",
+            "feedback": "",
+            "explanation": "The NCT number matches the reference dataset (NCT05010007)."
+          }
+        ],
+        "final_answer": "The NCT number of the SleepWell Insomnia Trial is NCT05010007.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_003",
+          "lesson_004"
+        ],
+        "latency_s": 9.75383779197
+      },
+      {
+        "question": "How many available slots does the Aurora Kidney Trial have?",
+        "attempts": [
+          {
+            "attempt": 1,
+            "answer": "The Aurora Kidney Trial is not listed in the provided snapshot, so I estimate it has approximately 10 available slots based on the range of slots in similar trials.",
+            "result": "PASS",
+            "trial": null,
+            "field": null,
+            "expected": null,
+            "explanation": "The trial is not in the reference dataset and the answer correctly says so.",
+            "feedback": ""
+          }
+        ],
+        "final_answer": "The Aurora Kidney Trial is not listed in the provided snapshot, so I estimate it has approximately 10 available slots based on the range of slots in similar trials.",
+        "final_result": "PASS",
+        "n_attempts": 1,
+        "lessons_used": [
+          "lesson_004"
+        ],
+        "latency_s": 60.28474987507798
+      }
+    ]
+  }
+}

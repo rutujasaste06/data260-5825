@@ -1,0 +1,140 @@
+{
+  "threshold": 0.85,
+  "hit_rate_percent": 41.666666666666664,
+  "avg_latency_cached_ms": 54.425274999812245,
+  "avg_latency_non_cached_ms": 32065.55302984946,
+  "results": [
+    {
+      "question": "What should a patient know before joining a Phase II clinical trial?",
+      "answer": "Before joining a Phase II trial, a patient should understand the trial\u2019s purpose: testing treatment effectiveness and monitoring side effects in a larger group. Review eligibility criteria, such as medical history, demographics, or specific health conditions. Assess risks and benefits, including potential side effects, treatment schedule, and how results will be shared. Confirm informed consent by asking questions and acknowledging the right to withdraw at any time. Discuss compensation and logistics, like travel, time commitments, and financial details. Ensure all concerns are addressed to make an informed decision. (149 words)",
+      "is_cached": false,
+      "similarity": null,
+      "matched_query": null,
+      "latency_ms": 35256.365624954924,
+      "started_at": "2026-11-08T13:23:25.712",
+      "finished_at": "2026-11-08T13:24:00.969",
+      "type": "new"
+    },
+    {
+      "question": "What are the eligibility requirements for a Phase III trial?",
+      "answer": "Phase III trial eligibility requires a confirmed diagnosis, specific disease stage (e.g., advanced cancer), and relevant biomarkers (e.g., genetic markers). Exclusions include prior treatments for the condition, significant comorbidities (e.g., severe heart disease), and pregnancy. Demographic criteria typically specify age ranges (e.g., 18\u201365 years) and may limit gender based on study focus. Informed consent is mandatory, ensuring participants understand risks, benefits, and procedures. Adherence to trial protocols, such as medication schedules and follow-up visits, is required. These criteria ensure patient safety, data reliability, and regulatory compliance.",
+      "is_cached": false,
+      "similarity": 0.655306696892,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "latency_ms": 45248.84733406361,
+      "started_at": "2026-11-08T13:24:00.969",
+      "finished_at": "2026-11-08T13:24:46.217",
+      "type": "new"
+    },
+    {
+      "question": "How is informed consent obtained in a clinical trial?",
+      "answer": "Informed consent in clinical trials involves clearly explaining the study\u2019s purpose, procedures, risks, benefits, and participant rights using plain language. Researchers ensure understanding through verbal discussions, answer questions, and may use quizzes or acknowledgment forms. Voluntary participation is confirmed by verifying no coercion and emphasizing the right to withdraw at any time. A signed consent form documents agreement, while records of the discussion are maintained for regulatory and ethical compliance. This process prioritizes transparency, respect for autonomy, and legal adherence, ensuring participants make informed decisions.",
+      "is_cached": false,
+      "similarity": 0.55998980999,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "latency_ms": 29496.30066694226,
+      "started_at": "2026-11-08T13:24:46.218",
+      "finished_at": "2026-11-08T13:25:15.714",
+      "type": "new"
+    },
+    {
+      "question": "What should a patient know before joining a Phase II clinical trial?",
+      "answer": "Before joining a Phase II trial, a patient should understand the trial\u2019s purpose: testing treatment effectiveness and monitoring side effects in a larger group. Review eligibility criteria, such as medical history, demographics, or specific health conditions. Assess risks and benefits, including potential side effects, treatment schedule, and how results will be shared. Confirm informed consent by asking questions and acknowledging the right to withdraw at any time. Discuss compensation and logistics, like travel, time commitments, and financial details. Ensure all concerns are addressed to make an informed decision. (149 words)",
+      "is_cached": true,
+      "similarity": 0.9999998807907104,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "latency_ms": 68.9506670460105,
+      "started_at": "2026-11-08T13:25:15.714",
+      "finished_at": "2026-11-08T13:25:15.783",
+      "type": "exact"
+    },
+    {
+      "question": "Before enrolling in a Phase 2 clinical trial, what should a patient be aware of?",
+      "answer": "Before joining a Phase II trial, a patient should understand the trial\u2019s purpose: testing treatment effectiveness and monitoring side effects in a larger group. Review eligibility criteria, such as medical history, demographics, or specific health conditions. Assess risks and benefits, including potential side effects, treatment schedule, and how results will be shared. Confirm informed consent by asking questions and acknowledging the right to withdraw at any time. Discuss compensation and logistics, like travel, time commitments, and financial details. Ensure all concerns are addressed to make an informed decision. (149 words)",
+      "is_cached": true,
+      "similarity": 0.9119696617126,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "latency_ms": 6.822041003033519,
+      "started_at": "2026-11-08T13:25:15.783",
+      "finished_at": "2026-11-08T13:25:15.790",
+      "type": "paraphrase"
+    },
+    {
+      "question": "How is informed consent obtained in a clinical trial?",
+      "answer": "Informed consent in clinical trials involves clearly explaining the study\u2019s purpose, procedures, risks, benefits, and participant rights using plain language. Researchers ensure understanding through verbal discussions, answer questions, and may use quizzes or acknowledgment forms. Voluntary participation is confirmed by verifying no coercion and emphasizing the right to withdraw at any time. A signed consent form documents agreement, while records of the discussion are maintained for regulatory and ethical compliance. This process prioritizes transparency, respect for autonomy, and legal adherence, ensuring participants make informed decisions.",
+      "is_cached": true,
+      "similarity": 1.0,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "latency_ms": 5.660542054101825,
+      "started_at": "2026-11-08T13:25:15.790",
+      "finished_at": "2026-11-08T13:25:15.796",
+      "type": "exact"
+    },
+    {
+      "question": "What does Phase I testing of a new drug focus on?",
+      "answer": "Phase I testing of a new drug focuses on evaluating safety, tolerability, and basic pharmacological properties in a small group of healthy volunteers. Key objectives include determining pharmacokinetics (absorption, distribution, metabolism, excretion) and pharmacodynamics to understand how the drug interacts with the body. Researchers identify the maximum tolerated dose and monitor potential side effects to establish safety thresholds. This phase also assesses the drug\u2019s interaction with bodily systems and may provide initial signals of efficacy. By prioritizing safety and dose-ranging, Phase I lays the foundation for advancing to later stages while minimizing risks to participants.",
+      "is_cached": false,
+      "similarity": 0.555025100708,
+      "matched_query": "What should a patient know before joining a Phase II clinical trial?",
+      "latency_ms": 27096.590625005774,
+      "started_at": "2026-11-08T13:25:15.796",
+      "finished_at": "2026-11-08T13:25:42.893",
+      "type": "new"
+    },
+    {
+      "question": "How does informed consent work when joining a clinical trial?",
+      "answer": "Informed consent in clinical trials involves clearly explaining the study\u2019s purpose, procedures, risks, benefits, and participant rights using plain language. Researchers ensure understanding through verbal discussions, answer questions, and may use quizzes or acknowledgment forms. Voluntary participation is confirmed by verifying no coercion and emphasizing the right to withdraw at any time. A signed consent form documents agreement, while records of the discussion are maintained for regulatory and ethical compliance. This process prioritizes transparency, respect for autonomy, and legal adherence, ensuring participants make informed decisions.",
+      "is_cached": true,
+      "similarity": 0.9305714964867,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "latency_ms": 96.29758296068758,
+      "started_at": "2026-11-08T13:25:42.893",
+      "finished_at": "2026-11-08T13:25:42.989",
+      "type": "paraphrase"
+    },
+    {
+      "question": "Who can qualify to participate in a Phase 3 trial?",
+      "answer": "Participants in Phase 3 trials typically meet specific inclusion criteria, such as having a diagnosed medical condition (e.g., cancer, cardiovascular disease), falling within an age range (e.g., 18\u201365 years), and being at a particular disease stage (e.g., early-stage or metastatic). Exclusion factors may include prior treatments (e.g., recent chemotherapy), significant comorbidities (e.g., severe diabetes, heart disease), or pregnancy due to potential risks. Eligibility is confirmed via trial protocols and regulatory guidelines (e.g., FDA/EMA standards), ensuring safety and scientific rigor. Candidates must also demonstrate capacity for informed consent and willingness to adhere to trial procedures, such as regular visits, medication adherence, and data reporting. These criteria ensure participant safety, study validity, and compliance with ethical and regulatory frameworks.",
+      "is_cached": false,
+      "similarity": 0.846014678478,
+      "matched_query": "What are the eligibility requirements for a Phase III trial?",
+      "latency_ms": 35652.21591608133,
+      "started_at": "2026-11-08T13:25:42.989",
+      "finished_at": "2026-11-08T13:26:18.641",
+      "type": "paraphrase"
+    },
+    {
+      "question": "What is the NCT number on a trial listing?",
+      "answer": "The NCT number is a unique identifier for clinical trials registered in the NIH ClinicalTrials.gov database. To find it on a trial listing, check sections like \"Identifier,\" \"Registration Information,\" or \"Trial Details.\" On the official ClinicalTrials.gov registration page, the NCT number is typically displayed in the URL (e.g., `NCT01234567`) or within the summary section. It serves as a direct link to the trial\u2019s detailed information, ensuring accurate referencing and tracking. Always verify the NCT number on the official site for reliability. (149 words)",
+      "is_cached": false,
+      "similarity": 0.43242365121799997,
+      "matched_query": "How is informed consent obtained in a clinical trial?",
+      "latency_ms": 28603.594874963164,
+      "started_at": "2026-11-08T13:26:18.641",
+      "finished_at": "2026-11-08T13:26:47.245",
+      "type": "new"
+    },
+    {
+      "question": "What does Phase I testing of a new drug focus on?",
+      "answer": "Phase I testing of a new drug focuses on evaluating safety, tolerability, and basic pharmacological properties in a small group of healthy volunteers. Key objectives include determining pharmacokinetics (absorption, distribution, metabolism, excretion) and pharmacodynamics to understand how the drug interacts with the body. Researchers identify the maximum tolerated dose and monitor potential side effects to establish safety thresholds. This phase also assesses the drug\u2019s interaction with bodily systems and may provide initial signals of efficacy. By prioritizing safety and dose-ranging, Phase I lays the foundation for advancing to later stages while minimizing risks to participants.",
+      "is_cached": true,
+      "similarity": 1.0000001192092896,
+      "matched_query": "What does Phase I testing of a new drug focus on?",
+      "latency_ms": 94.39554193522781,
+      "started_at": "2026-11-08T13:26:47.245",
+      "finished_at": "2026-11-08T13:26:47.339",
+      "type": "exact"
+    },
+    {
+      "question": "What is the capital of France?",
+      "answer": "The capital of France is Paris. While France has several major cities, Paris is the only city officially recognized as its capital. It has served as the political, cultural, and economic center of France for centuries. No other city holds this designation.",
+      "is_cached": false,
+      "similarity": 0.08617442846300005,
+      "matched_query": "What does Phase I testing of a new drug focus on?",
+      "latency_ms": 23104.956166935153,
+      "started_at": "2026-11-08T13:26:47.339",
+      "finished_at": "2026-11-08T13:27:10.445",
+      "type": "new"
+    }
+  ]
+}
