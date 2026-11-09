@@ -96,11 +96,16 @@ class SemanticCache:
             return None
         doc = result.docs[0]
         return {
+            "key": doc.id,
             "query": doc.query,
             "answer": doc.answer,
             "data_version": doc.data_version,
             "similarity": 1.0 - float(doc.dist),  # Redis returns cosine DISTANCE
         }
+
+    def bump_version(self):
+        """Call whenever the underlying data changes: marks every older cached answer as outdated."""
+        return int(self.redis_client.incr(VERSION_KEY))
 
     def store(self, question, vec, answer, data_version):
         self.redis_client.hset(
@@ -115,7 +120,7 @@ class SemanticCache:
         )
 
     # ---------- the query handler ----------
-    def handle_query(self, question, threshold=None):
+    def handle_query(self, question, threshold=None, check_version=False):
         threshold = self.threshold if threshold is None else threshold
         t_start = time.perf_counter()
         started_at = _now()
@@ -130,7 +135,20 @@ class SemanticCache:
 
         best = match["similarity"] if match else None
 
-        if match and best >= threshold:
+        # Part 3.5 invalidation: a hit whose stored data_version is older than the current
+        # marker is outdated - delete it and fall through to the miss path (re-run, re-store).
+        stale = False
+        if match and best >= threshold and check_version:
+            current = self.current_version()
+            if match["data_version"] != current:
+                stale = True
+                self.redis_client.delete(match["key"])
+                logger.info(
+                    "CACHE STALE saved data_version=%s but current=%s - entry removed, treating as a miss | %s",
+                    match["data_version"], current, question,
+                )
+
+        if match and best >= threshold and not stale:
             latency_ms = (time.perf_counter() - t_start) * 1000
             logger.info(
                 "CACHE HIT  similarity=%.3f (threshold %.2f) embed=%.1fms search=%.1fms | %s",
