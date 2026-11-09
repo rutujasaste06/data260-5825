@@ -1,0 +1,71 @@
+# HW9 Part 3.1 - labeled test set for the semantic cache (domain: clinical trial listings)
+#
+# Written and committed BEFORE any threshold sweep. Labels must not be edited after
+# results are seen; any labeling mistake is documented separately in the report.
+#
+# How it works: the cache is first filled with the 10 "seed" questions below (answered by
+# the HW8 agent). Each of the 40 cases is then sent as an incoming query.
+#   should_hit: true  -> an ideal cache returns the seed's saved answer
+#   should_hit: false -> an ideal cache must miss and run the agent
+# A "false hit" = the cache answers a should_hit:false case from a saved answer.
+
+seeds:
+  - {id: S01, query: "What should a patient know before joining a Phase II clinical trial?"}
+  - {id: S02, query: "How is informed consent obtained in a clinical trial?"}
+  - {id: S03, query: "What does Phase I testing of a new drug focus on?"}
+  - {id: S04, query: "What are the eligibility requirements for a Phase III trial?"}
+  - {id: S05, query: "How long does a typical Phase III clinical trial last?"}
+  - {id: S06, query: "What is a placebo in a clinical trial?"}
+  - {id: S07, query: "What is the purpose of an NCT number on a trial listing?"}
+  - {id: S08, query: "Can a participant withdraw from a clinical trial at any time?"}
+  - {id: S09, query: "What is a double-blind clinical trial?"}
+  - {id: S10, query: "Who reviews and approves a clinical trial before it starts?"}
+
+cases:
+  # ---- 10 exact duplicates (should hit) ----
+  - {id: E01, type: exact, seed: S01, should_hit: true, query: "What should a patient know before joining a Phase II clinical trial?"}
+  - {id: E02, type: exact, seed: S02, should_hit: true, query: "How is informed consent obtained in a clinical trial?"}
+  - {id: E03, type: exact, seed: S03, should_hit: true, query: "What does Phase I testing of a new drug focus on?"}
+  - {id: E04, type: exact, seed: S04, should_hit: true, query: "What are the eligibility requirements for a Phase III trial?"}
+  - {id: E05, type: exact, seed: S05, should_hit: true, query: "How long does a typical Phase III clinical trial last?"}
+  - {id: E06, type: exact, seed: S06, should_hit: true, query: "What is a placebo in a clinical trial?"}
+  - {id: E07, type: exact, seed: S07, should_hit: true, query: "What is the purpose of an NCT number on a trial listing?"}
+  - {id: E08, type: exact, seed: S08, should_hit: true, query: "Can a participant withdraw from a clinical trial at any time?"}
+  - {id: E09, type: exact, seed: S09, should_hit: true, query: "What is a double-blind clinical trial?"}
+  - {id: E10, type: exact, seed: S10, should_hit: true, query: "Who reviews and approves a clinical trial before it starts?"}
+
+  # ---- 10 paraphrases (same meaning, different words; should hit) ----
+  - {id: P01, type: paraphrase, seed: S01, should_hit: true, query: "Before enrolling in a Phase 2 trial, what should a participant be aware of?"}
+  - {id: P02, type: paraphrase, seed: S02, should_hit: true, query: "How does a participant give informed consent for a clinical study?"}
+  - {id: P03, type: paraphrase, seed: S03, should_hit: true, query: "What is the main goal of Phase 1 trials for a new medication?"}
+  - {id: P04, type: paraphrase, seed: S04, should_hit: true, query: "Who is eligible to take part in a Phase 3 trial?"}
+  - {id: P05, type: paraphrase, seed: S05, should_hit: true, query: "About how many months or years does a Phase III trial usually run?"}
+  - {id: P06, type: paraphrase, seed: S06, should_hit: true, query: "What does placebo mean in a clinical study?"}
+  - {id: P07, type: paraphrase, seed: S07, should_hit: true, query: "What does the NCT number on a clinical trial listing mean?"}
+  - {id: P08, type: paraphrase, seed: S08, should_hit: true, query: "Is it possible for a volunteer to leave a clinical trial whenever they want?"}
+  - {id: P09, type: paraphrase, seed: S09, should_hit: true, query: "What does it mean when a trial is double blinded?"}
+  - {id: P10, type: paraphrase, seed: S10, should_hit: true, query: "Which body approves a clinical trial before it can begin?"}
+
+  # ---- 10 superficially similar, different correct answer (should miss) ----
+  - {id: D01, type: similar_different, seed: S01, should_hit: false, query: "What should a patient know before joining a Phase I clinical trial?"}
+  - {id: D02, type: similar_different, seed: S02, should_hit: false, query: "How is informed consent withdrawn in a clinical trial?"}
+  - {id: D03, type: similar_different, seed: S03, should_hit: false, query: "What does Phase III testing of a new drug focus on?"}
+  - {id: D04, type: similar_different, seed: S04, should_hit: false, query: "What are the eligibility requirements for a Phase I trial?"}
+  - {id: D05, type: similar_different, seed: S05, should_hit: false, query: "How long does a typical Phase I clinical trial last?"}
+  - {id: D06, type: similar_different, seed: S06, should_hit: false, query: "What is a control group in a clinical trial?"}
+  - {id: D07, type: similar_different, seed: S07, should_hit: false, query: "What is the purpose of the phase number on a trial listing?"}
+  - {id: D08, type: similar_different, seed: S08, should_hit: false, query: "Can a sponsor end a clinical trial early at any time?"}
+  - {id: D09, type: similar_different, seed: S09, should_hit: false, query: "What is a single-blind clinical trial?"}
+  - {id: D10, type: similar_different, seed: S10, should_hit: false, query: "Who pays for a clinical trial before it starts?"}
+
+  # ---- 10 unrelated questions (should miss) ----
+  - {id: U01, type: unrelated, seed: null, should_hit: false, query: "What is the capital of France?"}
+  - {id: U02, type: unrelated, seed: null, should_hit: false, query: "How do I bake sourdough bread at home?"}
+  - {id: U03, type: unrelated, seed: null, should_hit: false, query: "What is the boiling point of water at sea level?"}
+  - {id: U04, type: unrelated, seed: null, should_hit: false, query: "Who wrote the novel Pride and Prejudice?"}
+  - {id: U05, type: unrelated, seed: null, should_hit: false, query: "How many players are on a soccer team?"}
+  - {id: U06, type: unrelated, seed: null, should_hit: false, query: "What is the square root of 144?"}
+  - {id: U07, type: unrelated, seed: null, should_hit: false, query: "How do I change a flat tire on a car?"}
+  - {id: U08, type: unrelated, seed: null, should_hit: false, query: "What is the tallest mountain in the world?"}
+  - {id: U09, type: unrelated, seed: null, should_hit: false, query: "How do I convert Celsius to Fahrenheit?"}
+  - {id: U10, type: unrelated, seed: null, should_hit: false, query: "What does a Python decorator do?"}
