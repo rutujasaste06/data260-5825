@@ -5,17 +5,23 @@ Reads a question from <PREFIX>_inbox, asks the local LLM to produce a
 short plan for answering it, and sends that plan to <PREFIX>_tasks for
 the Writer to pick up. Never talks to Writer or Reviewer directly -
 only through Kafka.
+
+HW10 Part 4: writes a span for the inbox wait and for its own work
+(trace_id = correlation_id). If the plan fails, an error result goes to
+<PREFIX>_final so the caller is not left waiting.
 """
 
 import json
 import os
 import sys
+import time
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "src"))
 
 from kafka import KafkaConsumer, KafkaProducer
 from model_client import ModelClient
-from topics import INBOX_TOPIC, TASKS_TOPIC
+from topics import INBOX_TOPIC, TASKS_TOPIC, FINAL_TOPIC
+from tracing import error_message, queue_span, traced
 
 KAFKA_BROKER = os.environ.get("KAFKA_BROKER", "localhost:9092")
 
@@ -53,8 +59,16 @@ def main():
         correlation_id = request.get("correlation_id")
         question = request.get("question")
         print(f"[planner] Received question (correlation_id={correlation_id}): {question}")
+        queue_span(correlation_id, "queue_inbox", request.get("sent_at"))
 
-        plan = make_plan(question)
+        try:
+            with traced(correlation_id, "planner"):
+                plan = make_plan(question)
+        except Exception as exc:
+            print(f"[planner] FAILED (correlation_id={correlation_id}): {exc}")
+            producer.send(FINAL_TOPIC, key=correlation_id, value=error_message(correlation_id, "planner", exc))
+            producer.flush()
+            continue
         print(f"[planner] Generated plan: {plan}")
 
         output = {
@@ -62,10 +76,13 @@ def main():
             "question": question,
             "plan": plan,
         }
+        if request.get("simulate_failure"):  # HW10 4.2 fault injection, passed along to the Writer
+            output["simulate_failure"] = request["simulate_failure"]
         # Part 3.IV: message key = the related entity (falls back to correlation_id),
         # so all messages about the same entity go to the same partition, in order.
         entity_id = request.get("entity_id") or correlation_id
         output["entity_id"] = entity_id
+        output["sent_at"] = time.time()
         producer.send(TASKS_TOPIC, key=entity_id, value=output)
         producer.flush()
         print(f"[planner] Sent plan to {TASKS_TOPIC}")

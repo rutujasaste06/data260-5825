@@ -14,6 +14,10 @@ killed mid-processing (e.g. while the LLM is still thinking), Kafka
 still considers that message unread, and the next time Writer starts
 up, it will receive that same message again instead of silently
 losing it.
+
+HW10 Part 4: writes a span for the tasks wait and for its own work
+(trace_id = correlation_id). If the draft fails, an error result goes to
+<PREFIX>_final and the offset is committed (so the failed message is not retried forever).
 """
 
 import json
@@ -25,7 +29,8 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "..", "src"))
 
 from kafka import KafkaConsumer, KafkaProducer
 from model_client import ModelClient
-from topics import TASKS_TOPIC, DRAFTS_TOPIC
+from topics import TASKS_TOPIC, DRAFTS_TOPIC, FINAL_TOPIC
+from tracing import error_message, queue_span, traced
 
 KAFKA_BROKER = os.environ.get("KAFKA_BROKER", "localhost:9092")
 
@@ -84,14 +89,26 @@ def main():
                 print(f"[{WRITER_NAME}] Received plan (correlation_id={correlation_id}) "
                       f"partition={msg.partition} offset={msg.offset} - starting work "
                       f"(offset NOT committed yet - if I die right now, this message is NOT lost)")
+                queue_span(correlation_id, "queue_tasks", task.get("sent_at"))
 
-                draft = write_answer(question, plan)
+                try:
+                    with traced(correlation_id, "writer"):
+                        if task.get("simulate_failure") == "writer":
+                            raise RuntimeError("simulated Writer failure (fault injection, HW10 4.2)")
+                        draft = write_answer(question, plan)
+                except Exception as exc:
+                    print(f"[{WRITER_NAME}] FAILED (correlation_id={correlation_id}): {exc}")
+                    producer.send(FINAL_TOPIC, value=error_message(correlation_id, "writer", exc))
+                    producer.flush()
+                    consumer.commit()
+                    continue
                 print(f"[{WRITER_NAME}] Generated draft: {draft}")
 
                 output = {
                     "correlation_id": correlation_id,
                     "question": question,
                     "draft": draft,
+                    "sent_at": time.time(),
                 }
                 producer.send(DRAFTS_TOPIC, value=output)
                 producer.flush()

@@ -1,0 +1,29 @@
+{
+  "hit": {
+    "trace_id": "9b71ea3b-82c5-47fc-8c8b-0b34e712e20e",
+    "question": "What questions should I ask the study team before enrolling in a clinical trial?",
+    "answer": "Before enrolling in a clinical trial, ask:  \n1. **Purpose & Role**: What is the trial\u2019s goal, duration, and your specific responsibilities?  \n2. **Risks & Benefits**: What are the potential risks, benefits, and how will your data be protected?  \n3. **Time & Costs**: How much time will this require, including visits, and are there any costs involved?  \n4. **Post-Trial & Alternatives**: What happens after the trial ends? Will you receive compensation? Are there alternatives to participation?  \nThese questions ensure you understand the trial\u2019s scope, your role, and your rights, helping you make an informed decision.",
+    "cache_hit": true,
+    "status": "ok",
+    "error": null,
+    "latency_ms": 172.5
+  },
+  "miss": {
+    "trace_id": "87966eff-3692-4c71-a871-e3c75cc9459b",
+    "question": "What questions should I ask the study team before enrolling in a clinical trial?",
+    "answer": "Before enrolling in a clinical trial, ask:  \n1. **Purpose & Role**: What is the trial\u2019s goal, duration, and your specific responsibilities?  \n2. **Risks & Benefits**: What are the potential risks, benefits, and how will your data be protected?  \n3. **Time & Costs**: How much time will this require, including visits, and are there any costs involved?  \n4. **Post-Trial & Alternatives**: What happens after the trial ends? Will you receive compensation? Are there alternatives to participation?  \nThese questions ensure you understand the trial\u2019s scope, your role, and your rights, helping you make an informed decision.",
+    "cache_hit": false,
+    "status": "ok",
+    "error": null,
+    "latency_ms": 33741.1
+  },
+  "failed": {
+    "trace_id": "f1a4ba6a-b735-4819-a572-253dac1ae0a8",
+    "question": "How do clinical trial sponsors choose which hospitals will run a study?",
+    "answer": null,
+    "cache_hit": false,
+    "status": "error",
+    "error": "RuntimeError: writer failed: RuntimeError: simulated Writer failure (fault injection, HW10 4.2)",
+    "latency_ms": 11605.1
+  }
+}
