@@ -8,3 +8,5 @@ ignore = ["E501"]
 [lint.per-file-ignores]
 "code/pipeline/part3/**" = ["E401", "E402", "E702", "E741"]
 "code/messaging/part3/**" = ["F401", "F841"]
+# HW11 stock-watch kit: instructor code kept exactly as provided
+"code/hw11/stock-watch/watch.py" = ["E701", "E702", "E741", "F401"]

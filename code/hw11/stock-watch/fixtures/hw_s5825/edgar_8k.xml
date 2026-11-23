@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- HW11 test fixture for DATA 260 (s5825). Orvane Foods (ORVN), Quantrix Semiconductor (QNTX), Tallbridge Bank (TLBK), Voltaro Motors (VLTR) and Kevant Logistics (KVNT) are fictional companies; these filings do not exist. -->
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>EDGAR 8-K filings (HW11 test fixture)</title>
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999921-26-000301</id>
+    <updated>2026-11-19T16:20:00-05:00</updated>
+    <title>ORVN: 8-K - Current report</title>
+    <summary>(Fictional test item for DATA 260.) Orvane Foods Inc. Item 2.02 Results of Operations and Financial Condition; Item 9.01 Financial Statements and Exhibits. Third quarter revenue $1.84B, up 9% year over year; full-year outlook raised.</summary>
+    <link href="https://www.sec.gov/Archives/edgar/data/9999921/000999992126000301/0009999921-26-000301-index.htm" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999922-26-000088</id>
+    <updated>2026-11-20T16:10:00-05:00</updated>
+    <title>QNTX: 8-K - Current report</title>
+    <summary>(Fictional test item for DATA 260.) Quantrix Semiconductor Corp. Item 2.02 Results of Operations and Financial Condition; Item 9.01 Financial Statements and Exhibits. Third quarter revenue $2.30B, up 21% year over year; fourth quarter outlook above prior range.</summary>
+    <link href="https://www.sec.gov/Archives/edgar/data/9999922/000999992226000088/0009999922-26-000088-index.htm" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999921-26-000312</id>
+    <updated>2026-11-20T09:15:00-05:00</updated>
+    <title>ORVN: 8-K/A - Current report, amendment</title>
+    <summary>(Fictional test item for DATA 260.) Orvane Foods Inc. Amendment No. 1 to the 8-K of November 19, filed only to correct a footnote label in a table in Exhibit 99.1. No other changes; results are unchanged.</summary>
+    <link href="https://www.sec.gov/Archives/edgar/data/9999921/000999992126000312/0009999921-26-000312-index.htm" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999923-26-000150</id>
+    <updated>2026-11-20T17:30:00-05:00</updated>
+    <title>TLBK: 8-K - Current report</title>
+    <summary>(Fictional test item for DATA 260.) Tallbridge Bank Corp. Item 8.01 Other Events: the bank received a notice from a federal regulator opening a review of its anti-money-laundering controls. No penalty has been proposed; the bank says it will cooperate and cannot predict the outcome.</summary>
+    <link href="https://www.sec.gov/Archives/edgar/data/9999923/000999992326000150/0009999923-26-000150-index.htm" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>urn:tag:sec.gov,2008:accession-number=0009999924-26-000067</id>
+    <updated>2026-11-20T18:05:00-05:00</updated>
+    <title>VLTR: 8-K - Current report</title>
+    <summary>(Fictional test item for DATA 260.) Voltaro Motors Inc. Item 5.02 Departure of Directors or Certain Officers: the chief executive officer resigned effective immediately; the chief financial officer was named interim chief executive officer while the board begins a search.</summary>
+    <link href="https://www.sec.gov/Archives/edgar/data/9999924/000999992426000067/0009999924-26-000067-index.htm" rel="alternate"/>
+  </entry>
+</feed>
