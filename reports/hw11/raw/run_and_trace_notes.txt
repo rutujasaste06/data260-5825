@@ -1,0 +1,26 @@
+Typed from Muse screenshots (ss_11, ss_12, ss_13, ss_19 to ss_22, ss_32, ss_33). Not machine exported.
+
+Fixture run: 20261123-130008-7314, started 2026-11-23T21:00:08+00:00, finished 21:04:50+00:00 (UTC)
+  --stop-after 6: interrupted after 6 items in edgar_demo, sources done 3/5, pending decisions 6
+  resume: 12 new, 1 duplicates suppressed, 5 alerts, 3 digest, 2 need review
+  status after: complete, sources done 5/5, pending 0, total notifications ever sent 5
+HIGH alerts (effect IDs): VLTR 8-K 580ac564de05; QNTX 8-K 2e0d65765ab7; VLTR +6.0% 0d43581aa626;
+  ORVN +7.8% 804985725480; ORVN 8-K ccddb22ba622
+
+Trace effect 2e0d65765ab7 (QNTX 8-K):
+  21:00:09 retrieved (edgar_demo, key sec:0009999922-26-000088)
+  21:04:35 dedup_merge (newswire_demo, same item from another source)
+  importance_scored 0.85 "QNTX 8-K Item 2.02: Q3 revenue up 21 percent, outlook raised"
+  decision notify
+  21:04:49 effect SendToUser
+
+Trace effect 804985725480 (ORVN +7.8%): retrieved prices_hw_a key price:ORVN:2026-11-20; importance_scored 0.85;
+  decision notify; effect SendToUser (one effect only)
+
+Live manual run: 20261123-132046-1aae, 0 new, 0 duplicates, 0 alerts, 0 digest, 0 need review.
+  Muse: 0 items from all 3 live sources (Stooq verification page, EDGAR 400).
+Usage screen before and after: Free plan 0% used, weekly limit resets Nov 30.
+Muse token answer: no total available; about 102000 tokens in the side chat context window.
+
+Scheduled run (from Muse answer, ss_37): job stock-watch-weekday, scheduled Mon Nov 23 1:30:00 PM PST, ran about 1:26:02 to 1:27:33 PM, status succeeded,
+  run ID 5d10c3f0-6f86-49f8-8b11-5e24b4c3b929, no result summary and no delivery recorded, no chat message. Next run Tue Nov 24 1:30 PM PST.

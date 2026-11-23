@@ -1,0 +1,76 @@
+{
+  "topic": "Material changes for a stock watchlist: large daily price moves and new SEC 8-K filings",
+  "user_agent": "DATA260-stock-watch/1.0 rutujarajendra.saste@sjsu.edu",
+  "note": "Approved-source allowlist. watch.py refuses any URL whose host is not listed here. SEC asks automated clients to send a User-Agent with a contact email: put yours in user_agent above. Watchlist (s5825): KO, JPM (steady, tier A) and AMD, TSLA (volatile, tier B). The price source threshold_pct is the lowest move worth scoring (half of the notify line); policy.md sets the notify line.",
+  "sources": [
+    {
+      "id": "prices_live_a",
+      "type": "stooq",
+      "modes": ["live"],
+      "url": "https://stooq.com/q/d/l/",
+      "tickers": ["ko.us", "jpm.us"],
+      "threshold_pct": 1.5,
+      "lookback_days": 3
+    },
+    {
+      "id": "prices_live_b",
+      "type": "stooq",
+      "modes": ["live"],
+      "url": "https://stooq.com/q/d/l/",
+      "tickers": ["amd.us", "tsla.us"],
+      "threshold_pct": 3.0,
+      "lookback_days": 3
+    },
+    {
+      "id": "edgar_live",
+      "type": "edgar",
+      "modes": ["live"],
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar",
+      "form": "8-K",
+      "per_company": 5,
+      "ciks": {"KO": "0000021344", "JPM": "0000019617", "AMD": "0000002488", "TSLA": "0001318605"}
+    },
+    {
+      "id": "prices_demo",
+      "type": "stooq",
+      "modes": ["fixtures"],
+      "url": "https://stooq.com/q/d/l/",
+      "tickers": ["nbrx.us", "cbds.us", "lksp.us"],
+      "threshold_pct": 2.0,
+      "lookback_days": 3
+    },
+    {
+      "id": "prices_hw_a",
+      "type": "stooq",
+      "modes": ["fixtures"],
+      "url": "https://stooq.com/q/d/l/",
+      "tickers": ["orvn.us", "tlbk.us", "kvnt.us"],
+      "threshold_pct": 1.5,
+      "lookback_days": 3
+    },
+    {
+      "id": "prices_hw_b",
+      "type": "stooq",
+      "modes": ["fixtures"],
+      "url": "https://stooq.com/q/d/l/",
+      "tickers": ["qntx.us", "vltr.us"],
+      "threshold_pct": 3.0,
+      "lookback_days": 3
+    },
+    {
+      "id": "edgar_demo",
+      "type": "edgar",
+      "modes": ["fixtures"],
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar",
+      "fixture": "edgar_8k.xml",
+      "ciks": {}
+    },
+    {
+      "id": "newswire_demo",
+      "type": "rss",
+      "modes": ["fixtures"],
+      "url": "https://example-newswire.example/markets/feed.xml",
+      "fixture": "newswire.xml"
+    }
+  ]
+}
